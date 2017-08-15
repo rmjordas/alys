@@ -1,0 +1,16 @@
+:root {
+  /*
+   * Apply to make an element a flex continainer that centers its children
+   *
+   * .centered {
+   *   @apply --centered;
+   * }
+   */
+  --centered: {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  };
+
+
+}
