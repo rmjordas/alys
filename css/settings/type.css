@@ -1,5 +1,5 @@
 :root {
-  --systemFonts: "-apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', 'HelveticaNeue-Light', 'Ubuntu', 'Droid Sans', sans-serif";
+  --systemFont: "-apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', 'HelveticaNeue-Light', 'Ubuntu', 'Droid Sans', sans-serif";
   --rootFontSize: 62.5%;
   --baseFontSize: 1.6rem;
 }
