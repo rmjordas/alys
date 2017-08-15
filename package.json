@@ -22,7 +22,7 @@
   },
   "homepage": "https://github.com/mds3dstn71/alys#readme",
   "devDependencies": {
-    "postcss": "^6.0.9",
+    "postcss-cli": "^4.1.0",
     "postcss-cssnext": "^3.0.2",
     "postcss-import": "^10.0.0",
     "stylelint": "^8.0.0",
