@@ -18,4 +18,4 @@
 @custom-media --vpPhone (width >= 54.4em);
 @custom-media --vpTablet (width >= 76.8em);
 @custom-media --vpDesktop (width >= 99.2em);
-@custom-media --vpLargeDesktop (width >= 120.0em);
+@custom-media --vpLargeDesktop (width >= 120.em);
