@@ -1,0 +1,27 @@
+:root {
+  /* Color names of hex values */
+  --black:       #000000;
+  --candyCorn:   #fbe655;
+  --carnation:   #f35667;
+  --cerise:      #da49b2;
+  --codGray:     #171717;
+  --crusta:      #fd763f;
+  --gallery:     #efefef;
+  --jungleGreen: #2eaa86;
+  --lochmara:    #0579c6;
+  --tundora:     #4a4a4a;
+  --westar:      #dbd6d0;
+  --white:       #ffffff;
+
+  /* Color names approximated to simpler names */
+  --blackish:  var(--codGray);
+  --blue:      var(--lochmara);
+  --darkGray:  var(--tundora);
+  --green:     var(--jungleGreen);
+  --lightGray: var(--westar);
+  --orange:    var(--crusta);
+  --pink:      var(--carnation);
+  --purple:    var(--cerise);
+  --whiteish:  var(--gallery);
+  --yellow:    var(--candyCorn);
+}
