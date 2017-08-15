@@ -1,6 +1,6 @@
 # Alys
 
-A minimal configuration, "drop-in" CSS boilerplate".
+A minimal-configuration, "drop-in" CSS boilerplate.
 
 ## License
 
