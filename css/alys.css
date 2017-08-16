@@ -18,15 +18,12 @@
 /* stylelint-disable at-rule-empty-line-before */
 @import 'settings/type';
 @import 'settings/colors';
-@import 'settings/global';
-@import 'settings/breakpoints';
 
 @import 'tools/centered';
 @import 'tools/media-queries';
 @import 'tools/sr-only';
 
 @import 'generic/normalize';
-@import 'generic/box-sizing';
 
 @import 'elements/base';
 @import 'elements/heading';
