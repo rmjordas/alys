@@ -1,0 +1,10 @@
+html {
+  font-size: var(--rootFontSize);
+  font-family: var(--systemFont);
+  height: 100%;
+}
+
+body {
+  color: var(--blackish);
+  font-size: var(--baseFontSize);
+}
