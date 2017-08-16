@@ -1,0 +1,123 @@
+fieldset {
+  border: 0.1rem solid var(--lightGray);
+  border-radius: 0.3rem;
+}
+
+fieldset legend {
+  font-size: 1.4rem;
+  font-weight: 700;
+  padding: 0 1rem;
+}
+
+label {
+  font-weight: 700;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+input,
+textarea,
+select {
+  border: 0.1rem solid var(--lightGray);
+  padding: 0.5rem;
+  border-radius: 0.3rem;
+  outline: 0;
+}
+
+input:invalid {
+  border: 0.1rem solid var(--pink);
+  outline: 0;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  border: 0.1rem solid var(--blue);
+}
+
+textarea {
+  min-height: 6.5rem;
+  width: 100%;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+input[type="checkbox"]:focus {
+  outline: 0.1rem dotted var(--blue);
+}
+
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+input[type="submit"]:not(:disabled),
+input[type="reset"]:not(:disabled),
+input[type="button"]:not(:disabled) {
+  font-weight: 700;
+  padding: 0.5em 1em;
+  border: 0.1rem solid var(--blue);
+  margin-bottom: 1.6rem;
+  color: var(--blue);
+  text-transform: uppercase;
+}
+
+input[type="submit"]:not(:disabled):hover,
+input[type="reset"]:not(:disabled):hover,
+input[type="button"]:not(:disabled):hover,
+input[type="submit"]:not(:disabled):focus,
+input[type="reset"]:not(:disabled):focus,
+input[type="button"]:not(:disabled):focus {
+  border: 0.1rem solid var(--blue);
+  background-color: var(--whiteish);
+}
+
+input[disabled] {
+  border: 0.1rem solid var(--lightGray);
+}
+
+button,
+button[type="submit"],
+button[type="reset"],
+button[type="button"] {
+  font-weight: 700;
+  border-radius: 0.6rem;
+  padding: 0.5em 1em;
+  color: var(--white);
+  border: 0.1rem solid var(--white);
+  background-color: var(--blue);
+  margin-bottom: 1.6rem;
+  text-transform: uppercase;
+}
+
+button:not(:active),
+button[type="submit"]:not(:active),
+button[type="reset"]:not(:active),
+button[type="button"]:not(:active) {
+  outline: 0;
+}
+
+button:not(:disabled):hover,
+button[type="submit"]:not(:disabled):hover,
+button[type="reset"]:not(:disabled):hover,
+button[type="button"]:not(:disabled):hover,
+button:not(:disabled):focus,
+button[type="submit"]:not(:disabled):focus,
+button[type="reset"]:not(:disabled):focus,
+button[type="button"]:not(:disabled):focus {
+  border: 0.1rem solid var(--white);
+  color: var(--white);
+  background-color: var(--blue);
+}
+
+input:disabled,
+button:disabled {
+  color: var(--darkGray);
+  background-color: var(--lightGray);
+  cursor: not-allowed;
+}
