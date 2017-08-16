@@ -8,3 +8,7 @@ body {
   color: var(--blackish);
   font-size: var(--baseFontSize);
 }
+
+p {
+  font-size: 1.4rem;
+}
