@@ -1,0 +1,7 @@
+input[disabled] {
+  border: 0.1rem solid var(--lightGray);
+}
+
+input:disabled {
+  @apply --input-style--disabled;
+}
