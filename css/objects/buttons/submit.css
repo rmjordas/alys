@@ -1,0 +1,12 @@
+button[type="submit"] {
+  @apply --button-style;
+}
+
+button[type="submit"]:not(:active) {
+  @apply --button-style--not-active;
+}
+
+button[type="submit"]:not(:disabled):hover,
+button[type="submit"]:not(:disabled):focus {
+  @apply --button-style--not-disabled--focused;
+}
