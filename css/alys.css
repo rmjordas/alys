@@ -35,3 +35,5 @@
 @import 'elements/img';
 @import 'elements/progress';
 @import 'elements/form';
+
+@import 'objects/buttons/base';
