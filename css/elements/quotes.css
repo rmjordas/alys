@@ -1,0 +1,14 @@
+blockquote {
+  background-color: var(--whiteish);
+  padding: 1em;
+  border-left: 0.3rem solid var(--lightGray);
+  margin: 1rem 2rem;
+}
+
+blockquote p {
+  margin-top: 0;
+}
+
+blockquote p:only-child {
+  margin-bottom: 0;
+}
