@@ -1,0 +1,28 @@
+:root {
+  --button-style: {
+    font-weight: 700;
+    border-radius: 0.6rem;
+    padding: 0.5em 1em;
+    color: var(--white);
+    border: 0.1rem solid var(--white);
+    background-color: var(--blue);
+    margin-bottom: 1.6rem;
+    text-transform: uppercase;
+  }
+
+  --button-style--not-active: {
+    outline: 0;
+  }
+
+  --button-style--not-disabled--focused: {
+    border: 0.1rem solid var(--white);
+    color: var(--white);
+    background-color: var(--blue);
+  }
+
+  --button-style--disabled: {
+    color: var(--darkGray);
+    background-color: var(--lightGray);
+    cursor: not-allowed;
+  }
+}
