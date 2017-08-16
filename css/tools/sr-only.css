@@ -3,10 +3,10 @@
    * Apply to hide the element visually
    *
    * .sr-only {
-   *   @apply --srOnly;
+   *   @apply --sr-only;
    *  }
    */
-  --srOnly: {
+  --sr-only: {
     border: 0;
     clip: rect(0, 0, 0, 0);
     height: 1px;
