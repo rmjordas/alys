@@ -1,0 +1,9 @@
+input[type="button"],
+input[type="button"]:not(:disabled) {
+  @apply --input-button-style;
+}
+
+input[type="button"]:not(:disabled):hover,
+input[type="button"]:not(:disabled):focus {
+  @apply --input-button-style--focus;
+}
