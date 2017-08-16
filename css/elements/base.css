@@ -31,3 +31,8 @@ abbr,
 acronym {
   cursor: help;
 }
+
+iframe {
+  border: 0.1rem solid #dbd6d0;
+  max-width: 100%;
+}
