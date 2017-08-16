@@ -29,5 +29,5 @@
 @import 'generic/box-sizing';
 
 @import 'elements/base';
-@import 'elements/headings';
-@import 'elements/quotes';
+@import 'elements/heading';
+@import 'elements/quote';
