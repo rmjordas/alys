@@ -1,0 +1,28 @@
+:root {
+  /*
+   * Apply to style input buttons
+   *
+   * input[type="reset"] {
+   *   @apply --input-button;
+   *  }
+   */
+  --input-button-style: {
+    font-weight: 700;
+    padding: 0.5em 1em;
+    border: 0.1rem solid var(--blue);
+    margin-bottom: 1.6rem;
+    color: var(--blue);
+    text-transform: uppercase;
+  }
+
+  --input-button-style--focus: {
+    border: 0.1rem solid var(--blue);
+    background-color: var(--whiteish);
+  }
+
+  --input-style--disabled: {
+    color: var(--darkGray);
+    background-color: var(--lightGray);
+    cursor: not-allowed;
+  }
+}
