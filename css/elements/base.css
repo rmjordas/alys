@@ -12,3 +12,17 @@ body {
 p {
   font-size: 1.4rem;
 }
+
+code {
+  background-color: var(--whiteish);
+  border-radius: 0.2em;
+  padding: 0.1em 0.3em;
+  white-space: pre-line;
+}
+
+pre {
+  background: var(--whiteish);
+  overflow-x: auto;
+  padding: 1rem;
+  border-radius: 0.3rem;
+}
