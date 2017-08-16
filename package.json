@@ -4,6 +4,7 @@
   "description": "A minimal-configuration, \"drop-in\" CSS boilerplate",
   "main": "index.js",
   "scripts": {
+    "build": "postcss css/alys.css -o .vscode/alys.css -c postcss.config.js",
     "test": "stylelint css/**/*.css"
   },
   "repository": {
@@ -21,10 +22,16 @@
     "url": "https://github.com/mds3dstn71/alys/issues"
   },
   "homepage": "https://github.com/mds3dstn71/alys#readme",
+  "publishConfig": {
+    "access": "public"
+  },
   "devDependencies": {
+    "cssnano": "^3.10.0",
     "postcss-cli": "^4.1.0",
     "postcss-cssnext": "^3.0.2",
     "postcss-import": "^10.0.0",
+    "postcss-reporter": "^5.0.0",
+    "postcss-url": "^7.1.2",
     "stylelint": "^8.0.0",
     "stylelint-config-standard": "^17.0.0"
   },
