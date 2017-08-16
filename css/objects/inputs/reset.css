@@ -1,0 +1,9 @@
+input[type="reset"],
+input[type="reset"]:not(:disabled) {
+  @apply --input-button-style;
+}
+
+input[type="reset"]:not(:disabled):hover,
+input[type="reset"]:not(:disabled):focus {
+  @apply --input-button-style--focus;
+}
