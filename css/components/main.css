@@ -1,3 +1,5 @@
-main[role="main"] {
-  flex: 0.7;
+@media (--vpPhone) {
+  main[role="main"] {
+    flex: 0.7;
+  }
 }

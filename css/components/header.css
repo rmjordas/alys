@@ -4,4 +4,11 @@ header[role="banner"] {
   margin: 0 auto;
   text-align: center;
   padding: 1.6rem 0;
+  display: none;
+}
+
+@media (--vpPhone) {
+  header[role="banner"] {
+    display: block;
+  }
 }
