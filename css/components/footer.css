@@ -1,0 +1,7 @@
+footer[role="contentinfo"] {
+  height: 3rem;
+  line-height: 3rem;
+  text-align: center;
+  color: var(--white);
+  background-color: var(--blue);
+}

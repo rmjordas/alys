@@ -50,6 +50,7 @@
 @import 'objects/wrapper';
 
 @import 'components/aside';
+@import 'components/footer';
 @import 'components/header';
 @import 'components/main';
 @import 'components/navigation';
