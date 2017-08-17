@@ -47,3 +47,5 @@
 @import 'objects/inputs/checkbox';
 @import 'objects/inputs/reset';
 @import 'objects/inputs/submit';
+
+@import 'components/navigation';
