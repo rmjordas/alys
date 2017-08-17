@@ -28,16 +28,16 @@
 @import 'generic/normalize';
 
 @import 'elements/base';
+@import 'elements/form';
 @import 'elements/heading';
-@import 'elements/quote';
-@import 'elements/table';
-@import 'elements/list';
 @import 'elements/hr';
-@import 'elements/link';
 @import 'elements/img';
+@import 'elements/link';
+@import 'elements/list';
 @import 'elements/nav';
 @import 'elements/progress';
-@import 'elements/form';
+@import 'elements/quote';
+@import 'elements/table';
 
 @import 'objects/buttons/base';
 @import 'objects/buttons/button';
