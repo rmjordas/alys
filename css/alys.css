@@ -49,5 +49,6 @@
 @import 'objects/inputs/submit';
 @import 'objects/wrapper';
 
+@import 'components/aside';
 @import 'components/header';
 @import 'components/navigation';
