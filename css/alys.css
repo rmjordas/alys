@@ -48,4 +48,5 @@
 @import 'objects/inputs/reset';
 @import 'objects/inputs/submit';
 
+@import 'components/header';
 @import 'components/navigation';

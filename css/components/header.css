@@ -1,0 +1,7 @@
+header[role="banner"] {
+  background-color: var(--blue);
+  color: var(--white);
+  margin: 0 auto;
+  text-align: center;
+  padding: 1.6rem 0;
+}
