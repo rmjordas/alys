@@ -1,0 +1,7 @@
+.wrapper__inner {
+  max-width: 96rem;
+  margin: 0 auto;
+  padding: 0 1.6rem;
+  display: flex;
+  flex-direction: row-reverse;
+}
