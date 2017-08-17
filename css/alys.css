@@ -19,7 +19,9 @@
 @import 'settings/type';
 @import 'settings/colors';
 
+@import 'tools/button-style.css';
 @import 'tools/centered';
+@import 'tools/input-style.css';
 @import 'tools/media-queries';
 @import 'tools/sr-only';
 
