@@ -4,7 +4,7 @@ module.exports = {
     require('postcss-import'),
     require('postcss-url'),
     require('postcss-cssnext'),
-    // require('cssnano'),
+    require('cssnano'),
     require('postcss-reporter')
   ],
 };
