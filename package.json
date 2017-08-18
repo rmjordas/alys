@@ -2,7 +2,11 @@
   "name": "alys",
   "version": "0.1.0",
   "description": "A minimal-configuration, \"drop-in\" CSS boilerplate",
-  "main": "index.js",
+  "main": "dist/alys.css",
+  "files": [
+    "LICENSE",
+    "dist/alys.css"
+  ],
   "scripts": {
     "build": "postcss css/alys.css -o dist/alys.css -c postcss.config.js",
     "test": "stylelint css/**/*.css"
