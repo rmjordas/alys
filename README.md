@@ -1,4 +1,7 @@
-# Alys
+# alys [![Build Status][badge]][ci]
+
+[badge]: https://travis-ci.org/mds3dstn71/alys.svg?branch=master
+[ci]: https://travis-ci.org/mds3dstn71/alys
 
 A minimal-configuration, "drop-in" CSS boilerplate.
 
