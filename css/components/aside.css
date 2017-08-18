@@ -1,5 +1,2 @@
-@media (--vpPhone) {
-  aside[role="complementary"] {
-    flex: 0.3;
-  }
+aside[role="complementary"] {
 }
