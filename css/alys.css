@@ -28,6 +28,7 @@
 @import 'generic/normalize';
 
 @import 'elements/base';
+@import 'elements/body';
 @import 'elements/form';
 @import 'elements/heading';
 @import 'elements/hr';
