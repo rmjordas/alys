@@ -1,2 +1,3 @@
 aside[role="complementary"] {
+  grid-area: aside;
 }

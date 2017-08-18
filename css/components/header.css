@@ -5,6 +5,8 @@ header[role="banner"] {
   text-align: center;
   padding: 1.6rem 0;
   display: none;
+  grid-area: header;
+  justify-self: stretch;
 }
 
 @media (--vpPhone) {

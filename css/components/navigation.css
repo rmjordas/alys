@@ -2,6 +2,7 @@ nav[role="navigation"] {
   height: 6rem;
   background-color: var(--black);
   color: var(--white);
+  grid-area: nav;
 }
 
 nav[role="navigation"] > ul {
