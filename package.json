@@ -9,6 +9,7 @@
   ],
   "scripts": {
     "build": "postcss css/alys.css -o dist/alys.css -c postcss.config.js",
+    "start": "postcss css/alys.css -o dist/alys.css -c postcss.config.js -w",
     "test": "stylelint css/**/*.css"
   },
   "repository": {
