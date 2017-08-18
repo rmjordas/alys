@@ -8,26 +8,24 @@ body {
   color: var(--blackish);
   font-size: var(--baseFontSize);
   display: grid;
-  grid-template-columns: 100%;
-  grid-template-rows: 1fr 6rem auto auto auto;
-  grid-template-areas:
-    "header"
-    "nav"
-    "main"
-    "aside"
-    "footer";
+  grid-template:
+    "header" 1fr
+    "nav"    6rem
+    "main"   auto
+    "aside"  auto
+    "footer" auto
+    / 100%;
 }
 
 @media (--vpPhone) {
   body {
     display: grid;
-    grid-template-columns: 1fr 28.8rem 67.2rem 1fr;
-    grid-template-rows: 1fr 6rem auto auto;
-    grid-template-areas:
-      "header header header header"
-      "nav nav nav nav"
-      ". aside main ."
-      "footer footer footer footer";
+    grid-template:
+      "header header header header" 1fr
+      "nav    nav    nav    nav"    6rem
+      ".      aside  main   ."      auto
+      "footer footer footer footer" auto
+      / 1fr 28.8rem 67.2rem 1fr;
   }
 }
 
