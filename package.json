@@ -1,12 +1,8 @@
 {
   "name": "alys",
-  "version": "0.1.0",
+  "version": "0.1.0-alpha.12",
   "description": "A minimal-configuration, \"drop-in\" CSS boilerplate",
   "main": "dist/alys.css",
-  "files": [
-    "LICENSE",
-    "dist/alys.css"
-  ],
   "scripts": {
     "build": "postcss css/alys.css -o dist/alys.css -c postcss.config.js",
     "start": "postcss css/alys.css -o dist/alys.css -c postcss.config.js -w",
@@ -21,7 +17,7 @@
     "boilerplate",
     "reset"
   ],
-  "author": "Rodger Jordas <mds3dstn71@protonmail.com> (https://github.com/mds3dstn71)",
+  "author": "Rodger Jordas <mds3dstn71@pm.me> (https://github.com/mds3dstn71)",
   "license": "Apache-2.0",
   "bugs": {
     "url": "https://github.com/mds3dstn71/alys/issues"
