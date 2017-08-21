@@ -7,45 +7,34 @@ A minimal-configuration, "drop-in" CSS boilerplate.
 
 ## Getting Started
 
-### npm
+## Releases
 
-```
-npm install alys
-```
+Go to the alys GitHub [Releases][] page and download the file for the version
+you want. Place the style sheet in your project directory and add a `link`
+element inside the `head` of your `.html` file referencing the path to the alys
+style sheet.
 
-After installing via npm, the direct method to import alys is is through:
+[Releases]: https://github.com/mds3dstn71/alys/releases
 
-```css
-import './node_modules/alys/dist/alys.css';
-```
+### Example
 
-If you are using a CSS processor like [PostCSS][], then you can use a simpler
-declaration. PostCSS will automatically try to search for alys in the
-`node_modules` directory:
-
-```css
-import 'alys';
+```html
+<head>
+  <title>My Website</title>
+  <link rel="stylesheet" href="/path/to/alys.min.css">
+</head>
 ```
 
-[PostCSS]: https://github.com/postcss/postcss-cli
+## unpkg CDN
 
-#### Require it in your task runner
-
-```js
-var alys = require('alys');
-```
-
-
-### unpkg
-
-Include a `link` element inside the `head` element with the following absolute
-path as the value of the `href` attribute:
+Include a `link` element inside the `head` element with the following URL as the
+value of the `href` attribute:
 
 ```
 https://unpkg.com/alys@latest/dist/alys.min.css
 ```
 
-#### Example
+### Example
 
 ```html
 <head>
@@ -54,26 +43,34 @@ https://unpkg.com/alys@latest/dist/alys.min.css
 </head>
 ```
 
-### GitHub Releases
+## npm
 
-Go to the alys GitHub [Releases][] page and download the `.zip` file for the
-version you want. Place the style sheet in your project directory and add this
-`link` element on the `head` of your `.html` file.
+```
+npm install alys
+```
 
-[Releases]: https://github.com/mds3dstn71/alys/releases
+After npm finishes installing alys, you can copy the style sheet from
+`./node_modules/alys/dist/`. Place the file somewhere in your project, e.g.
+`./styles/`, and use the `@import` rule to include in your other style sheet:
 
-#### Example
+```css
+@import 'styles/alys.css';
+```
 
-```html
-<head>
-  <title>My Website</title>
-  <link rel="stylesheet" href="alys.min.css">
-</head>
+If you are using a CSS processor, like [PostCSS][], then you can use a simpler
+declaration as, PostCSS will automatically try to search for alys in the
+`node_modules` directory:
+
+[PostCSS]: https://github.com/postcss/postcss-cli
+
+```css
+@import 'alys';
 ```
 
 ## Documentation
 
-Checkout the [alys Wiki](wiki) for more readings!
+Checkout the [alys Wiki](https://github.com/mds3dstn71/alys/wiki) for more
+readings!
 
 ## License
 
