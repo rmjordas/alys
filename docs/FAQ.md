@@ -40,7 +40,7 @@ rule-sets).
 ## How to use alys in my project?
 
 There are various ways to include alys in your project. Refer to the [Getting
-Started](getting-started.md) section for more information.
+Started](Home.md#getting-started) section for more information.
 
 ## It broke my web page! What to do?
 
