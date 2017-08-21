@@ -1,21 +1,21 @@
 **Quick Start**
 
-* [Getting Started](Home.md#getting-started)
-* [Browser Support](Home.md#browser-support)
-* [Best Practices](Home.md#best-practices)
+* [Getting Started](Home#getting-started)
+* [Browser Support](Home#browser-support)
+* [Best Practices](Home#best-practices)
 
 **Contents**
 
-* [Settings](Settings.md)
-* [Tools](Tools.md)
-* [Generic](Generic.md)
-* [Elements](Elements.md)
-* [Objects](Objects.md)
-* [Components](Components.md)
-* [Utilities](Utilities.md)
+* [Settings](Settings)
+* [Tools](Tools)
+* [Generic](Generic)
+* [Elements](Elements)
+* [Objects](Objects)
+* [Components](Components)
+* [Utilities](Utilities)
 
 **Misc**
 
-* [FAQ](FAQ.md)
-* [Change Log](CHANGELOG.md)
-* [Contributing Guide](CONTRIBUTING.md)
+* [FAQ](FAQ)
+* [Change Log](CHANGELOG)
+* [Contributing Guide](CONTRIBUTING)
