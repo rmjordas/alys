@@ -15,18 +15,37 @@
  *  limitations under the License.
  */
 
-/* stylelint-disable at-rule-empty-line-before */
+/* =====================================
+ * Settings
+ * =====================================
+ * Global variables
+ */
 @import 'settings/type';
 @import 'settings/colors';
 
+/* =====================================
+ * Tools
+ * =====================================
+ * Contains Mixins, functions, etc.
+ */
 @import 'tools/button-style.css';
 @import 'tools/centered';
 @import 'tools/input-style.css';
 @import 'tools/media-queries';
 @import 'tools/sr-only';
 
+/* =====================================
+ * Generic
+ * =====================================
+ * Resets, normalize, etc.
+ */
 @import 'generic/normalize';
 
+/* =====================================
+ * Elements
+ * =====================================
+ * Rule-sets have type/simple selectors only
+ */
 @import 'elements/base';
 @import 'elements/body';
 @import 'elements/form';
@@ -40,6 +59,11 @@
 @import 'elements/quote';
 @import 'elements/table';
 
+/* =====================================
+ * Objects
+ * =====================================
+ * Rule-sets have class selectors only
+ */
 @import 'objects/buttons/base';
 @import 'objects/buttons/button';
 @import 'objects/buttons/reset';
@@ -51,6 +75,11 @@
 @import 'objects/inputs/submit';
 @import 'objects/base';
 
+/* =====================================
+ * Components
+ * =====================================
+ * Combined selectors, e.g. attribute + type, etc.
+ */
 @import 'components/aside';
 @import 'components/footer';
 @import 'components/header';
