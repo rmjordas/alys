@@ -9,6 +9,7 @@
   --gallery: #efefef;
   --jungleGreen: #2eaa86;
   --lochmara: #0579c6;
+  --thunderbird: #cf1b1a;
   --tundora: #4a4a4a;
   --westar: #dbd6d0;
   --white: #fff;
@@ -22,6 +23,7 @@
   --orange: var(--crusta);
   --pink: var(--carnation);
   --purple: var(--cerise);
+  --red: var(--thunderbird);
   --whiteish: var(--gallery);
   --yellow: var(--candyCorn);
 }
