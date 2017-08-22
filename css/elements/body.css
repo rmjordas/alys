@@ -9,10 +9,8 @@ body {
     "aside"  auto
     "footer" auto
     / 100%;
-}
 
-@media (--vpPhone) {
-  body {
+  @media (--vpPhone) {
     display: grid;
     grid-template:
       "header header header header" 1fr

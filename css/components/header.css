@@ -6,10 +6,8 @@ header[role="banner"] {
   display: none;
   grid-area: header;
   justify-self: stretch;
-}
 
-@media (--vpPhone) {
-  header[role="banner"] {
+  @media (--vpPhone) {
     display: block;
   }
 }
