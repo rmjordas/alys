@@ -6,7 +6,7 @@
 
 - Changed:
   + `css/settings`:
-    * Hex value of "Red" in `olors.css`
+    * Hex value of "Red" in `colors.css`
     * `font-family` property value to `system-ui` in `type.css`
 
 ## 2017-08-21
