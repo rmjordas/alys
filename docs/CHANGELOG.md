@@ -1,5 +1,14 @@
 # Change Log
 
+## 2017-08-22
+
+### 0.1.0-beta.2
+
+- Changed:
+  + `css/settings`:
+    * Hex value of "Red" in `olors.css`
+    * `font-family` property value to `system-ui` in `type.css`
+
 ## 2017-08-21
 
 ### 0.1.0-beta.1
