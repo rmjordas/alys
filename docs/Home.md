@@ -98,10 +98,10 @@ you warnings and say that these attributes are not necessary. The reason why
 these attributes are used are explained in the Accessibility Checklist section
 below._
 
-## Use valid CSS
+### Use valid CSS
 
 _TODO_
 
-## Accessibility Checklist
+### Accessibility Checklist
 
 _TODO_
