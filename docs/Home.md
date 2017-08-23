@@ -1,4 +1,4 @@
-**alys** is a simple, minimal-configuration, "drop-in" CSS boilerplate.
+**alys** is a minimal-configuration, "drop-in" CSS boilerplate.
 
 Please see the [[FAQ]] for common questions, and other useful information.
 
