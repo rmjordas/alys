@@ -7,7 +7,7 @@ A minimal-configuration, "drop-in" CSS boilerplate.
 
 ## Getting Started
 
-## Releases
+### Releases
 
 Go to the alys GitHub [Releases][] page and download the file for the version
 you want. Place the style sheet in your project directory and add a `link`
@@ -23,7 +23,7 @@ style sheet.
 </head>
 ```
 
-## unpkg CDN
+### unpkg CDN
 
 Include a `link` element inside the `head` element with the following URL as the
 value of the `href` attribute:
@@ -39,7 +39,7 @@ https://unpkg.com/alys@latest/dist/alys.min.css
 </head>
 ```
 
-## npm
+### npm
 
 ```
 npm install alys
