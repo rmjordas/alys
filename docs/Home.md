@@ -13,8 +13,6 @@ style sheet.
 
 [Releases]: https://github.com/mds3dstn71/alys/releases
 
-### Example
-
 ```html
 <head>
   <title>My Website</title>
@@ -30,8 +28,6 @@ value of the `href` attribute:
 ```
 https://unpkg.com/alys@latest/dist/alys.min.css
 ```
-
-### Example
 
 ```html
 <head>
