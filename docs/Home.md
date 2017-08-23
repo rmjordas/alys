@@ -81,7 +81,7 @@ Also, Internet Explorer is deliberately excluded._
 
 ## Best Practices
 
-## Use valid HTML
+### Use valid HTML
 
 To ensure that your web site will work with alys (and other frameworks for that
 matter), use valid HTML5 syntax. One online tool to check whether your page is
