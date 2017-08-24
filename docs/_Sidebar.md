@@ -13,6 +13,7 @@
 * [Objects](Objects)
 * [Components](Components)
 * [Utilities](Utilities)
+* [Themes](Themes)
 
 **Misc**
 
