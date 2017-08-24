@@ -1,11 +1,44 @@
+## 2017-08-25
+
+### 0.1.0-beta.4
+
+- Added: "Themes" to the "Contents" section of `docs/_Sidebar.md`
+- Fixed: Size of `docs/img/black.gif` to `32px`
+
+## 2017-08-23
+
+### 0.1.0-beta.3
+
+- Added: `docs/Settings.md`
+- Removed:
+  + Heading text in `CHANGELOG.md`
+  + Distracting "Example" heading in `docs/Home.md`
+- Fixed: Heading level in `README.md` and `docs/Home.md`
+- Update: Tag line in `docs/Home.md`
+
 ## 2017-08-22
 
 ### 0.1.0-beta.2
 
+- Added:
+  + Import at-rule headings and descriptions as comments in `css/alys.css`
+  + Individual `postcss-cssnext` components in `postcss.config.js`
+- Fixed: Typo in `CHANGELOG.md`
+- Removed: Distracting "Example" heading in `README.md`
 - Changed:
+  + Declaration structure to utilize `postcss-nesting` in:
+    * `css/`:
+      - `elements/body.css`
+      - `components/header.css`
   + `css/settings`:
     * Hex value of "Red" in `colors.css`
     * `font-family` property value to `system-ui` in `type.css`
+- Updated:
+  + npm package manifest
+  + `package.json`:
+    * npm scripts
+    * package development dependencies
+    * "browserslist" property
 
 ## 2017-08-21
 
