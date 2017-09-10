@@ -2,10 +2,12 @@ html {
   font-size: var(--rootFontSize);
   font-family: var(--systemFont);
   height: 100%;
+  line-height: var(--baseLineHeight);
 }
 
 p {
-  font-size: 1.4rem;
+  font-size: 1em;
+  margin: 0 0 1.5rem;
 }
 
 code {

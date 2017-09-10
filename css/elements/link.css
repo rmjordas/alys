@@ -1,10 +1,10 @@
 a {
   color: var(--blue);
+  text-decoration: none;
 }
 
 a:hover,
 a:focus {
-  color: var(--white);
-  background-color: var(--blue);
   outline: 0;
+  text-decoration: underline;
 }

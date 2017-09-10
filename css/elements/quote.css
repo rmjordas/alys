@@ -1,11 +1,13 @@
 blockquote {
   background-color: var(--whiteish);
   padding: 1em;
-  border-left: 0.3rem solid var(--lightGray);
-  margin: 1rem 2rem;
+  border-left: 1rem solid var(--lightGray);
+  border-radius: 1rem;
+  margin: 0 2rem 1.5rem;
 }
 
 blockquote p {
+  font-style: italic;
   margin-top: 0;
 }
 
