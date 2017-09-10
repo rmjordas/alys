@@ -4,6 +4,7 @@
   "description": "A minimal-configuration, \"drop-in\" CSS boilerplate",
   "main": "dist/alys.css",
   "scripts": {
+    "dev": "postcss css/alys.css -o dist/alys.min.css -c postcss.config.js -w",
     "build": "postcss css/alys.css -o dist/alys.min.css -c postcss.config.js",
     "test": "stylelint css/**/*.css"
   },
