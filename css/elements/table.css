@@ -1,9 +1,29 @@
+table {
+  font-size: 1em;
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+
+table > caption {
+  font-weight: 600;
+  border: 0.2rem solid transparent;
+  letter-spacing: 0.05rem;
+  background: var(--blue);
+  color: var(--whiteish);
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+
 th,
 td {
   text-align: left;
-  border: 1px solid var(--lightGray);
+  border: 0;
 }
 
 th {
   background-color: var(--whiteish);
+}
+
+tbody tr {
+  border-bottom: 0.2rem solid var(--whiteish);
 }
