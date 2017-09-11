@@ -10,6 +10,19 @@ p {
   margin: 0 0 1.5rem;
 }
 
+del {
+  color: var(--pink);
+}
+
+ins {
+  color: var(--green);
+}
+
+mark {
+  background-color: var(--candyCorn);
+  border-radius: 0.2rem;
+}
+
 code {
   background-color: var(--whiteish);
   border-radius: 0.2em;
