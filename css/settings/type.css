@@ -1,5 +1,6 @@
 :root {
-  --systemFont: Nunito, Quicksand, system-ui;
+  --systemFont: system-ui;
+  --baseFont: Nunito, Quicksand, var(--systemFont);
   --rootFontSize: 62.5%;
   --baseFontSize: 1.6rem;
   --baseLineHeight: 2.025;

@@ -1,6 +1,6 @@
 html {
   font-size: var(--rootFontSize);
-  font-family: var(--systemFont);
+  font-family: var(--baseFont);
   height: 100%;
   line-height: var(--baseLineHeight);
 }
