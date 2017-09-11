@@ -6,11 +6,3 @@ button:not(:active) {
   @apply --button-style--not-active;
 }
 
-button:not(:disabled):hover,
-button:not(:disabled):focus {
-  @apply --button-style--not-disabled--focused;
-}
-
-button:disabled {
-  @apply --button-style--disabled;
-}
