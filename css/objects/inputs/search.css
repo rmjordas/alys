@@ -6,8 +6,6 @@
  */
 input[type="search"],
 input[type="search"]:not(:disabled) {
-  -webkit-appearance: textfield;
-  -moz-appearance: textfield;
   appearance: textfield;
   box-sizing: content-box;
   height: 3.8rem;
