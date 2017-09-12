@@ -1,0 +1,22 @@
+/* =====================================
+ * Banner
+ * =====================================
+ * Appears at the top of page and
+ * contains the only level 1 heading
+ * element indicating the page's title.
+ * On small screens, the banner is not
+ * visible
+ */
+header[role="banner"] {
+  background-color: var(--blue);
+  color: var(--white);
+  text-align: center;
+  padding: 1.6rem 0;
+  display: none;
+  grid-area: header;
+  justify-self: stretch;
+
+  @media (--vpPhone) {
+    display: block;
+  }
+}
