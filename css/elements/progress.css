@@ -1,3 +1,11 @@
+/* =====================================
+ * Progress Bars
+ * =====================================
+ * Progress Bars can either be:
+ *   Incomplete (0% <= x < 100%)
+ *   Complete (100%); or
+ *   Indeterminate
+ */
 progress {
   -webkit-appearance: none;
   -moz-appearance: none;

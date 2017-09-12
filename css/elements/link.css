@@ -1,3 +1,10 @@
+/* =====================================
+ * Anchor
+ * =====================================
+ * Allows navigation to other parts of
+ * the same web page or to another
+ * external domain.
+ */
 a {
   color: var(--blue);
   text-decoration: none;

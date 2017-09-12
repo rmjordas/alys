@@ -1,3 +1,11 @@
+/* =====================================
+ * Objects (Base)
+ * =====================================
+ * Objects contains rule-sets with
+ * selector specificities which are
+ * lower than id selectors, e.g. class,
+ * attribute, etc.
+ */
 .sr-only {
   @apply --sr-only;
 }

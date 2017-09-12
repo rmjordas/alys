@@ -1,3 +1,9 @@
+/* =====================================
+ * Inputs (Checkbox)
+ * =====================================
+ * Applies the "mixins" for inputs with
+ * type "checkbox"
+ */
 input[type="checkbox"]:focus {
   outline: 0.1rem dotted var(--blue);
 }

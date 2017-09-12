@@ -1,11 +1,14 @@
+/* =====================================
+ * Screen Reader Only
+ * =====================================
+ * Apply to hide the target element
+ * visually, e.g.:
+ *
+ * .sr-only {
+ *   @apply --sr-only;
+ *  }
+ */
 :root {
-  /*
-   * Apply to hide the element visually
-   *
-   * .sr-only {
-   *   @apply --sr-only;
-   *  }
-   */
   --sr-only: {
     border: 0;
     clip: rect(0, 0, 0, 0);

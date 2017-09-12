@@ -1,3 +1,9 @@
+/* =====================================
+ * Body
+ * =====================================
+ * The body will act as the page's "Grid
+ * Container".
+ */
 body {
   color: var(--blackish);
   font-size: var(--baseFontSize);

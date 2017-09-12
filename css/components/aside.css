@@ -1,3 +1,10 @@
+/* =====================================
+ * Aside
+ * =====================================
+ * Appears below the main content for
+ * smaller screens and beside the main
+ * content for desktops
+ */
 aside[role="complementary"] {
   padding: 0.8rem;
   grid-area: aside;

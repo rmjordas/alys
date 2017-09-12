@@ -1,3 +1,9 @@
+/* =====================================
+ * Inputs (Button)
+ * =====================================
+ * Applies the "mixins" for inputs with
+ * type "button"
+ */
 input[type="button"],
 input[type="button"]:not(:disabled) {
   @apply --input-button-style;

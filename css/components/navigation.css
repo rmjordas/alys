@@ -1,3 +1,12 @@
+/* =====================================
+ * Navbar
+ * =====================================
+ * Appears below the banner (if visible)
+ * or as the first component in smaller
+ * screens. Contains links to different
+ * parts of the current page or to other
+ * external resource.
+ */
 nav[role="navigation"] {
   height: 6rem;
   background-color: var(--black);

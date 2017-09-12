@@ -1,3 +1,9 @@
+/* =====================================
+ * Inputs (Search)
+ * =====================================
+ * Applies the "mixins" for inputs with
+ * type "search"
+ */
 input[type="search"],
 input[type="search"]:not(:disabled) {
   -webkit-appearance: textfield;

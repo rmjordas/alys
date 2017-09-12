@@ -1,3 +1,9 @@
+/* =====================================
+ * Buttons (Disabled)
+ * =====================================
+ * Applies the "mixins" for buttons that
+ * are disabled
+ */
 button:not(:disabled):hover,
 button:not(:disabled):focus {
   @apply --button-style--not-disabled--focused;

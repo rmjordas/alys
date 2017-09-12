@@ -1,3 +1,10 @@
+/* =====================================
+ * Main
+ * =====================================
+ * The main content of the page. Also
+ * the target of the "Skip to main
+ * content" anchor tag
+ */
 main[role="main"] {
   padding: 0.8rem;
   grid-area: main;

@@ -1,3 +1,10 @@
+/* =====================================
+ * Nav
+ * =====================================
+ * Navs are considered to have the
+ * "role" of "navigation" for most newer
+ * devices
+ */
 nav ol,
 nav ul {
   list-style: none;

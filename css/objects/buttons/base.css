@@ -1,3 +1,9 @@
+/* =====================================
+ * Buttons (Base)
+ * =====================================
+ * Applies the "mixins" for default
+ * button state
+ */
 button {
   @apply --button-style;
 }

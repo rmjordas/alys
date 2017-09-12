@@ -1,3 +1,9 @@
+/* =====================================
+ * Buttons (Reset)
+ * =====================================
+ * Applies the "mixins" for buttons with
+ * type "reset"
+ */
 button[type="reset"] {
   @apply --button-style;
 }

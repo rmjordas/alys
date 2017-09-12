@@ -1,3 +1,10 @@
+/* =====================================
+ * Horizontal Rule
+ * =====================================
+ * A line representing the of boudaries
+ * between two page sections (not
+ * necessarily two `section` elements).
+ */
 hr {
   border-width: 0;
   border-top: 0.2rem solid var(--lightGray);

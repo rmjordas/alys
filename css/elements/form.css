@@ -1,3 +1,9 @@
+/* =====================================
+ * Form
+ * =====================================
+ * Elements which are almost always
+ * present inside a `form` element.
+ */
 fieldset {
   border: 0.1rem solid var(--lightGray);
   border-radius: 0.3rem;

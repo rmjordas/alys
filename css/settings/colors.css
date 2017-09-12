@@ -1,5 +1,10 @@
 :root {
-  /* Color names of hex values */
+  /* =====================================
+   * Color Pallette
+   * =====================================
+   * Names of hex values as variable
+   * identifiers
+   */
   --black: #000;
   --candyCorn: #fbe655;
   --carnation: #f35667;
@@ -14,7 +19,12 @@
   --westar: #dbd6d0;
   --white: #fff;
 
-  /* Color names approximated to simpler names */
+  /* =====================================
+   * Color Pallette
+   * =====================================
+   * Color names approximated to simpler
+   * names
+   */
   --blackish: var(--codGray);
   --blue: var(--lochmara);
   --darkGray: var(--tundora);

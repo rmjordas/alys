@@ -1,3 +1,9 @@
+/* =====================================
+ * Inputs (Disabled)
+ * =====================================
+ * Applies the "mixins" for inputs that
+ * are disabled
+ */
 input[disabled] {
   border: 0.1rem solid var(--lightGray);
 }

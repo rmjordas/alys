@@ -1,15 +1,18 @@
-/*
- * Custom media queries with media query ranges
+/* =====================================
+ * Custom Media Queries
+ * =====================================
+ * Custom media queries with media query
+ * ranges, e.g.:
  *
  * @media (--vpPhone) {
  *    @apply --StylesForThisBreakpoint
  * }
- * Current version of postcss-cssnext does not (yet?) support application of
- * custom variables in place of width ranges, e.g.:
  *
- * `@custom-media --vpPhone (width >= 54.4em)`
- *
- * would be simpler to declare as
+ * Current version of postcss-cssnext
+ * does not support application of
+ * custom
+ * variables in place of width ranges,
+ * e.g.:
  *
  * `@custom-media --vpPhone (var(--mqPhone));`
  *

@@ -1,3 +1,9 @@
+/* =====================================
+ * Buttons (Button)
+ * =====================================
+ * Applies the "mixins" for buttons with
+ * type "button"
+ */
 button[type="button"] {
   @apply --button-style;
 }

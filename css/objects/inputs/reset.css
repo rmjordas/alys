@@ -1,3 +1,9 @@
+/* =====================================
+ * Inputs (Reset)
+ * =====================================
+ * Applies the "mixins" for inputs with
+ * type "reset"
+ */
 input[type="reset"],
 input[type="reset"]:not(:disabled) {
   @apply --input-button-style;

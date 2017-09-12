@@ -1,3 +1,9 @@
+/* =====================================
+ * Inputs (Submit)
+ * =====================================
+ * Applies the "mixins" for inputs with
+ * type "submit"
+ */
 input[type="submit"],
 input[type="submit"]:not(:disabled) {
   @apply --input-button-style;

@@ -1,3 +1,10 @@
+/* =====================================
+ * Blockquotes
+ * =====================================
+ * Blockquotes have a thick "border" on
+ * the left side and the texts inside it
+ * are italicized.
+ */
 blockquote {
   background-color: var(--whiteish);
   padding: 1em;

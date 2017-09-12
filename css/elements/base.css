@@ -1,3 +1,9 @@
+/* =====================================
+ * Elements (Base)
+ * =====================================
+ * These contains rule-sets that are too
+ * simple to have their own files.
+ */
 html {
   font-size: var(--rootFontSize);
   font-family: var(--baseFont);
