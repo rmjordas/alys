@@ -10,3 +10,8 @@ footer[role="contentinfo"] {
   background-color: var(--footerBackgroundColor);
   grid-area: footer;
 }
+
+footer[role="contentinfo"] a,
+footer[role="contentinfo"] a:hover {
+  color: var(--footerColor);
+}
