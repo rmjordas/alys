@@ -1,6 +1,6 @@
 {
   "name": "alys",
-  "version": "0.1.0-beta.2",
+  "version": "0.1.0-beta.5",
   "description": "A minimal-configuration, \"drop-in\" CSS boilerplate",
   "main": "dist/alys.min.css",
   "scripts": {
