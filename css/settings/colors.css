@@ -36,4 +36,20 @@
   --red: var(--thunderbird);
   --whiteish: var(--gallery);
   --yellow: var(--candyCorn);
+
+  /* =====================================
+   * Color Aliases
+   * =====================================
+   */
+  --warningColor: var(--orange);
+  --successColor: var(--green);
+  --errorColor: var(--pink);
+  --defaultColor: var(--blue);
+  --deleteColor: var(--pink);
+  --insertColor: var(--green);
+  --markColor: var(--yellow);
+  --darkestContrastBGColor: var(--blackish);
+  --lightestContrastBGColor: var(--whiteish);
+  --lighterContrastBGColor: var(--lightGray);
+  --lightContrastBGColor: var(--darkGray);
 }

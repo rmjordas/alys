@@ -6,6 +6,6 @@
  * content for desktops
  */
 aside[role="complementary"] {
-  padding: 0.8rem;
+  padding: var(--componentPaddingDefault);
   grid-area: aside;
 }

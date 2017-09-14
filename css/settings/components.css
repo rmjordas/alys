@@ -1,0 +1,29 @@
+:root {
+  /* ASIDE */
+  --asideWidthDesktop: 28.8rem;
+
+  /* FOOTER */
+  --footerBackgroundColor: var(--defaultColor);
+  --footerColor: var(--lightestContrastBGColor);
+
+  /* GENERIC */
+  --componentPaddingDefault: 0.8rem;
+
+  /* BANNER */
+  --bannerBackgroundColor: var(--defaultColor);
+  --bannerColor: var(--lightestContrastBGColor);
+  --bannerPadding: 1.6rem 0;
+
+  /* MAIN */
+  --mainWidthDesktop: 67.2rem;
+
+  /* NAVBAR */
+  --navbarAnchorColor: var(--lightestContrastBGColor);
+  --navbarAnchorColorHover: var(--defaultColor);
+  --navbarBackgroundColor: var(--black);
+  --navbarColor: var(--lightestContrastBGColor);
+  --navbarContentWidth: 96rem;
+  --navbarHeightDefault: 6rem;
+  --navbarHeightDesktop: 6rem;
+  --navbarItemRightPadding: 1.6rem;
+}

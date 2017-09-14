@@ -1,0 +1,11 @@
+:root {
+  /* BLOCKQUOTE */
+  --blockquoteBorderRadius: 1rem;
+  --blockquoteLeftBorder: 1rem solid var(--lighterContrastBGColor);
+  --blockquoteMargin: 0 2rem var(--elementDefaultBottomMargin);
+  --blockquotePadding: 1rem;
+
+  /* TABLE */
+  --tableFontSize: 1em;
+  --tableRowBottomBorder: 0.2rem solid var(--lightestContrastBGColor);
+}

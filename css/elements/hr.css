@@ -7,5 +7,5 @@
  */
 hr {
   border-width: 0;
-  border-top: 0.2rem solid var(--lightGray);
+  border-top: var(--horizontalRuleTopBorder);
 }

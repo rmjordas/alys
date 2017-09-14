@@ -5,43 +5,43 @@
  * simple to have their own files.
  */
 html {
-  font-size: var(--rootFontSize);
   font-family: var(--baseFont);
+  font-size: var(--rootFontSize);
   height: 100%;
   line-height: var(--baseLineHeight);
 }
 
 p {
-  font-size: 1em;
-  margin: 0 0 1.5rem;
+  font-size: var(--paragraphFontSize);
+  margin: var(--paragraphMargin);
 }
 
 del {
-  color: var(--pink);
+  color: var(--deleteColor);
 }
 
 ins {
-  color: var(--green);
+  color: var(--insertColor);
 }
 
 mark {
-  background-color: var(--candyCorn);
-  border-radius: 0.2rem;
+  background-color: var(--markColor);
+  border-radius: var(--inlineBorderRadius);
 }
 
 code {
-  font-size: 0.7862em;
-  background-color: var(--whiteish);
-  border-radius: 0.3em;
-  padding: 0.3rem 0.4rem;
+  font-size: var(--smallerFontSize);
+  background-color: var(--lightestContrastBGColor);
+  border-radius: var(--inlineBorderRadius);
+  padding: var(--inlineCodePadding);
   white-space: pre-line;
 }
 
 pre {
-  background: var(--whiteish);
+  background: var(--lightestContrastBGColor);
   overflow-x: auto;
-  padding: 1rem;
-  border-radius: 0.3rem;
+  padding: var(--inlinePrePadding);
+  border-radius: var(--inlineCodePadding);
 }
 
 abbr,
@@ -50,6 +50,6 @@ acronym {
 }
 
 iframe {
-  border: 0.1rem solid #dbd6d0;
+  border: var(--thinLightBorder);
   max-width: 100%;
 }

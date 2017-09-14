@@ -1,0 +1,7 @@
+:root {
+  --elementDefaultBottomMargin: 1.5rem;
+  --defaultBorderRadius: 0.3rem;
+  --horizontalRuleTopBorder: 0.2rem solid var(--lighterContrastBGColor);
+  --roundedRectangleUpper: 0.5rem 0.5rem 0 0;
+  --thinLightBorder: 0.1rem solid var(--lighterContrastBGColor);
+}

@@ -6,11 +6,11 @@
  * are italicized.
  */
 blockquote {
-  background-color: var(--whiteish);
-  padding: 1em;
-  border-left: 1rem solid var(--lightGray);
-  border-radius: 1rem;
-  margin: 0 2rem 1.5rem;
+  background-color: var(--lightestContrastBGColor);
+  padding: var(--blockquotePadding);
+  border-left: var(--blockquoteLeftBorder);
+  border-radius: var(--blockquoteBorderRadius);
+  margin: var(--blockquoteMargin);
 }
 
 blockquote p {

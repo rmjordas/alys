@@ -6,6 +6,6 @@
  * content" anchor tag
  */
 main[role="main"] {
-  padding: 0.8rem;
+  padding: var(--componentPaddingDefault);
   grid-area: main;
 }

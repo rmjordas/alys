@@ -4,4 +4,22 @@
   --rootFontSize: 62.5%;
   --baseFontSize: 1.6rem;
   --baseLineHeight: 2.025;
+
+  /* HEADINGS */
+  --headingFont: Quicksand, var(--systemFont);
+  --headingMargin: 0 0 var(--elementDefaultBottomMargin);
+  --h1FontSize: 2.6179em;
+  --h2FontSize: 2.058em;
+  --h3FontSize: 1.618em;
+  --h4FontSize: 1.272em;
+  --h5FontSize: 1em;
+  --h6FontSize: 0.7862em;
+
+  /* INLINE */
+  --inlineCodePadding: 0.3rem 0.4rem;
+  --inlinePrePadding: 1rem;
+  --smallerFontSize: var(--h6FontSize);
+  --inlineBorderRadius: 0.2rem;
+  --paragraphFontSize: 1em;
+  --paragraphMargin: 0 0 var(--elementDefaultBottomMargin);
 }

@@ -6,7 +6,7 @@
  * external domain.
  */
 a {
-  color: var(--blue);
+  color: var(--defaultColor);
   text-decoration: none;
 }
 

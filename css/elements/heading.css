@@ -10,29 +10,30 @@ h3,
 h4,
 h5,
 h6 {
-  margin: 0 0 1.5rem;
+  font-family: var(--headingFont);
+  margin: var(--headingMargin);
 }
 
 h1 {
-  font-size: 2.6179em;
+  font-size: var(--h1FontSize);
 }
 
 h2 {
-  font-size: 2.058em;
+  font-size: var(--h2FontSize);
 }
 
 h3 {
-  font-size: 1.618em;
+  font-size: var(--h3FontSize);
 }
 
 h4 {
-  font-size: 1.272em;
+  font-size: var(--h4FontSize);
 }
 
 h5 {
-  font-size: 1em;
+  font-size: var(--h5FontSize);
 }
 
 h6 {
-  font-size: 0.7862em;
+  font-size: var(--h6FontSize);
 }

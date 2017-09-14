@@ -11,16 +11,16 @@ progress {
 }
 
 progress::-webkit-progress-bar {
-  background-color: var(--whiteish);
-  border: 0.1em solid var(--lightGray);
-  border-radius: 0.3rem;
+  background-color: var(--lightestContrastBGColor);
+  border: 0.1em solid var(--lighterContrastBGColor);
+  border-radius: var(--defaultBorderRadius);
 }
 
 progress::-webkit-progress-value {
   background-color: var(--blue);
-  border-radius: 0.3rem;
+  border-radius: var(--defaultBorderRadius);
 }
 
 progress::-moz-progress-bar {
-  background-color: var(--blue);
+  background-color: var(--defaultColor);
 }

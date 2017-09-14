@@ -8,19 +8,10 @@
  * cell.
  */
 table {
-  font-size: 1em;
+  font-size: var(--tableFontSize);
   border-collapse: collapse;
   width: 100%;
-  margin-bottom: 1.5rem;
-}
-
-table > caption {
-  font-weight: 600;
-  border: 0.2rem solid transparent;
-  letter-spacing: 0.05rem;
-  background: var(--blue);
-  color: var(--whiteish);
-  border-radius: 0.5rem 0.5rem 0 0;
+  margin-bottom: var(--elementDefaultBottomMargin);
 }
 
 th,
@@ -30,9 +21,22 @@ td {
 }
 
 th {
-  background-color: var(--whiteish);
+  background-color: var(--lightestContrastBGColor);
+}
+
+table > caption {
+  font-weight: 600;
+  border: 0.2rem solid transparent;
+  letter-spacing: 0.05rem;
+  color: var(--darkestContrastBGColor);
+}
+
+thead th,
+tfoot th {
+  background-color: var(--defaultColor);
+  color: var(--lightestContrastBGColor);
 }
 
 tbody tr {
-  border-bottom: 0.2rem solid var(--whiteish);
+  border-bottom: var(--tableRowBottomBorder);
 }

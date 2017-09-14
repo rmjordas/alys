@@ -8,10 +8,10 @@
  * visible
  */
 header[role="banner"] {
-  background-color: var(--blue);
-  color: var(--white);
+  background-color: var(--bannerBackgroundColor);
+  color: var(--bannerColor);
   text-align: center;
-  padding: 1.6rem 0;
+  padding: var(--bannerPadding);
   display: none;
   grid-area: header;
   justify-self: stretch;

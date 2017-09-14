@@ -8,16 +8,15 @@
  * external resource.
  */
 nav[role="navigation"] {
-  height: 6rem;
-  background-color: var(--black);
-  color: var(--white);
+  background-color: var(--navbarBackgroundColor);
+  color: var(--navbarColor);
   grid-area: nav;
 }
 
 nav[role="navigation"] > ul {
   margin: 0 auto;
-  padding-left: 0.8rem;
-  max-width: 96rem;
+  padding-left: var(--componentPaddingDefault);
+  max-width: var(--navbarContentWidth);
   display: flex;
   justify-content: space-between;
 }
@@ -27,14 +26,14 @@ nav[role="navigation"] > ul li:first-of-type {
 }
 
 nav[role="navigation"] > ul li {
-  line-height: 6rem;
+  line-height: var(--navbarHeightDefault);
   flex-wrap: nowrap;
-  padding-right: 1.6rem;
+  padding-right: var(--navbarItemRightPadding);
 }
 
 nav[role="navigation"] > ul li a {
   text-decoration: none;
-  color: var(--white);
+  color: var(--navbarAnchorColor);
 }
 
 nav[role="navigation"] > ul li :not(a) {
@@ -43,6 +42,6 @@ nav[role="navigation"] > ul li :not(a) {
 
 nav[role="navigation"] > ul li a:hover {
   text-decoration: none;
-  color: var(--blue);
+  color: var(--navbarAnchorColorHover);
   background-color: transparent;
 }
