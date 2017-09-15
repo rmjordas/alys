@@ -10,13 +10,12 @@
 :root {
   --button-style: {
     font-weight: 700;
-    border-radius: 0.6rem;
-    padding: 0.5em 1em;
+    border-radius: 0.5rem;
+    padding: 1rem 1.5rem;
     color: var(--white);
-    border: 0.1rem solid var(--white);
+    border: 0;
     background-color: var(--blue);
-    margin-bottom: 1.6rem;
-    text-transform: uppercase;
+    margin-bottom: var(--elementDefaultBottomMargin);
   }
 
   --button-style--not-active: {
@@ -24,7 +23,6 @@
   }
 
   --button-style--not-disabled--focused: {
-    border: 0.1rem solid var(--white);
     color: var(--white);
     background-color: var(--blue);
   }
