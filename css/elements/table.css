@@ -7,21 +7,39 @@
  * only present at the bottom of each
  * cell.
  */
-table {
-  font-size: var(--tableFontSize);
-  border-collapse: collapse;
-  width: 100%;
-  margin-bottom: var(--elementDefaultBottomMargin);
-}
 
-th,
-td {
-  text-align: left;
-  border: 0;
+table {
+  border-collapse: collapse;
+  display: block;
+  font-size: var(--tableFontSize);
+  margin: 0 auto;
+  margin-bottom: var(--elementDefaultBottomMargin);
+  max-width: 100%;
+  overflow-x: auto;
+  width: fit-content;
 }
 
 th {
+  text-transform: uppercase;
   background-color: var(--lightestContrastBGColor);
+}
+
+td,
+th {
+  border: 0;
+  padding: 0.5rem 1rem;
+  text-align: left;
+  white-space: nowrap;
+}
+
+td:first-of-type,
+th:first-of-type {
+  border-left: none;
+}
+
+td:last-of-type,
+th:last-of-type {
+  border-right: none;
 }
 
 table > caption {
@@ -39,4 +57,8 @@ tfoot th {
 
 tbody tr {
   border-bottom: var(--tableRowBottomBorder);
+}
+
+tbody tr:last-child {
+  border-bottom: 0;
 }
