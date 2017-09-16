@@ -1,6 +1,10 @@
 :root {
   --elementDefaultBottomMargin: 1.5rem;
+  --defaultBorder: 0.2rem solid var(--defaultColor);
   --defaultBorderRadius: 0.3rem;
+  --defaultFieldsetBorder: 0.3rem solid var(--defaultColor);
+  --defaultFieldsetBorderRadius: 0.8rem;
+  --defaultFigureImgBorder: 0.3rem solid var(--defaultColor);
   --horizontalRuleTopBorder: 0.2rem solid var(--lighterContrastBGColor);
   --roundedRectangleUpper: 0.5rem 0.5rem 0 0;
   --thinLightBorder: 0.1rem solid var(--lighterContrastBGColor);

@@ -1,0 +1,29 @@
+/* =====================================
+ * Figure
+ * =====================================
+ * Images inside figure elements
+ */
+figure {
+  margin: 0 0 var(--elementDefaultBottomMargin);
+  padding: 0;
+  border: var(--defaultFigureImgBorder);
+}
+
+figure > * {
+  margin: 0.8rem;
+}
+
+figure img {
+  margin: 0;
+  vertical-align: top;
+  width: 100%;
+}
+
+figure figcaption {
+  margin: 0;
+  width: 100%;
+  background-color: var(--defaultColor);
+  color: var(--lightestContrastBGColor);
+  font-weight: 300;
+  text-align: center;
+}

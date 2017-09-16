@@ -52,6 +52,7 @@
 @import 'elements/base';
 @import 'elements/blockquote';
 @import 'elements/body';
+@import 'elements/figure';
 @import 'elements/form';
 @import 'elements/heading';
 @import 'elements/hr';
