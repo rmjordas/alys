@@ -5,8 +5,8 @@
  * present inside a `form` element.
  */
 fieldset {
-  border: 0.4rem solid var(--blue);
-  border-radius: 1rem;
+  border: var(--defaultFieldsetBorder);
+  border-radius: var(--defaultFieldsetBorderRadius);
   margin-bottom: var(--elementDefaultBottomMargin);
   padding-top: 4.2em;
   position: relative;
@@ -21,38 +21,39 @@ fieldset legend {
 
 label {
   display: block;
-  margin-bottom: 1.25rem;
+  margin-bottom: 0.25rem;
+  font-weight: 600;
 }
 
 input,
 textarea,
 select {
   appearance: none;
-  background-color: var(--whiteish);
-  border: 0.2rem solid transparent;
+  background-color: transparent;
+  border: 0.2rem solid var(--lighterContrastBGColor);
   border-radius: 0.5rem;
   height: 3.8rem;
   outline: 0;
   padding: 0 1rem;
-  min-width: 30rem;
+  width: 100%;
 }
 
 input[required]:valid {
-  background-color: var(--green);
-  border: 0.2rem solid var(--green);
-  color: var(--whiteish);
+  background-color: transparent;
+  border: 0.2rem solid var(--successColor);
+  color: var(--darkestContrastBGColor);
   outline: 0;
 }
 
 input:invalid {
-  background-color: var(--pink);
-  border: 0.2rem solid var(--pink);
-  color: var(--whiteish);
+  background-color: transparent;
+  border: 0.2rem solid var(--errorColor);
+  color: var(--darkestContrastBGColor);
   outline: 0;
 }
 
 input:invalid::placeholder {
-  color: var(--whiteish);
+  color: var(--errorColor);
 }
 
 input:invalid:focus {
@@ -62,7 +63,7 @@ input:invalid:focus {
 }
 
 input:invalid:focus::placeholder {
-  color: var(--darkGray);
+  color: var(--lighterContrastBGColor);
 }
 
 input:focus,

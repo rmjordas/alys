@@ -9,13 +9,13 @@
  */
 :root {
   --button-style: {
-    font-weight: 700;
-    border-radius: 0.5rem;
-    padding: 1rem 1.5rem;
-    color: var(--white);
+    background-color: var(--defaultColor);
     border: 0;
-    background-color: var(--blue);
+    border-radius: 0.5rem;
+    color: var(--lightestContrastBGColor);
+    font-weight: 700;
     margin-bottom: var(--elementDefaultBottomMargin);
+    padding: 1rem 1.5rem;
   }
 
   --button-style--not-active: {

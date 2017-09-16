@@ -9,15 +9,15 @@
  */
 :root {
   --input-button-style: {
-    width: auto;
-    min-width: 0;
-    font-weight: 700;
-    border-radius: 0.5rem;
-    padding: 1rem 1.5rem;
     background-color: transparent;
+    border: var(--defaultBorder);
+    border-radius: 0.5rem;
+    color: var(--defaultColor);
+    font-weight: 700;
     margin-bottom: var(--elementDefaultBottomMargin);
-    border: 0.2rem solid var(--blue);
-    color: var(--blue);
+    min-width: 0;
+    padding: 0 1.5rem;
+    width: auto;
   }
 
   --input-button-style--focus: {
