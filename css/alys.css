@@ -24,6 +24,7 @@
 @import 'settings/components';
 @import 'settings/decorations';
 @import 'settings/elements';
+@import 'settings/objects';
 @import 'settings/type';
 
 /* =====================================

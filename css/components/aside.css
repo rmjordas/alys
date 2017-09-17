@@ -8,5 +8,5 @@
 aside[role="complementary"] {
   padding: var(--componentPaddingDefault);
   grid-area: aside;
-  max-width: 92vw;
+  max-width: var(--componentMaxWidthDefault);
 }

@@ -7,6 +7,6 @@
  */
 main[role="main"] {
   padding: var(--componentPaddingDefault);
-  max-width: 92vw;
   grid-area: main;
+  max-width: var(--componentMaxWidthDefault);
 }

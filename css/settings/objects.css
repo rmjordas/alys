@@ -1,0 +1,10 @@
+:root {
+  /* INPUT */
+  --inputFocusedBackgroundColor: var(--white);
+  --inputFocusedColor: var(--darkGray);
+  --inputInvalidFocusedPlaceholderColor: var(--lighterContrastBGColor);
+  --inputInvalidBorder: 0.2rem solid var(--errorColor);
+  --inputInvalidPlaceholderColor: var(--errorColor);
+  --inputValidBorder: 0.2rem solid var(--successColor);
+}
+

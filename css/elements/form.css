@@ -5,34 +5,33 @@
  * present inside a `form` element.
  */
 fieldset {
-  border: var(--defaultFieldsetBorder);
-  border-radius: var(--defaultFieldsetBorderRadius);
+  border: var(--fieldsetBorder);
+  border-radius: var(--fieldsetBorderRadius);
   margin-bottom: var(--elementDefaultBottomMargin);
-  padding-top: 4.2em;
+  padding-top: var(--fieldsetTopPadding);
   position: relative;
 }
 
 fieldset legend {
-  font-family: 'Quicksand', var(--baseFont);
-  font-size: 2.058em;
+  font-family: var(--fieldsetLegendFont);
+  font-size: var(--fieldsetLegendFontSize);
   position: absolute;
   top: 0;
 }
 
 label {
   display: block;
-  margin-bottom: 0.25rem;
-  font-weight: 600;
+  margin-bottom: var(--labelBottomMargin);
+  font-weight: var(--labelFontWeight);
 }
 
 input,
 textarea,
 select {
-  appearance: none;
   background-color: transparent;
-  border: 0.2rem solid var(--lighterContrastBGColor);
-  border-radius: 0.5rem;
-  height: 3.8rem;
+  border: var(--textFieldBorder);
+  border-radius: var(--roundedRectangleMarginAll);
+  height: var(--textFieldHeight);
   outline: 0;
   padding: 0 1rem;
   width: 100%;
@@ -40,43 +39,42 @@ select {
 
 input[required]:valid {
   background-color: transparent;
-  border: 0.2rem solid var(--successColor);
+  border: var(--inputValidBorder);
   color: var(--darkestContrastBGColor);
   outline: 0;
 }
 
 input:invalid {
   background-color: transparent;
-  border: 0.2rem solid var(--errorColor);
+  border: var(--inputInvalidBorder);
   color: var(--darkestContrastBGColor);
   outline: 0;
 }
 
 input:invalid::placeholder {
-  color: var(--errorColor);
+  color: var(--inputInvalidPlaceholderColor);
 }
 
 input:invalid:focus {
-  border: 0.2rem solid var(--pink);
-  background-color: var(--white);
-  color: var(--darkGray);
+  border: var(--inputInvalidBorder);
+  background-color: var(--inputFocusedBackgroundColor);
+  color: var(--inputFocusedColor);
 }
 
 input:invalid:focus::placeholder {
-  color: var(--lighterContrastBGColor);
+  color: var(--inputInvalidFocusedPlaceholderColor);
 }
 
 input:focus,
 textarea:focus,
 select:focus {
-  border: 0.2rem solid var(--blue);
-  background-color: var(--white);
+  border: var(--textFieldFocusedBorder);
+  background-color: var(--textFieldFocusedBackgroundColor);
 }
 
 textarea {
-  appearance: none;
-  min-height: 6.5rem;
-  padding: 1rem;
+  min-height: var(--textareaMinHeight);
+  padding: var(--textareaPadding);
   width: 100%;
 }
 
