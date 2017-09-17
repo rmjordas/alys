@@ -7,10 +7,10 @@
  */
 blockquote {
   background-color: var(--lightestContrastBGColor);
-  padding: var(--blockquotePadding);
   border-left: var(--blockquoteLeftBorder);
   border-radius: var(--blockquoteBorderRadius);
   margin: var(--blockquoteMargin);
+  padding: var(--blockquotePadding);
 }
 
 blockquote p {

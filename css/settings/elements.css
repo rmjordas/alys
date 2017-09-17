@@ -5,7 +5,35 @@
   --blockquoteMargin: 0 2rem var(--elementDefaultBottomMargin);
   --blockquotePadding: 1rem;
 
+  /* FIELDSET */
+  --fieldsetBorder: 0.3rem solid var(--defaultColor);
+  --fieldsetBorderRadius: 0.8rem;
+  --fieldsetTopPadding: 4.2em;
+  --fieldsetLegendFont: var(--headingFont);
+  --fieldsetLegendFontSize: 2.058em;
+
+  /* FIGURE */
+  --figureImgBorder: 0.3rem solid var(--defaultColor);
+
+  /* GENERIC */
+  --elementDefaultBottomMargin: 1.5rem;
+  --textFieldBorder: 0.2rem solid var(--lighterContrastBGColor);
+  --textFieldFocusedBackgroundColor: var(--white);
+  --textFieldFocusedBorder: var(--defaultBorder);
+  --textFieldHeight: 3.8rem;
+
+  /* HORIZONTAL RULE */
+  --horizontalRuleTopBorder: 0.2rem solid var(--lighterContrastBGColor);
+
+  /* LABEL */
+  --labelBottomMargin: 0.25rem;
+  --labelFontWeight: 600;
+
   /* TABLE */
   --tableFontSize: 1em;
   --tableRowBottomBorder: 0.2rem solid var(--lightestContrastBGColor);
+
+  /* TEXTAREA */
+  --textareaMinHeight: 6.5rem;
+  --textareaPadding: 1rem;
 }

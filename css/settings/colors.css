@@ -41,15 +41,15 @@
    * Color Aliases
    * =====================================
    */
-  --warningColor: var(--orange);
-  --successColor: var(--green);
-  --errorColor: var(--pink);
+  --darkestContrastBGColor: var(--blackish);
   --defaultColor: var(--blue);
   --deleteColor: var(--pink);
+  --errorColor: var(--pink);
   --insertColor: var(--green);
-  --markColor: var(--yellow);
-  --darkestContrastBGColor: var(--blackish);
   --lightestContrastBGColor: var(--whiteish);
   --lighterContrastBGColor: var(--lightGray);
   --lightContrastBGColor: var(--darkGray);
+  --markColor: var(--yellow);
+  --successColor: var(--green);
+  --warningColor: var(--orange);
 }
