@@ -76,10 +76,10 @@
 @import 'objects/buttons/disabled';
 @import 'objects/inputs/button';
 @import 'objects/inputs/checkbox';
+@import 'objects/inputs/disabled';
 @import 'objects/inputs/radio';
 @import 'objects/inputs/reset';
 @import 'objects/inputs/submit';
-@import 'objects/inputs/disabled';
 @import 'objects/base';
 
 /* =====================================
