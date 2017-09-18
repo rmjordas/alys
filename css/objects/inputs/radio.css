@@ -1,0 +1,22 @@
+/* =====================================
+ * Inputs (Radio)
+ * =====================================
+ * Applies the "mixins" for inputs with
+ * type "radio"
+ */
+input[type="radio"] {
+  border-radius: 50%;
+  height: 2rem;
+  position: relative;
+  top: 0.4rem;
+  width: 2rem;
+}
+
+input[type="radio"]:focus {
+  outline: 0.1rem dotted var(--defaultColor);
+}
+
+input[type="radio"]:checked {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3E%3Ccircle r='2' fill='%230579c6'/%3E%3C/svg%3E");
+  border: 0.2rem solid var(--defaultColor);
+}
