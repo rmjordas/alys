@@ -11,10 +11,24 @@ html {
   line-height: var(--baseLineHeight);
 }
 
+blockquote,
+dl,
+figcaption,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ol,
+p,
+ul {
+  overflow: auto;
+}
+
 p {
   font-size: var(--paragraphFontSize);
   margin: var(--paragraphMargin);
-  overflow: auto;
 }
 
 del {

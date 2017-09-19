@@ -13,8 +13,11 @@ fieldset {
 }
 
 fieldset legend {
+  display: block;
   font-family: var(--fieldsetLegendFont);
   font-size: var(--fieldsetLegendFontSize);
+  overflow: hidden;
+  height: 2.058em;
   position: absolute;
   top: 0;
 }
