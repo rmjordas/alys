@@ -7,12 +7,28 @@
  *   Indeterminate
  */
 progress {
+  -webkit-appearance: progress-bar;
   appearance: none;
+  border: none;
+  border-radius: var(--defaultBorderRadius);
+  display: inline-block;
+  height: 2.4rem;
+  width: 100%;
+}
+
+progress[value] {
+  appearance: none;
+  border: none;
+  border-radius: var(--defaultBorderRadius);
+  color: var(--defaultColor);
 }
 
 progress::-webkit-progress-bar {
   background-color: var(--lightestContrastBGColor);
-  border: var(--thinLightBorder);
+}
+
+progress::-webkit-progress-value {
+  background-color: var(--defaultColor);
 }
 
 progress::-webkit-progress-bar,
@@ -23,4 +39,59 @@ progress::-webkit-progress-value {
 progress::-moz-progress-bar,
 progress::-webkit-progress-value {
   background-color: var(--defaultColor);
+}
+
+progress:indeterminate::-webkit-progress-bar {
+  background-image:
+    linear-gradient(
+      -45deg,
+      transparent
+      33%,
+      rgba(0, 0, 0, 0.1) 33%,
+      rgba(0, 0, 0, 0.1) 66%,
+      transparent
+      66%
+    ),
+    linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.25),
+      rgba(0, 0, 0, 0.25)
+    ),
+    linear-gradient(
+      90deg,
+      var(--defaultColor),
+      var(--errorColor)
+    );
+  background-size: 3.5rem 2.4rem, 100% 100%, 100% 100%;
+  border-radius: 2px;
+}
+
+@keyframes animate-stripes {
+  100% { background-position: 100% 0; }
+}
+
+progress:indeterminate::-moz-progress-bar {
+  animation: animate-stripes 5s linear infinite;
+  background-image:
+    linear-gradient(
+      -45deg,
+      transparent
+      33%,
+      rgba(0, 0, 0, 0.1) 33%,
+      rgba(0, 0, 0, 0.1) 66%,
+      transparent
+      66%
+    ),
+    linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.25),
+      rgba(0, 0, 0, 0.25)
+    ),
+    linear-gradient(
+      90deg,
+      var(--defaultColor),
+      var(--errorColor)
+    );
+  background-size: 3.5rem 2.4rem, 100% 100%, 100% 100%;
+  border-radius: 2px;
 }
