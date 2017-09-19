@@ -68,3 +68,8 @@ iframe {
   border: var(--thinLightBorder);
   max-width: 100%;
 }
+
+::selection {
+  color: var(--lightestContrastBGColor);
+  background: var(--defaultColor);
+}
