@@ -1,0 +1,43 @@
+meter {
+  background: var(--lightestContrastBGColor);
+  border: none;
+  border-radius: var(--defaultBorderRadius);
+  height: 2.4rem;
+  width: 100%;
+}
+
+meter::-webkit-meter-bar {
+  background: var(--lightestContrastBGColor);
+  border-radius: 0.3rem;
+}
+
+meter::-webkit-meter-optimum-value {
+  background: var(--successColor);
+  border-radius: 0.3rem;
+}
+
+meter::-webkit-meter-suboptimum-value {
+  background: var(--warningColor);
+  border-radius: 0.3rem;
+}
+
+meter::-webkit-meter-even-less-good-value {
+  background: var(--errorColor);
+  border-radius: 0.3rem;
+}
+
+meter::-moz-meter-bar {
+  border-radius: 0.3rem;
+}
+
+meter:-moz-meter-optimum::-moz-meter-bar {
+  background: var(--successColor);
+}
+
+meter:-moz-meter-sub-optimum::-moz-meter-bar {
+  background: var(--warningColor);
+}
+
+meter:-moz-meter-sub-sub-optimum::-moz-meter-bar {
+  background: var(--errorColor);
+}
