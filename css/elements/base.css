@@ -73,3 +73,13 @@ iframe {
   color: var(--lightestContrastBGColor);
   background: var(--defaultColor);
 }
+
+::-webkit-scrollbar {
+  background-color: var(--lighterContrastBGColor);
+  height: 0.8rem;
+  width: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--lightContrastBGColor);
+}
