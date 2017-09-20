@@ -1,6 +1,7 @@
 const atImport = require('postcss-import');
 const apply = require('postcss-apply');
 const autoprefixer = require('autoprefixer');
+const colorFunction = require('postcss-color-function');
 const cssnano = require('cssnano');
 const customProperties = require('postcss-custom-properties');
 const customMedia = require('postcss-custom-media');
@@ -20,6 +21,7 @@ module.exports = {
       grid: true,
     }),
     customProperties,
+    colorFunction,
     apply,
     customMedia,
     mediaMinmax,
