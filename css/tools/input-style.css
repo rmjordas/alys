@@ -17,17 +17,20 @@
     margin-bottom: var(--elementDefaultBottomMargin);
     min-width: 0;
     padding: 0 1.5rem;
+    transition: all 0.2s ease-in;
     width: auto;
   }
 
   --input-button-style--focus: {
-    border: 0.2rem solid var(--blue);
-    background-color: var(--whiteish);
+    border: 0.2rem solid var(--defaultColorHover);
+    background-color: transparent;
+    color: var(--defaultColorHover);
   }
 
   --input-style--disabled: {
-    color: var(--darkGray);
-    background-color: var(--lightGray);
+    color: var(--lighterContrastBGColor);
+    background-color: transparent;
+    border: 0.2rem solid var(--lighterContrastBGColor);
     cursor: not-allowed;
   }
 }

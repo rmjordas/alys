@@ -16,6 +16,7 @@
     font-weight: 700;
     margin-bottom: var(--elementDefaultBottomMargin);
     padding: 1rem 1.5rem;
+    transition: all 0.2s ease-in;
   }
 
   --button-style--not-active: {
@@ -24,12 +25,12 @@
 
   --button-style--not-disabled--focused: {
     color: var(--white);
-    background-color: var(--blue);
+    background-color: var(--defaultColorHover);
   }
 
   --button-style--disabled: {
-    color: var(--darkGray);
-    background-color: var(--lightGray);
+    color: var(--lightContrastBGColor);
+    background-color: var(--lighterContrastBGColor);
     cursor: not-allowed;
   }
 }

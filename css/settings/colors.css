@@ -43,6 +43,7 @@
    */
   --darkestContrastBGColor: var(--blackish);
   --defaultColor: var(--blue);
+  --defaultColorHover: color(var(--defaultColor) lightness(50%));
   --deleteColor: var(--pink);
   --errorColor: var(--pink);
   --insertColor: var(--green);

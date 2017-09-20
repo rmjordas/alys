@@ -4,10 +4,16 @@
  * Applies the "mixins" for inputs that
  * are disabled
  */
-input[disabled] {
-  border: 0.1rem solid var(--lightGray);
+input[disabled],
+input:disabled {
+  border: 0.2rem solid var(--lightestContrastBGColor);
+  background-color: var(--lightestContrastBGColor);
+  color: var(--lightGray);
+  cursor: not-allowed;
 }
 
-input:disabled {
+input[disabled][type="submit"],
+input[disabled][type="button"],
+input[disabled][type="reset"] {
   @apply --input-style--disabled;
 }
