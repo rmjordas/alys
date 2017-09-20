@@ -1,0 +1,26 @@
+a.btn {
+  background-color: transparent;
+  border-radius: var(--defaultBorderRadius);
+  cursor: default;
+  display: inline-block;
+  font-weight: 700;
+  padding: 0 1.5rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 0.2s ease-in;
+}
+
+a.btn:hover {
+  background-color: var(--defaultColorHover);
+  border-radius: var(--defaultBorderRadius);
+  color: var(--white);
+}
+
+a.btn.disabled {
+  color: var(--lighterContrastBGColor);
+  cursor: not-allowed;
+}
+
+a.btn.disabled:hover {
+  background: none;
+}

@@ -70,6 +70,7 @@
  * =====================================
  * Rule-sets have class selectors only
  */
+@import 'objects/anchor-btn';
 @import 'objects/buttons/base';
 @import 'objects/buttons/button';
 @import 'objects/buttons/reset';
