@@ -7,7 +7,7 @@
   --footerColor: var(--lightestContrastBGColor);
 
   /* GENERIC */
-  --componentMaxWidthDefault: 92vw;
+  --componentMaxWidthDefault: 96vw;
   --componentPaddingDefault: 0.8rem;
 
   /* BANNER */
