@@ -8,6 +8,7 @@ body {
   color: var(--darkestContrastBGColor);
   font-size: var(--baseFontSize);
   display: grid;
+  grid-gap: 0 var(--componentPaddingDefault);
   grid-template:
     "header" 1fr
     "nav"    var(--navbarHeightDefault)
@@ -17,7 +18,6 @@ body {
     / 1fr;
 
   @media (--vpPhone) {
-    display: grid;
     grid-template:
       "header header header header" 1fr
       "nav    nav    nav    nav"    var(--navbarHeightDesktop)

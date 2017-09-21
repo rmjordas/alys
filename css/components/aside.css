@@ -6,7 +6,11 @@
  * content for desktops
  */
 aside[role="complementary"] {
-  padding: var(--componentPaddingDefault);
   grid-area: aside;
   max-width: var(--componentMaxWidthDefault);
+  padding: 0 var(--componentPaddingDefault);
+
+  @media (--vpPhone) {
+    padding: 0;
+  }
 }

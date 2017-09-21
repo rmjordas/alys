@@ -6,7 +6,11 @@
  * content" anchor tag
  */
 main[role="main"] {
-  padding: var(--componentPaddingDefault);
   grid-area: main;
   max-width: var(--componentMaxWidthDefault);
+  padding: 0 var(--componentPaddingDefault);
+
+  @media (--vpPhone) {
+    padding: 0;
+  }
 }
