@@ -8,19 +8,19 @@ a.btn {
   text-decoration: none;
   text-transform: uppercase;
   transition: all 0.2s ease-in;
-}
 
-a.btn:hover {
-  background-color: var(--defaultColorHover);
-  border-radius: var(--defaultBorderRadius);
-  color: var(--white);
-}
+  &:hover {
+    background-color: var(--defaultColorHover);
+    border-radius: var(--defaultBorderRadius);
+    color: var(--white);
+  }
 
-a.btn.disabled {
-  color: var(--lighterContrastBGColor);
-  cursor: not-allowed;
-}
+  &.disabled {
+    color: var(--lighterContrastBGColor);
+    cursor: not-allowed;
+  }
 
-a.btn.disabled:hover {
-  background: none;
+  &.disabled:hover {
+    background: none;
+  }
 }

@@ -10,16 +10,16 @@ fieldset {
   margin-bottom: var(--elementDefaultBottomMargin);
   padding-top: var(--fieldsetTopPadding);
   position: relative;
-}
 
-fieldset legend {
-  display: block;
-  font-family: var(--fieldsetLegendFont);
-  font-size: var(--fieldsetLegendFontSize);
-  overflow: hidden;
-  height: 2.058em;
-  position: absolute;
-  top: 0;
+  & legend {
+    display: block;
+    font-family: var(--fieldsetLegendFont);
+    font-size: var(--fieldsetLegendFontSize);
+    overflow: hidden;
+    height: 2.058em;
+    position: absolute;
+    top: 0;
+  }
 }
 
 label {
@@ -40,45 +40,11 @@ select {
   width: 100%;
 }
 
-input[required]:valid {
-  background-color: transparent;
-  border: var(--inputValidBorder);
-  color: var(--darkestContrastBGColor);
-  outline: 0;
-}
-
-input:invalid {
-  background-color: transparent;
-  border: var(--inputInvalidBorder);
-  color: var(--darkestContrastBGColor);
-  outline: 0;
-}
-
-input:invalid::placeholder {
-  color: var(--inputInvalidPlaceholderColor);
-}
-
-input:invalid:focus {
-  border: var(--inputInvalidBorder);
-  background-color: var(--inputFocusedBackgroundColor);
-  color: var(--inputFocusedColor);
-}
-
-input:invalid:focus::placeholder {
-  color: var(--inputInvalidFocusedPlaceholderColor);
-}
-
 input:focus,
 textarea:focus,
 select:focus {
   border: var(--textFieldFocusedBorder);
   background-color: var(--textFieldFocusedBackgroundColor);
-}
-
-textarea {
-  min-height: var(--textareaMinHeight);
-  padding: var(--textareaPadding);
-  width: 100%;
 }
 
 button,
@@ -91,19 +57,53 @@ textarea {
   box-sizing: border-box;
 }
 
+input[required]:valid {
+  background-color: transparent;
+  border: var(--inputValidBorder);
+  color: var(--darkestContrastBGColor);
+  outline: 0;
+}
+
+input:invalid {
+  background-color: transparent;
+  border: var(--inputInvalidBorder);
+  color: var(--darkestContrastBGColor);
+  outline: 0;
+
+  &::placeholder {
+    color: var(--inputInvalidPlaceholderColor);
+  }
+
+  &:focus {
+    border: var(--inputInvalidBorder);
+    background-color: var(--inputFocusedBackgroundColor);
+    color: var(--inputFocusedColor);
+
+    &::placeholder {
+      color: var(--inputInvalidFocusedPlaceholderColor);
+    }
+  }
+}
+
+textarea {
+  min-height: var(--textareaMinHeight);
+  padding: var(--textareaPadding);
+  width: 100%;
+}
+
 select {
   background: url("data:image/svg+xml;charset=utf-8,<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='#dbd6d0' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><polyline points='6 9 12 15 18 9'/></svg>") no-repeat right 1rem center;
-}
 
-select:focus {
-  background: url("data:image/svg+xml;charset=utf-8,<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='#0579c6' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><polyline points='6 9 12 15 18 9'/></svg>") no-repeat right 1rem center;
-}
+  &:focus {
+    background: url("data:image/svg+xml;charset=utf-8,<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='#0579c6' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><polyline points='6 9 12 15 18 9'/></svg>") no-repeat right 1rem center;
+  }
 
-select:active {
-  background: url("data:image/svg+xml;charset=utf-8,<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='#0579c6' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><polyline points='18 15 12 9 6 15'/></svg>") no-repeat right 1rem center;
-}
+  &:active {
+    background: url("data:image/svg+xml;charset=utf-8,<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='#0579c6' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><polyline points='18 15 12 9 6 15'/></svg>") no-repeat right 1rem center;
+  }
 
-select optgroup,
-select option {
-  color: var(--defaultColor);
+  & optgroup,
+  & option {
+    color: var(--defaultColor);
+  }
 }

@@ -11,13 +11,13 @@ blockquote {
   border-radius: var(--blockquoteBorderRadius);
   margin: var(--blockquoteMargin);
   padding: var(--blockquotePadding);
-}
 
-blockquote p {
-  font-style: italic;
-  margin-top: 0;
-}
+  & p {
+    font-style: italic;
+    margin-top: 0;
 
-blockquote p:only-child {
-  margin-bottom: 0;
+    &:only-child {
+      margin-bottom: 0;
+    }
+  }
 }

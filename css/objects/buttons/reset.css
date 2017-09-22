@@ -6,13 +6,13 @@
  */
 button[type="reset"] {
   @apply --button-style;
-}
 
-button[type="reset"]:not(:active) {
-  @apply --button-style--not-active;
-}
+  &:not(:active) {
+    @apply --button-style--not-active;
+  }
 
-button[type="reset"]:not(:disabled):hover,
-button[type="reset"]:not(:disabled):focus {
-  @apply --button-style--not-disabled--focused;
+  &:not(:disabled):hover,
+  &:not(:disabled):focus {
+    @apply --button-style--not-disabled--focused;
+  }
 }

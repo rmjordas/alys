@@ -9,9 +9,14 @@ footer[role="contentinfo"] {
   color: var(--footerColor);
   background-color: var(--footerBackgroundColor);
   grid-area: footer;
+
+  & a,
+  & a:hover {
+    color: var(--footerColor);
+  }
 }
 
-footer[role="contentinfo"] a,
+/* footer[role="contentinfo"] a,
 footer[role="contentinfo"] a:hover {
   color: var(--footerColor);
-}
+} */

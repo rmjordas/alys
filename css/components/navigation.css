@@ -11,37 +11,38 @@ nav[role="navigation"] {
   background-color: var(--navbarBackgroundColor);
   color: var(--navbarColor);
   grid-area: nav;
+
+  & > ul {
+    margin: 0 auto;
+    padding-left: var(--componentPaddingDefault);
+    max-width: var(--navbarContentWidth);
+    display: flex;
+    justify-content: space-between;
+
+    & li {
+      line-height: var(--navbarHeightDefault);
+      flex-wrap: nowrap;
+      padding-right: var(--navbarItemRightPadding);
+
+      &:first-of-type {
+        flex: 0.8;
+      }
+
+      & a {
+        text-decoration: none;
+        color: var(--navbarAnchorColor);
+
+        &:hover {
+          text-decoration: none;
+          color: var(--navbarAnchorColorHover);
+          background-color: transparent;
+        }
+      }
+
+      & :not(a) {
+        display: none;
+      }
+    }
+  }
 }
 
-nav[role="navigation"] > ul {
-  margin: 0 auto;
-  padding-left: var(--componentPaddingDefault);
-  max-width: var(--navbarContentWidth);
-  display: flex;
-  justify-content: space-between;
-}
-
-nav[role="navigation"] > ul li:first-of-type {
-  flex: 0.8;
-}
-
-nav[role="navigation"] > ul li {
-  line-height: var(--navbarHeightDefault);
-  flex-wrap: nowrap;
-  padding-right: var(--navbarItemRightPadding);
-}
-
-nav[role="navigation"] > ul li a {
-  text-decoration: none;
-  color: var(--navbarAnchorColor);
-}
-
-nav[role="navigation"] > ul li :not(a) {
-  display: none;
-}
-
-nav[role="navigation"] > ul li a:hover {
-  text-decoration: none;
-  color: var(--navbarAnchorColorHover);
-  background-color: transparent;
-}

@@ -7,7 +7,6 @@
  * only present at the bottom of each
  * cell.
  */
-
 table {
   border-collapse: collapse;
   display: block;
@@ -17,11 +16,24 @@ table {
   max-width: 100%;
   overflow-x: auto;
   width: fit-content;
+
+  & > caption {
+    font-weight: 600;
+    border: 0.2rem solid transparent;
+    letter-spacing: 0.05rem;
+    color: var(--darkestContrastBGColor);
+  }
 }
 
 th {
   text-transform: uppercase;
   background-color: var(--lightestContrastBGColor);
+
+  @nest thead &,
+  tfoot & {
+    background-color: var(--defaultColor);
+    color: var(--lightestContrastBGColor);
+  }
 }
 
 td,
@@ -30,35 +42,22 @@ th {
   padding: 0.5rem 1rem;
   text-align: left;
   white-space: nowrap;
+
+  &:first-of-type {
+    border-left: none;
+  }
+
+  &:last-of-type {
+    border-right: none;
+  }
 }
 
-td:first-of-type,
-th:first-of-type {
-  border-left: none;
-}
+tbody {
+  & tr {
+    border-bottom: var(--tableRowBottomBorder);
+  }
 
-td:last-of-type,
-th:last-of-type {
-  border-right: none;
-}
-
-table > caption {
-  font-weight: 600;
-  border: 0.2rem solid transparent;
-  letter-spacing: 0.05rem;
-  color: var(--darkestContrastBGColor);
-}
-
-thead th,
-tfoot th {
-  background-color: var(--defaultColor);
-  color: var(--lightestContrastBGColor);
-}
-
-tbody tr {
-  border-bottom: var(--tableRowBottomBorder);
-}
-
-tbody tr:last-child {
-  border-bottom: 0;
+  & tr:last-child {
+    border-bottom: 0;
+  }
 }

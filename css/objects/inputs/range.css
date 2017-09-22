@@ -9,116 +9,122 @@ input[type="range"] {
   outline: 0;
   vertical-align: middle;
   width: 100%;
-}
 
-input[type="range"]:focus {
-  outline: none;
-}
+  &:focus {
+    outline: none;
+  }
 
-/* -------------------------------------
- * Chrome, Safari, Opera
- * -------------------------------------
- */
-input[type="range"]::-webkit-slider-runnable-track {
-  background: var(--lightestContrastBGColor);
-  border: none;
-  border-radius: var(--defaultBorderRadius);
-  cursor: pointer;
-  height: 1rem;
-  width: 100%;
-}
+  /* -------------------------------------
+  * Chrome, Safari, Opera
+  * -------------------------------------
+  */
+  &::-webkit-slider-runnable-track {
+    background: var(--lightestContrastBGColor);
+    border: none;
+    border-radius: var(--defaultBorderRadius);
+    cursor: pointer;
+    height: 1rem;
+    width: 100%;
+  }
 
-input[type="range"]::-webkit-slider-thumb {
-  appearance: none;
-  background: var(--defaultColor);
-  border: none;
-  border-radius: 50%;
-  cursor: pointer;
-  height: 2rem;
-  margin-top: -0.5rem;
-  width: 2rem;
-}
+  &::-webkit-slider-thumb {
+    appearance: none;
+    background: var(--defaultColor);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    height: 2rem;
+    margin-top: -0.5rem;
+    width: 2rem;
+  }
 
-input[type="range"]:focus::-webkit-slider-runnable-track {
-  background: var(--lighterContrastBGColor);
-}
+  &:focus {
+    &::-webkit-slider-runnable-track {
+      background: var(--lighterContrastBGColor);
+    }
 
-input[type="range"]:focus::-webkit-slider-thumb {
-  box-shadow: 0 0 0 0.1rem color(var(--defaultColor) alpha(50%));
-}
+    &::-webkit-slider-thumb {
+      box-shadow: 0 0 0 0.1rem color(var(--defaultColor) alpha(50%));
+    }
+  }
 
-/* -------------------------------------
- * Firefox
- * -------------------------------------
- */
-input[type="range"]::-moz-range-thumb {
-  background: var(--defaultColor);
-  border: none;
-  border-radius: 50%;
-  cursor: pointer;
-  height: 2rem;
-  width: 2rem;
-}
+  /* -------------------------------------
+  * Firefox
+  * -------------------------------------
+  */
+  &::-moz-range-thumb {
+    background: var(--defaultColor);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    height: 2rem;
+    width: 2rem;
+  }
 
-input[type="range"]::-moz-range-track {
-  background: var(--lightestContrastBGColor);
-  border-radius: var(--defaultBorderRadius);
-  border: none;
-  cursor: pointer;
-  height: 1rem;
-  width: 100%;
-}
+  &::-moz-range-track {
+    background: var(--lightestContrastBGColor);
+    border-radius: var(--defaultBorderRadius);
+    border: none;
+    cursor: pointer;
+    height: 1rem;
+    width: 100%;
+  }
 
-/* input[type="range"]:focus::-moz-range-track {
-  border-radius: var(--lightestContrastBGColor);
-}
+  /* &:focus::-moz-range-track {
+    border-radius: var(--lightestContrastBGColor);
+  }
 
-input[type="range"]:focus::-moz-range-thumb {
+  &:focus::-moz-range-thumb {
+  } */
+
+  /* -------------------------------------
+  * Edge
+  * -------------------------------------
+  */
+  &::-ms-fill-lower {
+    background: var(--defaultColor);
+    border: none;
+    border-radius: var(--defaultBorderRadius);
+  }
+
+  &::-ms-fill-upper {
+    background: var(--defaultColor);
+    border: none;
+    border-radius: var(--defaultBorderRadius);
+  }
+
+  &:focus::-ms-fill-lower {
+    background: var(--defaultColor);
+  }
+
+  &:focus::-ms-fill-lower {
+    background: var(--defaultColor);
+  }
+
+  &:focus::-ms-fill-upper {
+    background: var(--defaultColor);
+  }
+
+  &::-ms-thumb {
+    background: var(--defaultColor);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    height: 2rem;
+    margin-top: 0.5rem;
+    width: 2rem;
+  }
+
+  /* &:focus::-ms-thumb {
+
 } */
 
-/* -------------------------------------
- * Edge
- * -------------------------------------
- */
-input[type="range"]::-ms-fill-lower {
-  background: var(--defaultColor);
-  border: none;
-  border-radius: var(--defaultBorderRadius);
-}
-
-input[type="range"]::-ms-fill-upper {
-  background: var(--defaultColor);
-  border: none;
-  border-radius: var(--defaultBorderRadius);
-}
-
-input[type="range"]:focus::-ms-fill-lower {
-  background: var(--defaultColor);
-}
-
-input[type="range"]:focus::-ms-fill-upper {
-  background: var(--defaultColor);
-}
-
-input[type="range"]::-ms-thumb {
-  background: var(--defaultColor);
-  border: none;
-  border-radius: 50%;
-  cursor: pointer;
-  height: 2rem;
-  margin-top: 0.5rem;
-  width: 2rem;
-}
-
-/* input[type="range"]:focus::-ms-thumb {
-
-} */
-
-input[type="range"]::-ms-track {
-  background: transparent;
-  border-color: transparent;
-  color: transparent;
-  cursor: pointer;
-  height: 1rem;
-  width: 100%;
+  &::-ms-track {
+    background: transparent;
+    border-color: transparent;
+    color: transparent;
+    cursor: pointer;
+    height: 1rem;
+    width: 100%;
+  }
 }

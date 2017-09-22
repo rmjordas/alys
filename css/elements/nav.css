@@ -5,7 +5,9 @@
  * "role" of "navigation" for most newer
  * devices
  */
-nav ol,
-nav ul {
-  list-style: none;
+nav {
+  & ol,
+  & ul {
+    list-style: none;
+  }
 }

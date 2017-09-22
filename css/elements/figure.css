@@ -7,23 +7,23 @@ figure {
   border: var(--figureImgBorder);
   margin: 0 0 var(--elementDefaultBottomMargin);
   padding: 0;
-}
 
-figure > * {
-  margin: 0.8rem;
-}
+  & > * {
+    margin: 0.8rem;
+  }
 
-figure img {
-  margin: 0;
-  vertical-align: top;
-  width: 100%;
-}
+  & img {
+    margin: 0;
+    vertical-align: top;
+    width: 100%;
+  }
 
-figure figcaption {
-  background-color: var(--defaultColor);
-  color: var(--lightestContrastBGColor);
-  font-weight: 300;
-  margin: 0;
-  text-align: center;
-  width: 100%;
+  & figcaption {
+    background-color: var(--defaultColor);
+    color: var(--lightestContrastBGColor);
+    font-weight: 300;
+    margin: 0;
+    text-align: center;
+    width: 100%;
+  }
 }

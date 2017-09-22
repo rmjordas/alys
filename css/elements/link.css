@@ -8,10 +8,10 @@
 a {
   color: var(--defaultColor);
   text-decoration: none;
-}
 
-a:hover,
-a:focus {
-  outline: 0;
-  text-decoration: underline;
+  &:hover,
+  &:focus {
+    outline: 0;
+    text-decoration: underline;
+  }
 }
