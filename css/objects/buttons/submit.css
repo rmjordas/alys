@@ -4,15 +4,3 @@
  * Applies the "mixins" for buttons with
  * type "submit"
  */
-button[type="submit"] {
-  @apply --button-style;
-
-  &:not(:active) {
-    @apply --button-style--not-active;
-  }
-
-  &:not(:disabled):hover,
-  &:not(:disabled):focus {
-    @apply --button-style--not-disabled--focused;
-  }
-}

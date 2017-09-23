@@ -8,9 +8,9 @@ button:disabled {
   @apply --button-style--disabled;
 }
 
-button:not(:disabled) {
+/* button:not(:disabled) {
   &:hover,
   &:focus {
     @apply --button-style--not-disabled--focused;
   }
-}
+} */

@@ -10,9 +10,11 @@ a.btn {
   transition: all 0.2s ease-in;
 
   &:hover {
-    background-color: var(--defaultColorHover);
-    border-radius: var(--defaultBorderRadius);
-    color: var(--white);
+    @media (hover: none), (hover: on-demand) {
+      background-color: var(--defaultColorHover);
+      border-radius: var(--defaultBorderRadius);
+      color: var(--white);
+    }
   }
 
   &.disabled {

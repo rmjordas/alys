@@ -20,10 +20,18 @@
   }
 
   --button-style--not-active: {
-    outline: 0;
+    outline: none;
+  }
+
+  --button-style--not-disabled--active: {
+    background-color: deeppink;
   }
 
   --button-style--not-disabled--focused: {
+    outline: none;
+  }
+
+  --button-style--not-disabled--hover: {
     color: var(--white);
     background-color: var(--defaultColorHover);
   }

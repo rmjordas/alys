@@ -9,7 +9,14 @@ input[type="reset"]:not(:disabled) {
   @apply --input-button-style;
 }
 
-input[type="reset"]:not(:disabled):hover,
-input[type="reset"]:not(:disabled):focus {
-  @apply --input-button-style--focus;
+input[type="reset"]:not(:disabled) {
+  &:hover {
+    @media (hover: none), (hover: on-demand) {
+      @apply --input-button-style--not-disabled--hover;
+    }
+  }
+
+  &:focus {
+    @apply --input-button-style--not-disabled--focus;
+  }
 }

@@ -21,10 +21,17 @@
     width: auto;
   }
 
-  --input-button-style--focus: {
-    border: 0.2rem solid var(--defaultColorHover);
-    background-color: transparent;
+  --input-button-style--not-disabled--active: {
+    background-color: deeppink;
+  }
+
+  --input-button-style--not-disabled--focus: {
+    outline: none;
+  }
+
+  --input-button-style--not-disabled--hover: {
     color: var(--defaultColorHover);
+    border: 0.2rem solid var(--defaultColorHover);
   }
 
   --input-style--disabled: {
