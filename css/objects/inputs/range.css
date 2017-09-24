@@ -22,7 +22,7 @@ input[type="range"] {
     background: var(--lightestContrastBGColor);
     border: none;
     border-radius: var(--defaultBorderRadius);
-    cursor: pointer;
+    cursor: default;
     height: 1rem;
     width: 100%;
   }
@@ -65,7 +65,7 @@ input[type="range"] {
     background: var(--lightestContrastBGColor);
     border-radius: var(--defaultBorderRadius);
     border: none;
-    cursor: pointer;
+    cursor: default;
     height: 1rem;
     width: 100%;
   }
