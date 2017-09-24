@@ -7,7 +7,6 @@
  *   Indeterminate
  */
 progress {
-  -webkit-appearance: progress-bar;
   appearance: none;
   border: none;
   border-radius: var(--defaultBorderRadius);
