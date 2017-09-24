@@ -24,7 +24,9 @@
   }
 
   --button-style--not-disabled--active: {
-    background-color: deeppink;
+    background-color: var(--successColor);
+    transform: scale(0.95, 0.95);
+    transition: all 0ms;
   }
 
   --button-style--not-disabled--focused: {
@@ -32,7 +34,7 @@
   }
 
   --button-style--not-disabled--hover: {
-    color: var(--white);
+    color: var(--lightestContrastBGColor);
     background-color: var(--defaultColorHover);
   }
 

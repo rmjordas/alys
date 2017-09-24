@@ -15,18 +15,18 @@ button[type="submit"] {
   }
 
   &:not(:disabled) {
-    &:active {
-      @apply --button-style--not-disabled--active;
+    &:hover {
+      @media (hover: none), (hover: on-demand) {
+        @apply --button-style--not-disabled--hover;
+      }
     }
 
     &:focus {
       @apply --button-style--not-disabled--focused;
     }
 
-    &:hover {
-      @media (hover: none), (hover: on-demand) {
-        @apply --button-style--not-disabled--hover;
-      }
+    &:active {
+      @apply --button-style--not-disabled--active;
     }
   }
 }

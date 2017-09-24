@@ -22,7 +22,10 @@
   }
 
   --input-button-style--not-disabled--active: {
-    background-color: deeppink;
+    border: 0.2rem solid var(--successColor);
+    color: var(--successColor);
+    transform: scale(0.95, 0.95);
+    transition: all 0ms;
   }
 
   --input-button-style--not-disabled--focus: {

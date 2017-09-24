@@ -17,6 +17,16 @@ a.btn {
     }
   }
 
+  &:active {
+    background-color: var(--successColor);
+    color: var(--lightestContrastBGColor);
+    transition: all 0ms;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
   &.disabled {
     color: var(--lighterContrastBGColor);
     cursor: not-allowed;
