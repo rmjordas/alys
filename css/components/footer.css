@@ -1,7 +1,9 @@
 /* =====================================
  * Footer
  * =====================================
- * Appears at the bottom of the page
+ * Appears at the bottom of the page.
+ * Contains information about the current
+ * page or domain.
  */
 footer[role="contentinfo"] {
   align-self: stretch;

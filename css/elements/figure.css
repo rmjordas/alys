@@ -1,7 +1,8 @@
 /* =====================================
  * Figure
  * =====================================
- * Images inside figure elements
+ * Images, code, etc. inside figure
+ * elements
  */
 figure {
   border: var(--figureImgBorder);
