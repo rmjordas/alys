@@ -13,15 +13,15 @@ nav[role="navigation"] {
   grid-area: nav;
 
   & > ul {
-    margin: 0 auto;
-    padding-left: var(--componentPaddingDefault);
-    max-width: var(--navbarContentWidth);
     display: flex;
+    margin: 0 auto;
+    max-width: var(--navbarContentWidth);
+    padding-left: var(--componentPaddingDefault);
     justify-content: space-between;
 
     & li {
-      line-height: var(--navbarHeightDefault);
       flex-wrap: nowrap;
+      line-height: var(--navbarHeightDefault);
       padding-right: var(--navbarItemRightPadding);
 
       &:first-of-type {
@@ -29,13 +29,13 @@ nav[role="navigation"] {
       }
 
       & a {
-        text-decoration: none;
         color: var(--navbarAnchorColor);
+        text-decoration: none;
 
         &:hover {
-          text-decoration: none;
-          color: var(--navbarAnchorColorHover);
           background-color: transparent;
+          color: var(--navbarAnchorColorHover);
+          text-decoration: none;
         }
       }
 
@@ -45,4 +45,3 @@ nav[role="navigation"] {
     }
   }
 }
-

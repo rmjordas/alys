@@ -6,6 +6,6 @@
  * necessarily two `section` elements).
  */
 hr {
-  border-width: 0;
   border-top: var(--horizontalRuleTopBorder);
+  border-width: 0;
 }

@@ -15,8 +15,8 @@ fieldset {
     display: block;
     font-family: var(--fieldsetLegendFont);
     font-size: var(--fieldsetLegendFontSize);
-    overflow: hidden;
     height: 2.058em;
+    overflow: hidden;
     position: absolute;
     top: 0;
   }
@@ -43,8 +43,8 @@ select {
 input:focus,
 textarea:focus,
 select:focus {
-  border: var(--textFieldFocusedBorder);
   background-color: var(--textFieldFocusedBackgroundColor);
+  border: var(--textFieldFocusedBorder);
 }
 
 button,
@@ -75,8 +75,8 @@ input:invalid {
   }
 
   &:focus {
-    border: var(--inputInvalidBorder);
     background-color: var(--inputFocusedBackgroundColor);
+    border: var(--inputInvalidBorder);
     color: var(--inputFocusedColor);
 
     &::placeholder {

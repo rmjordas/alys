@@ -18,16 +18,16 @@ table {
   width: fit-content;
 
   & > caption {
-    font-weight: 600;
     border: 0.2rem solid transparent;
-    letter-spacing: 0.05rem;
     color: var(--darkestContrastBGColor);
+    font-weight: 600;
+    letter-spacing: 0.05rem;
   }
 }
 
 th {
-  text-transform: uppercase;
   background-color: var(--lightestContrastBGColor);
+  text-transform: uppercase;
 
   @nest thead &,
   tfoot & {
@@ -39,8 +39,8 @@ th {
 td,
 th {
   border: 0;
-  padding: 0.5rem 1rem;
   text-align: left;
+  padding: 0.5rem 1rem;
   white-space: nowrap;
 
   &:first-of-type {

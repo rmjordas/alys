@@ -54,9 +54,9 @@ code {
 
 pre {
   background: var(--lightestContrastBGColor);
+  border-radius: var(--inlineCodePadding);
   overflow-x: auto;
   padding: var(--inlinePrePadding);
-  border-radius: var(--inlineCodePadding);
 }
 
 abbr,
@@ -70,8 +70,8 @@ iframe {
 }
 
 ::selection {
-  color: var(--lightestContrastBGColor);
   background: var(--defaultColor);
+  color: var(--lightestContrastBGColor);
 }
 
 ::-webkit-scrollbar {

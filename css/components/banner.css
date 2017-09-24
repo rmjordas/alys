@@ -10,11 +10,11 @@
 header[role="banner"] {
   background-color: var(--bannerBackgroundColor);
   color: var(--bannerColor);
-  text-align: center;
-  padding: var(--bannerPadding);
   display: none;
   grid-area: header;
   justify-self: stretch;
+  padding: var(--bannerPadding);
+  text-align: center;
 
   @media (--vpPhone) {
     display: block;

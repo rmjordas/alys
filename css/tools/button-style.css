@@ -34,13 +34,13 @@
   }
 
   --button-style--not-disabled--hover: {
-    color: var(--lightestContrastBGColor);
     background-color: var(--defaultColorHover);
+    color: var(--lightestContrastBGColor);
   }
 
   --button-style--disabled: {
-    color: var(--lightContrastBGColor);
     background-color: var(--lighterContrastBGColor);
+    color: var(--lightContrastBGColor);
     cursor: not-allowed;
   }
 }

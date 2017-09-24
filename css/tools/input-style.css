@@ -33,14 +33,14 @@
   }
 
   --input-button-style--not-disabled--hover: {
-    color: var(--defaultColorHover);
     border: 0.2rem solid var(--defaultColorHover);
+    color: var(--defaultColorHover);
   }
 
   --input-style--disabled: {
-    color: var(--lighterContrastBGColor);
     background-color: transparent;
     border: 0.2rem solid var(--lighterContrastBGColor);
+    color: var(--lighterContrastBGColor);
     cursor: not-allowed;
   }
 }

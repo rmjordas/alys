@@ -47,9 +47,9 @@
   --deleteColor: var(--pink);
   --errorColor: var(--pink);
   --insertColor: var(--green);
-  --lightestContrastBGColor: var(--whiteish);
-  --lighterContrastBGColor: var(--lightGray);
   --lightContrastBGColor: var(--darkGray);
+  --lighterContrastBGColor: var(--lightGray);
+  --lightestContrastBGColor: var(--whiteish);
   --markColor: var(--yellow);
   --successColor: var(--green);
   --warningColor: var(--orange);

@@ -4,11 +4,11 @@
  * Appears at the bottom of the page
  */
 footer[role="contentinfo"] {
-  text-align: center;
   align-self: stretch;
-  color: var(--footerColor);
   background-color: var(--footerBackgroundColor);
+  color: var(--footerColor);
   grid-area: footer;
+  text-align: center;
 
   & a,
   & a:hover {
