@@ -35,7 +35,7 @@ select {
   border: var(--textFieldBorder);
   border-radius: var(--roundedRectangleMarginAll);
   height: var(--textFieldHeight);
-  outline: 0;
+  outline: none;
   padding: 0 1rem;
   width: 100%;
 }
@@ -61,14 +61,14 @@ input[required]:valid {
   background-color: transparent;
   border: var(--inputValidBorder);
   color: var(--darkestContrastBGColor);
-  outline: 0;
+  outline: none;
 }
 
 input:invalid {
   background-color: transparent;
   border: var(--inputInvalidBorder);
   color: var(--darkestContrastBGColor);
-  outline: 0;
+  outline: none;
 
   &::placeholder {
     color: var(--inputInvalidPlaceholderColor);

@@ -6,7 +6,7 @@
 input[type="range"] {
   appearance: none;
   border: none;
-  outline: 0;
+  outline: none;
   vertical-align: middle;
   width: 100%;
 
