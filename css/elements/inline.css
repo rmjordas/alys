@@ -1,0 +1,31 @@
+/* =====================================
+ * Inline
+ * =====================================
+ * Element that have a default display
+ * value of "inline"
+ */
+abbr,
+acronym {
+  cursor: help;
+}
+
+del {
+  color: var(--deleteColor);
+}
+
+ins {
+  color: var(--insertColor);
+}
+
+mark {
+  background-color: var(--markColor);
+  border-radius: var(--inlineBorderRadius);
+}
+
+code {
+  background-color: var(--lightestContrastBGColor);
+  border-radius: var(--inlineBorderRadius);
+  font-size: var(--smallerFontSize);
+  padding: var(--inlineCodePadding);
+  white-space: pre-line;
+}

@@ -31,37 +31,11 @@ p {
   margin: var(--paragraphMargin);
 }
 
-del {
-  color: var(--deleteColor);
-}
-
-ins {
-  color: var(--insertColor);
-}
-
-mark {
-  background-color: var(--markColor);
-  border-radius: var(--inlineBorderRadius);
-}
-
-code {
-  font-size: var(--smallerFontSize);
-  background-color: var(--lightestContrastBGColor);
-  border-radius: var(--inlineBorderRadius);
-  padding: var(--inlineCodePadding);
-  white-space: pre-line;
-}
-
 pre {
   background: var(--lightestContrastBGColor);
   border-radius: var(--inlineCodePadding);
   overflow-x: auto;
   padding: var(--inlinePrePadding);
-}
-
-abbr,
-acronym {
-  cursor: help;
 }
 
 iframe {

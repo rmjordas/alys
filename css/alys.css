@@ -58,6 +58,7 @@
 @import 'elements/heading';
 @import 'elements/hr';
 @import 'elements/img';
+@import 'elements/inline';
 @import 'elements/link';
 @import 'elements/list';
 @import 'elements/meter';
