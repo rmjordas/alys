@@ -1,14 +1,20 @@
 /* =====================================
- * Inputs (Submit)
+ * Input-buttons
  * =====================================
- * Applies the "mixins" for inputs with
- * type "submit"
+ * Applies the "mixins" for inputs used
+ * as buttons
  */
+input[type="button"],
+input[type="reset"],
 input[type="submit"],
+input[type="button"]:not(:disabled),
+input[type="reset"]:not(:disabled),
 input[type="submit"]:not(:disabled) {
   @apply --input-button-style;
 }
 
+input[type="button"]:not(:disabled),
+input[type="reset"]:not(:disabled),
 input[type="submit"]:not(:disabled) {
   &:hover {
     @media (hover: none), (hover: on-demand) {
@@ -22,5 +28,13 @@ input[type="submit"]:not(:disabled) {
 
   &:active {
     @apply --input-button-style--not-disabled--active;
+  }
+}
+
+input[disabled] {
+  &[type="submit"],
+  &[type="button"],
+  &[type="reset"] {
+    @apply --input-style--disabled;
   }
 }

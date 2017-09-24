@@ -71,21 +71,15 @@
  * =====================================
  * Rule-sets have class selectors only
  */
-@import 'objects/anchor-btn';
-@import 'objects/buttons/base';
+@import 'objects/buttons/anchor';
 @import 'objects/buttons/button';
-@import 'objects/buttons/reset';
-@import 'objects/buttons/submit';
-@import 'objects/buttons/disabled';
-@import 'objects/inputs/button';
+@import 'objects/buttons/input';
 @import 'objects/inputs/checkbox';
 @import 'objects/inputs/color';
 @import 'objects/inputs/disabled';
 @import 'objects/inputs/file';
 @import 'objects/inputs/radio';
 @import 'objects/inputs/range';
-@import 'objects/inputs/reset';
-@import 'objects/inputs/submit';
 @import 'objects/base';
 
 /* =====================================

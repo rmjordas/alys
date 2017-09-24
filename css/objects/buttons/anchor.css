@@ -1,3 +1,9 @@
+/* =====================================
+ * Anchor-buttons
+ * =====================================
+ * Applies the "mixins" for anchor
+ * elements with class "btn"
+ */
 a.btn {
   background-color: transparent;
   border-radius: var(--defaultBorderRadius);

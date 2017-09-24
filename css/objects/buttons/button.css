@@ -1,6 +1,36 @@
 /* =====================================
- * Buttons (Button)
+ * Button
  * =====================================
- * Applies the "mixins" for buttons with
- * type "button"
+ * Applies the "mixins" for button
+ * elements
  */
+button,
+button[type="button"],
+button[type="reset"],
+button[type="submit"] {
+  @apply --button-style;
+
+  &:not(:active) {
+    @apply --button-style--not-active;
+  }
+
+  &:not(:disabled) {
+    &:hover {
+      @media (hover: none), (hover: on-demand) {
+        @apply --button-style--not-disabled--hover;
+      }
+    }
+
+    &:focus {
+      @apply --button-style--not-disabled--focused;
+    }
+
+    &:active {
+      @apply --button-style--not-disabled--active;
+    }
+  }
+}
+
+button:disabled {
+  @apply --button-style--disabled;
+}

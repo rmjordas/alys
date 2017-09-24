@@ -11,11 +11,3 @@ input:disabled {
   color: var(--lightGray);
   cursor: not-allowed;
 }
-
-input[disabled] {
-  &[type="submit"],
-  &[type="button"],
-  &[type="reset"] {
-    @apply --input-style--disabled;
-  }
-}
