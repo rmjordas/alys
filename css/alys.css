@@ -80,6 +80,7 @@
 @import 'objects/inputs/file';
 @import 'objects/inputs/radio';
 @import 'objects/inputs/range';
+@import 'objects/inputs/search';
 @import 'objects/base';
 
 /* =====================================

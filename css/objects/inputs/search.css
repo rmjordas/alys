@@ -7,6 +7,4 @@
 input[type="search"],
 input[type="search"]:not(:disabled) {
   appearance: textfield;
-  box-sizing: content-box;
-  height: 3.8rem;
 }
