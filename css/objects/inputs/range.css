@@ -14,6 +14,32 @@ input[type="range"] {
     outline: none;
   }
 
+  &:disabled,
+  &[disabled] {
+    background-color: transparent;
+
+    &::-webkit-slider-runnable-track,
+    &::-webkit-slider-thumb {
+      cursor: not-allowed;
+    }
+
+    &::-webkit-slider-runnable-track {
+      background: var(--lighterContrastBGColor);
+    }
+
+    &::-webkit-slider-thumb {
+      background: var(--lightContrastBGColor);
+    }
+
+    &::-moz-range-thumb {
+      background: var(--lightContrastBGColor);
+    }
+
+    &::-moz-range-track {
+      background: var(--lighterContrastBGColor);
+    }
+  }
+
   /* -------------------------------------
   * Chrome, Safari, Opera
   * -------------------------------------

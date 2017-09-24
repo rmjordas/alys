@@ -29,6 +29,15 @@ input[type="file"] {
     top: -0.2rem;
   }
 
+  &:disabled {
+    cursor: not-allowed;
+
+    &::before,
+    &:hover::before {
+      background-color: var(--lighterContrastBGColor);
+    }
+  }
+
   &:active::before,
   &:focus::before,
   &:hover::before {
