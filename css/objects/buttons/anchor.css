@@ -10,6 +10,7 @@ a.btn {
   cursor: default;
   display: inline-block;
   font-weight: 700;
+  letter-spacing: 0.1rem;
   padding: 0 1.5rem;
   text-decoration: none;
   text-transform: uppercase;
