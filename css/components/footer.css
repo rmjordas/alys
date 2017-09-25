@@ -10,6 +10,7 @@ footer[role="contentinfo"] {
   background-color: var(--footerBackgroundColor);
   color: var(--footerColor);
   grid-area: footer;
+  padding: 2rem;
   text-align: center;
 
   & a,

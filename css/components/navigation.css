@@ -10,6 +10,7 @@
 nav[role="navigation"] {
   background-color: var(--navbarBackgroundColor);
   color: var(--navbarColor);
+  font-weight: 700;
   grid-area: nav;
 
   & > ul {
