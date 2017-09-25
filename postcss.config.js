@@ -6,6 +6,7 @@ const cssnano = require('cssnano');
 const customProperties = require('postcss-custom-properties');
 const customMedia = require('postcss-custom-media');
 const fontFamilySystemUi = require('postcss-font-family-system-ui');
+const initial = require('postcss-initial');
 const mediaMinmax = require('postcss-media-minmax');
 const nesting = require('postcss-nesting');
 const reporter = require('postcss-reporter');
@@ -22,6 +23,7 @@ module.exports = {
     }),
     customProperties,
     colorFunction,
+    initial,
     apply,
     customMedia,
     mediaMinmax,
