@@ -14,32 +14,6 @@ input[type="range"] {
     outline: none;
   }
 
-  &:disabled,
-  &[disabled] {
-    background-color: transparent;
-
-    &::-webkit-slider-runnable-track,
-    &::-webkit-slider-thumb {
-      cursor: not-allowed;
-    }
-
-    &::-webkit-slider-runnable-track {
-      background: var(--lighterContrastBGColor);
-    }
-
-    &::-webkit-slider-thumb {
-      background: var(--lightContrastBGColor);
-    }
-
-    &::-moz-range-thumb {
-      background: var(--lightContrastBGColor);
-    }
-
-    &::-moz-range-track {
-      background: var(--lighterContrastBGColor);
-    }
-  }
-
   /* -------------------------------------
   * Chrome, Safari, Opera
   * -------------------------------------
@@ -152,5 +126,41 @@ input[type="range"] {
     cursor: pointer;
     height: 1rem;
     width: 100%;
+  }
+
+  &:disabled,
+  &[disabled] {
+    background-color: transparent;
+    cursor: not-allowed;
+
+    &::-webkit-slider-runnable-track {
+      background: var(--lighterContrastBGColor);
+      cursor: not-allowed;
+    }
+
+    &::-webkit-slider-thumb {
+      background: var(--lightContrastBGColor);
+      cursor: not-allowed;
+    }
+
+    &::-moz-range-thumb {
+      background: var(--lightContrastBGColor);
+      cursor: not-allowed;
+    }
+
+    &::-moz-range-track {
+      background: var(--lighterContrastBGColor);
+      cursor: not-allowed;
+    }
+
+    &::-ms-thumb {
+      background: var(--lightContrastBGColor);
+      cursor: not-allowed;
+    }
+
+    &::-ms-track {
+      background: var(--lighterContrastBGColor);
+      cursor: not-allowed;
+    }
   }
 }
