@@ -57,3 +57,11 @@ iframe {
 ::-webkit-scrollbar-thumb {
   background: var(--lightContrastBGColor);
 }
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--defaultColorHover);
+}
+
+::-webkit-scrollbar-thumb:active {
+  background: var(--defaultColor);
+}
