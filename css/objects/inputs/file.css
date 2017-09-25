@@ -5,9 +5,17 @@
  * type "file"
  */
 input[type="file"] {
-  color: var(--lighterContrastBGColor);
+  background: var(--white);
+  color: var(--lightContrastBGColor);
+  cursor: inherit;
+  display: block;
+  height: 100%;
+  outline: none;
   padding: 0.5rem;
   position: relative;
+  right: 0;
+  top: 0;
+  width: 100%;
 
   &:focus {
     border: 0.2rem solid var(--lighterContrastBGColor);
@@ -17,19 +25,26 @@ input[type="file"] {
     visibility: hidden;
   }
 
+  &::-ms-browse {
+    visibility: hidden;
+  }
+
   &::before {
     background-color: var(--defaultColor);
     border-radius: var(--defaultBorderRadius) 0 0 var(--defaultBorderRadius);
-    color: var(--white);
+    color: var(--lightestContrastBGColor);
     content: attr(title);
     display: inline-block;
+    font-weight: 700;
     left: -0.2rem;
     padding: 1rem;
     position: absolute;
     top: -0.2rem;
+    transition: all 0.2s ease-in;
   }
 
   &:disabled {
+    color: var(--lighterContrastBGColor);
     cursor: not-allowed;
 
     &::before,
@@ -38,9 +53,15 @@ input[type="file"] {
     }
   }
 
-  &:active::before,
-  &:focus::before,
   &:hover::before {
-    background-color: var(--defaultColorHover);
+    @apply --button-style--not-disabled--hover;
+  }
+
+  &:focus::before {
+    @apply --button-style--not-disabled--focused;
+  }
+
+  &:active::before {
+    @apply --button-style--not-disabled--active;
   }
 }
