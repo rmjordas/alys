@@ -7,6 +7,7 @@
     "lint": "stylelint \"css/**/*.css\"",
     "dev": "postcss css/alys.css -o dist/alys.min.css -c postcss.config.js -w",
     "build": "postcss css/alys.css -o dist/alys.min.css -c postcss.config.js",
+    "start:testpage": "lite-server",
     "test": "npm run lint"
   },
   "engines": {
