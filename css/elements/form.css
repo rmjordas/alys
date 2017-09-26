@@ -104,6 +104,7 @@ select {
 
   &:disabled {
     color: var(--lighterContrastBGColor);
+    cursor: not-allowed;
   }
 
   & optgroup,
