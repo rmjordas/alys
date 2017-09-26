@@ -82,27 +82,22 @@ input[type="range"] {
   * -------------------------------------
   */
   &::-ms-fill-lower {
-    background: var(--defaultColor);
-    border: none;
+    background: var(--lightestContrastBGColor);
     border-radius: var(--defaultBorderRadius);
   }
 
   &::-ms-fill-upper {
-    background: var(--defaultColor);
+    background: var(--lightestContrastBGColor);
     border: none;
     border-radius: var(--defaultBorderRadius);
   }
 
   &:focus::-ms-fill-lower {
-    background: var(--defaultColor);
-  }
-
-  &:focus::-ms-fill-lower {
-    background: var(--defaultColor);
+    background: var(--lighterContrastBGColor);
   }
 
   &:focus::-ms-fill-upper {
-    background: var(--defaultColor);
+    background: var(--lighterContrastBGColor);
   }
 
   &::-ms-thumb {
@@ -111,17 +106,17 @@ input[type="range"] {
     border-radius: 50%;
     cursor: pointer;
     height: 2rem;
-    margin-top: 0.5rem;
+    margin-top: 0;
     width: 2rem;
   }
 
-  /* &:focus::-ms-thumb {
-
-} */
+  &:focus::-ms-thumb {
+    outline: none;
+  }
 
   &::-ms-track {
     background: transparent;
-    border-color: transparent;
+    border: 0;
     color: transparent;
     cursor: pointer;
     height: 1rem;
