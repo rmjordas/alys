@@ -91,6 +91,10 @@ progress {
       border-radius: 2px;
     }
   }
+
+  &::-ms-fill {
+    border-color: currentColor;
+  }
 }
 
 @keyframes animate-stripes {
