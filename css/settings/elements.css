@@ -2,7 +2,7 @@
   /* BLOCKQUOTE */
   --blockquoteBorderRadius: 1rem;
   --blockquoteLeftBorder: 1rem solid var(--lighterContrastBGColor);
-  --blockquoteMargin: 0 2rem var(--elementDefaultBottomMargin);
+  --blockquoteMargin: 0 1em var(--elementDefaultBottomMargin);
   --blockquotePadding: 1rem;
 
   /* FIELDSET */
