@@ -1,7 +1,7 @@
 {
   "name": "alys",
   "version": "0.1.0-beta.5",
-  "description": "A minimal-configuration, \"drop-in\" CSS boilerplate",
+  "description": "A modern CSS toolkit",
   "main": "dist/alys.min.css",
   "scripts": {
     "lint": "stylelint \"css/**/*.css\"",
@@ -13,10 +13,7 @@
   "engines": {
     "node": "8.x"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/mds3dstn71/alys.git"
-  },
+  "repository": "git+https://github.com/mds3dstn71/alys.git",
   "keywords": [
     "CSS",
     "toolkit",
