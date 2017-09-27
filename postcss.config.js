@@ -9,6 +9,7 @@ const fontFamilySystemUi = require('postcss-font-family-system-ui');
 const initial = require('postcss-initial');
 const mediaMinmax = require('postcss-media-minmax');
 const nesting = require('postcss-nesting');
+const customSelectors = require('postcss-custom-selectors');
 const reporter = require('postcss-reporter');
 const url = require('postcss-url');
 
@@ -24,6 +25,7 @@ module.exports = {
     customProperties,
     colorFunction,
     initial,
+    customSelectors,
     apply,
     customMedia,
     mediaMinmax,
