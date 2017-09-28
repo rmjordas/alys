@@ -15,6 +15,8 @@ header[role="banner"] {
   justify-self: stretch;
   padding: var(--bannerPadding);
   text-align: center;
+  width: var(--componentMaxWidthDefault);
+  max-width: 100%;
 
   @media (--vpPhone) {
     display: block;

@@ -9,6 +9,7 @@ html {
   font-size: var(--rootFontSize);
   height: 100%;
   line-height: var(--baseLineHeight);
+  max-width: 100vw;
 }
 
 blockquote,
@@ -43,6 +44,15 @@ iframe {
   max-width: 100%;
 }
 
+svg {
+  fill: var(--defaultColor);
+}
+
+audio,
+video {
+  max-width: 100%;
+}
+
 ::selection {
   background: var(--defaultColor);
   color: var(--lightestContrastBGColor);
@@ -63,5 +73,5 @@ iframe {
 }
 
 ::-webkit-scrollbar-thumb:active {
-  background: var(--defaultColor);
+  background: var(--lightContrastBGColor);
 }

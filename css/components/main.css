@@ -6,11 +6,32 @@
  * content" anchor tag
  */
 main[role="main"] {
-  grid-area: main;
-  max-width: var(--componentMaxWidthDefault);
+  margin: 0 auto;
+  max-width: 100%;
   padding: 0 var(--componentPaddingDefault);
 
-  @media (--vpPhone) {
-    padding: 0;
+  @supports (display: grid) {
+    grid-area: main;
+    width: calc(100% - (2 * var(--componentPaddingDefault)));
+
+    @media (--vpPhone) {
+      width: var(--pageMaxWidthDefault);
+      padding: 0;
+    }
+  }
+
+  /* lt Edge 16 */
+  @supports (display: -ms-grid) {
+    display: block;
+    padding: 0 var(--componentPaddingDefault);
+    max-width: 96rem;
+  }
+
+  /* lte IE 11 */
+  @media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {
+    display: block;
+    padding: 0 var(--componentPaddingDefault);
+    margin: 0 auto;
+    max-width: 96rem;
   }
 }

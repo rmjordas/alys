@@ -11,7 +11,12 @@ nav[role="navigation"] {
   background-color: var(--navbarBackgroundColor);
   color: var(--navbarColor);
   font-weight: 700;
-  grid-area: nav;
+  width: var(--componentMaxWidthDefault);
+  max-width: 100%;
+
+  @supports (display: grid) {
+    grid-area: nav;
+  }
 
   & > ul {
     display: flex;

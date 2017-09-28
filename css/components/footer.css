@@ -12,14 +12,10 @@ footer[role="contentinfo"] {
   grid-area: footer;
   padding: 2rem;
   text-align: center;
+  max-width: 100%;
 
   & a,
   & a:hover {
     color: var(--footerColor);
   }
 }
-
-/* footer[role="contentinfo"] a,
-footer[role="contentinfo"] a:hover {
-  color: var(--footerColor);
-} */
