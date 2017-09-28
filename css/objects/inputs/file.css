@@ -25,8 +25,18 @@ input[type="file"] {
     visibility: hidden;
   }
 
+  &::-ms-value {
+    border: 0;
+    color: var(--lightContrastBGColor);
+    padding: 0 1rem;
+  }
+
   &::-ms-browse {
-    visibility: hidden;
+    background-color: var(--defaultColor);
+    border: 0.2rem solid transparent;
+    border-radius: var(--defaultBorderRadius);
+    color: var(--lightestContrastBGColor);
+    font-weight: 700;
   }
 
   &::before {
@@ -43,14 +53,8 @@ input[type="file"] {
     transition: all 0.2s ease-in;
   }
 
-  &:disabled {
-    color: var(--lighterContrastBGColor);
-    cursor: not-allowed;
-
-    &::before,
-    &:hover::before {
-      background-color: var(--lighterContrastBGColor);
-    }
+  &:hover::-ms-browse {
+    @apply --button-style--not-disabled--hover;
   }
 
   &:hover::before {
@@ -63,5 +67,19 @@ input[type="file"] {
 
   &:active::before {
     @apply --button-style--not-disabled--active;
+  }
+
+  &:disabled {
+    color: var(--lighterContrastBGColor);
+    cursor: not-allowed;
+
+    &::before,
+    &:hover::before {
+      background-color: var(--lighterContrastBGColor);
+    }
+
+    &::-ms-browse {
+      background-color: var(--lighterContrastBGColor);
+    }
   }
 }
