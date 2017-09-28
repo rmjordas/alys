@@ -17,9 +17,18 @@ input[type="button"]:not(:disabled),
 input[type="reset"]:not(:disabled),
 input[type="submit"]:not(:disabled) {
   &:hover {
-    @media (hover: none), (hover: on-demand) {
-      @apply --input-button-style--not-disabled--hover;
+    /* Firefox and IE has no support for @media (hover: hover) */
+    @apply --input-button-style--not-disabled--hover;
+
+    @media (hover: none) {
+      border: 0.2rem solid var(--defaultColor);
+      color: var(--defaultColor);
     }
+
+    /* For modern browsers
+    @media (hover: hover), (hover: on-demand) {
+      @apply --input-button-style--not-disabled--hover;
+    } */
   }
 
   &:focus {

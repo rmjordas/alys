@@ -35,7 +35,7 @@
 
   --button-style--not-disabled--hover: {
     background-color: var(--defaultColorHover);
-    color: var(--lightestContrastBGColor);
+    color: var(--white);
   }
 
   --button-style--disabled: {

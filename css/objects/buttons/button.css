@@ -16,9 +16,18 @@ button[type="submit"] {
 
   &:not(:disabled) {
     &:hover {
-      @media (hover: none), (hover: on-demand) {
-        @apply --button-style--not-disabled--hover;
+      /* Firefox and IE has no support for @media (hover: hover) */
+      @apply --button-style--not-disabled--hover;
+
+      @media (hover: none) {
+        background-color: var(--defaultColor);
+        color: var(--lightestContrastBGColor);
       }
+
+      /* For modern browsers
+      @media (hover: none) {
+        @apply --button-style--not-disabled--hover;
+      } */
     }
 
     &:focus {

@@ -17,11 +17,20 @@ a.btn {
   transition: all 0.2s ease-in;
 
   &:hover {
-    @media (hover: none), (hover: on-demand) {
-      background-color: var(--defaultColorHover);
-      border-radius: var(--defaultBorderRadius);
-      color: var(--white);
+    /* Firefox and IE has no support for @media (hover: hover) */
+    background-color: var(--defaultColorHover);
+    color: var(--white);
+
+    @media (hover: none) {
+      background-color: var(defaultColor);
+      color: var(--lightestContrastBGColor);
     }
+
+    /* For modern browsers
+    @media (hover: hover), (hover: on-demand) {
+      background-color: var(--defaultColorHover);
+      color: var(--white);
+    } */
   }
 
   &:active {
