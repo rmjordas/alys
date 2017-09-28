@@ -10,10 +10,6 @@ input[type="range"] {
   vertical-align: middle;
   width: 100%;
 
-  &:focus {
-    outline: none;
-  }
-
   /* -------------------------------------
   * Chrome, Safari, Opera
   * -------------------------------------
@@ -38,16 +34,6 @@ input[type="range"] {
     width: 2rem;
   }
 
-  &:focus {
-    &::-webkit-slider-runnable-track {
-      background: var(--lighterContrastBGColor);
-    }
-
-    &::-webkit-slider-thumb {
-      box-shadow: 0 0 0 0.1rem color(var(--defaultColor) alpha(50%));
-    }
-  }
-
   /* -------------------------------------
   * Firefox
   * -------------------------------------
@@ -70,13 +56,6 @@ input[type="range"] {
     width: 100%;
   }
 
-  /* &:focus::-moz-range-track {
-    border-radius: var(--lightestContrastBGColor);
-  }
-
-  &:focus::-moz-range-thumb {
-  } */
-
   /* -------------------------------------
   * Edge
   * -------------------------------------
@@ -92,14 +71,6 @@ input[type="range"] {
     border-radius: var(--defaultBorderRadius);
   }
 
-  &:focus::-ms-fill-lower {
-    background: var(--lighterContrastBGColor);
-  }
-
-  &:focus::-ms-fill-upper {
-    background: var(--lighterContrastBGColor);
-  }
-
   &::-ms-thumb {
     background: var(--defaultColor);
     border: none;
@@ -110,10 +81,6 @@ input[type="range"] {
     width: 2rem;
   }
 
-  &:focus::-ms-thumb {
-    outline: none;
-  }
-
   &::-ms-track {
     background: transparent;
     border: 0;
@@ -121,6 +88,42 @@ input[type="range"] {
     cursor: pointer;
     height: 1rem;
     width: 100%;
+  }
+
+  &:hover {
+    &::-webkit-slider-thumb {
+      background-color: var(--defaultColorHover);
+    }
+
+    &::-moz-range-thumb {
+      background-color: var(--defaultColorHover);
+    }
+
+    &::-ms-thumb {
+      background-color: var(--defaultColorHover);
+    }
+  }
+
+  &:active {
+    &:not(:disabled) {
+      outline: none;
+
+      &::-webkit-slider-runnable-track {
+        background: var(--lighterContrastBGColor);
+      }
+
+      &::-moz-range-track {
+        background: var(--lighterContrastBGColor);
+      }
+
+      &::-ms-fill-lower {
+        background: var(--lighterContrastBGColor);
+      }
+
+      &::-ms-fill-upper {
+        background: var(--lighterContrastBGColor);
+      }
+    }
   }
 
   &:disabled,
