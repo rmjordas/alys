@@ -4,6 +4,8 @@
  * The main content of the page. Also
  * the target of the "Skip to main
  * content" anchor tag
+ *
+ * Max Specifity: 11 (0-1-1)
  */
 main[role="main"] {
   margin: 0 auto;

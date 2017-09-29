@@ -2,10 +2,12 @@
  * Banner
  * =====================================
  * Appears at the top of page and
- * contains the only level 1 heading
+ * contains the only a level 1 heading
  * element indicating the page's title.
  * On small screens, the banner is not
  * visible
+ *
+ * Max Specifity: 11 (0-1-1)
  */
 header[role="banner"] {
   background-color: var(--bannerBackgroundColor);

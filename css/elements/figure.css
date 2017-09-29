@@ -3,6 +3,8 @@
  * =====================================
  * Images, code, etc. inside figure
  * elements
+ *
+ * Max Specifity: 3 (0-0-3)
  */
 figure {
   border: var(--figureImgBorder);

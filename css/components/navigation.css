@@ -6,6 +6,8 @@
  * screens. Contains links to different
  * parts of the current page or to other
  * external resource.
+ *
+ * Max Specifity: 24 (0-2-4)
  */
 nav[role="navigation"] {
   background-color: var(--navbarBackgroundColor);

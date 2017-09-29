@@ -5,6 +5,8 @@
  *   Incomplete (0% <= x < 100%)
  *   Complete (100%); or
  *   Indeterminate
+ *
+ * Max Specifity: 12 (0-1-2)
  */
 progress {
   appearance: none;

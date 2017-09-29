@@ -3,6 +3,8 @@
  * =====================================
  * Applies the "mixins" for button
  * elements
+ *
+ * Max Specifity: 31 (0-3-1)
  */
 button,
 button[type="button"],

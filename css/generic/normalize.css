@@ -2,5 +2,7 @@
  * Normalize
  * =====================================
  * Unnecessary dependency
+ *
+ * Max Specifity: 20 (0-2-0)
  */
 @import 'normalize.css/normalize.css';

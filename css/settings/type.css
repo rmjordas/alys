@@ -1,4 +1,9 @@
 :root {
+  /* =====================================
+   * Typography Variables
+   * =====================================
+   */
+
   --baseFont: Nunito, Quicksand, var(--systemFont);
   --baseFontSize: 1.6rem;
   --baseLineHeight: 2.025;

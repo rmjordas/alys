@@ -1,4 +1,9 @@
 :root {
+  /* =====================================
+   * Element Variables
+   * =====================================
+   */
+
   /* BLOCKQUOTE */
   --blockquoteBorderRadius: 1rem;
   --blockquoteLeftBorder: 1rem solid var(--lighterContrastBGColor);

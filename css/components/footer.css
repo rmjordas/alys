@@ -4,6 +4,8 @@
  * Appears at the bottom of the page.
  * Contains information about the current
  * page or domain.
+ *
+ * Max Specifity: 22 (0-2-2)
  */
 footer[role="contentinfo"] {
   align-self: stretch;

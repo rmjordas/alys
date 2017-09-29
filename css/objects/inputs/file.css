@@ -3,6 +3,8 @@
  * =====================================
  * Applies the "mixins" for inputs with
  * type "file"
+ *
+ * Max Specifity: 32 (0-3-2)
  */
 input[type="file"] {
   background: var(--white);

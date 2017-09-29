@@ -3,6 +3,8 @@
  * =====================================
  * These contains rule-sets that are too
  * simple to have their own files.
+ *
+ * Max Specifity: 11 (0-1-1)
  */
 html {
   font-family: var(--baseFont);

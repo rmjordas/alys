@@ -5,6 +5,8 @@
  * selector specificities which are
  * lower than id selectors, e.g. class,
  * attribute, etc.
+ *
+ * Max Specifity: 10 (0-1-0)
  */
 .sr-only {
   @apply --sr-only;

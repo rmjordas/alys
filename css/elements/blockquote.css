@@ -4,6 +4,8 @@
  * Blockquotes have a thick "border" on
  * the left side and the texts inside it
  * are italicized.
+ *
+ * Max Specifity: 12 (0-1-2)
  */
 blockquote {
   background-color: var(--lightestContrastBGColor);

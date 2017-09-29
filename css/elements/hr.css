@@ -4,6 +4,8 @@
  * A line representing the of boudaries
  * between two page sections (not
  * necessarily two `section` elements).
+ *
+ * Max Specifity: 1 (0-0-1)
  */
 hr {
   border-top: var(--horizontalRuleTopBorder);

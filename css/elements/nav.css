@@ -4,6 +4,8 @@
  * Navs are considered to have the
  * "role" of "navigation" for most newer
  * devices
+ *
+ * Max Specifity: 2 (0-0-2)
  */
 nav {
   & ol,

@@ -1,3 +1,11 @@
+/* =====================================
+ * Inputs (Color)
+ * =====================================
+ * Pops open a color picker when color
+ * swatch is activated
+ *
+ * Max Specifity: 21 (0-2-1)
+ */
 input[type="color"] {
   padding: 0.5rem;
 

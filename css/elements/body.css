@@ -3,6 +3,8 @@
  * =====================================
  * The body will act as the page's "Grid
  * Container".
+ *
+ * Max Specifity: 1 (0-0-1)
  */
 body {
   color: var(--darkestContrastBGColor);

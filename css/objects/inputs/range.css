@@ -2,6 +2,8 @@
  * Inputs (Range)
  * =====================================
  * Draggable knob for number values
+ *
+ * Max Specifity: 32 (0-3-2)
  */
 input[type="range"] {
   appearance: none;

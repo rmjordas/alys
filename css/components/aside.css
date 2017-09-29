@@ -4,6 +4,8 @@
  * Appears below the main content for
  * smaller screens and beside the main
  * content for desktops
+ *
+ * Max Specifity: 11 (0-1-1)
  */
 aside[role="complementary"] {
   margin: 0 auto;

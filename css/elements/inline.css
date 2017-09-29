@@ -3,6 +3,8 @@
  * =====================================
  * Element that have a default display
  * value of "inline"
+ *
+ * Max Specifity: 1 (0-0-1)
  */
 abbr,
 acronym {

@@ -1,3 +1,11 @@
+/* =====================================
+ * Meter
+ * =====================================
+ * Provides a visual representation of a
+ * value with a known range
+ *
+ * Max Specifity: 12 (0-1-2)
+ */
 meter {
   background: var(--lightestContrastBGColor);
   border: none;

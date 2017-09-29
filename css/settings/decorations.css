@@ -1,4 +1,8 @@
 :root {
+  /* =====================================
+   * Decorations
+   * =====================================
+   */
   --defaultBorder: 0.2rem solid var(--defaultColor);
   --defaultBorderRadius: 0.3rem;
   --roundedRectangleUpper: 0.5rem 0.5rem 0 0;

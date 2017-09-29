@@ -4,6 +4,8 @@
  * Allows navigation to other parts of
  * the same web page or to another
  * external domain.
+ *
+ * Max Specifity: 11 (0-1-1)
  */
 a {
   color: var(--defaultColor);

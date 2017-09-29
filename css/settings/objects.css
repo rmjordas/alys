@@ -1,4 +1,9 @@
 :root {
+  /* =====================================
+   * Object Variables
+   * =====================================
+   */
+
   /* INPUT */
   --inputFocusedBackgroundColor: var(--white);
   --inputFocusedColor: var(--darkGray);

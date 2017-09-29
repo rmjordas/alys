@@ -2,6 +2,8 @@
  * Image
  * =====================================
  * By default, images are responsive
+ *
+ * Max Specifity: 1 (0-0-1)
  */
 img {
   max-width: 100%;

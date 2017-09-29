@@ -1,8 +1,10 @@
 /* =====================================
  * Form
  * =====================================
- * Elements which should be always
+ * Elements which should (preferably) be
  * present inside a `form` element.
+ *
+ * Max Specifity: 22 (0-2-2)
  */
 fieldset {
   border: var(--fieldsetBorder);

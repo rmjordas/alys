@@ -3,6 +3,8 @@
  * =====================================
  * Applies the "mixins" for anchor
  * elements with class "btn"
+ *
+ * Max Specifity: 31 (0-3-1)
  */
 a.btn {
   background-color: transparent;

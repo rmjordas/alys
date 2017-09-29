@@ -2,6 +2,8 @@
  * Lists
  * =====================================
  * List elements can nest other lists
+ *
+ * Max Specifity: 1 (0-0-1)
  */
 dt {
   font-weight: 700;

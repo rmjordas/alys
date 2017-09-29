@@ -3,6 +3,8 @@
  * =====================================
  * Applies the "mixins" for inputs that
  * are disabled
+ *
+ * Max Specifity: 11 (0-1-1)
  */
 input[disabled],
 input:disabled {
