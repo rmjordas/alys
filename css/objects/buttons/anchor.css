@@ -24,7 +24,7 @@ a.btn {
     color: var(--white);
 
     @media (hover: none) {
-      background-color: var(defaultColor);
+      background-color: var(--defaultColor);
       color: var(--lightestContrastBGColor);
     }
 
