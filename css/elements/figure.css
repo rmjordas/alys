@@ -8,8 +8,12 @@
  */
 figure {
   border: var(--figureImgBorder);
-  margin: 0 0 var(--elementDefaultBottomMargin);
+  border-radius: 0.5rem;
+  box-sizing: border-box;
+  margin: 0 auto var(--elementDefaultBottomMargin);
+  overflow: hidden;
   padding: 0;
+  max-width: fit-content;
 
   & > * {
     margin: 0.8rem;
@@ -18,7 +22,7 @@ figure {
   & img {
     margin: 0;
     vertical-align: top;
-    width: 100%;
+    max-width: 100%;
   }
 
   & figcaption {
@@ -26,7 +30,51 @@ figure {
     color: var(--lightestContrastBGColor);
     font-weight: 300;
     margin: 0;
+    padding: 0 1rem;
     text-align: center;
-    width: 100%;
+  }
+
+  /* lt Edge 16 */
+  @supports (display: -ms-grid) {
+    border-radius: 0;
+    display: table;
+
+    & > * ~ figcaption {
+      caption-side: top;
+    }
+
+    & img ~ figcaption {
+      caption-side: bottom;
+    }
+
+    & figcaption {
+      border: var(--figureImgBorder);
+      display: table-caption;
+    }
+  }
+
+  /* lte IE 11 */
+  @media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {
+    border-radius: 0;
+    display: table;
+    max-width: 100%;
+
+    & img {
+      display: block;
+      max-width: 96rem;
+    }
+
+    & > * ~ figcaption {
+      caption-side: top;
+    }
+
+    & img ~ figcaption {
+      caption-side: bottom;
+    }
+
+    & figcaption {
+      border: var(--figureImgBorder);
+      display: table-caption;
+    }
   }
 }
