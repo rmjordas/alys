@@ -17,9 +17,9 @@ input[type="range"] {
   * -------------------------------------
   */
   &::-webkit-slider-runnable-track {
-    background: var(--lightestContrastBGColor);
+    background: var(--color--foreground--lightest);
     border: none;
-    border-radius: var(--defaultBorderRadius);
+    border-radius: var(--border-radius);
     cursor: default;
     height: 1rem;
     width: 100%;
@@ -27,7 +27,7 @@ input[type="range"] {
 
   &::-webkit-slider-thumb {
     appearance: none;
-    background: var(--defaultColor);
+    background: var(--color);
     border: none;
     border-radius: 50%;
     cursor: pointer;
@@ -41,7 +41,7 @@ input[type="range"] {
   * -------------------------------------
   */
   &::-moz-range-thumb {
-    background: var(--defaultColor);
+    background: var(--color);
     border: none;
     border-radius: 50%;
     cursor: pointer;
@@ -50,8 +50,8 @@ input[type="range"] {
   }
 
   &::-moz-range-track {
-    background: var(--lightestContrastBGColor);
-    border-radius: var(--defaultBorderRadius);
+    background: var(--color--foreground--lightest);
+    border-radius: var(--border-radius);
     border: none;
     cursor: default;
     height: 1rem;
@@ -63,18 +63,18 @@ input[type="range"] {
   * -------------------------------------
   */
   &::-ms-fill-lower {
-    background: var(--lightestContrastBGColor);
-    border-radius: var(--defaultBorderRadius);
+    background: var(--color--foreground--lightest);
+    border-radius: var(--border-radius);
   }
 
   &::-ms-fill-upper {
-    background: var(--lightestContrastBGColor);
+    background: var(--color--foreground--lightest);
     border: none;
-    border-radius: var(--defaultBorderRadius);
+    border-radius: var(--border-radius);
   }
 
   &::-ms-thumb {
-    background: var(--defaultColor);
+    background: var(--color);
     border: none;
     border-radius: 50%;
     cursor: pointer;
@@ -94,15 +94,15 @@ input[type="range"] {
 
   &:hover {
     &::-webkit-slider-thumb {
-      background-color: var(--defaultColorHover);
+      background-color: var(--color--hover);
     }
 
     &::-moz-range-thumb {
-      background-color: var(--defaultColorHover);
+      background-color: var(--color--hover);
     }
 
     &::-ms-thumb {
-      background-color: var(--defaultColorHover);
+      background-color: var(--color--hover);
     }
   }
 
@@ -111,19 +111,19 @@ input[type="range"] {
       outline: none;
 
       &::-webkit-slider-runnable-track {
-        background: var(--lighterContrastBGColor);
+        background: var(--color--foreground--lighter);
       }
 
       &::-moz-range-track {
-        background: var(--lighterContrastBGColor);
+        background: var(--color--foreground--lighter);
       }
 
       &::-ms-fill-lower {
-        background: var(--lighterContrastBGColor);
+        background: var(--color--foreground--lighter);
       }
 
       &::-ms-fill-upper {
-        background: var(--lighterContrastBGColor);
+        background: var(--color--foreground--lighter);
       }
     }
   }
@@ -134,32 +134,32 @@ input[type="range"] {
     cursor: not-allowed;
 
     &::-webkit-slider-runnable-track {
-      background: var(--lighterContrastBGColor);
+      background: var(--color--foreground--lighter);
       cursor: not-allowed;
     }
 
     &::-webkit-slider-thumb {
-      background: var(--lightContrastBGColor);
+      background: var(--color--foreground--light);
       cursor: not-allowed;
     }
 
     &::-moz-range-thumb {
-      background: var(--lightContrastBGColor);
+      background: var(--color--foreground--light);
       cursor: not-allowed;
     }
 
     &::-moz-range-track {
-      background: var(--lighterContrastBGColor);
+      background: var(--color--foreground--lighter);
       cursor: not-allowed;
     }
 
     &::-ms-thumb {
-      background: var(--lightContrastBGColor);
+      background: var(--color--foreground--light);
       cursor: not-allowed;
     }
 
     &::-ms-track {
-      background: var(--lighterContrastBGColor);
+      background: var(--color--foreground--lighter);
       cursor: not-allowed;
     }
   }

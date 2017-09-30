@@ -8,7 +8,7 @@
  */
 input[type="file"] {
   background: var(--white);
-  color: var(--lightContrastBGColor);
+  color: var(--color--foreground--light);
   cursor: inherit;
   display: block;
   height: 100%;
@@ -20,7 +20,7 @@ input[type="file"] {
   width: 100%;
 
   &:focus {
-    border: 0.2rem solid var(--lighterContrastBGColor);
+    border: 0.2rem solid var(--color--foreground--lighter);
   }
 
   &::-webkit-file-upload-button {
@@ -29,22 +29,22 @@ input[type="file"] {
 
   &::-ms-value {
     border: 0;
-    color: var(--lightContrastBGColor);
+    color: var(--color--foreground--light);
     padding: 0 1rem;
   }
 
   &::-ms-browse {
-    background-color: var(--defaultColor);
+    background-color: var(--color);
     border: 0.2rem solid transparent;
-    border-radius: var(--defaultBorderRadius);
-    color: var(--lightestContrastBGColor);
+    border-radius: var(--border-radius);
+    color: var(--color--foreground--lightest);
     font-weight: 700;
   }
 
   &::before {
-    background-color: var(--defaultColor);
-    border-radius: var(--defaultBorderRadius) 0 0 var(--defaultBorderRadius);
-    color: var(--lightestContrastBGColor);
+    background-color: var(--color);
+    border-radius: var(--border-radius) 0 0 var(--border-radius);
+    color: var(--color--foreground--lightest);
     content: attr(title);
     display: inline-block;
     font-weight: 700;
@@ -72,16 +72,16 @@ input[type="file"] {
   }
 
   &:disabled {
-    color: var(--lighterContrastBGColor);
+    color: var(--color--foreground--lighter);
     cursor: not-allowed;
 
     &::before,
     &:hover::before {
-      background-color: var(--lighterContrastBGColor);
+      background-color: var(--color--foreground--lighter);
     }
 
     &::-ms-browse {
-      background-color: var(--lighterContrastBGColor);
+      background-color: var(--color--foreground--lighter);
     }
   }
 }

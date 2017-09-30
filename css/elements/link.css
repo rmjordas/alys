@@ -8,7 +8,7 @@
  * Max Specifity: 11 (0-1-1)
  */
 a {
-  color: var(--defaultColor);
+  color: var(--color);
   text-decoration: none;
 
   &:hover,

@@ -5,11 +5,10 @@
    */
 
   /* INPUT */
-  --inputFocusedBackgroundColor: var(--white);
-  --inputFocusedColor: var(--darkGray);
-  --inputInvalidFocusedPlaceholderColor: var(--lighterContrastBGColor);
-  --inputInvalidBorder: 0.2rem solid var(--errorColor);
-  --inputInvalidPlaceholderColor: var(--errorColor);
-  --inputValidBorder: 0.2rem solid var(--successColor);
+  --input--background-color--focused: var(--white);
+  --input--color--focused: var(--gray--dark);
+  --input--invalid--border: 0.2rem solid var(--color--error);
+  --input--placeholder--invalid--color: var(--color--error);
+  --input--placeholder--invalid--focused: var(--color--foreground--lighter);
+  --input--valid--border: 0.2rem solid var(--color--success);
 }
-

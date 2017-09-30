@@ -7,16 +7,16 @@
  * Max Specifity: 22 (0-2-2)
  */
 fieldset {
-  border: var(--fieldsetBorder);
-  border-radius: var(--fieldsetBorderRadius);
-  margin-bottom: var(--elementDefaultBottomMargin);
-  padding-top: var(--fieldsetTopPadding);
+  border: var(--fieldset--border);
+  border-radius: var(--fieldset--border-radius);
+  margin-bottom: var(--element--margin-bottom);
+  padding-top: var(--fieldset--padding-top);
   position: relative;
 
   & legend {
     display: block;
-    font-family: var(--fieldsetLegendFont);
-    font-size: var(--fieldsetLegendFontSize);
+    font-family: var(--fieldset__legend--font);
+    font-size: var(--fieldset__legend--font-size);
     height: 2.058em;
     overflow: hidden;
     position: absolute;
@@ -26,17 +26,17 @@ fieldset {
 
 label {
   display: block;
-  margin-bottom: var(--labelBottomMargin);
-  font-weight: var(--labelFontWeight);
+  margin-bottom: var(--label--margin-bottom);
+  font-weight: var(--label--font-weight);
 }
 
 input,
 textarea,
 select {
   background-color: transparent;
-  border: var(--textFieldBorder);
-  border-radius: var(--roundedRectangleMarginAll);
-  height: var(--textFieldHeight);
+  border: var(--textfield--border);
+  border-radius: var(--rounded-rectangle--margin);
+  height: var(--textfield--height);
   outline: none;
   padding: 0 1rem;
   width: 100%;
@@ -45,8 +45,8 @@ select {
 input:focus,
 textarea:focus,
 select:focus {
-  background-color: var(--textFieldFocusedBackgroundColor);
-  border: var(--textFieldFocusedBorder);
+  background-color: var(--textfield--background-color--focus);
+  border: var(--textfield--border--focus);
 }
 
 button,
@@ -61,35 +61,35 @@ textarea {
 
 input[required]:valid {
   background-color: transparent;
-  border: var(--inputValidBorder);
-  color: var(--darkestContrastBGColor);
+  border: var(--input--valid--border);
+  color: var(--color--foreground--darkest);
   outline: none;
 }
 
 input:invalid {
   background-color: transparent;
-  border: var(--inputInvalidBorder);
-  color: var(--darkestContrastBGColor);
+  border: var(--input--invalid--border);
+  color: var(--color--foreground--darkest);
   outline: none;
 
   &::placeholder {
-    color: var(--inputInvalidPlaceholderColor);
+    color: var(--input--placeholder--invalid--color);
   }
 
   &:focus {
-    background-color: var(--inputFocusedBackgroundColor);
-    border: var(--inputInvalidBorder);
-    color: var(--inputFocusedColor);
+    background-color: var(--input--background-color--focused);
+    border: var(--input--invalid--border);
+    color: var(--input--color--focused);
 
     &::placeholder {
-      color: var(--inputInvalidFocusedPlaceholderColor);
+      color: var(--input--placeholder--invalid--focused);
     }
   }
 }
 
 textarea {
-  min-height: var(--textareaMinHeight);
-  padding: var(--textareaPadding);
+  min-height: var(--textarea--min-height);
+  padding: var(--textarea--padding);
   width: 100%;
 }
 
@@ -105,12 +105,12 @@ select {
   }
 
   &:disabled {
-    color: var(--lighterContrastBGColor);
+    color: var(--color--foreground--lighter);
     cursor: not-allowed;
   }
 
   & optgroup,
   & option {
-    color: var(--defaultColor);
+    color: var(--color);
   }
 }

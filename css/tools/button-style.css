@@ -9,12 +9,12 @@
  */
 :root {
   --button-style: {
-    background-color: var(--defaultColor);
+    background-color: var(--color);
     border: 0;
     border-radius: 0.5rem;
-    color: var(--lightestContrastBGColor);
+    color: var(--color--foreground--lightest);
     font-weight: 700;
-    margin-bottom: var(--elementDefaultBottomMargin);
+    margin-bottom: var(--element--margin-bottom);
     padding: 1rem 1.5rem;
     transition: all 0.2s ease-in;
   }
@@ -24,7 +24,7 @@
   }
 
   --button-style--not-disabled--active: {
-    background-color: var(--successColor);
+    background-color: var(--color--success);
     transform: scale(0.95, 0.95);
     transition: all 0ms;
   }
@@ -34,13 +34,13 @@
   }
 
   --button-style--not-disabled--hover: {
-    background-color: var(--defaultColorHover);
+    background-color: var(--color--hover);
     color: var(--white);
   }
 
   --button-style--disabled: {
-    background-color: var(--lighterContrastBGColor);
-    color: var(--lightContrastBGColor);
+    background-color: var(--color--foreground--lighter);
+    color: var(--color--foreground--light);
     cursor: not-allowed;
   }
 }

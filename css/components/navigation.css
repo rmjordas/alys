@@ -10,10 +10,10 @@
  * Max Specifity: 24 (0-2-4)
  */
 nav[role="navigation"] {
-  background-color: var(--navbarBackgroundColor);
-  color: var(--navbarColor);
+  background-color: var(--navbar--background-color);
+  color: var(--navbar--color);
   font-weight: 700;
-  width: var(--componentMaxWidthDefault);
+  width: var(--component--width--max);
   max-width: 100%;
 
   @supports (display: grid) {
@@ -23,26 +23,26 @@ nav[role="navigation"] {
   & > ul {
     display: flex;
     margin: 0 auto;
-    max-width: var(--navbarContentWidth);
-    padding-left: var(--componentPaddingDefault);
+    max-width: var(--navbar__content--width--max);
+    padding-left: var(--component--padding);
     justify-content: space-between;
 
     & li {
       flex-wrap: nowrap;
-      line-height: var(--navbarHeightDefault);
-      padding-right: var(--navbarItemRightPadding);
+      line-height: var(--navbar--height);
+      padding-right: var(--navbar--padding-right);
 
       &:first-of-type {
         flex: 0.8;
       }
 
       & a {
-        color: var(--navbarAnchorColor);
+        color: var(--navbar__anchor--color);
         text-decoration: none;
 
         &:hover {
           background-color: transparent;
-          color: var(--navbarAnchorColorHover);
+          color: var(--navbar__anchor--color--hover);
           text-decoration: none;
         }
       }

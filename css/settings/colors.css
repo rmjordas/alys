@@ -6,13 +6,13 @@
    * identifiers
    */
   --black: #000;
-  --candyCorn: #fbe655;
+  --candy-corn: #fbe655;
   --carnation: #f35667;
   --cerise: #da49b2;
-  --codGray: #171717;
+  --cod-gray: #171717;
   --crusta: #fd763f;
   --gallery: #efefef;
-  --jungleGreen: #2eaa86;
+  --jungle-green: #2eaa86;
   --lochmara: #0579c6;
   --thunderbird: #cf1b1a;
   --tundora: #4a4a4a;
@@ -20,37 +20,41 @@
   --white: #fff;
 
   /* =====================================
-   * Color Pallette
+   * Color Pallette (Simple)
    * =====================================
    * Color names approximated to simpler
    * names
    */
-  --blackish: var(--codGray);
+  --blackish: var(--cod-gray);
   --blue: var(--lochmara);
-  --darkGray: var(--tundora);
-  --green: var(--jungleGreen);
-  --lightGray: var(--westar);
+  --gray--dark: var(--tundora);
+  --gray--light: var(--westar);
+  --green: var(--jungle-green);
   --orange: var(--crusta);
   --pink: var(--carnation);
   --purple: var(--cerise);
   --red: var(--thunderbird);
   --whiteish: var(--gallery);
-  --yellow: var(--candyCorn);
+  --yellow: var(--candy-corn);
 
   /* =====================================
    * Color Aliases
    * =====================================
    */
-  --darkestContrastBGColor: var(--blackish);
-  --defaultColor: var(--blue);
-  --defaultColorHover: color(var(--defaultColor) lightness(50%));
-  --deleteColor: var(--pink);
-  --errorColor: var(--pink);
-  --insertColor: var(--green);
-  --lightContrastBGColor: var(--darkGray);
-  --lighterContrastBGColor: var(--lightGray);
-  --lightestContrastBGColor: var(--whiteish);
-  --markColor: var(--yellow);
-  --successColor: var(--green);
-  --warningColor: var(--orange);
+  --color: var(--blue);
+  --color--delete: var(--pink);
+  --color--error: var(--pink);
+  --color--foreground--darkest: var(--blackish);
+  --color--foreground--light: var(--gray--dark);
+  --color--foreground--lighter: var(--gray--light);
+  --color--foreground--lightest: var(--whiteish);
+  --color--background--darkest: var(--blackish);
+  --color--background--light: var(--gray--dark);
+  --color--background--lighter: var(--gray--light);
+  --color--background--lightest: var(--whiteish);
+  --color--hover: color(var(--color) lightness(50%));
+  --color--insert: var(--green);
+  --color--mark: var(--yellow);
+  --color--success: var(--green);
+  --color--warning: var(--orange);
 }

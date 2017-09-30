@@ -8,6 +8,6 @@
  * Max Specifity: 1 (0-0-1)
  */
 hr {
-  border-top: var(--horizontalRuleTopBorder);
+  border-top: var(--horizontal-rule--border-top);
   border-width: 0;
 }

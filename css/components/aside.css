@@ -10,14 +10,14 @@
 aside[role="complementary"] {
   margin: 0 auto;
   max-width: 100%;
-  padding: 0 var(--componentPaddingDefault);
+  padding: 0 var(--component--padding);
 
   @supports (display: grid) {
     grid-area: aside;
-    width: calc(100% - (2 * var(--componentPaddingDefault)));
+    width: calc(100% - (2 * var(--component--padding)));
 
     @media (--vpPhone) {
-      width: var(--pageMaxWidthDefault);
+      width: var(--page--width);
       padding: 0;
     }
   }
@@ -25,7 +25,7 @@ aside[role="complementary"] {
   /* lt Edge 16 */
   @supports (display: -ms-grid) {
     display: block;
-    padding: 0 var(--componentPaddingDefault);
+    padding: 0 var(--component--padding);
     margin: 0 auto;
     max-width: 96rem;
   }
@@ -33,7 +33,7 @@ aside[role="complementary"] {
   /* lte IE 11 */
   @media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {
     display: block;
-    padding: 0 var(--componentPaddingDefault);
+    padding: 0 var(--component--padding);
     margin: 0 auto;
     max-width: 96rem;
   }

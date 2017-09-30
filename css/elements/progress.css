@@ -11,7 +11,7 @@
 progress {
   appearance: none;
   border: none;
-  border-radius: var(--defaultBorderRadius);
+  border-radius: var(--border-radius);
   display: inline-block;
   height: 2.4rem;
   width: 100%;
@@ -19,26 +19,26 @@ progress {
   &[value] {
     appearance: none;
     border: none;
-    border-radius: var(--defaultBorderRadius);
-    color: var(--defaultColor);
+    border-radius: var(--border-radius);
+    color: var(--color);
   }
 
   &::-webkit-progress-bar {
-    background-color: var(--lightestContrastBGColor);
+    background-color: var(--color--foreground--lightest);
   }
 
   &::-webkit-progress-value {
-    background-color: var(--defaultColor);
+    background-color: var(--color);
   }
 
   &::-webkit-progress-bar,
   &::-webkit-progress-value {
-    border-radius: var(--defaultBorderRadius);
+    border-radius: var(--border-radius);
   }
 
   &::-moz-progress-bar,
   &::-webkit-progress-value {
-    background-color: var(--defaultColor);
+    background-color: var(--color);
   }
 
   &:indeterminate {
@@ -60,8 +60,8 @@ progress {
         ),
         linear-gradient(
           90deg,
-          var(--defaultColor),
-          var(--errorColor)
+          var(--color),
+          var(--color--error)
         );
       background-size: 3.5rem 2.4rem, 100% 100%, 100% 100%;
       border-radius: 2px;
@@ -86,8 +86,8 @@ progress {
         ),
         linear-gradient(
           90deg,
-          var(--defaultColor),
-          var(--errorColor)
+          var(--color),
+          var(--color--error)
         );
       background-size: 3.5rem 2.4rem, 100% 100%, 100% 100%;
       border-radius: 2px;

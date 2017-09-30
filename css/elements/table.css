@@ -12,29 +12,29 @@
 table {
   border-collapse: collapse;
   display: block;
-  font-size: var(--tableFontSize);
+  font-size: var(--table--font-size);
   margin: 0 auto;
-  margin-bottom: var(--elementDefaultBottomMargin);
+  margin-bottom: var(--element--margin-bottom);
   max-width: 100%;
   overflow-x: auto;
   width: fit-content;
 
   & > caption {
     border: 0.2rem solid transparent;
-    color: var(--darkestContrastBGColor);
+    color: var(--color--foreground--darkest);
     font-weight: 600;
     letter-spacing: 0.05rem;
   }
 }
 
 th {
-  background-color: var(--lightestContrastBGColor);
+  background-color: var(--color--foreground--lightest);
   text-transform: uppercase;
 
   @nest thead &,
   tfoot & {
-    background-color: var(--defaultColor);
-    color: var(--lightestContrastBGColor);
+    background-color: var(--color);
+    color: var(--color--foreground--lightest);
   }
 }
 
@@ -56,7 +56,7 @@ th {
 
 tbody {
   & tr {
-    border-bottom: var(--tableRowBottomBorder);
+    border-bottom: var(--table__tr--border-bottom);
   }
 
   & tr:last-child {

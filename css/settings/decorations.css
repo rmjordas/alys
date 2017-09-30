@@ -3,9 +3,9 @@
    * Decorations
    * =====================================
    */
-  --defaultBorder: 0.2rem solid var(--defaultColor);
-  --defaultBorderRadius: 0.3rem;
-  --roundedRectangleUpper: 0.5rem 0.5rem 0 0;
-  --roundedRectangleMarginAll: 0.5rem;
-  --thinLightBorder: 0.1rem solid var(--lighterContrastBGColor);
+  --border: 0.2rem solid var(--color);
+  --border-radius: 0.3rem;
+  --rounded-rectangle--border-radius--upper: 0.5rem 0.5rem 0 0;
+  --rounded-rectangle--margin: 0.5rem;
+  --border--thin--light: 0.1rem solid var(--color--foreground--lighter);
 }

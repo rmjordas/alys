@@ -23,8 +23,8 @@ input[type="submit"]:not(:disabled) {
     @apply --input-button-style--not-disabled--hover;
 
     @media (hover: none) {
-      border: 0.2rem solid var(--defaultColor);
-      color: var(--defaultColor);
+      border: 0.2rem solid var(--color);
+      color: var(--color);
     }
 
     /* For modern browsers

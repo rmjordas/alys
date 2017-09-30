@@ -5,40 +5,40 @@
    */
 
   /* BLOCKQUOTE */
-  --blockquoteBorderRadius: 1rem;
-  --blockquoteLeftBorder: 1rem solid var(--lighterContrastBGColor);
-  --blockquoteMargin: 0 1em var(--elementDefaultBottomMargin);
-  --blockquotePadding: 1rem;
+  --blockquote--border-left: 1rem solid var(--color--foreground--lighter);
+  --blockquote--border-radius: 1rem;
+  --blockquote--margin: 0 1em var(--element--margin-bottom);
+  --blockquote--padding: 1rem;
 
   /* FIELDSET */
-  --fieldsetBorder: 0.3rem solid var(--defaultColor);
-  --fieldsetBorderRadius: 0.8rem;
-  --fieldsetTopPadding: 4.2em;
-  --fieldsetLegendFont: var(--headingFont);
-  --fieldsetLegendFontSize: 2.058em;
+  --fieldset--border: 0.3rem solid var(--color);
+  --fieldset--border-radius: 0.8rem;
+  --fieldset__legend--font: var(--heading--font);
+  --fieldset__legend--font-size: 2.058em;
+  --fieldset--padding-top: 4.2em;
 
   /* FIGURE */
-  --figureImgBorder: 0.3rem solid var(--defaultColor);
+  --figure__img--border: 0.3rem solid var(--color);
 
   /* GENERIC */
-  --elementDefaultBottomMargin: 1.5rem;
-  --textFieldBorder: 0.2rem solid var(--lighterContrastBGColor);
-  --textFieldFocusedBackgroundColor: var(--white);
-  --textFieldFocusedBorder: var(--defaultBorder);
-  --textFieldHeight: 3.8rem;
+  --element--margin-bottom: 1.5rem;
+  --textfield--background-color--focus: var(--white);
+  --textfield--border: 0.2rem solid var(--color--foreground--lighter);
+  --textfield--border--focus: var(--border);
+  --textfield--height: 3.8rem;
 
   /* HORIZONTAL RULE */
-  --horizontalRuleTopBorder: 0.2rem solid var(--lighterContrastBGColor);
+  --horizontal-rule--border-top: 0.2rem solid var(--color--foreground--lighter);
 
   /* LABEL */
-  --labelBottomMargin: 0.25rem;
-  --labelFontWeight: 600;
+  --label--font-weight: 600;
+  --label--margin-bottom: 0.25rem;
 
   /* TABLE */
-  --tableFontSize: 1em;
-  --tableRowBottomBorder: 0.2rem solid var(--lightestContrastBGColor);
+  --table--font-size: 1em;
+  --table__tr--border-bottom: 0.2rem solid var(--color--foreground--lightest);
 
   /* TEXTAREA */
-  --textareaMinHeight: 6.5rem;
-  --textareaPadding: 1rem;
+  --textarea--min-height: 6.5rem;
+  --textarea--padding: 1rem;
 }

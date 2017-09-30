@@ -10,15 +10,15 @@
  * Max Specifity: 11 (0-1-1)
  */
 header[role="banner"] {
-  background-color: var(--bannerBackgroundColor);
-  color: var(--bannerColor);
+  background-color: var(--banner--background-color);
+  color: var(--banner--color);
   display: none;
   grid-area: header;
   justify-self: stretch;
-  padding: var(--bannerPadding);
+  padding: var(--banner--padding);
   text-align: center;
-  width: var(--componentMaxWidthDefault);
   user-select: none;
+  width: var(--component--width--max);
   max-width: 100%;
 
   @media (--vpPhone) {

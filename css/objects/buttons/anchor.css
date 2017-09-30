@@ -8,7 +8,7 @@
  */
 a.btn {
   background-color: transparent;
-  border-radius: var(--defaultBorderRadius);
+  border-radius: var(--border-radius);
   cursor: default;
   display: inline-block;
   font-weight: 700;
@@ -20,24 +20,24 @@ a.btn {
 
   &:hover {
     /* Firefox and IE has no support for @media (hover: hover) */
-    background-color: var(--defaultColorHover);
+    background-color: var(--color--hover);
     color: var(--white);
 
     @media (hover: none) {
-      background-color: var(--defaultColor);
-      color: var(--lightestContrastBGColor);
+      background-color: var(--color);
+      color: var(--color--foreground--lightest);
     }
 
     /* For modern browsers
     @media (hover: hover), (hover: on-demand) {
-      background-color: var(--defaultColorHover);
+      background-color: var(--color--hover);
       color: var(--white);
     } */
   }
 
   &:active {
-    background-color: var(--successColor);
-    color: var(--lightestContrastBGColor);
+    background-color: var(--color--success);
+    color: var(--color--foreground--lightest);
     transition: all 0ms;
   }
 
@@ -46,7 +46,7 @@ a.btn {
   }
 
   &.disabled {
-    color: var(--lighterContrastBGColor);
+    color: var(--color--foreground--lighter);
     cursor: not-allowed;
   }
 

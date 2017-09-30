@@ -7,30 +7,30 @@
  * Max Specifity: 12 (0-1-2)
  */
 meter {
-  background: var(--lightestContrastBGColor);
+  background: var(--color--foreground--lightest);
   border: none;
-  border-radius: var(--defaultBorderRadius);
+  border-radius: var(--border-radius);
   height: 2.4rem;
   width: 100%;
 
   &::-webkit-meter-bar {
-    background: var(--lightestContrastBGColor);
+    background: var(--color--foreground--lightest);
     border: 0;
     border-radius: 0.3rem;
   }
 
   &::-webkit-meter-optimum-value {
-    background: var(--successColor);
+    background: var(--color--success);
     border-radius: 0.3rem;
   }
 
   &::-webkit-meter-suboptimum-value {
-    background: var(--warningColor);
+    background: var(--color--warning);
     border-radius: 0.3rem;
   }
 
   &::-webkit-meter-even-less-good-value {
-    background: var(--errorColor);
+    background: var(--color--error);
     border-radius: 0.3rem;
   }
 
@@ -39,14 +39,14 @@ meter {
   }
 
   &:-moz-meter-optimum::-moz-meter-bar {
-    background: var(--successColor);
+    background: var(--color--success);
   }
 
   &:-moz-meter-sub-optimum::-moz-meter-bar {
-    background: var(--warningColor);
+    background: var(--color--warning);
   }
 
   &:-moz-meter-sub-sub-optimum::-moz-meter-bar {
-    background: var(--errorColor);
+    background: var(--color--error);
   }
 }

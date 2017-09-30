@@ -7,16 +7,16 @@
  * Max Specifity: 1 (0-0-1)
  */
 body {
-  color: var(--darkestContrastBGColor);
-  font-size: var(--baseFontSize);
+  color: var(--color--foreground--darkest);
+  font-size: var(--base--font-size);
   max-width: 100%;
 
   @supports (display: grid) {
     display: grid;
-    grid-gap: 0 var(--componentPaddingDefault);
+    grid-gap: 0 var(--component--padding);
     grid-template:
       "header" 1fr
-      "nav"    var(--navbarHeightDefault)
+      "nav"    var(--navbar--height)
       "main"   auto
       "aside"  auto
       "footer" auto
@@ -25,10 +25,10 @@ body {
     @media (--vpPhone) {
       grid-template:
         "header header header header" 1fr
-        "nav    nav    nav    nav"    var(--navbarHeightDesktop)
+        "nav    nav    nav    nav"    var(--navbar--height--desktop)
         ".      aside  main   ."      auto
         "footer footer footer footer" auto
-        / 1fr var(--asideWidthDesktop) var(--mainWidthDesktop) 1fr;
+        / 1fr var(--aside--width--desktop) var(--main--width--desktop) 1fr;
     }
   }
 

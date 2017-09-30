@@ -12,22 +12,22 @@ acronym {
 }
 
 del {
-  color: var(--deleteColor);
+  color: var(--color--delete);
 }
 
 ins {
-  color: var(--insertColor);
+  color: var(--color--insert);
 }
 
 mark {
-  background-color: var(--markColor);
-  border-radius: var(--inlineBorderRadius);
+  background-color: var(--color--mark);
+  border-radius: var(--inline--border-radius);
 }
 
 code {
-  background-color: var(--lightestContrastBGColor);
-  border-radius: var(--inlineBorderRadius);
-  font-size: var(--smallerFontSize);
-  padding: var(--inlineCodePadding);
+  background-color: var(--color--foreground--lightest);
+  border-radius: var(--inline--border-radius);
+  font-size: var(--small--font-size);
+  padding: var(--code--padding);
   white-space: pre-line;
 }

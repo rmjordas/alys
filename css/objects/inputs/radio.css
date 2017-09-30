@@ -14,11 +14,11 @@ input[type="radio"] {
   width: 2rem;
 
   &:focus {
-    outline: 0.1rem dotted var(--defaultColor);
+    outline: 0.1rem dotted var(--color);
   }
 
   &:checked {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3E%3Ccircle r='2' fill='%230579c6'/%3E%3C/svg%3E");
-    border: 0.2rem solid var(--defaultColor);
+    border: 0.2rem solid var(--color);
   }
 }

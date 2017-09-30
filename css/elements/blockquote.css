@@ -8,11 +8,11 @@
  * Max Specifity: 12 (0-1-2)
  */
 blockquote {
-  background-color: var(--lightestContrastBGColor);
-  border-left: var(--blockquoteLeftBorder);
-  border-radius: var(--blockquoteBorderRadius);
-  margin: var(--blockquoteMargin);
-  padding: var(--blockquotePadding);
+  background-color: var(--color--foreground--lightest);
+  border-left: var(--blockquote--border-left);
+  border-radius: var(--blockquote--border-radius);
+  margin: var(--blockquote--margin);
+  padding: var(--blockquote--padding);
 
   & p {
     font-style: italic;

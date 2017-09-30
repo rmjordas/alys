@@ -8,8 +8,8 @@
  */
 input[disabled],
 input:disabled {
-  background-color: var(--lightestContrastBGColor);
-  border: 0.2rem solid var(--lightestContrastBGColor);
-  color: var(--lightGray);
+  background-color: var(--color--foreground--lightest);
+  border: 0.2rem solid var(--color--foreground--lightest);
+  color: var(--gray--light);
   cursor: not-allowed;
 }

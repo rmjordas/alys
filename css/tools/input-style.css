@@ -10,11 +10,11 @@
 :root {
   --input-button-style: {
     background-color: transparent;
-    border: var(--defaultBorder);
+    border: var(--border);
     border-radius: 0.5rem;
-    color: var(--defaultColor);
+    color: var(--color);
     font-weight: 700;
-    margin-bottom: var(--elementDefaultBottomMargin);
+    margin-bottom: var(--element--margin-bottom);
     min-width: 0;
     padding: 0 1.5rem;
     transition: all 0.2s ease-in;
@@ -22,8 +22,8 @@
   }
 
   --input-button-style--not-disabled--active: {
-    border: 0.2rem solid var(--successColor);
-    color: var(--successColor);
+    border: 0.2rem solid var(--color--success);
+    color: var(--color--success);
     transform: scale(0.95, 0.95);
     transition: all 0ms;
   }
@@ -33,14 +33,14 @@
   }
 
   --input-button-style--not-disabled--hover: {
-    border: 0.2rem solid var(--defaultColorHover);
-    color: var(--defaultColorHover);
+    border: 0.2rem solid var(--color--hover);
+    color: var(--color--hover);
   }
 
   --input-style--disabled: {
     background-color: transparent;
-    border: 0.2rem solid var(--lighterContrastBGColor);
-    color: var(--lighterContrastBGColor);
+    border: 0.2rem solid var(--color--foreground--lighter);
+    color: var(--color--foreground--lighter);
     cursor: not-allowed;
   }
 }

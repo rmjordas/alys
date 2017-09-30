@@ -7,10 +7,10 @@
  * Max Specifity: 11 (0-1-1)
  */
 html {
-  font-family: var(--baseFont);
-  font-size: var(--rootFontSize);
+  font-family: var(--base--font-family);
+  font-size: var(--root--font-size);
   height: 100%;
-  line-height: var(--baseLineHeight);
+  line-height: var(--base--line-height);
   max-width: 100vw;
 }
 
@@ -30,24 +30,24 @@ ul {
 }
 
 p {
-  font-size: var(--paragraphFontSize);
-  margin: var(--paragraphMargin);
+  font-size: var(--paragraph--font-size);
+  margin: var(--paragraph--margin);
 }
 
 pre {
-  background: var(--lightestContrastBGColor);
-  border-radius: var(--inlineCodePadding);
+  background: var(--color--foreground--lightest);
+  border-radius: var(--code--padding);
   overflow-x: auto;
-  padding: var(--inlinePrePadding);
+  padding: var(--pre--padding);
 }
 
 iframe {
-  border: var(--thinLightBorder);
+  border: var(--border--thin--light);
   max-width: 100%;
 }
 
 svg {
-  fill: var(--defaultColor);
+  fill: var(--color);
 }
 
 audio,
@@ -56,24 +56,24 @@ video {
 }
 
 ::selection {
-  background: var(--defaultColor);
-  color: var(--lightestContrastBGColor);
+  background: var(--color);
+  color: var(--color--foreground--lightest);
 }
 
 ::-webkit-scrollbar {
-  background-color: var(--lighterContrastBGColor);
+  background-color: var(--color--foreground--lighter);
   height: 0.8rem;
   width: 0.5rem;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--lightContrastBGColor);
+  background: var(--color--foreground--light);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--defaultColorHover);
+  background: var(--color--hover);
 }
 
 ::-webkit-scrollbar-thumb:active {
-  background: var(--lightContrastBGColor);
+  background: var(--color--foreground--light);
 }

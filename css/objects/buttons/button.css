@@ -22,8 +22,8 @@ button[type="submit"] {
       @apply --button-style--not-disabled--hover;
 
       @media (hover: none) {
-        background-color: var(--defaultColor);
-        color: var(--lightestContrastBGColor);
+        background-color: var(--color);
+        color: var(--color--foreground--lightest);
       }
 
       /* For modern browsers

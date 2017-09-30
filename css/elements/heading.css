@@ -12,30 +12,30 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: var(--headingFont);
-  margin: var(--headingMargin);
+  font-family: var(--heading--font);
+  margin: var(--heading--margin);
 }
 
 h1 {
-  font-size: var(--h1FontSize);
+  font-size: var(--h1--font-size);
 }
 
 h2 {
-  font-size: var(--h2FontSize);
+  font-size: var(--h2--font-size);
 }
 
 h3 {
-  font-size: var(--h3FontSize);
+  font-size: var(--h3--font-size);
 }
 
 h4 {
-  font-size: var(--h4FontSize);
+  font-size: var(--h4--font-size);
 }
 
 h5 {
-  font-size: var(--h5FontSize);
+  font-size: var(--h5--font-size);
 }
 
 h6 {
-  font-size: var(--h6FontSize);
+  font-size: var(--h6--font-size);
 }

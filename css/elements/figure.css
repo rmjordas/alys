@@ -7,10 +7,10 @@
  * Max Specifity: 3 (0-0-3)
  */
 figure {
-  border: var(--figureImgBorder);
+  border: var(--figure__img--border);
   border-radius: 0.5rem;
   box-sizing: border-box;
-  margin: 0 auto var(--elementDefaultBottomMargin);
+  margin: 0 auto var(--element--margin-bottom);
   overflow: hidden;
   padding: 0;
   max-width: fit-content;
@@ -26,8 +26,8 @@ figure {
   }
 
   & figcaption {
-    background-color: var(--defaultColor);
-    color: var(--lightestContrastBGColor);
+    background-color: var(--color);
+    color: var(--color--foreground--lightest);
     font-weight: 300;
     margin: 0;
     padding: 0 1rem;
@@ -48,7 +48,7 @@ figure {
     }
 
     & figcaption {
-      border: var(--figureImgBorder);
+      border: var(--figure__img--border);
       display: table-caption;
     }
   }
@@ -73,7 +73,7 @@ figure {
     }
 
     & figcaption {
-      border: var(--figureImgBorder);
+      border: var(--figure__img--border);
       display: table-caption;
     }
   }

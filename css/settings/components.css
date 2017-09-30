@@ -5,32 +5,32 @@
    */
 
   /* ASIDE */
-  --asideWidthDesktop: 28.8rem;
+  --aside--width--desktop: 28.8rem;
 
   /* FOOTER */
-  --footerBackgroundColor: var(--defaultColor);
-  --footerColor: var(--lightestContrastBGColor);
+  --footer--background-color: var(--color);
+  --footer--color: var(--color--foreground--lightest);
 
   /* GENERIC */
-  --componentMaxWidthDefault: 100vw;
-  --componentPaddingDefault: 0.8rem;
-  --pageMaxWidthDefault: 100vw;
+  --component--width--max: 100vw;
+  --component--padding: 0.8rem;
+  --page--width: 100vw; /* TODO: move to root styles */
 
   /* BANNER */
-  --bannerBackgroundColor: var(--defaultColor);
-  --bannerColor: var(--lightestContrastBGColor);
-  --bannerPadding: 1.6rem 0;
+  --banner--background-color: var(--color);
+  --banner--color: var(--color--foreground--lightest);
+  --banner--padding: 1.6rem 0;
 
   /* MAIN */
-  --mainWidthDesktop: 67.2rem;
+  --main--width--desktop: 67.2rem;
 
   /* NAVBAR */
-  --navbarAnchorColor: var(--lightestContrastBGColor);
-  --navbarAnchorColorHover: var(--defaultColor);
-  --navbarBackgroundColor: var(--black);
-  --navbarColor: var(--lightestContrastBGColor);
-  --navbarContentWidth: 96rem;
-  --navbarHeightDefault: 6rem;
-  --navbarHeightDesktop: 6rem;
-  --navbarItemRightPadding: 1.6rem;
+  --navbar__anchor--color: var(--color--foreground--lightest);
+  --navbar__anchor--color--hover: var(--color);
+  --navbar--background-color: var(--black);
+  --navbar--color: var(--color--foreground--lightest);
+  --navbar__content--width--max: 96rem;
+  --navbar--height: 6rem;
+  --navbar--height--desktop: 6rem;
+  --navbar--padding-right: 1.6rem;
 }

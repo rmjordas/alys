@@ -9,8 +9,8 @@
  */
 footer[role="contentinfo"] {
   align-self: stretch;
-  background-color: var(--footerBackgroundColor);
-  color: var(--footerColor);
+  background-color: var(--footer--background-color);
+  color: var(--footer--color);
   grid-area: footer;
   padding: 2rem;
   text-align: center;
@@ -18,6 +18,6 @@ footer[role="contentinfo"] {
 
   & a,
   & a:hover {
-    color: var(--footerColor);
+    color: var(--footer--color);
   }
 }
