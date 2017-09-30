@@ -18,6 +18,7 @@ header[role="banner"] {
   padding: var(--bannerPadding);
   text-align: center;
   width: var(--componentMaxWidthDefault);
+  user-select: none;
   max-width: 100%;
 
   @media (--vpPhone) {
