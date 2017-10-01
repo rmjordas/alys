@@ -44,13 +44,13 @@
  * Resets, normalize, etc.
  */
 @import 'generic/normalize';
+@import 'generic/normalys';
 
 /* =====================================
  * Elements
  * =====================================
  * Rule-sets have type/simple selectors only
  */
-@import 'elements/base';
 @import 'elements/blockquote';
 @import 'elements/body';
 @import 'elements/figure';
