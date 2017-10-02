@@ -1,9 +1,3 @@
-## 2017-xx-xx
-
-### 0.1.0-beta.6
-
-- https://codepen.io/gunnarbittersmann/pen/yXwQgL?editors=1000
-
 ## 2017-10-01
 
 ### 0.1.0-beta.5
