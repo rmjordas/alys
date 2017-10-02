@@ -12,17 +12,9 @@ body {
   max-width: 100%;
 
   @supports (display: grid) {
-    display: grid;
-    grid-gap: 0 var(--component--padding);
-    grid-template:
-      "header" 1fr
-      "nav"    var(--navbar--height)
-      "main"   auto
-      "aside"  auto
-      "footer" auto
-      / 1fr;
-
     @media (--vpPhone) {
+      display: grid;
+      grid-gap: 0 var(--component--padding);
       grid-template:
         "header header header header" 1fr
         "nav    nav    nav    nav"    var(--navbar--height--desktop)
