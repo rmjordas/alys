@@ -1,3 +1,66 @@
+## 2017-xx-xx
+
+### 0.1.0-beta.6
+
+- https://codepen.io/gunnarbittersmann/pen/yXwQgL?editors=1000
+
+## 2017-10-01
+
+### 0.1.0-beta.5
+
+- Added:
+  + `.eslintrc.json` for linting build tools
+  + `yarn.lock`
+  + `css/`:
+    * `objects/`:
+      - `buttons/`:
+        + `anchor.css`
+        + `button.css`
+        + `input.css`
+      - `inputs/`:
+        + `file.css`
+        + `search.css`
+        + `color.css`
+        + `range.css`
+    * `elements/`:
+      - `figure.css`
+      - `meter.css`
+  + Base font "Nunito"; "Quicksand" and system-ui fonts are fallback
+  + Styles for inline elements as `css/elements/inline.css`
+  + Inline documentation for each style sheet file
+  + Styles for anchor elements inside the `footer` element
+  + Rule-set for `::selection` pseudo-class
+  + Rule-set for custom Webkit scrollbar and scrollbar "thumbs"
+  + Fallback styles for outdated browsers that don't support [CSS Grid][]
+  + yarn script: `start:testpage`
+- Rename:
+  + `css/components/header.css` to `css/components/banner.css`
+  + `.stylelintrc.json` to `.stylelintrc`
+- Fixed:
+  + Component page layout to use `grid-gap` instead of individual padding
+  + Styles for `disabled` `input` and `button` elements
+  + Fix "sticky hover" issue on touch device
+  + Horizontal rule thickness
+  + `font-size` and `padding`s of `code` element rule-sets
+  + Cursor appearance to be `not-allowed` for `disabled` elements
+  + Fix overflow issue with long strings
+  + Element's `outline` property values to be `none`
+  + Responsiveness of table elements
+  + Order of `@import` declarations in `css/alys.css`
+  + File-level order of declaration
+  + Various typos, grammatical and syntax errors
+- Remove:
+  + Unnecessary vendor prefixes on declarations
+  + `package-lock.json`
+- Updated:
+  + Styles to follow style guide in: `docs/img/style-guide.png`
+  + Declarations to use custom property syntax
+  + Declaration structure to utilize nesting selectors
+  + yarn script: `dev`
+  + Package development dependencies list
+
+[CSS Grid]: https://www.w3.org/TR/css3-grid-layout/
+
 ## 2017-08-25
 
 ### 0.1.0-beta.4
