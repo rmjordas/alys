@@ -8,14 +8,15 @@
  *    @apply --StylesForThisBreakpoint
  * }
  *
- * Current version of postcss-cssnext
- * does not support application of
- * custom
- * variables in place of width ranges,
- * e.g.:
+ * Current version of postcss-custom-media
+ * does not support application of custom
+ * properties in place of width ranges,
+ * i.e.:
  *
- * `@custom-media --vpPhone (var(--mqPhone));`
- *
+ * ```css
+ * :root { --mqPhone: 54.4em; }
+ * `@custom-media --vpPhone (var(--mqPhone));
+ * ```
  */
 
 @custom-media --vpPhone (width >= 54.4em);
