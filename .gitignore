@@ -62,3 +62,5 @@ typings/
 # Local setup
 .vscode/
 dist/
+.npmignore
+postcss.build.config.js
