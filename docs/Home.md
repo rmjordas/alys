@@ -435,17 +435,17 @@ The table below summarizes alys' support for browsers:
 
 ### Use valid HTML
 
-To ensure that your web site will work with alys (and other frameworks for that
-matter), use valid HTML5 syntax. One online tool to check whether your page is
-valid HTML is the [Nu Html Checker](https://checker.html5.org/).
+To ensure that your web site will work with `alys`, use valid HTML5 syntax. A
+great online tool to check whether your page is valid HTML is the
+[`Nu Html Checker`](https://checker.html5.org/).
 
-There are three options for you to provide your source code. You can give it the
-URL of your web site by choosing the "address" option for the select box
-labeled, "Check by". The other two options will allow you to specify a file from
-your computer and upload it to Nu Html Checker; and directly input you code in a
-textbox.
+There are three options for you to provide your source code to Nu Html Checker.
+You can give it the URL of your web site by choosing the "address" option for
+the select box labeled, "Check by". The other two options will allow you to
+specify a file from your computer and upload it to `Nu Html Checker`; and
+directly input you code in a textbox.
 
-_Note: alys relies on specific HTML attributes which Nu Html Checker will give
+_Note: `alys` relies on specific HTML attributes which Nu Html Checker will give
 you warnings and say that these attributes are not necessary. The reason why
 these attributes are used are explained in the Accessibility Checklist section
 below._
