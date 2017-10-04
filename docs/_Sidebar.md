@@ -1,6 +1,8 @@
 **Quick Start**
 
 * [Getting Started](Home#getting-started)
+* [ITCSS Architecture](Home#inverted-triangle-itcss-architecture)
+* [PostCSS](Home#postcss)
 * [Browser Support](Home#browser-support)
 * [Best Practices](Home#best-practices)
 
@@ -19,4 +21,5 @@
 
 * [FAQ](FAQ)
 * [Change Log](CHANGELOG)
+* [Code of Conduct](CODE_OF_CONDUCT)
 * [Contributing Guide](CONTRIBUTING)
