@@ -407,6 +407,17 @@ Explorer and with greater than 1% global usage.
 }
 ```
 
+### Why Exclude Internet Explorer
+
+Internet Explorer is an outdated and insecure browser and users who still use it
+should consider upgrading to a better supported browser such as Mozilla Firefox
+or Google Chrome.
+
+That said, occasional testing is still done in Internet Explorer 11 but any
+feature that works with modern browsers and won't render correctly in Internet
+Explorer will not be patched. If you have a solution for these issues, you are
+very much welcome to open a [pull request](CONTRIBUTING.md).
+
 The table below summarizes alys' support for browsers:
 
 | Platform | ![firefox] | ![chrome] | ![safari] | ![opera] | ![edge] |
