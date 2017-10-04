@@ -463,4 +463,60 @@ standard CSS syntax and not worry about vendor-prefixes.
 
 ### Accessibility Checklist
 
-_TODO_
+Elements with the `role` attribute, mentioned in an earlier section (on using
+valid HTML), will make the HTML Validator output warnings saying these
+attributes are "redunant". But according to The A11Y Project,
+
+> In HTML5, several of the landmark roles are implicit via the native structural
+> element which is supported by most modern desktop browsers with the exception
+> of IE and iOS Safari.
+
+These attributes are also necessary for setting up the default layout of the web
+page.
+
+Summarized below are suggestions from the
+[Web Accessibility Checklist by The A11Y Project][a11y-checklist] that you can
+incorporate in your projects:
+
+[a11y-checklist]: http://a11yproject.com/checklist.html
+
+- Landmarks (for iOS and IE browsers)
+  + [ ] `<header role="banner">`
+  + [ ] `<nav role="navigation">`
+  + [ ] `<main role="main">`
+  + [ ] `<article role="article">`
+  + [ ] `<aside role="complementary">`
+  + [ ] `<footer role="contentinfo">`
+  + [ ] `<form role="search">`
+- Language attribute
+  + [ ] `<html lang="en">`
+- Document Outline
+  + [ ] Use semantic headings and structure
+- Links:
+  + [ ] Ensure links have `:focus` state.
+  + [ ] Ensure links are recognizable (underlined).
+  + [ ] Provide a “Skip to main content” link.
+- [ ] Images
+  + [ ] Use appropriate `alt` text
+- JavaScript
+  + [ ] Unobtrusive JavaScript
+  + [ ] No-JS Alternatives
+- Forms
+  + [ ] Logical layout
+  + [ ] Associated label for all form controls (e.g. `input`, `select` etc.)
+  + [ ] Make sure `placeholder` attributes are NOT being used in place of
+    `label` tags.
+  + [ ] Group related `form` elements with `fieldset` and describe the group
+    with `legend`
+- Media/Audio
+  + [ ] Provide text transcripts
+  + [ ] Synchronized subtitles for videos
+- Color and Contrast
+  + [ ] Test color contrast
+- Test for different types of color blindness
+  + [ ] _Deuteranopia_
+  + [ ] _Protanopia_
+  + [ ] _Tritanopia_
+- Testing
+  + [ ] Test using a screen reader
+  + [ ] Test using keyboard only
