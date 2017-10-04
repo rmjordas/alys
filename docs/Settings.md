@@ -115,19 +115,15 @@ The default color palette is defined in [`css/settings/colors.css`][colors.css]:
 
 ## Type
 
-Default font is set by the `system-ui` keyword which currently resolved by
-`postcss-font-family-system-ui`, a plugin for PostCSS,to a pre-defined set of
-commonly used typefaces in modern devices.
+The base typeface for text is called _Nunito_, a sans-serif typeface with
+rounded typographic features. Headings and user interfaces use a similar looking
+typeface called _Quicksand_. Both are not available by default to most modern
+devices so they should be provided to the user's browser.
 
-```css
-font-family: system-ui;
-```
-
-The code above will be processed into:
-
-```css
-font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue;
-```
+The root typeface is set by the `system-ui` keyword which currently resolved by
+`postcss-font-family-system-ui`, a plugin for PostCSS, to a pre-defined set of
+commonly used typefaces in modern devices. This entry serves as the fallback
+font-family, typically when the user blocks downloading fonts on their devices.
 
 `system-ui` is defined in [CSS Fonts Module Level 4][], which is described as a:
 
@@ -135,3 +131,19 @@ font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxy
     interface font on the platform on which the [User Agent] is running.
 
 [CSS Fonts Module Level 4]: https://drafts.csswg.org/css-fonts-4/#system-ui-def
+
+```css
+html {
+  font-family: system-ui;
+}
+```
+
+The code above will be processed into:
+
+```css
+html {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue;
+}
+```
+
+
