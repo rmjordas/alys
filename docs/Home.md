@@ -452,7 +452,14 @@ below._
 
 ### Use valid CSS
 
-_TODO_
+Similar to using valid HTML, avoiding non-standard CSS syntax like
+vendor-prefixed property declarations, will improve the compatibility of your
+styles across all browsers.
+
+Realistically, however, some projects need to support old and insecure browsers
+like Internet Explorer, etc. Packages like `autoprefixer`, help make development
+easier (and less sucky). It provides a way for developers to focus on writing
+standard CSS syntax and not worry about vendor-prefixes.
 
 ### Accessibility Checklist
 
