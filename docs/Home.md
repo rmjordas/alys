@@ -1,4 +1,14 @@
-**alys** is a minimal-configuration, "drop-in" CSS boilerplate.
+## Description
+
+`alys` is a modern CSS toolkit made for modern web pages.
+
+Features:
+
+* Future CSS syntax
+* CSS Grid Layout
+* ITCSS architecture
+
+[CSSNext]: https://cssnext.io
 
 Please see the [[FAQ]] for common questions, and other useful information.
 
