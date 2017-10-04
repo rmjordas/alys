@@ -1,4 +1,4 @@
-**Quick Start**
+**Home**
 
 * [Getting Started](Home#getting-started)
 * [ITCSS Architecture](Home#inverted-triangle-itcss-architecture)
