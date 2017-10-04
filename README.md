@@ -1,7 +1,18 @@
 # alys [![Build Status](https://travis-ci.org/mds3dstn71/alys.svg?branch=master)](https://travis-ci.org/mds3dstn71/alys)
 
+## Description
 
-A modern CSS toolkit
+`alys` is a modern CSS toolkit.
+
+Features:
+
+* Future CSS syntax
+* CSS Grid
+* ITCSS architecture
+
+Please see the [FAQ][] for common questions, and other useful information.
+
+[FAQ]: https://github.com/mds3dstn71/alys/wiki/FAQ
 
 ## Quick Start
 
