@@ -34,12 +34,33 @@ https://unpkg.com/alys@latest/dist/alys.min.css
 yarn install alys
 ```
 
+## Latest Release Highlights
 
 
 
 
 
 
+### v0.1.0-beta.5
+
+* Styles are now based on formal [style guide]
+* Added new _objects_ and _elements_
+* `yarn` is now the default package dependency manager
+* New font stack: "[Nunito], [Quicksand], [system-ui]"
+* Inline documentation in every CSS file
+* Fallback styles for outdated browsers that don't support [CSS Grid]
+* Various typo, grammar and syntax error fixes 🥇
+
+### Details
+
+* [Full change log](https://github.com/mds3dstn71/alys/blob/master/docs/CHANGELOG.md#010-beta5)
+* [Closed Milestone](https://github.com/mds3dstn71/alys/milestone/2?closed=1)
+
+[style guide]: ../../blob/master/docs/img/style-guide.png
+[Nunito]: https://fonts.google.com/specimen/Nunito
+[Quicksand]: https://fonts.google.com/specimen/Quicksand
+[system-ui]: https://github.com/JLHwung/postcss-font-family-system-ui
+[CSS Grid]: https://www.w3.org/TR/css3-grid-layout/
 
 ## Documentation
 
