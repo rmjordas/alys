@@ -1,6 +1,81 @@
 **Settings** contain the color, font and other constant definitions used in the
 style sheets.
 
+## Custom Properties
+
+### About
+
+TODO `postcss-custom-properties`
+
+### Naming
+
+Custom properties should follow a consistent naming scheme. Custom property
+identifiers are made up of _terms_ or descriptive segments that are separated by
+either a _dunderscore_ (`__`) or _double-dash_ (`--`). The terms are structured
+based on the ruleset to which they apply.
+
+Every term is written in lowercase and multiple words are separated by a single
+dash (`-`). Elements (`body`, `p`, etc.) or pseudo-elements (`::before`, `::after`, etc.).
+
+For _Settings_ and _Elements_:
+
+1. Elements/Pseudo-elements
+2. Target descendant (if any)
+3. Pseudo-elements (if any)
+4. Attribute name
+5. Property name
+6. Pseudo-class
+
+For _Objects_:
+
+1. Class name (prefixed with `c-`)
+2. Pseduo-element (if any)
+3. Attribute name
+4. Property name
+5. Pseudo-class
+
+### Examples
+
+Example markup:
+
+```html
+<article class="story">
+
+  <header class="story__header">
+    <h1 class="story__title">Why do beards suddenly appear?</h1>
+  </header>
+
+  <p class="story__content">
+    Why indeed.
+  </p>
+
+  <p class="story__author">
+    <a class="author__link" href="//whydobeards.com">Mr. Beard</a>
+  </p>
+
+</article>
+```
+
+_An article's author name should be bold and have not margin or padding._
+
+```css
+:root {
+  --story__author--font-weight: 700;
+  --story__author--margin: 0;
+  --story__author--padding: 0;
+}
+```
+
+_Hovering the author's name will change it's color and make it render an
+underline._
+
+```css
+:root {
+  --author__link--color--hover: #cf1b1a;
+  --author__link--text-decoration--hover: underline;
+}
+```
+
 ## Colors
 
 The default color palette is defined in [`css/settings/colors.css`][colors.css]:
