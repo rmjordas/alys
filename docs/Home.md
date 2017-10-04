@@ -14,12 +14,14 @@ Please see the [[FAQ]] for common questions, and other useful information.
 
 ## Getting Started
 
+There are a lot of ways to use `alys` in your projects:
+
 ### Releases
 
-Go to the alys GitHub [Releases][] page and download the file for the version
+Go to the `alys` GitHub [Releases][] page and download the file for the version
 you want. Place the style sheet in your project directory and add a `link`
-element inside the `head` of your `.html` file referencing the path to the alys
-style sheet.
+element inside the `head` of your `.html` file referencing the relative path to
+the `alys` style sheet.
 
 [Releases]: https://github.com/mds3dstn71/alys/releases
 
@@ -32,10 +34,10 @@ style sheet.
 
 ### unpkg CDN
 
-Include a `link` element inside the `head` element with the following URL as the
-value of the `href` attribute:
+Another method is to include a `link` element inside the `head` element with the
+following URL as the value of the `href` attribute:
 
-```
+```fundamental
 https://unpkg.com/alys@latest/dist/alys.min.css
 ```
 
@@ -46,25 +48,28 @@ https://unpkg.com/alys@latest/dist/alys.min.css
 </head>
 ```
 
-### npm
+### `yarn` or `npm`
 
-```
-npm install alys
+`alys` is also available as package that you can include in your project either
+through `yarn` or `npm` package dependency managers.
+
+```bash
+yarn install alys
 ```
 
-After npm finishes installing alys, you can copy the style sheet from
+After `yarn` finishes installing `alys`, you can copy the style sheet from
 `./node_modules/alys/dist/`. Place the file somewhere in your project, e.g.
-`./styles/`, and use the `@import` rule to include in your other style sheet:
+`./styles/`, and use the `@import` rule to include it in your main style sheet:
 
 ```css
-@import 'styles/alys.css';
+@import './styles/alys.css';
 ```
 
-If you are using a CSS processor, like [PostCSS][], then you can use a simpler
-declaration as, PostCSS will automatically try to search for alys in the
+If you are using a CSS processor, like [`PostCSS`][], then you can use a simpler
+declaration and `PostCSS` will automatically try to search for `alys` in the
 `node_modules` directory:
 
-[PostCSS]: https://github.com/postcss/postcss-cli
+[`PostCSS`]: https://github.com/postcss/postcss-cli
 
 ```css
 @import 'alys';
