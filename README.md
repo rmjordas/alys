@@ -28,10 +28,10 @@ https://github.com/mds3dstn71/alys/releases
 https://unpkg.com/alys@latest/dist/alys.min.css
 ```
 
-### npm
+### `yarn` or `npm`
 
 ```bash
-npm install alys
+yarn install alys
 ```
 
 ## Documentation
