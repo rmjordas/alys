@@ -341,6 +341,53 @@ Don't forget to `@import` all the files you need.
 @import 'dark-theme.css';
 ```
 
+### PostCSS
+
+[PostCSS][] is a processor used to "transform CSS with JavaScript". By itself,
+PostCSS does nothing, because its actually the plugins that do the
+transformations. Some of the most useful plugins in `alys` are `autoprefixer`
+and `cssnano`.
+
+The `autoprefixer` plugin allows the `alys` source code to have minimal amount
+of vender-prefixed property declarations. When the project is built,
+`autoprefixer` will inject the necessary prefixes which are necessary for
+browsers you've included in the "browserslist" property in the `package.json`
+file.
+
+`cssnano` _minifies_ the CSS produced by various transformations before it gets
+called. Minified CSS is smaller in size therefore browsers can download it
+faster. Minification involves various processes such as removing unnecessary
+whitespace characters, empty rulesets, resolve custom properties, and a lot
+more.
+
+Future CSS syntax is also possible because of PostCSS plugins. Future CSS syntax
+eliminates the need for CSS pre-processors such as `Sass` or `LESS`.
+
+[PostCSS]: https://postcss.org
+
+#### Plugins List
+
+The project uses the following plugins which are also listed in the project's
+`package.json`. For detailed instructions on their usage, please refer to their
+respective repository.
+
+- [`autoprefixer`](https://github.com/postcss/autoprefixer)
+- [`cssnano`](https://github.com/ben-eb/cssnano)
+- [`postcss-apply`](https://github.com/pascalduez/postcss-apply)
+- [`postcss-color-function`](https://github.com/postcss/postcss-color-function)
+- [`postcss-custom-media`](https://github.com/postcss/postcss-custom-media)
+- [`postcss-custom-properties`](https://github.com/postcss/postcss-custom-properties)
+- [`postcss-custom-selectors`](https://github.com/postcss/postcss-custom-selectors)
+- [`postcss-font-family-system-ui`](https://github.com/JLHwung/postcss-font-family-system-ui)
+- [`postcss-import`](https://github.com/postcss/postcss-import)
+- [`postcss-initial`](https://github.com/maximkoretskiy/postcss-initial)
+- [`postcss-media-minmax`](https://github.com/postcss/postcss-media-minmax)
+- [`postcss-nesting`](https://github.com/jonathantneal/postcss-nesting)
+- [`postcss-reporter`](https://github.com/postcss/postcss-reporter)
+- [`postcss-url`](https://github.com/postcss/postcss-url)
+- [`stylelint`](https://github.com/stylelint/stylelint)
+- [`stylelint-config-standard`](https://github.com/stylelint/stylelint-config-standard)
+
 ## Browser Support
 
 The table below summarizes alys' support for browsers:
