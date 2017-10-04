@@ -390,6 +390,23 @@ respective repository.
 
 ## Browser Support
 
+`alys` should work without issue on most modern web browsers. Vendor-prefixed
+properties are injected by the `autoprefixer` plugin for PostCSS which are based
+off of [CanIUse][] for last two (2) versions of browsers that are not Internet
+Explorer and with greater than 1% global usage.
+
+[CanIUse]: https://caniuse.com
+
+```json
+{
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie < 11"
+  ]
+}
+```
+
 The table below summarizes alys' support for browsers:
 
 | Platform | ![firefox] | ![chrome] | ![safari] | ![opera] | ![edge] |
