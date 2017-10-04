@@ -422,12 +422,8 @@ The table below summarizes alys' support for browsers:
 
 | Platform | ![firefox] | ![chrome] | ![safari] | ![opera] | ![edge] |
 | -------- | :--------: | :-------: | :-------: | :------: | :-----: |
-| Desktop  |     55     |     60    |   10.1*   |    46    |    15   |
-| Mobile   |     55     |     59    |   10.3*   |    --    |    --   |
-
-_Note: Support for Safari is limited. Mobile versions of the Opera browser are
-too many to test, e.g. Opera Mini, Opera Mobile, Opera 42.7 (Android 4.x), etc.
-Also, Internet Explorer is deliberately excluded._
+| Desktop  |     56     |     61    |    11     |    47    |    15   |
+| Mobile   |     55     |     61    |    11     |    --    |    --   |
 
 [chrome]: img/chrome.png
 [edge]: img/edge.png
