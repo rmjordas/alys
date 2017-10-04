@@ -67,6 +67,9 @@ yarn install alys
 * [`alys` wiki](https://github.com/mds3dstn71/alys/wiki)
 * [Project web site](https:/mds3dstn71.github.io/alys/docs)
 * [FAQ](https://github.com/mds3dstn71/alys/wiki/FAQ)
+
+## Contributing
+
 * [Contributing Guide](https://github.com/mds3dstn71/alys/wiki/CONTRIBUTING)
 
 ## License
