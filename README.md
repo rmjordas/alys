@@ -1,7 +1,5 @@
-# alys [![Build Status][badge]][ci]
+# alys [![Build Status](https://travis-ci.org/mds3dstn71/alys.svg?branch=master)](https://travis-ci.org/mds3dstn71/alys)
 
-[badge]: https://travis-ci.org/mds3dstn71/alys.svg?branch=master
-[ci]: https://travis-ci.org/mds3dstn71/alys
 
 A modern CSS toolkit
 
