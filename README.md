@@ -34,34 +34,18 @@ https://unpkg.com/alys@latest/dist/alys.min.css
 yarn install alys
 ```
 
+
+
+
+
+
+
+
 ## Documentation
 
-- [`alys` wiki](https://github.com/mds3dstn71/alys/wiki)
-- [Project web site](https://alys.netlify.com/docs)
-
-### Home
-
-* [Getting Started](https://github.com/mds3dstn71/alys/wiki#getting-started)
-* [ITCSS Architecture](https://github.com/mds3dstn71/alys/wiki#inverted-triangle-itcss-architecture)
-* [PostCSS](https://github.com/mds3dstn71/alys/wiki#postcss)
-* [Browser Support](https://github.com/mds3dstn71/alys/wiki#browser-support)
-* [Best Practices](https://github.com/mds3dstn71/alys/wiki#best-practices)
-
-### Contents
-
-* [Settings](https://github.com/mds3dstn71/alys/wiki/Settings)
-* [Tools](https://github.com/mds3dstn71/alys/wiki/Tools)
-* [Generic](https://github.com/mds3dstn71/alys/wiki/Generic)
-* [Elements](https://github.com/mds3dstn71/alys/wiki/Elements)
-* [Objects](https://github.com/mds3dstn71/alys/wiki/Objects)
-* [Components](https://github.com/mds3dstn71/alys/wiki/Components)
-* [Utilities](https://github.com/mds3dstn71/alys/wiki/Utilities)
-* [Themes](https://github.com/mds3dstn71/alys/wiki/Themes)
-
-### Misc
-
+* [`alys` wiki](https://github.com/mds3dstn71/alys/wiki)
+* [Project web site](https:/mds3dstn71.github.io/alys/docs)
 * [FAQ](https://github.com/mds3dstn71/alys/wiki/FAQ)
-* [Change Log](https://github.com/mds3dstn71/alys/wiki/CHANGELOG)
 * [Contributing Guide](https://github.com/mds3dstn71/alys/wiki/CONTRIBUTING)
 
 ## License
