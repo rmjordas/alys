@@ -1,8 +1,7 @@
 ## What does `alys` do?
 
 `alys` is modern CSS toolkit that provides simple styles to any plain HTML file
-without doing a ton of configuration, e.g. wrapping simple elements inside
-`div`s and adding classes to those elements, etc.
+without doing a ton of configuration.
 
 ## Is this a Bootstrap 4 replacement?
 
@@ -21,7 +20,8 @@ Some rule-sets are dependent on a combination of some selectors, for example,
 the custom navigation bar only shows when there is a `nav` element and it has a
 `role` attribute set to `navigation`.
 
-The most essential elements on your web page should be:
+If you want to use `alys` default layout, the most essential elements on your
+web page should be:
 
 ```html
 <body>
@@ -53,12 +53,20 @@ your new file to the list of `@import`s:
 
 Even though `alys` recommends a certain structure to be followed (for layout
 purposes) these styles can always be replaced with your own styles. User styles
-should be included in the `themes/` directory so that the redundant rule-sets
+should be included in the `themes/` directory so that the redundant declarations
 can be removed when building the minified style sheet.
+
+## What's the difference between `alys.css` and `alys.min.css`?
+
+The former is the uncompressed style sheet, usually used in development whereas
+the latter is the minified (compressed) style sheet. The minified style sheet's
+goal to be as small as possible, therefore white space and other unnecessary
+characters are removed. Depending on the processor, some further optimizations
+can be performed like combining duplicate rule-sets, selectors, etc.
 
 ## What is `alys` grid system?
 
-There is no grid system _a la_ Bootstrap, Clarity, etc., rather the styles
+There is no grid system _à la_ Bootstrap, Clarity, etc., rather the styles
 default to small screen size (less than `54.4em`) and additional styles are
 triggered when the view port width becomes larger than `54em` (via `@media`
 rule).
@@ -73,13 +81,7 @@ of your issue and add helpful information, like:
   iOS 7, etc.)
 * A screenshot
 
-## What's the difference between `alys.css` and `alys.min.css`?
-
-The former is the uncompressed style sheet, usually used in development whereas
-the latter is the minified (compressed) style sheet. The minified style sheet's
-goal to be as small as possible, therefore white space and other unnecessary
-characters are removed. Depending on the processor, some further optimizations
-can be performed like combining duplicate rule-sets, selectors, etc.
+A more detailed guideline is available on the [[CONTRIBUTING]] page.
 
 ## Why not use `Sass`/`LESS`?
 

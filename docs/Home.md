@@ -124,7 +124,7 @@ At the top are the _Settings_, which contains all global custom properties, and
 _Tools_, which are groups of property declarations reused by different rulesets.
 The first groups to contain selectors are in the _Generics_ group. These styles
 will override the default browser styles to "normalize" the appearance of
-elements accross different browsers. _Elements_ are rulesets that have simple,
+elements across different browsers. _Elements_ are rulesets that have simple,
 type or pseudo-element selectors, whereas _Objects_ have rulesets with class
 selectors. Styles for user interface features should be placed in _Components_.
 Finally, _Utilities_ and _Themes_ are both used to override the styles
@@ -146,15 +146,15 @@ _Settings_ contain all global variable declarations.
   --border-radius: 0.3rem;
 
   /* Button styles*/
-  --button-color: var(--primary-color);
-  --button-border-radius: var(--border-radius);
+  --button--color: var(--primary-color);
+  --button--border-radius: var(--border-radius);
 }
 ```
 
 ##### Tools
 
-Rule-sets in the _Tools_ group have declarations that are reused by a lot of
-different selectors. Like in the Settings group, the rule-sets in Tools all
+Rulesets in the _Tools_ group have declarations that are reused by a lot of
+different selectors. Like in the Settings group, the rulesets in Tools all
 contain custom property declarations. In pre-processors like `Sass`, these are
 similar to _mixins_.
 
@@ -164,14 +164,14 @@ similar to _mixins_.
   --westar: #dbd6d0;
   --gray--light: var(--westar);
   --color--foreground--light: var(--gray--light);
-  --gallery-border: 0.1rem solid var(--color--foreground--light);
-  --transition-all: all 0.2s ease-in;
+  --gallery__item--border: 0.1rem solid var(--color--foreground--light);
+  --transition--all: all 0.2s ease-in;
 
   /* Default Gallery item hover styles */
-  --gallery-item--not-disabled--hover: {
-    border: var(--gallery-border);
+  --gallery__item--not-disabled--hover: {
+    border: var(--gallery__item--border);
     transform: scale(0.9, 0.9);
-    transition: var(--transition-all);
+    transition: var(--transition--all);
   }
 }
 ```
@@ -186,8 +186,8 @@ We use the `@apply` rule to _apply_ these "mixins" to selectors:
 
 ##### Generic
 
-This group contains all rule-sets that normalizes or resets the default user
-agent styles.
+The _Generic_ group contains all rulesets that "normalizes" or resets the
+default browser styles.
 
 ```css
 @import 'normalys.css';
@@ -195,28 +195,28 @@ agent styles.
 
 ##### Elements
 
-_Elements_ contain rule-sets that simple type or pseudo-element selecors which
+_Elements_ contain rulesets that simple type or pseudo-element selectors which
 have exactly `1` (`0-0-1`) specificity.
 
 ```css
 :root {
   /* Properties for context */
-  --element-margin--bottom: 1.5em;
+  --element--margin--bottom: 1.5em;
   --paragraph--font-size: 1em;
-  --paragraph-margin: 0 0 var(--element-margin--bottom);
-  --scrollbar-height: 0.8rem;
-  --scrollbar-width: 0.5rem;
+  --paragraph--margin: 0 0 var(--element--margin--bottom);
+  --scrollbar--height: 0.8rem;
+  --scrollbar--width: 0.5rem;
 }
 
 p /* Specificity (S): 1 (0-0-1) */ {
   font-size: var(--paragraph--font-size);
-  margin: var(--paragraph-margin);
+  margin: var(--paragraph--margin);
 }
 
 ::-webkit-scrollbar /* S: 1 (0-0-1) */ {
   background-color: var(--color--foreground--light);
-  height: var(--scrollbar-height);
-  width: var(--scrollbar-width);
+  height: var(--scrollbar--height);
+  width: var(--scrollbar--width);
 }
 ```
 
@@ -231,12 +231,12 @@ specificity of `10` (`0-1-0`).
   --sr-only: {
     border: 0;
     clip: rect(0, 0, 0, 0);
-    height: 1px;
-    margin: -1px;
+    height: 0.1rem;
+    margin: -0.1rem;
     overflow: hidden;
     padding: 0;
     position: absolute;
-    width: 1px;
+    width: 0.1rem;
   };
 }
 
@@ -259,11 +259,11 @@ most web pages.
   --lights--flashing--padding: 0 1rem;
   /* ... */
 
-  --lights-styles: {
+  --m-lights: {
     /* Default styles for lights component... */
   }
 
-  --lights-styles--flashing: {
+  --m-lights--flashing: {
     /* Additional styles for flashing lights */
     width: var(--lights--flashing--width--max);
     padding: var(--lights--flashing--padding);
@@ -279,8 +279,8 @@ most web pages.
  * S-max: 10 (0-1-0)
  */
 .flashing-lights {
-  @apply --lights-styles;
-  @apply --lights-styles--flashing;
+  @apply --m-lights;
+  @apply --m-lights--flashing;
   /* ... */
 }
 ```
@@ -305,7 +305,7 @@ _Utilities_ include helper styles used for development.
 
 ##### Themes
 
-Place all customization options in the _Themes_ group. All user defined custom
+Place all style customization in the _Themes_ group. All user defined custom
 properties should correspond to an existing custom properties. Additional
 custom properties are prefixed with `u-`. Any file with declarations that will
 ultimately be appended with the `!important` rule is placed here instead.
@@ -321,9 +321,9 @@ ultimately be appended with the `!important` rule is placed here instead.
   --yellow-green: var(--confier);
 
   /* Overrides default paragraph background color */
-  --paragraph-background-color: var(--yellow-green);
+  --paragraph--background-color: var(--yellow-green);
   /* User-defined custom property */
-  --u-price-table-heading-background-color: var(--yellow-green);
+  --u-price-table__heading--background-color: var(--yellow-green);
 }
 ```
 
@@ -349,7 +349,7 @@ transformations. Some of the most useful plugins in `alys` are `autoprefixer`
 and `cssnano`.
 
 The `autoprefixer` plugin allows the `alys` source code to have minimal amount
-of vender-prefixed property declarations. When the project is built,
+of vendor-prefixed property declarations. When the project is built,
 `autoprefixer` will inject the necessary prefixes which are necessary for
 browsers you've included in the "browserslist" property in the `package.json`
 file.
@@ -416,7 +416,7 @@ or Google Chrome.
 That said, occasional testing is still done in Internet Explorer 11 but any
 feature that works with modern browsers and won't render correctly in Internet
 Explorer will not be patched. If you have a solution for these issues, you are
-very much welcome to open a [pull request](CONTRIBUTING.md).
+very much welcome to open a [pull request](CONTRIBUTING).
 
 The table below summarizes alys' support for browsers:
 
@@ -458,14 +458,14 @@ styles across all browsers.
 
 Realistically, however, some projects need to support old and insecure browsers
 like Internet Explorer, etc. Packages like `autoprefixer`, help make development
-easier (and less sucky). It provides a way for developers to focus on writing
+easier (and less suck-y). It provides a way for developers to focus on writing
 standard CSS syntax and not worry about vendor-prefixes.
 
 ### Accessibility Checklist
 
 Elements with the `role` attribute, mentioned in an earlier section (on using
 valid HTML), will make the HTML Validator output warnings saying these
-attributes are "redunant". But according to The A11Y Project,
+attributes are "redundant". But according to The A11Y Project,
 
 > In HTML5, several of the landmark roles are implicit via the native structural
 > element which is supported by most modern desktop browsers with the exception
