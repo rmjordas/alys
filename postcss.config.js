@@ -1,16 +1,17 @@
-const atImport = require('postcss-import');
 const apply = require('postcss-apply');
+const atImport = require('postcss-import');
 const autoprefixer = require('autoprefixer');
 const colorFunction = require('postcss-color-function');
 const cssnano = require('cssnano');
-const customProperties = require('postcss-custom-properties');
 const customMedia = require('postcss-custom-media');
+const customProperties = require('postcss-custom-properties');
+const customSelectors = require('postcss-custom-selectors');
 const fontFamilySystemUi = require('postcss-font-family-system-ui');
 const initial = require('postcss-initial');
 const mediaMinmax = require('postcss-media-minmax');
 const nesting = require('postcss-nesting');
-const customSelectors = require('postcss-custom-selectors');
 const reporter = require('postcss-reporter');
+const stylelint = require('stylelint');
 const url = require('postcss-url');
 
 module.exports = {
