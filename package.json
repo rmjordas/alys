@@ -31,10 +31,10 @@
   "devDependencies": {
     "autoprefixer": "^7.1.4",
     "cssnano": "^3.10.0",
-    "eslint": "^4.7.2",
-    "eslint-config-airbnb-base": "^12.0.0",
+    "eslint": "^4.8.0",
+    "eslint-config-airbnb-base": "^12.0.2",
     "eslint-plugin-import": "^2.7.0",
-    "postcss": "^6.0.11",
+    "postcss": "^6.0.13",
     "postcss-apply": "^0.8.0",
     "postcss-cli": "^4.1.1",
     "postcss-color-function": "^4.0.0",
@@ -48,7 +48,7 @@
     "postcss-nesting": "^4.2.1",
     "postcss-reporter": "^5.0.0",
     "postcss-url": "^7.1.2",
-    "stylelint": "^8.1.1",
+    "stylelint": "^8.2.0",
     "stylelint-config-standard": "^17.0.0"
   },
   "dependencies": {
