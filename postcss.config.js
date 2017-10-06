@@ -17,7 +17,11 @@ const url = require('postcss-url');
 module.exports = {
   map: false,
   plugins: [
-    atImport,
+    atImport({
+      plugins: [
+        stylelint,
+      ],
+    }),
     url,
     autoprefixer({
       remove: false,
