@@ -445,11 +445,6 @@ the select box labeled, "Check by". The other two options will allow you to
 specify a file from your computer and upload it to `Nu Html Checker`; and
 directly input you code in a textbox.
 
-_Note: `alys` relies on specific HTML attributes which Nu Html Checker will give
-you warnings and say that these attributes are not necessary. The reason why
-these attributes are used are explained in the Accessibility Checklist section
-below._
-
 ### Use valid CSS
 
 Similar to using valid HTML, avoiding non-standard CSS syntax like
@@ -520,3 +515,47 @@ incorporate in your projects:
 - Testing
   + [ ] Test using a screen reader
   + [ ] Test using keyboard only
+
+### Boilerplate Markup
+
+TODO: Boilerplate markup
+
+```html
+<body>
+  <a class="sr-only" href="#main">Jump to main</a>
+
+  <header role="banner">
+    <h1>My Web Site</h1>
+    <p>Subtitle</p>
+  </header>
+
+  <nav role="navigation">
+    <h2 class="sr-only">Navigation Links</h2>
+    <ul>
+      <li><a href="my-website.com">My Website</a></li><!--
+   --><li><a href="my-repo.com">Repo</a></li><!--
+   --><li><a href="my-website.com/about">About</a></li>
+    </ul>
+  </nav>
+
+  <main id="main" role="main">
+    <h2 class="sr-only">Main Content</h2>
+  </main>
+
+  <aside role="complementary">
+    <h2 class="sr-only">Complementary Content</h2>
+  </aside>
+
+  <footer role="contentinfo">
+    <h2 class="sr-only">Website Information</h2>
+  </footer>
+</body>
+```
+
+_Note: `alys` relies on specific HTML attributes which Nu Html Checker will give
+you warnings and say that these attributes are not necessary. The reason why
+these attributes are used are explained in the Accessibility Checklist section.
+It is recommended to include a heading element (hidden visually by the
+`.sr-only` class) for each of the major sections of your web page to better
+define the document's outline._
+
