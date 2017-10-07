@@ -1,10 +1,11 @@
 **Home**
 
 * [Getting Started](Home#getting-started)
-* [ITCSS Architecture](Home#inverted-triangle-itcss-architecture)
+* [ITCSS Architecture](Home#inverted-triangle-css-itcss-architecture)
 * [PostCSS](Home#postcss)
 * [Browser Support](Home#browser-support)
 * [Best Practices](Home#best-practices)
+* [Boilerplate Markup](Home#boilerplate-markup)
 
 **Contents**
 
