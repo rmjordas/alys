@@ -29,7 +29,7 @@ For _Settings_ and _Elements_:
 For _Objects_:
 
 1. Class name (prefixed with `c-`)
-2. Pseduo-element (if any)
+2. Pseudo-element (if any)
 3. Attribute name
 4. Property name
 5. Pseudo-class

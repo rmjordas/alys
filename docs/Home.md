@@ -2,7 +2,7 @@
 
 `alys` is a modern CSS toolkit made for modern web pages.
 
-Features:
+## Features
 
 * Future CSS syntax
 * CSS Grid Layout
@@ -85,7 +85,7 @@ at the top of the style sheet and the larger specificity will be at the bottom.
 #### Specificity
 
 Specificity of a selector is determined by a set of numbers of the form:
-`a-b-c`. The [W3 CSS specificition][] considers ID selectors, i.e. identifiers
+`a-b-c`. The [W3 CSS specification][] considers ID selectors, i.e. identifiers
 that are preceded with a hash (`#`), to contribute to the `a` value; class
 selectors (`.className`), attribute selectors (`[property="value"]`) and
 pseudo-classes (`:pseudoclass`) to contribute to the `b` value; and finally, the
@@ -95,7 +95,7 @@ The universal selector, `*` is "ignored" in the computation and similarly, the
 negation pseudo-class, `:not`, is also not considered but it's contents are,
 i.e. `:not(:active)` will only consider `:active`.
 
-[W3 CSS specificition]: https://www.w3.org/TR/selectors/#specificity
+[W3 CSS specification]: https://www.w3.org/TR/selectors/#specificity
 
 #### `alys` and ITCSS
 
