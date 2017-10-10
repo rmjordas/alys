@@ -116,9 +116,7 @@ architecture based on the following resources:
 The following diagram shows the different layers of grouped rule-sets and their
 location with respect to each other:
 
-![The Inverted Triangle][IT]
-
-[IT]: img/inverted-triangle.png
+<p align="center"><img src="img/inverted-triangle.png" alt="inverted triangle"></p>
 
 At the top are the _Settings_, which contains all global custom properties, and
 _Tools_, which are groups of property declarations reused by different rulesets.
