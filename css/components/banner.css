@@ -19,6 +19,10 @@ header[role="banner"] {
   width: var(--component--width--max);
   max-width: 100%;
 
+  & h1 {
+    color: var(--banner--color);
+  }
+
   @media (--vpPhone) {
     display: block;
   }
