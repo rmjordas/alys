@@ -11,11 +11,13 @@
   --cerise: #da49b2;
   --cod-gray: #171717;
   --crusta: #fd763f;
+  --dove-gray: #666;
   --gallery: #efefef;
   --jungle-green: #2eaa86;
   --lochmara: #0579c6;
   --thunderbird: #cf1b1a;
   --tundora: #4a4a4a;
+  --tundora--light: #444;
   --westar: #dbd6d0;
   --white: #fff;
 
@@ -26,6 +28,8 @@
    * names
    */
   --blackish: var(--cod-gray);
+  --blackish--light: var(--tundora--light);
+  --blackish--lighter: var(--dove-gray);
   --blue: var(--lochmara);
   --gray--dark: var(--tundora);
   --gray--light: var(--westar);
