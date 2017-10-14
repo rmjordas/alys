@@ -24,7 +24,7 @@
 
   /* INLINE */
   --inline--border-radius: 0.2rem;
-  --code--padding: 0.3rem 0.4rem;
+  --code--padding: 0.1rem 0.4rem;
   --pre--padding: 1rem; /* TODO:`pre` is not an inline element by default */
   --paragraph--font-size: 1em;
   --paragraph--margin: 0 0 var(--element--margin-bottom);
