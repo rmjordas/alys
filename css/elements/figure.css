@@ -9,7 +9,6 @@
 figure {
   border: var(--figure__img--border);
   border-radius: 0.5rem;
-  box-sizing: border-box;
   margin: 0 auto var(--element--margin-bottom);
   overflow: hidden;
   padding: 0;

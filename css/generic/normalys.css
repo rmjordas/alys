@@ -7,6 +7,7 @@
  * Max Specifity: 11 (0-1-1)
  */
 html {
+  box-sizing: border-box;
   color: var(--blackish--light);
   font-family: var(--base--font-family);
   font-size: var(--root--font-size);
@@ -15,6 +16,11 @@ html {
   height: 100%;
   line-height: var(--base--line-height);
   max-width: 100vw;
+}
+
+*::before,
+*::after {
+  box-sizing: inherit;
 }
 
 blockquote,
