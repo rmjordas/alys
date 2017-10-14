@@ -10,27 +10,4 @@ body {
   color: var(--color--foreground--darkest);
   font-size: var(--base--font-size);
   max-width: 100%;
-
-  @supports (display: grid) {
-    @media (--vpPhone) {
-      display: grid;
-      grid-gap: 0 var(--component--padding);
-      grid-template:
-        "header header header header" 1fr
-        "nav    nav    nav    nav"    var(--navbar--height--desktop)
-        ".      aside  main   ."      auto
-        "footer footer footer footer" auto
-        / 1fr var(--aside--width--desktop) var(--main--width--desktop) 1fr;
-    }
-  }
-
-  /* lt Edge 16 */
-  @supports (display: -ms-grid) {
-    display: block;
-  }
-
-  /* lte IE 11 */
-  @media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {
-    display: block;
-  }
 }

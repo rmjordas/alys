@@ -89,8 +89,6 @@
  * Combined selectors, e.g. attribute +
  * type, etc.
  */
-@import 'components/aside';
 @import 'components/banner';
 @import 'components/footer';
-@import 'components/main';
 @import 'components/navigation';

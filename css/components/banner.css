@@ -13,8 +13,6 @@ header[role="banner"] {
   background-color: var(--banner--background-color);
   color: var(--banner--color);
   display: none;
-  grid-area: header;
-  justify-self: stretch;
   padding: var(--banner--padding);
   text-align: center;
   user-select: none;
