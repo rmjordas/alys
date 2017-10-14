@@ -19,6 +19,7 @@
   --h5--font-size: 1em;
   --h6--font-size: 0.7862em;
   --heading--font: var(--typeface--ui), var(--typeface--system);
+  --heading--line-height: 1.272;
   --heading--margin: 0 0 var(--element--margin-bottom);
 
   /* INLINE */
