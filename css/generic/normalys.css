@@ -37,6 +37,10 @@ p {
   margin: var(--paragraph--margin);
 }
 
+sub {
+  bottom: -0.2em;
+}
+
 pre {
   background: var(--color--foreground--lightest);
   border-radius: var(--code--padding);
