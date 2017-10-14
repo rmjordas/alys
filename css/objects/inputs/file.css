@@ -17,7 +17,6 @@ input[type="file"] {
   position: relative;
   right: 0;
   top: 0;
-  width: 100%;
 
   &:focus {
     border: 0.2rem solid var(--color--foreground--lighter);

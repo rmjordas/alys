@@ -9,6 +9,7 @@
 fieldset {
   border: var(--fieldset--border);
   border-radius: var(--fieldset--border-radius);
+  margin: 0;
   margin-bottom: var(--element--margin-bottom);
   padding-top: var(--fieldset--padding-top);
   position: relative;
@@ -17,16 +18,18 @@ fieldset {
     display: block;
     font-family: var(--fieldset__legend--font);
     font-size: var(--fieldset__legend--font-size);
-    height: 2.058em;
+    line-height: var(--heading--line-height);
+    height: 1.272em;
+    left: 1.2rem;
     overflow: hidden;
     position: absolute;
+    right: 1.2rem;
     top: 0;
   }
 }
 
 label {
   display: block;
-  margin-bottom: var(--label--margin-bottom);
   font-weight: var(--label--font-weight);
 }
 
@@ -39,7 +42,6 @@ select {
   height: var(--textfield--height);
   outline: none;
   padding: 0 1rem;
-  width: 100%;
 }
 
 input:focus,
@@ -89,7 +91,6 @@ input:invalid {
 textarea {
   min-height: var(--textarea--min-height);
   padding: var(--textarea--padding);
-  width: 100%;
 }
 
 select {

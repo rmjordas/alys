@@ -15,7 +15,7 @@ html {
   -moz-osx-font-smoothing: grayscale;
   height: 100%;
   line-height: var(--base--line-height);
-  max-width: 100vw;
+  max-width: 100%;
 }
 
 *::before,
