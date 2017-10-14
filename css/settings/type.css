@@ -5,7 +5,7 @@
    */
   --base--font-family: var(--typeface--text), var(--typeface--ui), var(--typeface--system);
   --base--font-size: 1.6rem;
-  --base--line-height: 2.025;
+  --base--line-height: 1.6;
   --root--font-size: 62.5%;
   --typeface--system: system-ui;
   --typeface--text: Nunito;
