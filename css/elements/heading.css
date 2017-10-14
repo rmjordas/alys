@@ -12,6 +12,7 @@ h3,
 h4,
 h5,
 h6 {
+  color: var(--blackish--light);
   font-family: var(--heading--font);
   line-height: var(--heading--line-height);
   margin: var(--heading--margin);
