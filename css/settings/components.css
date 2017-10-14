@@ -7,6 +7,11 @@
   /* ASIDE */
   --aside--width--desktop: 28.8rem;
 
+  /* BANNER */
+  --banner--background-color: var(--color);
+  --banner--color: var(--color--foreground--lightest);
+  --banner--padding: 1.6rem 0;
+
   /* FOOTER */
   --footer--background-color: var(--color);
   --footer--color: var(--color--foreground--lightest);
@@ -15,11 +20,6 @@
   --component--width--max: 100vw;
   --component--padding: 0.8rem;
   --page--width: 100vw; /* TODO: move to root styles */
-
-  /* BANNER */
-  --banner--background-color: var(--color);
-  --banner--color: var(--color--foreground--lightest);
-  --banner--padding: 1.6rem 0;
 
   /* MAIN */
   --main--width--desktop: 67.2rem;
