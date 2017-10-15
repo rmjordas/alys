@@ -3,15 +3,25 @@
    * Typography Variables
    * =====================================
    */
-  --base--font-family: var(--typeface--text), var(--typeface--ui), var(--typeface--system);
-  --base--font-size: 1.6rem;
-  --base--line-height: 1.4;
-  --root--font-size: 62.5%;
   --typeface--system: system-ui;
   --typeface--text: Nunito;
   --typeface--ui: Quicksand;
 
-  /* HEADINGS */
+  /* =====================================
+   * Aliases
+   * =====================================
+   * Typography property values should
+   * prefer to use these instead of above
+   */
+  --base--font-family: var(--typeface--text), var(--typeface--ui), var(--typeface--system);
+  --base--font-size: 1.6rem;
+  --base--line-height: 1.4;
+  --root--font-size: 62.5%;
+
+  /* =====================================
+   * Headings
+   * =====================================
+   */
   --h1--font-size: 2em;
   --h2--font-size: 1.7511em;
   --h3--font-size: 1.5157em;
@@ -22,12 +32,20 @@
   --heading--line-height: 1.272;
   --heading--margin: 0 0 var(--element--margin-bottom);
 
-  /* INLINE */
+  /* =====================================
+   * Inline
+   * =====================================
+   */
   --inline--border-radius: 0.2rem;
   --code--padding: 0.1rem 0.4rem;
-  --pre--padding: 1rem;
-  --pre--border-radius: 0.4rem;
   --paragraph--font-size: 1em;
   --paragraph--margin: 0 0 var(--element--margin-bottom);
   --small--font-size: var(--h6--font-size);
+
+  /* =====================================
+   * Block
+   * =====================================
+   */
+  --pre--padding: 1rem;
+  --pre--border-radius: 0.4rem;
 }

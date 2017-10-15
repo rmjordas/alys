@@ -44,6 +44,9 @@
   /* =====================================
    * Color Aliases
    * =====================================
+   * Elements color property values should
+   * prefer to use these instead of above
+   *
    */
   --color: var(--blue);
   --color--delete: var(--pink);
