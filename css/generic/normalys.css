@@ -49,7 +49,7 @@ sub {
 
 pre {
   background: var(--color--foreground--lightest);
-  border-radius: var(--code--padding);
+  border-radius: var(--pre--border-radius);
   overflow-x: auto;
   padding: var(--pre--padding);
 }
