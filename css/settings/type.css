@@ -5,19 +5,19 @@
    */
   --base--font-family: var(--typeface--text), var(--typeface--ui), var(--typeface--system);
   --base--font-size: 1.6rem;
-  --base--line-height: 1.6;
+  --base--line-height: 1.4;
   --root--font-size: 62.5%;
   --typeface--system: system-ui;
   --typeface--text: Nunito;
   --typeface--ui: Quicksand;
 
   /* HEADINGS */
-  --h1--font-size: 2.6179em;
-  --h2--font-size: 2.058em;
-  --h3--font-size: 1.618em;
-  --h4--font-size: 1.272em;
-  --h5--font-size: 1em;
-  --h6--font-size: 0.7862em;
+  --h1--font-size: 2em;
+  --h2--font-size: 1.7511em;
+  --h3--font-size: 1.5157em;
+  --h4--font-size: 1.3195em;
+  --h5--font-size: 1.1487em;
+  --h6--font-size: 1em;
   --heading--font: var(--typeface--ui), var(--typeface--system);
   --heading--line-height: 1.272;
   --heading--margin: 0 0 var(--element--margin-bottom);
@@ -25,7 +25,8 @@
   /* INLINE */
   --inline--border-radius: 0.2rem;
   --code--padding: 0.1rem 0.4rem;
-  --pre--padding: 1rem; /* TODO:`pre` is not an inline element by default */
+  --pre--padding: 1rem;
+  --pre--border-radius: 0.4rem;
   --paragraph--font-size: 1em;
   --paragraph--margin: 0 0 var(--element--margin-bottom);
   --small--font-size: var(--h6--font-size);

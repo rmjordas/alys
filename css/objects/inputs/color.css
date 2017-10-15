@@ -7,7 +7,7 @@
  * Max Specifity: 21 (0-2-1)
  */
 input[type="color"] {
-  height: 3.3rem;
+  height: 3.1rem;
   padding: 0.5rem;
 
   &::-webkit-color-swatch-wrapper {
