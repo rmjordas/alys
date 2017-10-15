@@ -88,9 +88,17 @@ input:invalid {
   }
 }
 
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
 textarea {
+  box-sizing: border-box;
   min-height: var(--textarea--min-height);
   padding: var(--textarea--padding);
+  width: 100%;
 }
 
 select {
@@ -107,10 +115,5 @@ select {
   &:disabled {
     color: var(--color--foreground--lighter);
     cursor: not-allowed;
-  }
-
-  & optgroup,
-  & option {
-    color: var(--color);
   }
 }

@@ -44,7 +44,7 @@ p {
 }
 
 sub {
-  bottom: -0.2em;
+  bottom: -0.07em;
 }
 
 pre {
@@ -56,7 +56,7 @@ pre {
 
 iframe {
   border: var(--border--thin--light);
-  max-width: 100%;
+  width: 100%;
 }
 
 svg {
