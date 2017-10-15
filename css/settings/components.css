@@ -19,7 +19,6 @@
   /* GENERIC */
   --component--width--max: 100vw;
   --component--padding: 0.8rem;
-  --page--width: 100vw; /* TODO: move to root styles */
 
   /* MAIN */
   --main--width--desktop: 67.2rem;
