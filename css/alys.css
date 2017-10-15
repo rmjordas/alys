@@ -43,6 +43,7 @@
  * =====================================
  * Resets, normalize, etc.
  */
+@import 'generic/box';
 @import 'generic/normalize';
 @import 'generic/normalys';
 
