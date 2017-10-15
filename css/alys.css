@@ -82,6 +82,7 @@
 @import 'objects/inputs/range';
 @import 'objects/inputs/search';
 @import 'objects/base';
+@import 'objects/container';
 
 /* =====================================
  * Components
