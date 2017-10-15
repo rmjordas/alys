@@ -82,8 +82,8 @@
 @import 'objects/inputs/radio';
 @import 'objects/inputs/range';
 @import 'objects/inputs/search';
-@import 'objects/base';
 @import 'objects/container';
+@import 'objects/sr-only';
 
 /* =====================================
  * Components

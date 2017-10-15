@@ -1,0 +1,10 @@
+/* =====================================
+ * Screen Reader Only
+ * =====================================
+ * Visually hide element
+ *
+ * Max Specificity: 10 (0-1-0)
+ */
+.sr-only {
+  @apply --sr-only;
+}
