@@ -55,19 +55,19 @@ input[type="file"] {
     transition: all 0.2s ease-in;
   }
 
-  &:hover::-ms-browse {
+  &:hover:not(:disabled)::-ms-browse {
     @apply --button-style--not-disabled--hover;
   }
 
-  &:hover::before {
+  &:hover:not(:disabled)::before {
     @apply --button-style--not-disabled--hover;
   }
 
-  &:focus::before {
+  &:focus:not(:disabled)::before {
     @apply --button-style--not-disabled--focused;
   }
 
-  &:active::before {
+  &:active:not(:disabled)::before {
     @apply --button-style--not-disabled--active;
   }
 
