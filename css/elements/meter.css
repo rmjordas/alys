@@ -7,14 +7,14 @@
  * Max Specifity: 12 (0-1-2)
  */
 meter {
-  background: var(--color--foreground--lightest);
+  background: var(--color--background--lightest);
   border: none;
   border-radius: var(--border-radius);
   height: 2.4rem;
   width: 100%;
 
   &::-webkit-meter-bar {
-    background: var(--color--foreground--lightest);
+    background: var(--color--background--lightest);
     border: 0;
     border-radius: 0.3rem;
   }

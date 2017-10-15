@@ -7,7 +7,7 @@
  * Max Specifity: 11 (0-1-1)
  */
 html {
-  color: var(--blackish--light);
+  color: var(--color--foreground--darker);
   font-family: var(--base--font-family);
   font-size: var(--root--font-size);
   -webkit-font-smoothing: antialiased;
@@ -42,7 +42,7 @@ sub {
 }
 
 pre {
-  background: var(--color--foreground--lightest);
+  background: var(--color--background--lightest);
   border-radius: var(--pre--border-radius);
   overflow-x: auto;
   padding: var(--pre--padding);

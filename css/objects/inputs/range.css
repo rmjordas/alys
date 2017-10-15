@@ -16,7 +16,7 @@ input[type="range"] {
   * -------------------------------------
   */
   &::-webkit-slider-runnable-track {
-    background: var(--color--foreground--lightest);
+    background: var(--color--background--lightest);
     border: none;
     border-radius: var(--border-radius);
     cursor: default;
@@ -49,7 +49,7 @@ input[type="range"] {
   }
 
   &::-moz-range-track {
-    background: var(--color--foreground--lightest);
+    background: var(--color--background--lightest);
     border-radius: var(--border-radius);
     border: none;
     cursor: default;
@@ -62,12 +62,12 @@ input[type="range"] {
   * -------------------------------------
   */
   &::-ms-fill-lower {
-    background: var(--color--foreground--lightest);
+    background: var(--color--background--lightest);
     border-radius: var(--border-radius);
   }
 
   &::-ms-fill-upper {
-    background: var(--color--foreground--lightest);
+    background: var(--color--background--lightest);
     border: none;
     border-radius: var(--border-radius);
   }
@@ -110,19 +110,19 @@ input[type="range"] {
       outline: none;
 
       &::-webkit-slider-runnable-track {
-        background: var(--color--foreground--lighter);
+        background: var(--color--background--lighter);
       }
 
       &::-moz-range-track {
-        background: var(--color--foreground--lighter);
+        background: var(--color--background--lighter);
       }
 
       &::-ms-fill-lower {
-        background: var(--color--foreground--lighter);
+        background: var(--color--background--lighter);
       }
 
       &::-ms-fill-upper {
-        background: var(--color--foreground--lighter);
+        background: var(--color--background--lighter);
       }
     }
   }
@@ -148,7 +148,7 @@ input[type="range"] {
     }
 
     &::-moz-range-track {
-      background: var(--color--foreground--lighter);
+      background: var(--color--background--lighter);
       cursor: not-allowed;
     }
 
@@ -158,7 +158,7 @@ input[type="range"] {
     }
 
     &::-ms-track {
-      background: var(--color--foreground--lighter);
+      background: var(--color--background--lighter);
       cursor: not-allowed;
     }
   }

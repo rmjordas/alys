@@ -21,14 +21,14 @@ table {
 
   & > caption {
     border: 0.2rem solid transparent;
-    color: var(--color--foreground--darkest);
+    color: var(--color--foreground--dark);
     font-weight: 600;
     letter-spacing: 0.05rem;
   }
 }
 
 th {
-  background-color: var(--color--foreground--lightest);
+  background-color: var(--color--background--lightest);
   text-transform: uppercase;
 
   @nest thead &,

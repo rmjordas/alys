@@ -27,7 +27,7 @@
   /* NAVBAR */
   --navbar__anchor--color: var(--color--foreground--lightest);
   --navbar__anchor--color--hover: var(--color--primary);
-  --navbar--background-color: var(--black);
+  --navbar--background-color: var(--color--background--darkest);
   --navbar--color: var(--color--foreground--lightest);
   --navbar__content--width--max: 96rem;
   --navbar--height: 6rem;

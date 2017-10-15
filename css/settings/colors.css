@@ -52,6 +52,8 @@
   --color--delete: var(--pink);
   --color--error: var(--pink);
   --color--foreground--darkest: var(--blackish);
+  --color--foreground--darker: var(--blackish--light);
+  --color--foreground--dark: var(--blackish--lighter);
   --color--foreground--light: var(--gray--dark);
   --color--foreground--lighter: var(--gray--light);
   --color--foreground--lightest: var(--whiteish);

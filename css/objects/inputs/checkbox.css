@@ -13,7 +13,7 @@ input[type="checkbox"] {
   width: 2rem;
 
   &:focus {
-    outline: 0.1rem dotted var(--blue);
+    outline: 0.1rem dotted var(--color--primary);
   }
 
   &:checked {

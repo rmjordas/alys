@@ -7,7 +7,7 @@
  * Max Specifity: 32 (0-3-2)
  */
 input[type="file"] {
-  background: var(--white);
+  background-color: transparent;
   color: var(--color--foreground--light);
   cursor: inherit;
   display: block;
@@ -77,11 +77,11 @@ input[type="file"] {
 
     &::before,
     &:hover::before {
-      background-color: var(--color--foreground--lighter);
+      background-color: var(--color--background--lighter);
     }
 
     &::-ms-browse {
-      background-color: var(--color--foreground--lighter);
+      background-color: var(--color--background--lighter);
     }
   }
 }

@@ -22,7 +22,7 @@
 
   /* GENERIC */
   --element--margin-bottom: 1.5157rem;
-  --textfield--background-color--focus: var(--white);
+  --textfield--background-color--focus: none;
   --textfield--border: 0.2rem solid var(--color--foreground--lighter);
   --textfield--border--focus: var(--border);
   --textfield--height: 3.8rem;

@@ -39,7 +39,7 @@
   }
 
   --button-style--disabled: {
-    background-color: var(--color--foreground--lighter);
+    background-color: var(--color--background--lighter);
     color: var(--color--foreground--light);
     cursor: not-allowed;
   }

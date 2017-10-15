@@ -5,8 +5,8 @@
    */
 
   /* INPUT */
-  --input--background-color--focused: var(--white);
-  --input--color--focused: var(--gray--dark);
+  --input--background-color--focused: none;
+  --input--color--focused: var(--color--foreground--light);
   --input--invalid--border: 0.2rem solid var(--color--error);
   --input--placeholder--invalid--color: var(--color--error);
   --input--placeholder--invalid--focused: var(--color--foreground--lighter);
