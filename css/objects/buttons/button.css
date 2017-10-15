@@ -26,10 +26,9 @@ button[type="submit"] {
         color: var(--color--foreground--lightest);
       }
 
-      /* For modern browsers
       @media (hover: none) {
         @apply --button-style--not-disabled--hover;
-      } */
+      }
     }
 
     &:focus {

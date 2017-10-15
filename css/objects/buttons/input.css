@@ -27,10 +27,9 @@ input[type="submit"]:not(:disabled) {
       color: var(--color--primary);
     }
 
-    /* For modern browsers
     @media (hover: hover), (hover: on-demand) {
       @apply --input-button-style--not-disabled--hover;
-    } */
+    }
   }
 
   &:focus {

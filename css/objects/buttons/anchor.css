@@ -29,11 +29,10 @@ a.btn {
       color: var(--color--foreground--lightest);
     }
 
-    /* For modern browsers
     @media (hover: hover), (hover: on-demand) {
       background-color: var(--color--hover);
       color: var(--white);
-    } */
+    }
   }
 
   &:active {
