@@ -14,14 +14,14 @@
   --fieldset--border: 0.3rem solid var(--color);
   --fieldset--border-radius: 0.8rem;
   --fieldset__legend--font: var(--heading--font);
-  --fieldset__legend--font-size: 2.058em;
+  --fieldset__legend--font-size: 1.7511em;
   --fieldset--padding-top: 4.2em;
 
   /* FIGURE */
   --figure__img--border: 0.3rem solid var(--color);
 
   /* GENERIC */
-  --element--margin-bottom: 1.5rem;
+  --element--margin-bottom: 1.5157rem;
   --textfield--background-color--focus: var(--white);
   --textfield--border: 0.2rem solid var(--color--foreground--lighter);
   --textfield--border--focus: var(--border);
