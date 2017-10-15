@@ -26,7 +26,7 @@ input[type="range"] {
 
   &::-webkit-slider-thumb {
     appearance: none;
-    background: var(--color);
+    background: var(--color--primary);
     border: none;
     border-radius: 50%;
     cursor: pointer;
@@ -40,7 +40,7 @@ input[type="range"] {
   * -------------------------------------
   */
   &::-moz-range-thumb {
-    background: var(--color);
+    background: var(--color--primary);
     border: none;
     border-radius: 50%;
     cursor: pointer;
@@ -73,7 +73,7 @@ input[type="range"] {
   }
 
   &::-ms-thumb {
-    background: var(--color);
+    background: var(--color--primary);
     border: none;
     border-radius: 50%;
     cursor: pointer;

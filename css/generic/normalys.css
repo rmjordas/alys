@@ -60,7 +60,7 @@ iframe {
 }
 
 svg {
-  fill: var(--color);
+  fill: var(--color--primary);
 }
 
 audio,
@@ -69,7 +69,7 @@ video {
 }
 
 ::selection {
-  background: var(--color);
+  background: var(--color--primary);
   color: var(--color--foreground--lightest);
 }
 

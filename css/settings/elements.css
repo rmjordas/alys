@@ -11,14 +11,14 @@
   --blockquote--padding: 1rem;
 
   /* FIELDSET */
-  --fieldset--border: 0.3rem solid var(--color);
+  --fieldset--border: 0.3rem solid var(--color--primary);
   --fieldset--border-radius: 0.8rem;
   --fieldset__legend--font: var(--heading--font);
   --fieldset__legend--font-size: 1.7511em;
   --fieldset--padding-top: 4.2em;
 
   /* FIGURE */
-  --figure__img--border: 0.3rem solid var(--color);
+  --figure__img--border: 0.3rem solid var(--color--primary);
 
   /* GENERIC */
   --element--margin-bottom: 1.5157rem;

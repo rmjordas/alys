@@ -9,7 +9,7 @@
  */
 :root {
   --button-style: {
-    background-color: var(--color);
+    background-color: var(--color--primary);
     border: 0;
     border-radius: 0.5rem;
     color: var(--color--foreground--lightest);

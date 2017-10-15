@@ -20,7 +20,7 @@ progress {
     appearance: none;
     border: none;
     border-radius: var(--border-radius);
-    color: var(--color);
+    color: var(--color--primary);
   }
 
   &::-webkit-progress-bar {
@@ -28,7 +28,7 @@ progress {
   }
 
   &::-webkit-progress-value {
-    background-color: var(--color);
+    background-color: var(--color--primary);
   }
 
   &::-webkit-progress-bar,
@@ -38,7 +38,7 @@ progress {
 
   &::-moz-progress-bar,
   &::-webkit-progress-value {
-    background-color: var(--color);
+    background-color: var(--color--primary);
   }
 
   &:indeterminate {
@@ -60,7 +60,7 @@ progress {
         ),
         linear-gradient(
           90deg,
-          var(--color),
+          var(--color--primary),
           var(--color--error)
         );
       background-size: 3.5rem 2.4rem, 100% 100%, 100% 100%;
@@ -86,7 +86,7 @@ progress {
         ),
         linear-gradient(
           90deg,
-          var(--color),
+          var(--color--primary),
           var(--color--error)
         );
       background-size: 3.5rem 2.4rem, 100% 100%, 100% 100%;

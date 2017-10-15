@@ -33,7 +33,7 @@ th {
 
   @nest thead &,
   tfoot & {
-    background-color: var(--color);
+    background-color: var(--color--primary);
     color: var(--color--foreground--lightest);
   }
 }

@@ -26,7 +26,7 @@ figure {
   }
 
   & figcaption {
-    background-color: var(--color);
+    background-color: var(--color--primary);
     color: var(--color--foreground--lightest);
     font-weight: 300;
     margin: 0;

@@ -8,12 +8,12 @@
   --aside--width--desktop: 28.8rem;
 
   /* BANNER */
-  --banner--background-color: var(--color);
+  --banner--background-color: var(--color--primary);
   --banner--color: var(--color--foreground--lightest);
   --banner--padding: 1.6rem 0;
 
   /* FOOTER */
-  --footer--background-color: var(--color);
+  --footer--background-color: var(--color--primary);
   --footer--color: var(--color--foreground--lightest);
 
   /* GENERIC */
@@ -26,7 +26,7 @@
 
   /* NAVBAR */
   --navbar__anchor--color: var(--color--foreground--lightest);
-  --navbar__anchor--color--hover: var(--color);
+  --navbar__anchor--color--hover: var(--color--primary);
   --navbar--background-color: var(--black);
   --navbar--color: var(--color--foreground--lightest);
   --navbar__content--width--max: 96rem;

@@ -34,7 +34,7 @@ input[type="file"] {
   }
 
   &::-ms-browse {
-    background-color: var(--color);
+    background-color: var(--color--primary);
     border: 0.2rem solid transparent;
     border-radius: var(--border-radius);
     color: var(--color--foreground--lightest);
@@ -42,7 +42,7 @@ input[type="file"] {
   }
 
   &::before {
-    background-color: var(--color);
+    background-color: var(--color--primary);
     border-radius: var(--border-radius) 0 0 var(--border-radius);
     color: var(--color--foreground--lightest);
     content: attr(title);

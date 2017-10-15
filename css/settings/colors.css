@@ -48,7 +48,7 @@
    * prefer to use these instead of above
    *
    */
-  --color: var(--blue);
+  --color--primary: var(--blue);
   --color--delete: var(--pink);
   --color--error: var(--pink);
   --color--foreground--darkest: var(--blackish);
@@ -59,7 +59,7 @@
   --color--background--light: var(--gray--dark);
   --color--background--lighter: var(--gray--light);
   --color--background--lightest: var(--whiteish);
-  --color--hover: color(var(--color) lightness(50%));
+  --color--hover: color(var(--color--primary) lightness(50%));
   --color--insert: var(--green);
   --color--mark: var(--yellow);
   --color--success: var(--green);

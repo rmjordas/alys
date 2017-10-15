@@ -3,7 +3,7 @@
    * Decorations
    * =====================================
    */
-  --border: 0.2rem solid var(--color);
+  --border: 0.2rem solid var(--color--primary);
   --border-radius: 0.3rem;
   --rounded-rectangle--border-radius--upper: 0.5rem 0.5rem 0 0;
   --rounded-rectangle--margin: 0.5rem;
