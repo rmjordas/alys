@@ -32,6 +32,10 @@ https://unpkg.com/alys@latest/dist/alys.min.css
 yarn add alys
 ```
 
+## Prerequisites
+
+- `node` v8.x
+
 ## Documentation
 
 * [`alys` wiki](https://github.com/mds3dstn71/alys/wiki)
