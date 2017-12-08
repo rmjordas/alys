@@ -1,6 +1,6 @@
 {
   "name": "alys",
-  "version": "0.1.0-beta.5",
+  "version": "0.1.0-beta.5.1",
   "description": "A modern CSS toolkit",
   "main": "dist/alys.min.css",
   "scripts": {
@@ -29,27 +29,27 @@
     "access": "public"
   },
   "devDependencies": {
-    "autoprefixer": "^7.1.4",
+    "autoprefixer": "^7.2.2",
     "cssnano": "^3.10.0",
-    "eslint": "^4.9.0",
-    "eslint-config-airbnb-base": "^12.0.2",
-    "eslint-plugin-import": "^2.7.0",
-    "postcss": "^6.0.13",
+    "eslint": "^4.12.1",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.8.0",
+    "postcss": "^6.0.14",
     "postcss-apply": "^0.8.0",
     "postcss-cli": "^4.1.1",
-    "postcss-color-function": "^4.0.0",
+    "postcss-color-function": "^4.0.1",
     "postcss-custom-media": "^6.0.0",
     "postcss-custom-properties": "^6.1.0",
     "postcss-custom-selectors": "^4.0.1",
-    "postcss-font-family-system-ui": "^2.0.1",
+    "postcss-font-family-system-ui": "^2.1.1",
     "postcss-import": "^11.0.0",
     "postcss-initial": "^2.0.0",
     "postcss-media-minmax": "^3.0.0",
     "postcss-nesting": "^4.2.1",
     "postcss-reporter": "^5.0.0",
-    "postcss-url": "^7.1.2",
-    "stylelint": "^8.2.0",
-    "stylelint-config-standard": "^17.0.0"
+    "postcss-url": "^7.3.0",
+    "stylelint": "^8.3.1",
+    "stylelint-config-standard": "^18.0.0"
   },
   "dependencies": {
     "normalize.css": "^7.0.0"
