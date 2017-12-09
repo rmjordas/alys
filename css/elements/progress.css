@@ -41,6 +41,10 @@ progress {
     background-color: var(--color--primary);
   }
 
+  &::-ms-fill {
+    border-color: currentColor;
+  }
+
   &:indeterminate {
     &::-webkit-progress-bar {
       background-image:
@@ -92,10 +96,6 @@ progress {
       background-size: 3.5rem 2.4rem, 100% 100%, 100% 100%;
       border-radius: 2px;
     }
-  }
-
-  &::-ms-fill {
-    border-color: currentColor;
   }
 }
 

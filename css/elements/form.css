@@ -44,13 +44,6 @@ select {
   padding: 0 1rem;
 }
 
-input:focus,
-textarea:focus,
-select:focus {
-  background-color: var(--textfield--background-color--focus);
-  border: var(--textfield--border--focus);
-}
-
 button,
 input,
 select,
@@ -58,34 +51,6 @@ textarea {
   appearance: none;
   font-family: inherit;
   font-size: 100%;
-}
-
-input[required]:valid {
-  background-color: transparent;
-  border: var(--input--valid--border);
-  color: var(--color--foreground--darkest);
-  outline: none;
-}
-
-input:invalid {
-  background-color: transparent;
-  border: var(--input--invalid--border);
-  color: var(--color--foreground--darkest);
-  outline: none;
-
-  &::placeholder {
-    color: var(--input--placeholder--invalid--color);
-  }
-
-  &:focus {
-    background-color: var(--input--background-color--focused);
-    border: var(--input--invalid--border);
-    color: var(--input--color--focused);
-
-    &::placeholder {
-      color: var(--input--placeholder--invalid--focused);
-    }
-  }
 }
 
 input::-webkit-inner-spin-button,
@@ -115,5 +80,40 @@ select {
   &:disabled {
     color: var(--color--foreground--lighter);
     cursor: not-allowed;
+  }
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  background-color: var(--textfield--background-color--focus);
+  border: var(--textfield--border--focus);
+}
+
+input[required]:valid {
+  background-color: transparent;
+  border: var(--input--valid--border);
+  color: var(--color--foreground--darkest);
+  outline: none;
+}
+
+input:invalid {
+  background-color: transparent;
+  border: var(--input--invalid--border);
+  color: var(--color--foreground--darkest);
+  outline: none;
+
+  &::placeholder {
+    color: var(--input--placeholder--invalid--color);
+  }
+
+  &:focus {
+    background-color: var(--input--background-color--focused);
+    border: var(--input--invalid--border);
+    color: var(--input--color--focused);
+
+    &::placeholder {
+      color: var(--input--placeholder--invalid--focused);
+    }
   }
 }

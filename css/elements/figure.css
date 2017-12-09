@@ -43,13 +43,13 @@ figure {
       caption-side: top;
     }
 
-    & img ~ figcaption {
-      caption-side: bottom;
-    }
-
     & figcaption {
       border: var(--figure__img--border);
       display: table-caption;
+    }
+
+    & img ~ figcaption {
+      caption-side: bottom;
     }
   }
 
@@ -69,13 +69,13 @@ figure {
       caption-side: top;
     }
 
-    & img ~ figcaption {
-      caption-side: bottom;
-    }
-
     & figcaption {
       border: var(--figure__img--border);
       display: table-caption;
+    }
+
+    & img ~ figcaption {
+      caption-side: bottom;
     }
   }
 }

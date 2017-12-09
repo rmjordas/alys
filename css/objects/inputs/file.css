@@ -19,10 +19,6 @@ input[type="file"] {
   top: 0;
   width: calc(100% - 1.6rem);
 
-  &:focus {
-    border: 0.2rem solid var(--color--foreground--lighter);
-  }
-
   &::-webkit-file-upload-button {
     visibility: hidden;
   }
@@ -55,20 +51,8 @@ input[type="file"] {
     transition: all 0.2s ease-in;
   }
 
-  &:hover:not(:disabled)::-ms-browse {
-    @apply --button-style--not-disabled--hover;
-  }
-
-  &:hover:not(:disabled)::before {
-    @apply --button-style--not-disabled--hover;
-  }
-
-  &:focus:not(:disabled)::before {
-    @apply --button-style--not-disabled--focused;
-  }
-
-  &:active:not(:disabled)::before {
-    @apply --button-style--not-disabled--active;
+  &:focus {
+    border: 0.2rem solid var(--color--foreground--lighter);
   }
 
   &:disabled {
@@ -83,5 +67,21 @@ input[type="file"] {
     &::-ms-browse {
       background-color: var(--color--background--lighter);
     }
+  }
+
+  &:hover:not(:disabled)::-ms-browse {
+    @apply --button-style--not-disabled--hover;
+  }
+
+  &:hover:not(:disabled)::before {
+    @apply --button-style--not-disabled--hover;
+  }
+
+  &:focus:not(:disabled)::before {
+    @apply --button-style--not-disabled--focused;
+  }
+
+  &:active:not(:disabled)::before {
+    @apply --button-style--not-disabled--active;
   }
 }

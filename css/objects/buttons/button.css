@@ -16,6 +16,10 @@ button[type="submit"] {
     @apply --button-style--not-active;
   }
 
+  &:disabled {
+    @apply --button-style--disabled;
+  }
+
   &:not(:disabled) {
     &:hover {
       /* Firefox and IE has no support for @media (hover: hover) */
@@ -39,8 +43,4 @@ button[type="submit"] {
       @apply --button-style--not-disabled--active;
     }
   }
-}
-
-button:disabled {
-  @apply --button-style--disabled;
 }
