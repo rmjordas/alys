@@ -54,7 +54,7 @@ https://unpkg.com/alys@latest/dist/alys.min.css
 through `yarn` or `npm` package dependency managers.
 
 ```bash
-yarn install alys
+yarn add alys
 ```
 
 After `yarn` finishes installing `alys`, you can copy the style sheet from
@@ -556,4 +556,3 @@ these attributes are used are explained in the Accessibility Checklist section.
 It is recommended to include a heading element (hidden visually by the
 `.sr-only` class) for each of the major sections of your web page to better
 define the document's outline._
-
