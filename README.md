@@ -14,6 +14,8 @@ Please see the [FAQ][] for common questions, and other useful information.
 
 ## Quick Start
 
+> **Note**: Building from source requires `node` version 8.x
+
 ### Releases
 
 ```fundamental
@@ -31,10 +33,6 @@ https://unpkg.com/alys@latest/dist/alys.min.css
 ```bash
 yarn add alys
 ```
-
-## Prerequisites
-
-- `node` v8.x
 
 ## Documentation
 
