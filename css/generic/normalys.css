@@ -30,7 +30,8 @@ h6,
 ol,
 p,
 ul {
-  overflow: auto;
+  overflow-x: auto;
+  overflow-y: hidden;
 }
 
 p {
