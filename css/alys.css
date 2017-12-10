@@ -1,4 +1,4 @@
-/*! alys v0.1.0-beta.5 | Apache-2.0 License | https://github.com/mds3dstn71/alys */
+/*! alys v0.1.0-beta.5.3 | Apache-2.0 License | https://github.com/mds3dstn71/alys */
 
 /*  Copyright 2017 Rodger Jordas
  *
@@ -44,7 +44,6 @@
  * Resets, normalize, etc.
  */
 @import 'generic/box';
-@import 'generic/normalize';
 @import 'generic/normalys';
 
 /* =====================================
@@ -94,3 +93,11 @@
 @import 'components/banner';
 @import 'components/footer';
 @import 'components/navigation';
+
+/* =====================================
+ * Themes
+ * =====================================
+ *
+ */
+
+@import 'themes/default';

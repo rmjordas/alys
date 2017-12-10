@@ -1,0 +1,50 @@
+html {
+  color: var(--color--foreground--darker);
+  font-family: var(--base--font-family);
+  font-size: var(--root--font-size);
+  line-height: var(--base--line-height);
+}
+
+p {
+  font-size: var(--paragraph--font-size);
+  margin: var(--paragraph--margin);
+}
+
+pre {
+  background: var(--color--background--lightest);
+  border-radius: var(--pre--border-radius);
+  overflow-x: auto;
+  padding: var(--pre--padding);
+}
+
+iframe {
+  border: var(--border--thin--light);
+  width: 100%;
+}
+
+svg {
+  fill: var(--color--primary);
+}
+
+::selection {
+  background: var(--color--primary);
+  color: var(--color--foreground--lightest);
+}
+
+::-webkit-scrollbar {
+  background-color: var(--color--foreground--lighter);
+  height: 0.8rem;
+  width: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color--foreground--light);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color--hover);
+}
+
+::-webkit-scrollbar-thumb:active {
+  background: var(--color--foreground--light);
+}
