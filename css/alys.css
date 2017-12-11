@@ -34,6 +34,7 @@
  */
 @import 'tools/button-style';
 @import 'tools/centered';
+@import 'tools/hover-style';
 @import 'tools/input-style';
 @import 'tools/media-queries';
 @import 'tools/sr-only';

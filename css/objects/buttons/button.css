@@ -21,19 +21,7 @@ button[type="submit"] {
   }
 
   &:not(:disabled) {
-    &:hover {
-      /* Firefox and IE has no support for @media (hover: hover) */
-      @apply --button-style--not-disabled--hover;
-
-      @media (hover: none) {
-        background-color: var(--color--primary);
-        color: var(--color--foreground--lightest);
-      }
-
-      @media (hover: none) {
-        @apply --button-style--not-disabled--hover;
-      }
-    }
+    /* @apply --hover-style */
 
     &:focus {
       @apply --button-style--not-disabled--focused;

@@ -1,0 +1,19 @@
+:root {
+  --hover-style: {
+    &:hover {
+      /* Firefox and IE has no support for @media (hover: hover) */
+      background-color: var(--color--hover);
+      color: var(--white);
+
+      @media (hover: none) {
+        background-color: var(--color--primary);
+        color: var(--color--foreground--lightest);
+      }
+
+      @media (hover: hover), (hover: on-demand) {
+        background-color: var(--color--hover);
+        color: var(--white);
+      }
+    }
+  }
+}
