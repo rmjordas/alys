@@ -1,6 +1,6 @@
 {
   "name": "alys",
-  "version": "0.1.0-beta.5.3",
+  "version": "0.1.0-beta.6",
   "description": "A modern CSS toolkit",
   "main": "dist/alys.min.css",
   "style": "dist/alys.min.css",
