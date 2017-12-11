@@ -7,7 +7,6 @@
  * Max Specifity: 3 (0-0-3)
  */
 figure {
-  border: var(--figure__img--border);
   border-radius: 0.5rem;
   margin: 0 auto var(--element--margin-bottom);
   overflow: hidden;
@@ -26,8 +25,6 @@ figure {
   }
 
   & figcaption {
-    background-color: var(--color--primary);
-    color: var(--color--foreground--lightest);
     font-weight: 300;
     margin: 0;
     padding: 0.8rem;
