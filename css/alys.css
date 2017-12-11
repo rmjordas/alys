@@ -32,9 +32,9 @@
  * =====================================
  * Contains Mixins, functions, etc.
  */
-@import 'tools/button-style.css';
+@import 'tools/button-style';
 @import 'tools/centered';
-@import 'tools/input-style.css';
+@import 'tools/input-style';
 @import 'tools/media-queries';
 @import 'tools/sr-only';
 
