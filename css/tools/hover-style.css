@@ -1,3 +1,12 @@
+/* =====================================
+ * Hover Styles
+ * =====================================
+ * Apply to style hover events, e.g.:
+ *
+ * a.btn {
+ *   @apply --hover-style;
+ * }
+ */
 :root {
   --hover-style: {
     &:hover {
