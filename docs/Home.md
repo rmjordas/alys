@@ -23,7 +23,7 @@ you want. Place the style sheet in your project directory and add a `link`
 element inside the `head` of your `.html` file referencing the relative path to
 the `alys` style sheet.
 
-[Releases]: https://github.com/mds3dstn71/alys/releases
+[Releases]: https://github.com/rmjordas/alys/releases
 
 ```html
 <head>

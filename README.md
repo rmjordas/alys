@@ -1,6 +1,6 @@
 <p align="center"><img src="docs/img/alys-banner.png" alt="alys banner"></p>
 
-[![Build Status](https://travis-ci.org/mds3dstn71/alys.svg?branch=master)](https://travis-ci.org/mds3dstn71/alys)
+[![Build Status](https://travis-ci.org/rmjordas/alys.svg?branch=master)](https://travis-ci.org/rmjordas/alys)
 
 ## Features
 
@@ -10,7 +10,7 @@
 
 Please see the [FAQ][] for common questions, and other useful information.
 
-[FAQ]: https://github.com/mds3dstn71/alys/wiki/FAQ
+[FAQ]: https://github.com/rmjordas/alys/wiki/FAQ
 
 ## Quick Start
 
@@ -19,7 +19,7 @@ Please see the [FAQ][] for common questions, and other useful information.
 ### Releases
 
 ```fundamental
-https://github.com/mds3dstn71/alys/releases
+https://github.com/rmjordas/alys/releases
 ```
 
 ### unpkg
@@ -36,13 +36,13 @@ yarn add alys
 
 ## Documentation
 
-* [`alys` wiki](https://github.com/mds3dstn71/alys/wiki)
-* [Project web site](https:/mds3dstn71.github.io/alys/docs)
-* [FAQ](https://github.com/mds3dstn71/alys/wiki/FAQ)
+* [`alys` wiki](https://github.com/rmjordas/alys/wiki)
+* [Project web site](https:/rmjordas.github.io/alys/docs)
+* [FAQ](https://github.com/rmjordas/alys/wiki/FAQ)
 
 ## Contributing
 
-* [Contributing Guide](https://github.com/mds3dstn71/alys/wiki/CONTRIBUTING)
+* [Contributing Guide](https://github.com/rmjordas/alys/wiki/CONTRIBUTING)
 
 ## License
 

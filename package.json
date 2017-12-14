@@ -14,18 +14,18 @@
   "engines": {
     "node": "8.x"
   },
-  "repository": "git+https://github.com/mds3dstn71/alys.git",
+  "repository": "git+https://github.com/rmjordas/alys.git",
   "keywords": [
     "CSS",
     "toolkit",
     "reset"
   ],
-  "author": "Rodger Jordas <mds3dstn71@pm.me> (https://github.com/mds3dstn71)",
+  "author": "Rodger Jordas <rmjordas@gmail.com> (https://github.com/rmjordas)",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/mds3dstn71/alys/issues"
+    "url": "https://github.com/rmjordas/alys/issues"
   },
-  "homepage": "https://github.com/mds3dstn71/alys#readme",
+  "homepage": "https://github.com/rmjordas/alys#readme",
   "publishConfig": {
     "access": "public"
   },
