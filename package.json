@@ -30,9 +30,9 @@
     "access": "public"
   },
   "devDependencies": {
-    "autoprefixer": "^7.2.2",
+    "autoprefixer": "^7.2.3",
     "cssnano": "^3.10.0",
-    "eslint": "^4.13.0",
+    "eslint": "^4.13.1",
     "eslint-config-airbnb-base": "^12.1.0",
     "eslint-plugin-import": "^2.8.0",
     "lite-server": "^2.3.0",
