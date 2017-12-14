@@ -15,7 +15,7 @@ const stylelint = require('stylelint');
 const url = require('postcss-url');
 
 module.exports = {
-  map: false,
+  map: { inline: false },
   plugins: [
     atImport({
       plugins: [
