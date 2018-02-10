@@ -9,10 +9,12 @@
     "dev": "postcss css/alys.css -o dist/alys.min.css -c postcss.config.js -w",
     "build": "postcss css/alys.css -o dist/alys.min.css -c postcss.config.js",
     "atp": "lite-server",
-    "test": "npm run lint"
+    "test": "npm run lint",
+    "push:docs": "git subtree push --prefix docs wiki master",
+    "updeps": "yarn upgrade-interactive --latest --exact"
   },
   "engines": {
-    "node": "8.x"
+    "node": "8.9.4"
   },
   "repository": "git+https://github.com/rmjordas/alys.git",
   "keywords": [
@@ -30,28 +32,28 @@
     "access": "public"
   },
   "devDependencies": {
-    "autoprefixer": "^7.2.3",
-    "cssnano": "^3.10.0",
-    "eslint": "^4.13.1",
-    "eslint-config-airbnb-base": "^12.1.0",
-    "eslint-plugin-import": "^2.8.0",
-    "lite-server": "^2.3.0",
-    "postcss": "^6.0.14",
-    "postcss-apply": "^0.8.0",
-    "postcss-cli": "^4.1.1",
-    "postcss-color-function": "^4.0.1",
-    "postcss-custom-media": "^6.0.0",
-    "postcss-custom-properties": "^6.1.0",
-    "postcss-custom-selectors": "^4.0.1",
-    "postcss-font-family-system-ui": "^2.1.1",
-    "postcss-import": "^11.0.0",
-    "postcss-initial": "^2.0.0",
-    "postcss-media-minmax": "^3.0.0",
-    "postcss-nesting": "^4.2.1",
-    "postcss-reporter": "^5.0.0",
-    "postcss-url": "^7.3.0",
-    "stylelint": "^8.4.0",
-    "stylelint-config-standard": "^18.0.0"
+    "autoprefixer": "7.2.6",
+    "cssnano": "3.10.0",
+    "eslint": "4.17.0",
+    "eslint-config-airbnb-base": "12.1.0",
+    "eslint-plugin-import": "2.8.0",
+    "lite-server": "2.3.0",
+    "postcss": "6.0.17",
+    "postcss-apply": "0.8.0",
+    "postcss-cli": "5.0.0",
+    "postcss-color-function": "4.0.1",
+    "postcss-custom-media": "6.0.0",
+    "postcss-custom-properties": "6.2.0",
+    "postcss-custom-selectors": "4.0.1",
+    "postcss-font-family-system-ui": "3.0.0",
+    "postcss-import": "11.0.0",
+    "postcss-initial": "2.0.0",
+    "postcss-media-minmax": "3.0.0",
+    "postcss-nesting": "4.2.1",
+    "postcss-reporter": "5.0.0",
+    "postcss-url": "7.3.0",
+    "stylelint": "8.4.0",
+    "stylelint-config-standard": "18.0.0"
   },
   "browserslist": [
     "> 1%",
