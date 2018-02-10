@@ -1,6 +1,4 @@
-<p align="center"><img src="docs/img/alys-banner.png" alt="alys banner"></p>
-
-[![Build Status](https://travis-ci.org/rmjordas/alys.svg?branch=master)](https://travis-ci.org/rmjordas/alys)
+# alys [![Build Status](https://travis-ci.org/rmjordas/alys.svg?branch=master)](https://travis-ci.org/rmjordas/alys)
 
 ## Features
 
@@ -14,7 +12,7 @@ Please see the [FAQ][] for common questions, and other useful information.
 
 ## Quick Start
 
-> **Note**: Building from source requires `node` version 8.x
+> **Note**: Building from source requires `node` version 8.9.4
 
 ### Releases
 
@@ -46,6 +44,6 @@ yarn add alys
 
 ## License
 
-Copyright 2017 Rodger Jordas
+Copyright 2017-2018 Rodger Jordas
 
 This project is licensed under the terms of the Apache License, Version 2.0.
