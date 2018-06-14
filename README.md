@@ -1,46 +1,62 @@
-# alys [![Build Status](https://travis-ci.org/rmjordas/alys.svg?branch=master)](https://travis-ci.org/rmjordas/alys)
+# alys [![Build Status][badge]][ci]
 
-## Features
-
-* Future CSS syntax
-* CSS Grid
-* ITCSS architecture
-
-Please see the [FAQ][] for common questions, and other useful information.
-
-[FAQ]: https://github.com/rmjordas/alys/wiki/FAQ
+[badge]: https://travis-ci.org/rmjordas/alys.svg?branch=master
+[ci]: https://travis-ci.org/rmjordas/alys
 
 ## Quick Start
 
-> **Note**: Building from source requires `node` version 8.9.4
+### `npm`
+
+```bash
+npm install alys
+```
 
 ### Releases
 
 ```fundamental
-https://github.com/rmjordas/alys/releases
+https://github/rmjordas/alys/releases
 ```
 
 ### unpkg
 
 ```fundamental
-https://unpkg.com/alys@latest/dist/alys.min.css
-```
-
-### `yarn`
-
-```bash
-yarn add alys
+https://unpkg.com/alys@latest/dist/alys.umd.min.js
 ```
 
 ## Documentation
 
-* [`alys` wiki](https://github.com/rmjordas/alys/wiki)
-* [Project web site](https:/rmjordas.github.io/alys/docs)
-* [FAQ](https://github.com/rmjordas/alys/wiki/FAQ)
+[Project web site](https://rmjordas.github.io/alys)
 
-## Contributing
+## Development
 
-* [Contributing Guide](https://github.com/rmjordas/alys/wiki/CONTRIBUTING)
+To run this app on your machine, clone the repository, then run the
+`npm install` command on your terminal to install the project dependencies:
+
+```bash
+git clone https://github.com/rmjordas/alys.git
+cd alys
+npm install
+```
+
+Enter `npm run build` in your terminal to compile the app in a `dist` directory:
+
+```bash
+npm run build
+```
+
+## Testing
+
+```bash
+yarn test # or
+yarn test:watch
+```
+
+Enter one of the commands above to run the tests. The first command lints the
+source files before running a single round of tests. The second similarly lints
+and runs a round of tests but does not exit immediately after and any change to
+the source files will trigger another round of tests.
+
+To exit the process, press <kbd>Ctrl</kbd> + <kbd>C</kbd>.
 
 ## License
 

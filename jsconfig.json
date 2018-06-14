@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"],
+      "vue$": ["vue/dist/vue.runtime.esm.js"]
+    }
+  },
+  "include": ["components/**/*", "docs/**/*"]
+}

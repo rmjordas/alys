@@ -1,6 +1,33 @@
 language: node_js
+
 node_js:
   - "lts/*"
+
 cache:
   directories:
     - "node_modules"
+
+install:
+  - npm install
+  - npm run build
+  - npm run build:docs
+
+script:
+  - npm test --runInBand
+
+deploy:
+  - provider: pages
+    skip-cleanup: true
+    github-token: $GITHUB_TOKEN
+    target-branch: gh-pages
+    keep-history: true
+    local-dir: docs/.vuepress/dist
+    on:
+      branch: master
+  - provider: npm
+    skip-cleanup: true
+    email: "rmjordas@gmail.com"
+    api_key: $NPM_TOKEN
+    tag: latest
+    on:
+      tags: true

@@ -1,63 +1,60 @@
 {
   "name": "alys",
-  "version": "0.1.0-beta.5.3",
-  "description": "A modern CSS toolkit",
-  "main": "dist/alys.min.css",
-  "style": "dist/alys.min.css",
-  "scripts": {
-    "lint": "stylelint \"css/**/*.css\"",
-    "dev": "postcss css/alys.css -o dist/alys.min.css -c postcss.config.js -w",
-    "build": "postcss css/alys.css -o dist/alys.min.css -c postcss.config.js",
-    "atp": "lite-server",
-    "test": "npm run lint",
-    "push:docs": "git subtree push --prefix docs wiki master",
-    "updeps": "yarn upgrade-interactive --latest --exact"
-  },
+  "version": "0.2.0",
+  "description": "A tiny Vue.js component library",
+  "keywords": [
+    "Vue",
+    "UI",
+    "toolkit"
+  ],
+  "author": "Rodger Jordas <rmjordas@gmail.com> (https://rmjordas.github.io)",
+  "license": "Apache-2.0",
+  "private": false,
+  "main": "dist/build.js",
   "engines": {
-    "node": "8.9.4"
+    "node": "8.11.3",
+    "npm": "6.1.0"
   },
   "repository": "git+https://github.com/rmjordas/alys.git",
-  "keywords": [
-    "CSS",
-    "toolkit",
-    "reset"
-  ],
-  "author": "Rodger Jordas <rmjordas@gmail.com> (https://github.com/rmjordas)",
-  "license": "Apache-2.0",
   "bugs": {
     "url": "https://github.com/rmjordas/alys/issues"
   },
-  "homepage": "https://github.com/rmjordas/alys#readme",
+  "homepage": "https://rmjordas.github.io/alys",
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build --target lib --name alys src/index.js",
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs",
+    "lint": "vue-cli-service lint",
+    "test:unit": "vue-cli-service test:unit",
+    "test": "npm run test:unit"
+  },
+  "files": [
+    "dist"
+  ],
   "publishConfig": {
     "access": "public"
   },
+  "dependencies": {
+    "vue": "2.5.16"
+  },
   "devDependencies": {
-    "autoprefixer": "7.2.6",
-    "cssnano": "3.10.0",
-    "eslint": "4.17.0",
-    "eslint-config-airbnb-base": "12.1.0",
-    "eslint-plugin-import": "2.8.0",
-    "lite-server": "2.3.0",
-    "postcss": "6.0.17",
-    "postcss-apply": "0.8.0",
-    "postcss-cli": "5.0.0",
-    "postcss-color-function": "4.0.1",
-    "postcss-custom-media": "6.0.0",
-    "postcss-custom-properties": "6.2.0",
-    "postcss-custom-selectors": "4.0.1",
-    "postcss-font-family-system-ui": "3.0.0",
-    "postcss-import": "11.0.0",
-    "postcss-initial": "2.0.0",
-    "postcss-media-minmax": "3.0.0",
-    "postcss-nesting": "4.2.1",
-    "postcss-reporter": "5.0.0",
-    "postcss-url": "7.3.0",
-    "stylelint": "8.4.0",
-    "stylelint-config-standard": "18.0.0"
+    "@vue/cli-plugin-babel": "3.0.0-rc.2",
+    "@vue/cli-plugin-eslint": "3.0.0-rc.2",
+    "@vue/cli-plugin-unit-jest": "3.0.0-rc.2",
+    "@vue/cli-service": "3.0.0-rc.2",
+    "@vue/eslint-config-airbnb": "3.0.0-rc.2",
+    "@vue/test-utils": "1.0.0-beta.18",
+    "babel-core": "7.0.0-bridge.0",
+    "babel-jest": "23.0.1",
+    "node-sass": "4.9.0",
+    "sass-loader": "7.0.3",
+    "vue-template-compiler": "2.5.16",
+    "vuepress": "0.10.1"
   },
   "browserslist": [
     "> 1%",
     "last 2 versions",
-    "not ie < 11"
+    "not ie <= 8"
   ]
 }
