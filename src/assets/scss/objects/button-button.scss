@@ -1,0 +1,32 @@
+// =====================================
+// Button
+// =====================================
+// Applies the "mixins" for button
+// elements
+// -------------------------------------
+button,
+button[type='button'],
+button[type='reset'],
+button[type='submit'] {
+  @include button-style();
+
+  &:not(:active) {
+    @include button-style--not-active();
+  }
+
+  &:disabled {
+    @include button-style--disabled();
+  }
+
+  &:not(:disabled) {
+    /* @include hover-style() */
+
+    &:focus {
+      @include button-style--not-disabled--focused();
+    }
+
+    &:active {
+      @include button-style--not-disabled--active();
+    }
+  }
+}

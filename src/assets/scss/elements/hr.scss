@@ -1,0 +1,11 @@
+// =====================================
+// Horizontal Rule
+// =====================================
+// A line representing the of boudaries
+// between two page sections (not
+// necessarily two `section` elements).
+// -------------------------------------
+hr {
+  border-top: $horizontal-rule--border-top;
+  border-width: 0;
+}

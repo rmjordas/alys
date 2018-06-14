@@ -1,0 +1,40 @@
+// =====================================
+// Element Variables
+// =====================================
+
+// BLOCKQUOTE
+$blockquote--border-left: 1rem solid $color--foreground--lighter;
+$blockquote--border-radius: 1rem;
+$blockquote--margin: 0 1em $element--margin-bottom;
+$blockquote--padding: 1rem;
+
+// FIELDSET
+$fieldset--border: 0.3rem solid $color--primary;
+$fieldset--border-radius: 0.8rem;
+$fieldset__legend--font: $heading--font;
+$fieldset__legend--font-size: 1.7511em;
+$fieldset--padding-top: 4.2em;
+
+// FIGURE
+$figure__img--border: 0.3rem solid $color--primary;
+
+// GENERIC
+$element--margin-bottom: 1.5157rem;
+$textfield--background-color--focus: none;
+$textfield--border: 0.2rem solid $color--foreground--lighter;
+$textfield--border--focus: $border;
+$textfield--height: 3.8rem;
+
+// HORIZONTAL RULE
+$horizontal-rule--border-top: 0.2rem solid $color--foreground--lighter;
+
+// LABEL
+$label--font-weight: 600;
+
+// TABLE
+$table--font-size: 1em;
+$table__tr--border-bottom: 0.2rem solid $color--foreground--lightest;
+
+// TEXTAREA
+$textarea--min-height: 6.5rem;
+$textarea--padding: 1rem;

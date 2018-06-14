@@ -1,0 +1,139 @@
+// =====================================
+// Inputs (Range)
+// =====================================
+// Draggable knob for number values
+// -------------------------------------
+input[type='range'] {
+  appearance: none;
+  border: none;
+  outline: none;
+  vertical-align: middle;
+
+  // Chrome, Safari, Opera
+  &::-webkit-slider-runnable-track {
+    background: $color--background--lightest;
+    border: none;
+    border-radius: $border-radius;
+    cursor: default;
+    height: 1rem;
+    width: 100%;
+  }
+
+  &::-webkit-slider-thumb {
+    appearance: none;
+    background: $color--primary;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    height: 2rem;
+    margin-top: -0.5rem;
+    width: 2rem;
+  }
+
+  // Firefox
+  &::-moz-range-thumb {
+    background: $color--primary;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    height: 2rem;
+    width: 2rem;
+  }
+
+  &::-moz-range-track {
+    background: $color--background--lightest;
+    border-radius: $border-radius;
+    border: none;
+    cursor: default;
+    height: 1rem;
+    width: 100%;
+  }
+
+  // Edge
+  &::-ms-fill-lower {
+    background: $color--background--lightest;
+    border-radius: $border-radius;
+  }
+
+  &::-ms-fill-upper {
+    background: $color--background--lightest;
+    border: none;
+    border-radius: $border-radius;
+  }
+
+  &::-ms-thumb {
+    background: $color--primary;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    height: 2rem;
+    margin-top: 0;
+    width: 2rem;
+  }
+
+  &::-ms-track {
+    background: transparent;
+    border: 0;
+    color: transparent;
+    cursor: pointer;
+    height: 1rem;
+    width: 100%;
+  }
+
+  &[disabled] {
+    background-color: transparent;
+    cursor: not-allowed;
+
+    &::-webkit-slider-runnable-track {
+      background: $color--foreground--lighter;
+      cursor: not-allowed;
+    }
+
+    &::-webkit-slider-thumb {
+      background: $color--foreground--light;
+      cursor: not-allowed;
+    }
+
+    &::-moz-range-thumb {
+      background: $color--foreground--light;
+      cursor: not-allowed;
+    }
+
+    &::-moz-range-track {
+      background: $color--background--lighter;
+      cursor: not-allowed;
+    }
+
+    &::-ms-thumb {
+      background: $color--foreground--light;
+      cursor: not-allowed;
+    }
+
+    &::-ms-track {
+      background: $color--background--lighter;
+      cursor: not-allowed;
+    }
+  }
+
+  &:active {
+    &:not(:disabled) {
+      outline: none;
+
+      &::-webkit-slider-runnable-track {
+        background: $color--background--lighter;
+      }
+
+      &::-moz-range-track {
+        background: $color--background--lighter;
+      }
+
+      &::-ms-fill-lower {
+        background: $color--background--lighter;
+      }
+
+      &::-ms-fill-upper {
+        background: $color--background--lighter;
+      }
+    }
+  }
+}

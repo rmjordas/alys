@@ -1,0 +1,13 @@
+// =====================================
+// Inputs (Disabled)
+// =====================================
+// Applies the "mixins" for inputs that
+// are disabled
+// -------------------------------------
+input[disabled],
+input:disabled {
+  background-color: $color--background--lightest;
+  border: 0.2rem solid $color--foreground--lightest;
+  color: $color--foreground--lighter;
+  cursor: not-allowed;
+}

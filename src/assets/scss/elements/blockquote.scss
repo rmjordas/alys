@@ -1,0 +1,23 @@
+// =====================================
+// Blockquotes
+// =====================================
+// Blockquotes have a thick "border" on
+// the left side and the texts inside it
+// are italicized.
+// -------------------------------------
+blockquote {
+  background-color: $color--background--lightest;
+  border-left: $blockquote--border-left;
+  border-radius: $blockquote--border-radius;
+  margin: $blockquote--margin;
+  padding: $blockquote--padding;
+
+  & p {
+    font-style: italic;
+    margin-top: 0;
+
+    &:only-child {
+      margin-bottom: 0;
+    }
+  }
+}

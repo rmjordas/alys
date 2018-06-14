@@ -1,0 +1,23 @@
+// =====================================
+// Inputs (Color)
+// =====================================
+// Pops open a color picker when color
+// swatch is activated
+// -------------------------------------
+input[type='color'] {
+  height: 3.1rem;
+  padding: 0.5rem;
+
+  &::-webkit-color-swatch-wrapper {
+    padding: 0;
+  }
+
+  &::-webkit-color-swatch {
+    border: none;
+    border-radius: $border-radius;
+  }
+
+  &:disabled {
+    opacity: 0.5;
+  }
+}

@@ -1,0 +1,39 @@
+// =====================================
+// Button Styles
+// =====================================
+
+@mixin button-style() {
+  background-color: $color--primary;
+  border: 0;
+  border-radius: 0.5rem;
+  color: $color--foreground--lightest;
+  font-weight: 700;
+  margin-bottom: $element--margin-bottom;
+  padding: 1rem 1.5rem;
+  transition: all 0.2s ease-in;
+}
+
+@mixin button-style--not-active() {
+  outline: none;
+}
+
+@mixin button-style--not-disabled--active() {
+  background-color: $color--success;
+  transform: scale(0.95, 0.95);
+  transition: all 0ms;
+}
+
+@mixin button-style--not-disabled--focused() {
+  outline: none;
+}
+
+@mixin button-style--not-disabled--hover() {
+  background-color: $color--hover;
+  color: $white;
+}
+
+@mixin button-style--disabled() {
+  background-color: $color--background--lighter;
+  color: $color--foreground--light;
+  cursor: not-allowed;
+}

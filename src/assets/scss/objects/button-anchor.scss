@@ -1,0 +1,38 @@
+// =====================================
+// Anchor-buttons
+// =====================================
+// Applies the "mixins" for anchor
+// elements with class "btn"
+// -------------------------------------
+a.btn {
+  background-color: transparent;
+  border-radius: $border-radius;
+  cursor: default;
+  display: inline-block;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+  margin-bottom: $element--margin-bottom;
+  padding: 0.8rem 1.6rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 0.2s ease-in;
+
+  &:active {
+    background-color: $color--success;
+    color: $color--foreground--lightest;
+    transition: all 0ms;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &.disabled {
+    color: $color--foreground--lighter;
+    cursor: not-allowed;
+  }
+
+  &.disabled:hover {
+    background: none;
+  }
+}
