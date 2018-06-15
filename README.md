@@ -20,7 +20,9 @@ https://github.com/rmjordas/alys/releases
 ### unpkg
 
 ```fundamental
+https://unpkg.com/alys@latest/dist/alys.css
 https://unpkg.com/alys@latest/dist/alys.umd.min.js
+https://unpkg.com/alys@latest/dist/alys.common.js
 ```
 
 ## Documentation

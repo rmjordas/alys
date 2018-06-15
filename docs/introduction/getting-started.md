@@ -9,10 +9,10 @@ Alys script file.
 
 [releases]: https://github.com/rmjordas/alys/releases
 
-```html
+```html {3,4}
 <head>
   <title>My Website</title>
-  <script src="https://unpkg.com/vue"></script>
+  <script src="//unpkg.com/vue"></script>
   <srcipt src="/path/to/alys.umd.min.js"></script>
 </head>
 ```
@@ -26,12 +26,27 @@ the following URL as the value of the `src` attribute:
 https://unpkg.com/alys@latest/dist/alys.umd.min.js
 ```
 
-```html
+```html {3,11,12,14}
 <head>
   <title>My Website</title>
-  <script src="https://unpkg.com/vue"></script>
-  <script href="//unpkg.com/alys@latest/dist/alys.umd.min.js"></script>
+  <link href="//unpkg.com/alys@latest/dist/alys.css">
 </head>
+<body>
+  <div id="#app">
+    <h1>Hello, Alys!</h1>
+    <a-button>Spicy</a-button>
+  </div>
+
+  <script src="//unpkg.com/vue"></script>
+  <script src="//unpkg.com/alys@latest/dist/alys.umd.min.js"></script>
+  <script>
+    Vue.use(alys);
+
+    const vm = new Vue({
+      el: '#app',
+    });
+  </script>
+</body>
 ```
 
 ## `yarn` or `npm`
