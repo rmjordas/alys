@@ -14,7 +14,7 @@ npm install alys
 ### Releases
 
 ```fundamental
-https://github/rmjordas/alys/releases
+https://github.com/rmjordas/alys/releases
 ```
 
 ### unpkg
