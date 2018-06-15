@@ -3,6 +3,7 @@ docs/
 node_modules/
 src/
 tests/
+tmp/
 .editorconfig
 .eslintignore
 .eslintrc.js

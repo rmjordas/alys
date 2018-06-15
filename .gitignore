@@ -89,4 +89,5 @@ typings/
 
 # Local setup
 .vscode/
-docs/.vuepress/dist
+docs/.vuepress/dist/
+tmp/

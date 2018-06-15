@@ -7,5 +7,5 @@
       "vue$": ["vue/dist/vue.runtime.esm.js"]
     }
   },
-  "include": ["components/**/*", "docs/**/*"]
+  "include": ["src/**/*", "docs/**/*"]
 }
