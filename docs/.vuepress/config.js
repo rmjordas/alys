@@ -38,6 +38,24 @@ module.exports = {
     editLinks: true,
     lastUpdated: 'Last Updated',
     nav: [],
-    sidebar: ['/home', '/faq'],
+    sidebar: [
+      {
+        title: 'Introduction',
+        collapsable: false,
+        children: ['/introduction/getting-started'],
+      },
+      {
+        title: 'Components',
+        collapsable: false,
+        children: [
+          '/components/button',
+          '/components/blockquote',
+          '/components/checkbox',
+          '/components/figure',
+          '/components/hr',
+          '/components/input',
+        ],
+      },
+    ],
   },
 };

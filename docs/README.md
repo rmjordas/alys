@@ -2,7 +2,7 @@
 home: true
 heroImage: /hero.png
 actionText: Get Started →
-actionLink: /home
+actionLink: /introduction/getting-started
 features:
 - title: Modern style
   details: Simple, rounded corners, perfect for modern web applications.

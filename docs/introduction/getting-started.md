@@ -1,20 +1,11 @@
-# Home
+# Getting Started
 
-`alys` is a modern UI toolkit made for modern web pages.
+## Releases
 
-_Please see the [FAQ](/faq.md) for common questions, and other useful
-information._
-
-## Getting Started
-
-There are a lot of ways to use `alys` in your projects:
-
-### Releases
-
-Go to the `alys` GitHub [Releases][] page and download the file for the version
+Go to the Alys GitHub [Releases][] page and download the file for the version
 you want. Place the file in your project directory and add a `script` element
 inside the `head` of your `.html` file referencing the relative path to the
-`alys` script file.
+Alys script file.
 
 [releases]: https://github.com/rmjordas/alys/releases
 
@@ -26,7 +17,7 @@ inside the `head` of your `.html` file referencing the relative path to the
 </head>
 ```
 
-### unpkg CDN
+## unpkg CDN
 
 Another method is to include a `script` element inside the `head` element with
 the following URL as the value of the `src` attribute:
@@ -43,23 +34,21 @@ https://unpkg.com/alys@latest/dist/alys.umd.min.js
 </head>
 ```
 
-### `yarn` or `npm`
+## `yarn` or `npm`
 
-`alys` is also available as package that you can include in your project either
+Alys is also available as package that you can include in your project either
 through `yarn` or `npm` package dependency managers.
 
 ```bash
 yarn add alys # or
-npm install alys
+npm install alys --save
 ```
 
-After `yarn` or `npm` finishes installing `alys`, you can simply import it into
-your project:
+After `yarn` or `npm` finishes installing Alys, you can simply `import` it into
+your project and install it as a Vue plugin:
 
 ```js
-import alys from 'alys';
+import Alys from 'alys';
+
+Vue.use(Alys);
 ```
-
-## Usage
-
-TODO
