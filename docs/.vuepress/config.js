@@ -1,6 +1,6 @@
 module.exports = {
   title: 'Alys',
-  description: 'A tiny Vue.js component library',
+  description: '♠️ A tiny Vue.js component library',
   head: [
     ['link', { rel: 'icon', href: `/logo.png` }],
     ['link', { rel: 'manifest', href: '/manifest.json' }],
