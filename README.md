@@ -1,4 +1,4 @@
-# alys [![Build Status][badge]][ci]
+# Alys [![Build Status][badge]][ci]
 
 [badge]: https://travis-ci.org/rmjordas/alys.svg?branch=master
 [ci]: https://travis-ci.org/rmjordas/alys
