@@ -10,7 +10,7 @@ cache:
 install:
   - npm install
   - npm run build
-  - npm run build:docs
+  - npm run docs:build
 
 script:
   - npm test --runInBand
