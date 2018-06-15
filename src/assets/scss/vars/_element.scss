@@ -4,9 +4,10 @@
 
 // BLOCKQUOTE
 $blockquote--border-left: 1rem solid $color--foreground--lighter;
-$blockquote--border-radius: 1rem;
-$blockquote--margin: 0 1em $element--margin-bottom;
-$blockquote--padding: 1rem;
+$blockquote--border-radius: 0.4em;
+// $blockquote--margin: 0 1em $element--margin-bottom;
+$blockquote--margin: 0 1em;
+$blockquote--padding: 0.6em;
 
 // FIELDSET
 $fieldset--border: 0.3rem solid $color--primary;
@@ -21,9 +22,9 @@ $figure__img--border: 0.3rem solid $color--primary;
 // GENERIC
 $element--margin-bottom: 1.5157rem;
 $textfield--background-color--focus: none;
-$textfield--border: 0.2rem solid $color--foreground--lighter;
+$textfield--border: 0.1em solid $color--foreground--lighter;
 $textfield--border--focus: $border;
-$textfield--height: 3.8rem;
+$textfield--height: 2em;
 
 // HORIZONTAL RULE
 $horizontal-rule--border-top: 0.2rem solid $color--foreground--lighter;

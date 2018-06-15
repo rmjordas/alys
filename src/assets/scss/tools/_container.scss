@@ -3,7 +3,7 @@
 // =====================================
 // A padded wrapper
 // -------------------------------------
-.container {
+@mixin container() {
   margin: 0 auto;
   max-width: 98rem;
   padding: 0.8rem;

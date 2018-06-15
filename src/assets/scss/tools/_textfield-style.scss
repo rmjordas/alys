@@ -1,0 +1,18 @@
+// =====================================
+// Input Text Styles
+// =====================================
+// Styles for input, textarea and select
+// -------------------------------------
+@mixin textfield-style() {
+  background-color: transparent;
+  border: $textfield--border;
+  border-radius: $rounded-rectangle--margin;
+  height: $textfield--height;
+  outline: none;
+  padding: 0 0.6em;
+}
+
+@mixin textfield-style--focused() {
+  background-color: $textfield--background-color--focus;
+  border: $textfield--border--focus;
+}
