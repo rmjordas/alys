@@ -25,7 +25,7 @@ https://unpkg.com/alys@latest/dist/alys.umd.min.js
 
 ## Documentation
 
-[Project web site](https://rmjordas.github.io/alys)
+[Project web site](https://alys.js.org)
 
 ## Development
 

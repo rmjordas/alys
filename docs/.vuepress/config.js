@@ -32,7 +32,7 @@ module.exports = {
     ['meta', { name: 'msapplication-TileColor', content: '#fff' }],
   ],
   serviceWorker: true,
-  base: '/alys/',
+  base: '/',
   themeConfig: {
     repo: 'rmjordas/alys',
     editLinks: true,
