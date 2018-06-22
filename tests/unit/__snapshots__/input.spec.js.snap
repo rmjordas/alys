@@ -5,6 +5,7 @@ VueWrapper {
   "_emitted": Object {},
   "_emittedByOrder": Array [],
   "element": <input
+    class="input"
     type="text"
   />,
   "isFunctionalComponent": undefined,
@@ -20,6 +21,7 @@ VueWrapper {
     "$children": Array [],
     "$createElement": [Function],
     "$el": <input
+      class="input"
       type="text"
     />,
     "$emit": [Function],
@@ -47,6 +49,7 @@ VueWrapper {
           ],
           "$createElement": [Function],
           "$el": <input
+            class="input"
             type="text"
           />,
           "$emit": [Function],
@@ -95,6 +98,7 @@ VueWrapper {
             ],
             "$createElement": [Function],
             "$el": <input
+              class="input"
               type="text"
             />,
             "$emit": [Function],
@@ -247,6 +251,7 @@ VueWrapper {
           "ref": "vm",
         },
         "elm": <input
+          class="input"
           type="text"
         />,
         "fnContext": undefined,
@@ -277,6 +282,7 @@ VueWrapper {
         ],
         "$createElement": [Function],
         "$el": <input
+          class="input"
           type="text"
         />,
         "$emit": [Function],
@@ -325,6 +331,7 @@ VueWrapper {
           ],
           "$createElement": [Function],
           "$el": <input
+            class="input"
             type="text"
           />,
           "$emit": [Function],
@@ -399,6 +406,7 @@ VueWrapper {
               "ref": "vm",
             },
             "elm": <input
+              class="input"
               type="text"
             />,
             "fnContext": undefined,
@@ -492,6 +500,7 @@ VueWrapper {
             "ref": "vm",
           },
           "elm": <input
+            class="input"
             type="text"
           />,
           "fnContext": undefined,
@@ -562,6 +571,7 @@ VueWrapper {
       ],
       "$createElement": [Function],
       "$el": <input
+        class="input"
         type="text"
       />,
       "$emit": [Function],
@@ -610,6 +620,7 @@ VueWrapper {
         ],
         "$createElement": [Function],
         "$el": <input
+          class="input"
           type="text"
         />,
         "$emit": [Function],
@@ -684,6 +695,7 @@ VueWrapper {
             "ref": "vm",
           },
           "elm": <input
+            class="input"
             type="text"
           />,
           "fnContext": undefined,
@@ -777,6 +789,7 @@ VueWrapper {
           "ref": "vm",
         },
         "elm": <input
+          class="input"
           type="text"
         />,
         "fnContext": undefined,
@@ -846,6 +859,7 @@ VueWrapper {
       ],
       "$createElement": [Function],
       "$el": <input
+        class="input"
         type="text"
       />,
       "$emit": [Function],
@@ -894,6 +908,7 @@ VueWrapper {
         ],
         "$createElement": [Function],
         "$el": <input
+          class="input"
           type="text"
         />,
         "$emit": [Function],
@@ -968,6 +983,7 @@ VueWrapper {
             "ref": "vm",
           },
           "elm": <input
+            class="input"
             type="text"
           />,
           "fnContext": undefined,
@@ -1061,6 +1077,7 @@ VueWrapper {
           "ref": "vm",
         },
         "elm": <input
+          class="input"
           type="text"
         />,
         "fnContext": undefined,
@@ -1143,6 +1160,7 @@ VueWrapper {
         ],
         "$createElement": [Function],
         "$el": <input
+          class="input"
           type="text"
         />,
         "$emit": [Function],
@@ -1191,6 +1209,7 @@ VueWrapper {
           ],
           "$createElement": [Function],
           "$el": <input
+            class="input"
             type="text"
           />,
           "$emit": [Function],
@@ -1343,6 +1362,7 @@ VueWrapper {
         "ref": "vm",
       },
       "elm": <input
+        class="input"
         type="text"
       />,
       "fnContext": undefined,
@@ -1382,6 +1402,7 @@ VueWrapper {
       "$children": Array [],
       "$createElement": [Function],
       "$el": <input
+        class="input"
         type="text"
       />,
       "$emit": [Function],
@@ -1409,6 +1430,7 @@ VueWrapper {
             ],
             "$createElement": [Function],
             "$el": <input
+              class="input"
               type="text"
             />,
             "$emit": [Function],
@@ -1457,6 +1479,7 @@ VueWrapper {
               ],
               "$createElement": [Function],
               "$el": <input
+                class="input"
                 type="text"
               />,
               "$emit": [Function],
@@ -1609,6 +1632,7 @@ VueWrapper {
             "ref": "vm",
           },
           "elm": <input
+            class="input"
             type="text"
           />,
           "fnContext": undefined,
@@ -1639,6 +1663,7 @@ VueWrapper {
           ],
           "$createElement": [Function],
           "$el": <input
+            class="input"
             type="text"
           />,
           "$emit": [Function],
@@ -1687,6 +1712,7 @@ VueWrapper {
             ],
             "$createElement": [Function],
             "$el": <input
+              class="input"
               type="text"
             />,
             "$emit": [Function],
@@ -1761,6 +1787,7 @@ VueWrapper {
                 "ref": "vm",
               },
               "elm": <input
+                class="input"
                 type="text"
               />,
               "fnContext": undefined,
@@ -1854,6 +1881,7 @@ VueWrapper {
               "ref": "vm",
             },
             "elm": <input
+              class="input"
               type="text"
             />,
             "fnContext": undefined,
@@ -1924,6 +1952,7 @@ VueWrapper {
         ],
         "$createElement": [Function],
         "$el": <input
+          class="input"
           type="text"
         />,
         "$emit": [Function],
@@ -1972,6 +2001,7 @@ VueWrapper {
           ],
           "$createElement": [Function],
           "$el": <input
+            class="input"
             type="text"
           />,
           "$emit": [Function],
@@ -2046,6 +2076,7 @@ VueWrapper {
               "ref": "vm",
             },
             "elm": <input
+              class="input"
               type="text"
             />,
             "fnContext": undefined,
@@ -2139,6 +2170,7 @@ VueWrapper {
             "ref": "vm",
           },
           "elm": <input
+            class="input"
             type="text"
           />,
           "fnContext": undefined,
@@ -2208,6 +2240,7 @@ VueWrapper {
         ],
         "$createElement": [Function],
         "$el": <input
+          class="input"
           type="text"
         />,
         "$emit": [Function],
@@ -2256,6 +2289,7 @@ VueWrapper {
           ],
           "$createElement": [Function],
           "$el": <input
+            class="input"
             type="text"
           />,
           "$emit": [Function],
@@ -2330,6 +2364,7 @@ VueWrapper {
               "ref": "vm",
             },
             "elm": <input
+              class="input"
               type="text"
             />,
             "fnContext": undefined,
@@ -2423,6 +2458,7 @@ VueWrapper {
             "ref": "vm",
           },
           "elm": <input
+            class="input"
             type="text"
           />,
           "fnContext": undefined,
@@ -2505,6 +2541,7 @@ VueWrapper {
           ],
           "$createElement": [Function],
           "$el": <input
+            class="input"
             type="text"
           />,
           "$emit": [Function],
@@ -2553,6 +2590,7 @@ VueWrapper {
             ],
             "$createElement": [Function],
             "$el": <input
+              class="input"
               type="text"
             />,
             "$emit": [Function],
@@ -2705,6 +2743,7 @@ VueWrapper {
           "ref": "vm",
         },
         "elm": <input
+          class="input"
           type="text"
         />,
         "fnContext": undefined,
@@ -2754,8 +2793,10 @@ VueWrapper {
           "attrs": Object {
             "type": "text",
           },
+          "staticClass": "input",
         },
         "elm": <input
+          class="input"
           type="text"
         />,
         "fnContext": undefined,
@@ -2788,6 +2829,7 @@ VueWrapper {
             ],
             "$createElement": [Function],
             "$el": <input
+              class="input"
               type="text"
             />,
             "$emit": [Function],
@@ -2836,6 +2878,7 @@ VueWrapper {
               ],
               "$createElement": [Function],
               "$el": <input
+                class="input"
                 type="text"
               />,
               "$emit": [Function],
@@ -2988,6 +3031,7 @@ VueWrapper {
             "ref": "vm",
           },
           "elm": <input
+            class="input"
             type="text"
           />,
           "fnContext": undefined,
@@ -3088,8 +3132,10 @@ VueWrapper {
         "attrs": Object {
           "type": "text",
         },
+        "staticClass": "input",
       },
       "elm": <input
+        class="input"
         type="text"
       />,
       "fnContext": undefined,
@@ -3122,6 +3168,7 @@ VueWrapper {
           ],
           "$createElement": [Function],
           "$el": <input
+            class="input"
             type="text"
           />,
           "$emit": [Function],
@@ -3170,6 +3217,7 @@ VueWrapper {
             ],
             "$createElement": [Function],
             "$el": <input
+              class="input"
               type="text"
             />,
             "$emit": [Function],
@@ -3322,6 +3370,7 @@ VueWrapper {
           "ref": "vm",
         },
         "elm": <input
+          class="input"
           type="text"
         />,
         "fnContext": undefined,
@@ -3419,6 +3468,7 @@ VueWrapper {
       "$children": Array [],
       "$createElement": [Function],
       "$el": <input
+        class="input"
         type="text"
       />,
       "$emit": [Function],
@@ -3446,6 +3496,7 @@ VueWrapper {
             ],
             "$createElement": [Function],
             "$el": <input
+              class="input"
               type="text"
             />,
             "$emit": [Function],
@@ -3494,6 +3545,7 @@ VueWrapper {
               ],
               "$createElement": [Function],
               "$el": <input
+                class="input"
                 type="text"
               />,
               "$emit": [Function],
@@ -3646,6 +3698,7 @@ VueWrapper {
             "ref": "vm",
           },
           "elm": <input
+            class="input"
             type="text"
           />,
           "fnContext": undefined,
@@ -3676,6 +3729,7 @@ VueWrapper {
           ],
           "$createElement": [Function],
           "$el": <input
+            class="input"
             type="text"
           />,
           "$emit": [Function],
@@ -3724,6 +3778,7 @@ VueWrapper {
             ],
             "$createElement": [Function],
             "$el": <input
+              class="input"
               type="text"
             />,
             "$emit": [Function],
@@ -3798,6 +3853,7 @@ VueWrapper {
                 "ref": "vm",
               },
               "elm": <input
+                class="input"
                 type="text"
               />,
               "fnContext": undefined,
@@ -3891,6 +3947,7 @@ VueWrapper {
               "ref": "vm",
             },
             "elm": <input
+              class="input"
               type="text"
             />,
             "fnContext": undefined,
@@ -3961,6 +4018,7 @@ VueWrapper {
         ],
         "$createElement": [Function],
         "$el": <input
+          class="input"
           type="text"
         />,
         "$emit": [Function],
@@ -4009,6 +4067,7 @@ VueWrapper {
           ],
           "$createElement": [Function],
           "$el": <input
+            class="input"
             type="text"
           />,
           "$emit": [Function],
@@ -4083,6 +4142,7 @@ VueWrapper {
               "ref": "vm",
             },
             "elm": <input
+              class="input"
               type="text"
             />,
             "fnContext": undefined,
@@ -4176,6 +4236,7 @@ VueWrapper {
             "ref": "vm",
           },
           "elm": <input
+            class="input"
             type="text"
           />,
           "fnContext": undefined,
@@ -4245,6 +4306,7 @@ VueWrapper {
         ],
         "$createElement": [Function],
         "$el": <input
+          class="input"
           type="text"
         />,
         "$emit": [Function],
@@ -4293,6 +4355,7 @@ VueWrapper {
           ],
           "$createElement": [Function],
           "$el": <input
+            class="input"
             type="text"
           />,
           "$emit": [Function],
@@ -4367,6 +4430,7 @@ VueWrapper {
               "ref": "vm",
             },
             "elm": <input
+              class="input"
               type="text"
             />,
             "fnContext": undefined,
@@ -4460,6 +4524,7 @@ VueWrapper {
             "ref": "vm",
           },
           "elm": <input
+            class="input"
             type="text"
           />,
           "fnContext": undefined,
@@ -4542,6 +4607,7 @@ VueWrapper {
           ],
           "$createElement": [Function],
           "$el": <input
+            class="input"
             type="text"
           />,
           "$emit": [Function],
@@ -4590,6 +4656,7 @@ VueWrapper {
             ],
             "$createElement": [Function],
             "$el": <input
+              class="input"
               type="text"
             />,
             "$emit": [Function],
@@ -4742,6 +4809,7 @@ VueWrapper {
           "ref": "vm",
         },
         "elm": <input
+          class="input"
           type="text"
         />,
         "fnContext": undefined,
@@ -4781,6 +4849,7 @@ VueWrapper {
         "$children": Array [],
         "$createElement": [Function],
         "$el": <input
+          class="input"
           type="text"
         />,
         "$emit": [Function],
@@ -4808,6 +4877,7 @@ VueWrapper {
               ],
               "$createElement": [Function],
               "$el": <input
+                class="input"
                 type="text"
               />,
               "$emit": [Function],
@@ -4856,6 +4926,7 @@ VueWrapper {
                 ],
                 "$createElement": [Function],
                 "$el": <input
+                  class="input"
                   type="text"
                 />,
                 "$emit": [Function],
@@ -5008,6 +5079,7 @@ VueWrapper {
               "ref": "vm",
             },
             "elm": <input
+              class="input"
               type="text"
             />,
             "fnContext": undefined,
@@ -5038,6 +5110,7 @@ VueWrapper {
             ],
             "$createElement": [Function],
             "$el": <input
+              class="input"
               type="text"
             />,
             "$emit": [Function],
@@ -5086,6 +5159,7 @@ VueWrapper {
               ],
               "$createElement": [Function],
               "$el": <input
+                class="input"
                 type="text"
               />,
               "$emit": [Function],
@@ -5160,6 +5234,7 @@ VueWrapper {
                   "ref": "vm",
                 },
                 "elm": <input
+                  class="input"
                   type="text"
                 />,
                 "fnContext": undefined,
@@ -5253,6 +5328,7 @@ VueWrapper {
                 "ref": "vm",
               },
               "elm": <input
+                class="input"
                 type="text"
               />,
               "fnContext": undefined,
@@ -5323,6 +5399,7 @@ VueWrapper {
           ],
           "$createElement": [Function],
           "$el": <input
+            class="input"
             type="text"
           />,
           "$emit": [Function],
@@ -5371,6 +5448,7 @@ VueWrapper {
             ],
             "$createElement": [Function],
             "$el": <input
+              class="input"
               type="text"
             />,
             "$emit": [Function],
@@ -5445,6 +5523,7 @@ VueWrapper {
                 "ref": "vm",
               },
               "elm": <input
+                class="input"
                 type="text"
               />,
               "fnContext": undefined,
@@ -5538,6 +5617,7 @@ VueWrapper {
               "ref": "vm",
             },
             "elm": <input
+              class="input"
               type="text"
             />,
             "fnContext": undefined,
@@ -5607,6 +5687,7 @@ VueWrapper {
           ],
           "$createElement": [Function],
           "$el": <input
+            class="input"
             type="text"
           />,
           "$emit": [Function],
@@ -5655,6 +5736,7 @@ VueWrapper {
             ],
             "$createElement": [Function],
             "$el": <input
+              class="input"
               type="text"
             />,
             "$emit": [Function],
@@ -5729,6 +5811,7 @@ VueWrapper {
                 "ref": "vm",
               },
               "elm": <input
+                class="input"
                 type="text"
               />,
               "fnContext": undefined,
@@ -5822,6 +5905,7 @@ VueWrapper {
               "ref": "vm",
             },
             "elm": <input
+              class="input"
               type="text"
             />,
             "fnContext": undefined,
@@ -5904,6 +5988,7 @@ VueWrapper {
             ],
             "$createElement": [Function],
             "$el": <input
+              class="input"
               type="text"
             />,
             "$emit": [Function],
@@ -5952,6 +6037,7 @@ VueWrapper {
               ],
               "$createElement": [Function],
               "$el": <input
+                class="input"
                 type="text"
               />,
               "$emit": [Function],
@@ -6104,6 +6190,7 @@ VueWrapper {
             "ref": "vm",
           },
           "elm": <input
+            class="input"
             type="text"
           />,
           "fnContext": undefined,
@@ -6278,8 +6365,10 @@ VueWrapper {
       "attrs": Object {
         "type": "text",
       },
+      "staticClass": "input",
     },
     "elm": <input
+      class="input"
       type="text"
     />,
     "fnContext": undefined,
@@ -6303,6 +6392,7 @@ VueWrapper {
         "$children": Array [],
         "$createElement": [Function],
         "$el": <input
+          class="input"
           type="text"
         />,
         "$emit": [Function],
@@ -6324,6 +6414,7 @@ VueWrapper {
             ],
             "$createElement": [Function],
             "$el": <input
+              class="input"
               type="text"
             />,
             "$emit": [Function],
@@ -6372,6 +6463,7 @@ VueWrapper {
               ],
               "$createElement": [Function],
               "$el": <input
+                class="input"
                 type="text"
               />,
               "$emit": [Function],
@@ -6517,6 +6609,7 @@ VueWrapper {
           ],
           "$createElement": [Function],
           "$el": <input
+            class="input"
             type="text"
           />,
           "$emit": [Function],
@@ -6565,6 +6658,7 @@ VueWrapper {
             ],
             "$createElement": [Function],
             "$el": <input
+              class="input"
               type="text"
             />,
             "$emit": [Function],
@@ -6709,6 +6803,7 @@ VueWrapper {
           ],
           "$createElement": [Function],
           "$el": <input
+            class="input"
             type="text"
           />,
           "$emit": [Function],
@@ -6757,6 +6852,7 @@ VueWrapper {
             ],
             "$createElement": [Function],
             "$el": <input
+              class="input"
               type="text"
             />,
             "$emit": [Function],
@@ -6917,6 +7013,7 @@ VueWrapper {
           "$children": Array [],
           "$createElement": [Function],
           "$el": <input
+            class="input"
             type="text"
           />,
           "$emit": [Function],
@@ -6938,6 +7035,7 @@ VueWrapper {
               ],
               "$createElement": [Function],
               "$el": <input
+                class="input"
                 type="text"
               />,
               "$emit": [Function],
@@ -6986,6 +7084,7 @@ VueWrapper {
                 ],
                 "$createElement": [Function],
                 "$el": <input
+                  class="input"
                   type="text"
                 />,
                 "$emit": [Function],
@@ -7131,6 +7230,7 @@ VueWrapper {
             ],
             "$createElement": [Function],
             "$el": <input
+              class="input"
               type="text"
             />,
             "$emit": [Function],
@@ -7179,6 +7279,7 @@ VueWrapper {
               ],
               "$createElement": [Function],
               "$el": <input
+                class="input"
                 type="text"
               />,
               "$emit": [Function],
@@ -7323,6 +7424,7 @@ VueWrapper {
             ],
             "$createElement": [Function],
             "$el": <input
+              class="input"
               type="text"
             />,
             "$emit": [Function],
@@ -7371,6 +7473,7 @@ VueWrapper {
               ],
               "$createElement": [Function],
               "$el": <input
+                class="input"
                 type="text"
               />,
               "$emit": [Function],
@@ -7678,6 +7781,7 @@ VueWrapper {
             "$children": Array [],
             "$createElement": [Function],
             "$el": <input
+              class="input"
               type="text"
             />,
             "$emit": [Function],
@@ -7722,6 +7826,7 @@ VueWrapper {
               "$children": Array [],
               "$createElement": [Function],
               "$el": <input
+                class="input"
                 type="text"
               />,
               "$emit": [Function],
@@ -7900,6 +8005,7 @@ VueWrapper {
         ],
         "$createElement": [Function],
         "$el": <input
+          class="input"
           type="text"
         />,
         "$emit": [Function],
@@ -7928,6 +8034,7 @@ VueWrapper {
             "$children": Array [],
             "$createElement": [Function],
             "$el": <input
+              class="input"
               type="text"
             />,
             "$emit": [Function],
@@ -7972,6 +8079,7 @@ VueWrapper {
               "$children": Array [],
               "$createElement": [Function],
               "$el": <input
+                class="input"
                 type="text"
               />,
               "$emit": [Function],
@@ -8174,6 +8282,7 @@ VueWrapper {
               "$children": Array [],
               "$createElement": [Function],
               "$el": <input
+                class="input"
                 type="text"
               />,
               "$emit": [Function],
@@ -8218,6 +8327,7 @@ VueWrapper {
                 "$children": Array [],
                 "$createElement": [Function],
                 "$el": <input
+                  class="input"
                   type="text"
                 />,
                 "$emit": [Function],
@@ -8396,6 +8506,7 @@ VueWrapper {
           ],
           "$createElement": [Function],
           "$el": <input
+            class="input"
             type="text"
           />,
           "$emit": [Function],
@@ -8424,6 +8535,7 @@ VueWrapper {
               "$children": Array [],
               "$createElement": [Function],
               "$el": <input
+                class="input"
                 type="text"
               />,
               "$emit": [Function],
@@ -8468,6 +8580,7 @@ VueWrapper {
                 "$children": Array [],
                 "$createElement": [Function],
                 "$el": <input
+                  class="input"
                   type="text"
                 />,
                 "$emit": [Function],
@@ -8772,6 +8885,7 @@ VueWrapper {
         "ref": "vm",
       },
       "elm": <input
+        class="input"
         type="text"
       />,
       "fnContext": undefined,
