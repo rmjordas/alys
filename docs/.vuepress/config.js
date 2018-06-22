@@ -48,8 +48,8 @@ module.exports = {
         title: 'Components',
         collapsable: false,
         children: [
-          '/components/button',
           '/components/blockquote',
+          '/components/button',
           '/components/checkbox',
           '/components/figure',
           '/components/hr',
