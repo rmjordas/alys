@@ -8,7 +8,6 @@
   border-radius: 0.2rem;
   color: $color--foreground--lightest;
   font-weight: 700;
-  // margin-bottom: $element--margin-bottom;
   padding: 0.6em 1.2em;
   transition: all 0.2s ease-in;
 }
@@ -24,7 +23,7 @@
 }
 
 @mixin button-style--not-disabled--focused() {
-  outline: none;
+  outline: 0.125em dotted $color--primary;
 }
 
 @mixin button-style--not-disabled--hover() {
@@ -41,13 +40,13 @@
 // FLAT
 @mixin button-style--flat() {
   background-color: transparent;
+  border: 0.125em solid transparent;
   border-radius: $border-radius;
   color: $color--primary;
   cursor: default;
   display: inline-block;
   font-weight: 700;
   letter-spacing: 0.1rem;
-  // margin-bottom: $element--margin-bottom;
   padding: 0.6em 1.2em;
   text-decoration: none;
   text-transform: uppercase;
@@ -55,13 +54,14 @@
 }
 
 @mixin button-style--flat--active() {
-  background-color: $color--success;
-  color: $color--foreground--lightest;
+  border: 0.125em solid $color--success;
+  background: none;
+  color: $color--success;
   transition: all 0ms;
 }
 
 @mixin button-style--flat--focused() {
-  outline: none;
+  outline: 0.125em dotted $color--primary;
 }
 
 @mixin button-style--flat--disabled() {

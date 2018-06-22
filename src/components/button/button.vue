@@ -2,6 +2,7 @@
   <button
     :type="type"
     :disabled="disabled"
+    class="button"
     :class="classObject"
     @click="click">
     <slot>{{ label }}</slot>
@@ -50,10 +51,7 @@ export default {
 <style lang="scss" scoped>
 @import '../../assets/scss/globals.scss';
 
-button,
-button[type='button'],
-button[type='reset'],
-button[type='submit'] {
+.button {
   @include button-style();
 
   &:not(:active) {
