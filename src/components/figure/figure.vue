@@ -67,7 +67,7 @@ figure {
     }
 
     & figcaption {
-      border: $figure__img--border;
+      border: 0.3rem solid $color--primary;
       display: table-caption;
     }
 
@@ -96,7 +96,7 @@ figure {
     }
 
     & figcaption {
-      border: $figure__img--border;
+      border: 0.3rem solid $color--primary;
       display: table-caption;
     }
 
