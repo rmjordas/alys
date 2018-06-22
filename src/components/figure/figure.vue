@@ -33,7 +33,6 @@ export default {
 @import '../../assets/scss/globals.scss';
 
 figure {
-  // border-radius: 0.5rem;
   margin: 0 auto;
   overflow: hidden;
   padding: 0;
@@ -47,7 +46,6 @@ figure {
     display: block;
     margin: 0 auto;
     max-width: 100%;
-    vertical-align: top;
   }
 
   & figcaption {
