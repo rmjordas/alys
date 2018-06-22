@@ -1,5 +1,5 @@
 <template>
-  <input type="checkbox" />
+  <input type="checkbox" class="checkbox">
 </template>
 
 
@@ -13,12 +13,10 @@ export default {
 <style lang="scss" scoped>
 @import '../../assets/scss/globals.scss';
 
-input[type='checkbox'] {
+.checkbox {
   @include form-input-style();
-  height: 2em;
-  position: relative;
-  top: 0;
-  width: 2em;
+  height: 1.5em;
+  width: 1.5em;
 
   &:focus {
     outline: 0.125em dotted $color--primary;

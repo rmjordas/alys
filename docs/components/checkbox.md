@@ -2,7 +2,7 @@
 
 ## Default
 
-<demo-checkbox checked/>
+<demo-checkbox checked />
 
 ```vue
 <a-checkbox checked />
