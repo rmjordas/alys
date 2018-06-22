@@ -1,5 +1,5 @@
 <template>
-  <input :type="type">
+  <input :type="type" class="input">
 </template>
 
 <script>
@@ -18,9 +18,12 @@ export default {
 <style lang="scss" scoped>
 @import '../../assets/scss/globals.scss';
 
-input {
+.input {
   @include form-input-style();
-  @include textfield-style--focused();
+
+  &:focus {
+    @include textfield-style--focused();
+  }
 
   // COLOR
   &[type='color'] {
@@ -279,27 +282,27 @@ input {
 
   &[required]:valid {
     background-color: transparent;
-    border: $input--valid--border;
+    border: 0.125em solid $color--success;
     color: $color--foreground--darkest;
     outline: none;
   }
   &:invalid {
     background-color: transparent;
-    border: $input--invalid--border;
+    border: 0.125em solid $color--error;
     color: $color--foreground--darkest;
     outline: none;
 
     &::placeholder {
-      color: $input--placeholder--invalid--color;
+      color: $color--error;
     }
 
     &:focus {
-      background-color: $input--background-color--focused;
-      border: $input--invalid--border;
-      color: $input--color--focused;
+      background-color: none;
+      border: 0.125em solid $color--error;
+      color: $color--foreground--light;
 
       &::placeholder {
-        color: $input--placeholder--invalid--focused;
+        color: $color--foreground--lighter;
       }
     }
   }

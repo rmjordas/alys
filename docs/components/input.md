@@ -18,10 +18,10 @@
 
 ## Text (disabled)
 
-<demo-input disabled />
+<demo-input placeholder="Disabled text input" disabled />
 
 ```vue
-<a-input disabled />
+<a-input placeholder="Disabled text input" disabled />
 ```
 
 ## Text (valid)
@@ -106,16 +106,16 @@
 
 ## Search
 
-<demo-input type="search" />
+<demo-input type="search" placeholder="Search" />
 
 ```vue
-<a-input type="search" />
+<a-input type="search" placeholder="Search" />
 ```
 
 ## Search (disabled)
 
-<demo-input type="search" disabled />
+<demo-input type="search" placeholder="Disabled Search" disabled  />
 
 ```vue
-<a-input type="search" disabled />
+<a-input type="search"placeholder="Disabled Search" disabled />
 ```
