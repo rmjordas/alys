@@ -10,3 +10,10 @@ export default {
   name: 'DemoBlockquote',
 };
 </script>
+
+
+<style lang="scss" scoped>
+blockquote {
+  margin: 0;
+}
+</style>

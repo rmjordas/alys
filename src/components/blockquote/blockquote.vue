@@ -1,6 +1,7 @@
 <template>
-  <blockquote>
-    <p><slot /></p>
+  <blockquote :type="type" class="blockquote">
+    <p v-if="type == 'single'"><slot /></p>
+    <slot v-else />
   </blockquote>
 </template>
 
@@ -8,6 +9,16 @@
 <script>
 export default {
   name: 'ABlockquote',
+
+  props: {
+    type: {
+      type: String,
+      default: 'multiple',
+      validator(type) {
+        return ['single', 'multiple'].includes(type);
+      },
+    },
+  },
 };
 </script>
 
@@ -15,19 +26,20 @@ export default {
 <style lang="scss" scoped>
 @import '../../assets/scss/globals.scss';
 
-blockquote {
+.blockquote {
   background-color: $color--background--lightest;
-  border-left: $blockquote--border-left;
-  border-radius: $blockquote--border-radius;
-  margin: $blockquote--margin;
-  padding: $blockquote--padding;
+  border-left: 0.5rem solid $color--foreground--lighter;
+  border-radius: 0.2em;
+  font-style: italic;
+  line-height: 1.45;
+  margin: 0 1em;
+  padding: 0.6em;
 
   & p {
-    font-style: italic;
-    margin-top: 0;
+    margin: 0 0 0.6em;
 
-    &:only-child {
-      margin-bottom: 0;
+    &:last-child {
+      margin: 0;
     }
   }
 }
