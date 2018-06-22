@@ -4,11 +4,8 @@
 // Global variables
 // -------------------------------------
 @import 'vars/color';
-@import 'vars/type';
 @import 'vars/decoration';
 @import 'vars/element';
-@import 'vars/component';
-@import 'vars/media-query';
 
 // =====================================
 // Tools
@@ -16,10 +13,6 @@
 // Mixins, functions, etc.
 // -------------------------------------
 @import 'tools/button-style';
-@import 'tools/centered';
-@import 'tools/container';
 @import 'tools/form-style';
-@import 'tools/hover-style';
 @import 'tools/input-style';
 @import 'tools/textfield-style';
-@import 'tools/sr-only';

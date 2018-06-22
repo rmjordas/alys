@@ -2,30 +2,8 @@
 // Element Variables
 // =====================================
 
-// FIELDSET
-$fieldset--border: 0.3rem solid $color--primary;
-$fieldset--border-radius: 0.8rem;
-$fieldset__legend--font: $heading--font;
-$fieldset__legend--font-size: 1.7511em;
-$fieldset--padding-top: 4.2em;
-
-// FIGURE
-$figure__img--border: 0.3rem solid $color--primary;
-
-// GENERIC
-$element--margin-bottom: 1.5157rem;
+// TEXTFIELD
 $textfield--background-color--focus: none;
 $textfield--border: 0.125em solid $color--foreground--lighter;
 $textfield--border--focus: $border;
 $textfield--height: 2em;
-
-// LABEL
-$label--font-weight: 600;
-
-// TABLE
-$table--font-size: 1em;
-$table__tr--border-bottom: 0.2rem solid $color--foreground--lightest;
-
-// TEXTAREA
-$textarea--min-height: 6.5rem;
-$textarea--padding: 1rem;
