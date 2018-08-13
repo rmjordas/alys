@@ -1,6 +1,6 @@
 {
   "name": "alys",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "♠️ A tiny Vue.js component toolkit",
   "keywords": [
     "Vue",
@@ -39,21 +39,21 @@
     "access": "public"
   },
   "dependencies": {
-    "vue": "2.5.16"
+    "vue": "2.5.17"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "3.0.0-rc.3",
-    "@vue/cli-plugin-eslint": "3.0.0-rc.3",
-    "@vue/cli-plugin-unit-jest": "3.0.0-rc.3",
-    "@vue/cli-service": "3.0.0-rc.3",
-    "@vue/eslint-config-airbnb": "3.0.0-rc.3",
-    "@vue/test-utils": "1.0.0-beta.19",
-    "babel-core": "7.0.0-bridge.0",
-    "babel-jest": "23.0.1",
-    "node-sass": "4.9.0",
-    "sass-loader": "7.0.3",
-    "vue-template-compiler": "2.5.16",
-    "vuepress": "0.10.2"
+    "@vue/cli-plugin-babel": "3.0.0",
+    "@vue/cli-plugin-eslint": "3.0.0",
+    "@vue/cli-plugin-unit-jest": "3.0.0",
+    "@vue/cli-service": "3.0.0",
+    "@vue/eslint-config-airbnb": "3.0.0",
+    "@vue/test-utils": "1.0.0-beta.24",
+    "babel-core": "6.26.3",
+    "babel-jest": "23.4.2",
+    "node-sass": "4.9.3",
+    "sass-loader": "7.1.0",
+    "vue-template-compiler": "2.5.17",
+    "vuepress": "0.14.1"
   },
   "browserslist": [
     "> 1%",
