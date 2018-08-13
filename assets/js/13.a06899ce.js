@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[13],{175:function(t,e,n){"use strict";n.r(e);var s={name:"DemoButton"},a=n(0),u=Object(a.a)(s,function(){var t=this.$createElement,e=this._self._c||t;return e("div",{staticClass:"demo-wrapper"},[e("a-button",this._b({},"a-button",this.$attrs,!1),[this._t("default")],2)],1)},[],!1,null,null,null);e.default=u.exports}}]);
