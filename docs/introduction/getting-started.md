@@ -22,7 +22,7 @@ Alys script file.
 Another method is to include a `script` element inside the `head` element with
 the following URL as the value of the `src` attribute:
 
-```fundamental
+```txt
 https://unpkg.com/alys@latest/dist/alys.umd.min.js
 ```
 
