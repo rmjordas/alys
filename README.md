@@ -5,6 +5,28 @@
 
 ⚠️ **Work in Progress** ⚠️
 
+## Background
+
+This project started as "classless" PostCSS/CSS toolkit as a way to practice
+CSS. Although, the original design featured rounded and colorful aesthetic,
+which admittedly is not unique nor mind-blowing, it was usable and decent enough
+for a more backend-leaning developer like me.
+
+Eventually, it was determined that a "classless" toolkit is not that useful
+because more complicated applications would contain a lot of different
+components and these components would most likely have specialized styles. If
+the web page is simple or, maybe, used as a base style, then this toolkit would
+be fine.
+
+The next iteration produced a small Vue component library. Initially, the goal
+was to port the styles to components, but this was not fulfilled (because of
+reasons and I kinda forgot about this repo).
+
+Finally (hopefully), this newest iteration would lead to the desired `v1.0.0`
+release. This time, it's written with JavaScript using the React framework. So,
+why the switch? Well, React is very popular. Also, it ~~requires~~ encourages
+developers to be good at JavaScript to use it well.
+
 ## Quick Start
 
 ### npm
@@ -15,13 +37,13 @@ npm install alys
 
 ### Releases
 
-```fundamental
+```
 https://github.com/rmjordas/alys/releases
 ```
 
 ### unpkg
 
-```fundamental
+```
 https://unpkg.com/alys@latest/dist/alys.css
 https://unpkg.com/alys@latest/dist/alys.umd.min.js
 https://unpkg.com/alys@latest/dist/alys.common.js
