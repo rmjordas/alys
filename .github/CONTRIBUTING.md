@@ -1,10 +1,19 @@
+# Contributing
+
 Thank you for your interest in the project. We definitely appreciate any
 contributions you can provide. To get started publishing contributions, please
 read first the the instructions below.
 
-## Requements
+## Requirements
 
-install git and node.
+This projects requires Git, Node.js and npm. Verify you have the required
+programs by entering the following commands to your terminal:
+
+```bash
+git --version
+node --version
+npm --version
+```
 
 ## Instructions
 
