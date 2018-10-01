@@ -3,9 +3,8 @@
     "target": "es6",
     "baseUrl": ".",
     "paths": {
-      "@/*": ["./src/*"],
-      "vue$": ["vue/dist/vue.runtime.esm.js"]
+      "@/*": ["./src/*"]
     }
   },
-  "include": ["src/**/*", "docs/**/*"]
+  "include": ["src/**/*"]
 }

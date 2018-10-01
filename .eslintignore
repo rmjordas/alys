@@ -1,7 +1,5 @@
+/.docz/
 /build/
-/config/
 /dist/
-/*.js
-/test/unit/coverage/
+/docs/
 **/*.spec.js
-*.pack.js

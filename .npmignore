@@ -1,22 +1,28 @@
-dist/demo.html
+.docz/
+.github/
+.storybook/
 docs/
 node_modules/
+public/
 src/
 tests/
 tmp/
+.browserlistrc
 .editorconfig
 .eslintignore
 .eslintrc.js
 .gitignore
 .npmignore
+.prettierrc
 .postcssrc.js
 .prettierrc
 .travis.yml
-babel.config.js
+babelrc.js
+doczrc.js
 jest.config.js
 jsconfig.json
-vue.config.js
 npm-debug.log
+webpack.config.js
 
 # Editor directories and files
 .vscode/

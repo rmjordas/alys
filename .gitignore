@@ -88,6 +88,7 @@ typings/
 .serverless
 
 # Local setup
-.vscode/
-docs/.vuepress/dist/
+.docz/
+docs/
 tmp/
+build/
