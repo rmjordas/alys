@@ -1,3 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`renders component 1`] = `<input type="checkbox" class="checkbox">`;

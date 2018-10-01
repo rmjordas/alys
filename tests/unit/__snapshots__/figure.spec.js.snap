@@ -1,8 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`renders component 1`] = `
-<figure>
-  <img src="https://alys.js.org/logo.png" alt="">
-  <figcaption>Alys logo</figcaption>
-</figure>
-`;

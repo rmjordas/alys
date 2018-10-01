@@ -1,11 +1,11 @@
 language: node_js
 
 node_js:
-  - "lts/*"
+  - 'lts/*'
 
 cache:
   directories:
-    - "node_modules"
+    - 'node_modules'
 
 install:
   - npm install
@@ -13,7 +13,7 @@ install:
   - npm run docs:build
 
 script:
-  - npm test --runInBand
+  - npm test
 
 deploy:
   - provider: pages
@@ -21,12 +21,12 @@ deploy:
     github-token: $GITHUB_TOKEN
     target-branch: gh-pages
     keep-history: true
-    local-dir: docs/.vuepress/dist
+    local-dir: docs/
     on:
       branch: master
   - provider: npm
     skip-cleanup: true
-    email: "rmjordas@gmail.com"
+    email: $NPM_EMAIL
     api_key: $NPM_TOKEN
     tag: latest
     on:
