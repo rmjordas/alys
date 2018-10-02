@@ -1,47 +1,18 @@
-import path from 'path';
-
-const PUBLIC = path.resolve(__dirname, 'public');
-const SRC = path.resolve(__dirname, 'src');
-
 export default {
   title: 'Alys',
   description: 'A tiny React component library',
   base: '/',
   src: './src',
   dest: './docs',
-  modifyBundlerConfig: (config) => {
-    config.resolve.alias = Object.assign({}, config.resolve.alias, {
-      '@public': PUBLIC,
-      '@fonts': `${PUBLIC}/fonts`,
-      '@images': `${PUBLIC}/images`,
-      '@components': `${SRC}/theme/components`,
-      '@styles': `${SRC}/theme/styles`,
-    });
-
-    return config;
-  },
+  indexHtml: './index.html',
   htmlContext: {
-    favicon: '/public/logo-icon.png',
-    head: {
-      links: [
-        {
-          rel: 'stylesheet',
-          href:
-            'https://fonts.googleapis.com/css?family=Kadwa:400,700|Montserrat:400,400i,700',
-        },
-        {
-          rel: 'stylesheet',
-          href: 'https://codemirror.net/theme/material.css',
-        },
-      ],
-    },
+    favicon: '/favicon.ico',
   },
   themeConfig: {
     codemirrorTheme: 'material',
-    // logo: {
-    //   src: '/public/logo-icon.png',
-    //   width: 232,
-    // },
+    logo: {
+      src: '/logo-icon.svg',
+    },
     colors: {
       primary: '#333',
       sidebarBg: '#f3f3f3',
