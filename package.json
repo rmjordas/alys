@@ -25,7 +25,7 @@
     "build": "webpack --mode=production",
     "storybook": "start-storybook -p 9001",
     "docs:dev": "docz dev",
-    "docs:build": "docz build"
+    "docs:build": "docz build && cp ./public/CNAME docs"
   },
   "publishConfig": {
     "access": "public"
