@@ -1,7 +1,7 @@
 import React from 'react';
-import styled from 'styled-components';
+import Styled from 'styled-components';
 
-const ButtonWrapper = styled.button`
+const ButtonWrapper = Styled.button`
   border-radius: 5px;
   color: #efefef;
   background: deeppink;
