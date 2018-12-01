@@ -12,7 +12,7 @@ const HeaderCell = styled.td`
   text-align: ${({ centered }) => (centered ? 'center' : 'left')};
   padding: 5px;
   font-weight: 700;
-  width: ${({ width = 'initial' }) => styleLengths(width, '%')};
+  width: ${({ width = 'auto' }) => styleLengths(width, '%')};
 `;
 
 const DataCell = styled.td.attrs(({ required }) => ({

@@ -13,9 +13,11 @@ export default class SyntaxHighlightedCode extends Component {
 
   render() {
     return (
-      <pre ref={(ref) => (this.element = ref)}>
+      <pre ref={this._handleRef}>
         <PrismCode className="language-jsx">{this.props.children}</PrismCode>
       </pre>
     );
   }
+
+  _handleRef = (ref) => (this.element = ref);
 }

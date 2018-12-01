@@ -3,10 +3,12 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 import { examplePropShape } from './Example';
-import Props, { propItemPropsShape } from './Props';
+import { propItemPropsShape } from './Props';
 import { pluralize } from '@utils/string-utils';
 
-const Example = React.lazy(() => import('./Example'));
+const [Example, Props] = ['./Example', './Props'].map((v) =>
+  React.lazy(() => import(v)),
+);
 
 const Wrapper = styled.div`
   margin-left: 0;

@@ -14,7 +14,7 @@ const AlysLogo = styled(logo).attrs(() => ({
 const Wrapper = styled.div`
   display: flex;
   align-items: center;
-  margin: 0px;
+  margin: 0;
   padding: 1em;
   color: #fff;
   background-color: #333;
