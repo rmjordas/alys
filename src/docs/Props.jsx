@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 import { styleLengths } from '@utils/string-utils';
+import { parseType } from '@utils/props-utils';
 
 const Table = styled.table`
   width: 100%;
@@ -53,19 +54,31 @@ export default function Props({ props }) {
               <DataCell>{description}</DataCell>
 
               <DataCell>
-                <code>
-                  {type.name}
+                <code>{type.name}</code>
 
-                  {type.name === 'enum' &&
-                    `: ${type.value.map((v) => v.value).join(' | ')}`}
+                {type.name === 'enum' && (
+                  <React.Fragment>
+                    :{' '}
+                    {parseType(type)
+                      .map((v) => <code>{v}</code>)
+                      .reduce((a, v) => [a, ' | ', v])}
+                  </React.Fragment>
+                )}
 
-                  {type.name === 'union' &&
-                    `: ${type.value
-                      .map((v) =>
-                        v.name === 'arrayOf' ? `${v.value.name}[]` : v.name,
-                      )
-                      .join(', ')}`}
-                </code>
+                {type.name === 'union' && (
+                  <React.Fragment>
+                    :{' '}
+                    {parseType(type)
+                      .map((v) => <code>{v}</code>)
+                      .reduce((a, v) => [a, ', ', v])}
+                  </React.Fragment>
+                )}
+
+                {type.name === 'custom' && (
+                  <React.Fragment>
+                    : {<code>{parseType(type)}</code>}
+                  </React.Fragment>
+                )}
               </DataCell>
 
               <DataCell required={value.required}>
