@@ -1,5 +1,5 @@
-/.docz/
-/build/
-/dist/
-/docs/
-**/*.spec.js
+/build
+/dist
+/lib
+component-data.js
+prism.js

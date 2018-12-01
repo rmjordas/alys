@@ -64,25 +64,12 @@ cd alys
 npm install
 ```
 
-Enter `npm run build` in your terminal to compile the app in a `dist` directory:
+Enter `npm run build:lib` in your terminal to compile the app in a `lib`
+directory:
 
 ```bash
-npm run build
+npm run build:lib
 ```
-
-## Testing
-
-```bash
-yarn test # or
-yarn test:watch
-```
-
-Enter one of the commands above to run the tests. The first command lints the
-source files before running a single round of tests. The second similarly lints
-and runs a round of tests but does not exit immediately after and any change to
-the source files will trigger another round of tests.
-
-To exit the process, press <kbd>Ctrl</kbd> + <kbd>C</kbd>.
 
 ## License
 

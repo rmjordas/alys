@@ -1,7 +1,7 @@
 language: node_js
 
 node_js:
-  - 'lts/*'
+  - '10'
 
 cache:
   directories:
@@ -9,8 +9,8 @@ cache:
 
 install:
   - npm install
-  - npm run build
-  - npm run docs:build
+  - npm run build:lib
+  - npm run build:docs
 
 script:
   - npm test
@@ -21,7 +21,7 @@ deploy:
     github-token: $GITHUB_TOKEN
     target-branch: gh-pages
     keep-history: true
-    local-dir: docs/
+    local-dir: build/
     on:
       branch: master
   - provider: npm

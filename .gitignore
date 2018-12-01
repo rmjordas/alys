@@ -88,7 +88,9 @@ typings/
 .serverless
 
 # Local setup
-.docz/
-docs/
+.vscode/settings.json
+.vscode/launch.json
+/docs
 tmp/
 build/
+lib/
