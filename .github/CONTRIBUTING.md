@@ -108,7 +108,7 @@ specific portions of the application:
 
 ### Environment variables
 
-> [Create React App: Add Custom Environment Variables](https://facebook.github.io/create-react-app/docs/adding-custom-environment-variables)
+> [Add Custom Environment Variables](https://facebook.github.io/create-react-app/docs/adding-custom-environment-variables)
 
 You may choose to provide the application some configuration via environment
 variables when you are running the scripts above. For example, if you want to
@@ -136,7 +136,7 @@ BROWSER=none
 
 Then you can just run `npm run start`.
 
-> [Create React App: Advanced Configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+> [Advanced Configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
 You can also inject configuration values when compiling the application. Create
 React App requires a `REACT_APP_` prefix for those values to be included:
@@ -180,9 +180,9 @@ npm install
 Make and commit your changes. Make sure the commands `npm run build:lib` and
 `npm run test` are working.
 
-Finally send a [GitHub Pull Request][pr] with a clear list of what you've done.
+Send a pull request and include a short summary of your changes.
 
-[open_pr]: https://github.com/rmjordas/alys/compare?expand=1
+> [About Pull Requests](https://help.github.com/articles/about-pull-requests/)
 
 ## Contributing (for collaborators)
 
@@ -200,7 +200,7 @@ following documentation:
 To be able to interact with a remote repository, such as Alys's repository on
 GitHub, you have to setup authentication. Follow these guides from GitHub:
 
-> [Set up git](https://help.github.com/articles/set-up-git/).
+> [Set up git](https://help.github.com/articles/set-up-git/)
 >
 > [Why is Git always asking for my password?](https://help.github.com/articles/why-is-git-always-asking-for-my-password/)
 
