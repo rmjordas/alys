@@ -468,14 +468,3 @@ doing this, you can now commit the changes.
 
 Rebasing `master` to `other-branch` with conflicts would have a similar process
 for resolution, but the resulting history graph will be different.
-
-## Requirements
-
-This projects requires Git, Node.js and npm. Verify you have the required
-programs by entering the following commands to your terminal:
-
-```bash
-git --version
-node --version
-npm --version
-```
