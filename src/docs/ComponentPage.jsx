@@ -6,9 +6,8 @@ import { examplePropShape } from './Example';
 import { propItemPropsShape } from './Props';
 import { pluralize } from '@utils/string-utils';
 
-const [Example, Props] = ['./Example', './Props'].map((v) =>
-  React.lazy(() => import(v)),
-);
+const Example = React.lazy(() => import('./Example'));
+const Props = React.lazy(() => import('./Props'));
 
 const Wrapper = styled.div`
   margin-left: 0;
