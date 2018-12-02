@@ -28,7 +28,7 @@
     "start:docs": "node scripts/start.js",
     "prebuild:docs": "npm run gen:docs",
     "build:docs": "node scripts/build.js",
-    "build:cjs": "cross-env NODE_ENV=production babel ./src/components --out-dir ./lib --ignore spec.js",
+    "build:cjs": "cross-env NODE_ENV=production babel ./src/components --out-dir ./lib --ignore **/*.spec.js",
     "build:css": "cpx \"./src/components/**/*.css\" ./lib",
     "prebuild:lib": "rimraf lib",
     "build:lib": "npm-run-all --parallel build:cjs build:css build:copy-files",
@@ -37,11 +37,10 @@
   "peerDependencies": {
     "prismjs": "^1.15.0",
     "react": "^16.6.3",
-    "react-dom": "^16.6.3"
+    "react-dom": "^16.6.3",
+    "styled-components": "^4.1.1"
   },
-  "dependencies": {
-    "styled-components": "4.1.1"
-  },
+  "dependencies": {},
   "devDependencies": {
     "@babel/cli": "7.1.5",
     "@babel/core": "7.1.0",
@@ -52,9 +51,10 @@
     "babel-eslint": "9.0.0",
     "babel-jest": "23.6.0",
     "babel-loader": "8.0.4",
+    "babel-plugin-module-resolver": "3.1.1",
     "babel-plugin-named-asset-import": "^0.2.3",
-    "babel-preset-react-app": "^6.1.0",
     "babel-plugin-styled-components": "1.9.2",
+    "babel-preset-react-app": "^6.1.0",
     "bfj": "6.1.1",
     "case-sensitive-paths-webpack-plugin": "2.1.2",
     "chalk": "2.4.1",
@@ -104,6 +104,7 @@
     "rimraf": "2.6.2",
     "sass-loader": "7.1.0",
     "style-loader": "0.23.0",
+    "styled-components": "4.1.1",
     "terser-webpack-plugin": "1.1.0",
     "url-loader": "1.1.1",
     "webpack": "4.19.1",
@@ -182,7 +183,20 @@
       ]
     ],
     "plugins": [
-      "babel-plugin-styled-components"
+      "babel-plugin-styled-components",
+      [
+        "module-resolver",
+        {
+          "root": [
+            "./src"
+          ],
+          "alias": {
+            "@": "./src/components",
+            "@common": "./src/components/common",
+            "@utils": "./src/components/utils"
+          }
+        }
+      ]
     ]
   }
 }
