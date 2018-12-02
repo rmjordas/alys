@@ -11,6 +11,7 @@ const Props = React.lazy(() => import('./Props'));
 
 const Wrapper = styled.div`
   margin-left: 0;
+  margin-bottom: 1em;
   padding: 1em;
 
   @media (min-width: 60em) {
