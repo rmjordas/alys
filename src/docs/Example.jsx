@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 const SyntaxHighlightedCode = React.lazy(() =>
-  import('@common/components/SyntaxHighlightedCode'),
+  import('@common/SyntaxHighlightedCode'),
 );
 
 const Wrapper = styled.div`

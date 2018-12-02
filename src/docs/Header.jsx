@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
-import { ReactComponent as logo } from '../assets/logo-icon.svg';
+import { ReactComponent as logo } from './assets/logo-icon.svg';
 
 const AlysLogo = styled(logo).attrs(() => ({
   height: '20px',
