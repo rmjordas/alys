@@ -60,7 +60,7 @@ export default function Props({ props }) {
                   <React.Fragment>
                     :{' '}
                     {parseType(type)
-                      .map((v) => <code>{v}</code>)
+                      .map((v) => <code key={`${key}-${v}`}>{v}</code>)
                       .reduce((a, v) => [a, ' | ', v])}
                   </React.Fragment>
                 )}
@@ -69,7 +69,7 @@ export default function Props({ props }) {
                   <React.Fragment>
                     :{' '}
                     {parseType(type)
-                      .map((v) => <code>{v}</code>)
+                      .map((v) => <code key={`${key}-${v}`}>{v}</code>)
                       .reduce((a, v) => [a, ', ', v])}
                   </React.Fragment>
                 )}
