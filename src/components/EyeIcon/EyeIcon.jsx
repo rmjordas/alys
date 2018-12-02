@@ -29,7 +29,7 @@ const stringOrNumberProp = PropTypes.oneOfType([
   PropTypes.string,
   PropTypes.number,
 ]);
-export const eyeColorEnum = PropTypes.oneOf([FILL_DEFAULT]);
+export const eyeIconColorEnum = PropTypes.oneOf([FILL_DEFAULT]);
 
 EyeIcon.defaultProps = {
   fill: FILL_DEFAULT,
@@ -39,7 +39,7 @@ EyeIcon.defaultProps = {
 
 EyeIcon.propTypes = {
   /** Fill color */
-  fill: PropTypes.oneOfType([PropTypes.string, eyeColorEnum]),
+  fill: PropTypes.oneOfType([PropTypes.string, eyeIconColorEnum]),
 
   /** Icon width */
   width: stringOrNumberProp,
