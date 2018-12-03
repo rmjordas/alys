@@ -2,6 +2,7 @@ export { default as ArrowLeftIcon } from './ArrowLeftIcon';
 export { default as Avatar } from './Avatar';
 export { default as EmailIcon } from './EmailIcon';
 export { default as HomeIcon } from './HomeIcon';
+export { default as PasswordIcon } from './PasswordIcon';
 export { default as PhoneIcon } from './PhoneIcon';
 export { default as PreviewIcon } from './PreviewIcon';
 export { default as ProgressBar } from './ProgressBar';
