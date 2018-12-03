@@ -9,6 +9,7 @@ export { default as HomeIcon } from './HomeIcon';
 export { default as LocationIcon } from './LocationIcon';
 export { default as MentorIcon } from './MentorIcon';
 export { default as PasswordIcon } from './PasswordIcon';
+export { default as PencilIcon } from './PencilIcon';
 export { default as PhoneIcon } from './PhoneIcon';
 export { default as PhoneXIcon } from './PhoneXIcon';
 export { default as PreviewIcon } from './PreviewIcon';
