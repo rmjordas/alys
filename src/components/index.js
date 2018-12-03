@@ -1,3 +1,4 @@
+export { default as AddMentorIcon } from './AddMentorIcon';
 export { default as ArrowLeftIcon } from './ArrowLeftIcon';
 export { default as ArrowRightIcon } from './ArrowRightIcon';
 export { default as Avatar } from './Avatar';
