@@ -5,6 +5,7 @@ export { default as Avatar } from './Avatar';
 export { default as ChevronLeftIcon } from './ChevronLeftIcon';
 export { default as ChevronRightIcon } from './ChevronRightIcon';
 export { default as ComputerIcon } from './ComputerIcon';
+export { default as ConfirmIcon } from './ConfirmIcon';
 export { default as EmailIcon } from './EmailIcon';
 export { default as HomeIcon } from './HomeIcon';
 export { default as LocationIcon } from './LocationIcon';
