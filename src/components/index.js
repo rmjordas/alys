@@ -31,6 +31,7 @@ export { default as ProgressBar } from './ProgressBar';
 export { default as RegisterIcon } from './RegisterIcon';
 export { default as RemoveMentorIcon } from './RemoveMentorIcon';
 export { default as SadIcon } from './SadIcon';
+export { default as SearchIcon } from './SearchIcon';
 export { default as SettingsIcon } from './SettingsIcon';
 export { default as SignOutIcon } from './SignOutIcon';
 export { default as StreamIcon } from './StreamIcon';
