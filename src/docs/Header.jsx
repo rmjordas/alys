@@ -20,6 +20,11 @@ const Wrapper = styled.div`
   background-color: #333;
   border-bottom: 1px solid #d4dadf;
   box-shadow: 0 1px 1px 0 rgba(116, 129, 141, 0.1);
+  text-decoration: none;
+
+  &:visited {
+    color: #fff;
+  }
 `;
 
 const Text = styled.h1`
@@ -32,7 +37,7 @@ const Text = styled.h1`
 
 export default function Header({ title }) {
   return (
-    <Wrapper>
+    <Wrapper as="a" href="/">
       <AlysLogo />
       <Text>{title}</Text>
     </Wrapper>
