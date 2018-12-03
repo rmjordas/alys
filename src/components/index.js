@@ -8,6 +8,7 @@ export { default as CameraIcon } from './CameraIcon';
 export { default as ChevronLeftIcon } from './ChevronLeftIcon';
 export { default as ChevronRightIcon } from './ChevronRightIcon';
 export { default as ClockIcon } from './ClockIcon';
+export { default as CloseIcon } from './CloseIcon';
 export { default as CommentIcon } from './CommentIcon';
 export { default as ComputerIcon } from './ComputerIcon';
 export { default as ConfirmIcon } from './ConfirmIcon';
