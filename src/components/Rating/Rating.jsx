@@ -12,7 +12,7 @@ const Wrapper = styled.div`
   max-width: 5em;
 `;
 
-export default function Rating({ value }) {
+export default function Rating({ value, color }) {
   let stars = [];
 
   for (let i = 1; i <= MAX_VALUE; i += 1) {
@@ -21,6 +21,7 @@ export default function Rating({ value }) {
         fontSize="0.77875em"
         key={`ratingstar${i}`}
         filled={i <= value}
+        color={color}
       />,
     );
   }
@@ -28,7 +29,14 @@ export default function Rating({ value }) {
   return <Wrapper>{stars}</Wrapper>;
 }
 
+Rating.defaultProps = {
+  color: 'default',
+};
+
 Rating.propTypes = {
   /** Amount of filled stars */
   value: PropTypes.oneOf([0, 1, 2, 3, 4, 5]).isRequired,
+
+  /** Fill color of stars */
+  color: PropTypes.oneOf(['default', 'secondary']),
 };
