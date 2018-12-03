@@ -15,6 +15,7 @@ export { default as ComputerIcon } from './ComputerIcon';
 export { default as ConfirmIcon } from './ConfirmIcon';
 export { default as EmailIcon } from './EmailIcon';
 export { default as EnlargeIcon } from './EnlargeIcon';
+export { default as FiltersIcon } from './FiltersIcon';
 export { default as HappyIcon } from './HappyIcon';
 export { default as HomeIcon } from './HomeIcon';
 export { default as LaptopIcon } from './LaptopIcon';
