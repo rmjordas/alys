@@ -36,6 +36,7 @@ export { default as SadIcon } from './SadIcon';
 export { default as SearchIcon } from './SearchIcon';
 export { default as SettingsIcon } from './SettingsIcon';
 export { default as SignOutIcon } from './SignOutIcon';
+export { default as SpeakerIcon } from './SpeakerIcon';
 export { default as StreamIcon } from './StreamIcon';
 export { default as SvgIcon } from './SvgIcon';
 export { default as TabletIcon } from './TabletIcon';
