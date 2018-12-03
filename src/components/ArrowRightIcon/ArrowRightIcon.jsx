@@ -13,7 +13,7 @@ export default function ArrowLeftIcon({ dark, ...svgProps }) {
   };
 
   return (
-    <SvgIcon {...svgProps}>
+    <SvgIcon viewBox="0 0 18.8 17.2" {...svgProps}>
       <g id="arrow-right-icon" transform="translate(0 0)">
         <line
           {...commonProps}

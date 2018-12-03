@@ -13,7 +13,7 @@ export default function PreviewIcon({ dark, ...svgProps }) {
   };
 
   return (
-    <SvgIcon {...svgProps}>
+    <SvgIcon viewBox="0 0 20 20" {...svgProps}>
       <g id="sad-icon" transform="translate(0 0)">
         <circle
           {...commonProps}

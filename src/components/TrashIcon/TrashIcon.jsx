@@ -13,7 +13,7 @@ export default function TrashIcon({ dark, ...svgProps }) {
   };
 
   return (
-    <SvgIcon {...svgProps}>
+    <SvgIcon viewBox="0 0 19 19" {...svgProps}>
       <path
         {...commonProps}
         id="path"

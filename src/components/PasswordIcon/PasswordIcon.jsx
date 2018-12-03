@@ -12,7 +12,7 @@ export default function PasswordIcon({ dark, ...svgProps }) {
   };
 
   return (
-    <SvgIcon {...svgProps}>
+    <SvgIcon viewBox="0 0 17 19.988" {...svgProps}>
       <g id="password-icon" transform="translate(0 -0.011)">
         <path
           {...commonProps}

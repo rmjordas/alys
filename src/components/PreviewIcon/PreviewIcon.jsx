@@ -13,7 +13,7 @@ export default function PreviewIcon({ dark, ...svgProps }) {
   };
 
   return (
-    <SvgIcon {...svgProps}>
+    <SvgIcon viewBox="0 0 19 19" {...svgProps}>
       <g id="preview-icon" transform="translate(0 0)">
         <path {...commonProps} id="path" d="M.5,4.5v-3a.945.945,0,0,1,1-1h3" />
         <path

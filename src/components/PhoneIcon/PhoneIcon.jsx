@@ -12,7 +12,7 @@ export default function PhoneIcon({ dark, ...svgProps }) {
   };
 
   return (
-    <SvgIcon {...svgProps}>
+    <SvgIcon viewBox="0 0 13 22" {...svgProps}>
       <g id="phone-icon" transform="translate(0 0)">
         <path
           {...commonProps}

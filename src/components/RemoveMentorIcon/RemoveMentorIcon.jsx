@@ -14,7 +14,7 @@ export default function RemoveMentorIcon({ dark, ...svgProps }) {
   };
 
   return (
-    <SvgIcon {...svgProps}>
+    <SvgIcon viewBox="0 0 23.7 23.5" {...svgProps}>
       <g id="remove-mentor-icon" transform="translate(0 0)">
         <path id="path" {...commonProps} d="M5.5,13.6v3l-5,2.3" />
         <path id="path-2" data-name="path" {...commonProps} d="M13.4,17.5" />

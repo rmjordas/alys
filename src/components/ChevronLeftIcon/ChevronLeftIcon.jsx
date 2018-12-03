@@ -6,7 +6,7 @@ import SvgIcon from '../SvgIcon';
 /** See <SvgIcon /> for more prop descriptions. */
 export default function ChevronLeftIcon({ dark, ...svgProps }) {
   return (
-    <SvgIcon {...svgProps}>
+    <SvgIcon viewBox="0 0 5.8 10.7" {...svgProps}>
       <g id="arrow-left" transform="translate(-512.002 -387)">
         <path
           id="arrow-left-2"

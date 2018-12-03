@@ -12,7 +12,7 @@ export default function ComputerIcon({ dark, ...svgProps }) {
   };
 
   return (
-    <SvgIcon {...svgProps}>
+    <SvgIcon viewBox="0 0 22.917 19" {...svgProps}>
       <g id="computer-icon" transform="translate(0 0)">
         <path
           {...commonProps}

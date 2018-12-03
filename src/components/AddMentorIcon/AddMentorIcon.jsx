@@ -14,7 +14,7 @@ export default function AddMentorIcon({ dark, ...svgProps }) {
   };
 
   return (
-    <SvgIcon {...svgProps}>
+    <SvgIcon viewBox="0 0 23.7 23.5" {...svgProps}>
       <g id="add-mentor-icon" transform="translate(0 0)">
         <path {...commonProps} id="path" d="M5.5,13.6v3l-5,2.3" />
         <path {...commonProps} id="path-2" data-name="path" d="M13.4,17.5" />

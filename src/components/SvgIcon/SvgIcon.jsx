@@ -4,14 +4,16 @@ import PropTypes from 'prop-types';
 import { styleLengths } from '@utils/string-utils';
 
 /** Renders SVG paths. */
-export default function SvgIcon({ fontSize, children }) {
+export default function SvgIcon({ fontSize, viewBox, children, ...svgProps }) {
   return (
     <svg
+      xmlns="http://www.w3.org/2000/svg"
       color="inherit"
-      viewBox="0 0 24 24"
+      viewBox={viewBox}
       focusable={false}
       width={styleLengths(fontSize)}
       height={styleLengths(fontSize)}
+      {...svgProps}
     >
       {children}
     </svg>
@@ -22,6 +24,7 @@ const DEFAULT_FONT_SIZE = 24;
 
 SvgIcon.defaultProps = {
   fontSize: DEFAULT_FONT_SIZE,
+  viewBox: '0 0 24 24',
 };
 
 SvgIcon.propTypes = {
@@ -30,4 +33,6 @@ SvgIcon.propTypes = {
 
   /** Size of the icon */
   fontSize: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+
+  viewBox: PropTypes.string,
 };

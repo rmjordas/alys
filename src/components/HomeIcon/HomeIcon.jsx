@@ -14,7 +14,7 @@ export default function HomeIcon({ dark, ...svgProps }) {
   };
 
   return (
-    <SvgIcon {...svgProps}>
+    <SvgIcon viewBox="0 0 20.4 19.6" {...svgProps}>
       <g id="home-icon" transform="translate(0 0)">
         <path {...commonProps} id="path" d="M17.5,8.1h2.4L10.2.5.5,8.1h2" />
         <path {...commonProps} id="path-2" data-name="path" d="M17.5,7.1" />

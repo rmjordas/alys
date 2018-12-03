@@ -12,7 +12,7 @@ export default function EmailIcon({ dark, ...svgProps }) {
   };
 
   return (
-    <SvgIcon {...svgProps}>
+    <SvgIcon viewBox="0 0 20 15" {...svgProps}>
       <g id="email-icon" transform="translate(0 0)">
         <path
           {...commonProps}
