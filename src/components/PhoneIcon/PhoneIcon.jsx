@@ -24,7 +24,7 @@ export default function PhoneIcon({ dark, ...svgProps }) {
           {...commonProps}
           id="line-2"
           data-name="line"
-          strokeLineCap="round"
+          strokeLinecap="round"
           x2="2"
           transform="translate(5.5 2.5)"
         />
