@@ -3,8 +3,6 @@ import PropTypes from 'prop-types';
 
 import SvgIcon from '../SvgIcon';
 
-const isDark = (dark) => (dark ? '#fff' : '#4C5264');
-
 export default function ArrowLeftIcon({ dark, ...svgProps }) {
   return (
     <SvgIcon {...svgProps}>
@@ -13,7 +11,7 @@ export default function ArrowLeftIcon({ dark, ...svgProps }) {
           id="arrow-left-2"
           data-name="arrow-left"
           fill="none"
-          stroke={isDark(dark)}
+          stroke={dark ? '#fff' : '#4C5264'}
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeMiterlimit={10}
