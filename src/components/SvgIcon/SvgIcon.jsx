@@ -34,5 +34,6 @@ SvgIcon.propTypes = {
   /** Size of the icon */
   fontSize: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
 
+  /** Defines the position and dimension for the content of the <svg> element */
   viewBox: PropTypes.string,
 };
