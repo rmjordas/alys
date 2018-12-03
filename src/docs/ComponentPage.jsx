@@ -26,7 +26,9 @@ export default function ComponentPage({ component }) {
 
   return (
     <Wrapper>
-      <h2>{name}</h2>
+      <h2>
+        <code>{name}</code>
+      </h2>
 
       <p>{description}</p>
 
