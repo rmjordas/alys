@@ -13,6 +13,7 @@ export { default as LikeIcon } from './LikeIcon';
 export { default as LocationIcon } from './LocationIcon';
 export { default as MentorIcon } from './MentorIcon';
 export { default as MicrophoneIcon } from './MicrophoneIcon';
+export { default as NewIcon } from './NewIcon';
 export { default as PasswordIcon } from './PasswordIcon';
 export { default as PencilIcon } from './PencilIcon';
 export { default as PhoneIcon } from './PhoneIcon';
