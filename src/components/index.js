@@ -6,6 +6,7 @@ export { default as ComputerIcon } from './ComputerIcon';
 export { default as EmailIcon } from './EmailIcon';
 export { default as HomeIcon } from './HomeIcon';
 export { default as LocationIcon } from './LocationIcon';
+export { default as MentorIcon } from './MentorIcon';
 export { default as PasswordIcon } from './PasswordIcon';
 export { default as PhoneIcon } from './PhoneIcon';
 export { default as PreviewIcon } from './PreviewIcon';
