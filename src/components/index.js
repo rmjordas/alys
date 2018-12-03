@@ -13,6 +13,7 @@ export { default as CommentIcon } from './CommentIcon';
 export { default as ComputerIcon } from './ComputerIcon';
 export { default as ConfirmIcon } from './ConfirmIcon';
 export { default as EmailIcon } from './EmailIcon';
+export { default as HappyIcon } from './HappyIcon';
 export { default as HomeIcon } from './HomeIcon';
 export { default as LaptopIcon } from './LaptopIcon';
 export { default as LikeIcon } from './LikeIcon';
