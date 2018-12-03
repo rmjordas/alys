@@ -30,6 +30,7 @@ export { default as PhoneIcon } from './PhoneIcon';
 export { default as PhoneXIcon } from './PhoneXIcon';
 export { default as PreviewIcon } from './PreviewIcon';
 export { default as ProgressBar } from './ProgressBar';
+export { default as Rating } from './Rating';
 export { default as RegisterIcon } from './RegisterIcon';
 export { default as RemoveMentorIcon } from './RemoveMentorIcon';
 export { default as SadIcon } from './SadIcon';
