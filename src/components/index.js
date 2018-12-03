@@ -3,6 +3,7 @@ export { default as ArrowRightIcon } from './ArrowRightIcon';
 export { default as AttachmentIcon } from './AttachmentIcon';
 export { default as Avatar } from './Avatar';
 export { default as CameraFlipIcon } from './CameraFlipIcon';
+export { default as CameraIcon } from './CameraIcon';
 export { default as ChevronLeftIcon } from './ChevronLeftIcon';
 export { default as ChevronRightIcon } from './ChevronRightIcon';
 export { default as ClockIcon } from './ClockIcon';
