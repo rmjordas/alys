@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 
 import SvgIcon from '../SvgIcon';
 
+/** See <SvgIcon /> for more prop descriptions. */
 export default function ArrowLeftIcon({ dark, ...svgProps }) {
   return (
     <SvgIcon {...svgProps}>
