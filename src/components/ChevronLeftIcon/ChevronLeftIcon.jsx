@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import SvgIcon from '../SvgIcon';
 
 /** See <SvgIcon /> for more prop descriptions. */
-export default function ArrowLeftIcon({ dark, ...svgProps }) {
+export default function ChevronLeftIcon({ dark, ...svgProps }) {
   return (
     <SvgIcon {...svgProps}>
       <g id="arrow-left" transform="translate(-512.002 -387)">
@@ -24,9 +24,9 @@ export default function ArrowLeftIcon({ dark, ...svgProps }) {
   );
 }
 
-ArrowLeftIcon.defaultProps = { dark: false };
+ChevronLeftIcon.defaultProps = { dark: false };
 
-ArrowLeftIcon.propTypes = {
+ChevronLeftIcon.propTypes = {
   /** Set to `true` to make icon viewable in dark backgrounds */
   dark: PropTypes.bool,
 };
