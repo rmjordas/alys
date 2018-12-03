@@ -1,4 +1,9 @@
+export { default as ArrowLeftIcon } from './ArrowLeftIcon';
 export { default as Avatar } from './Avatar';
+export { default as EmailIcon } from './EmailIcon';
+export { default as HomeIcon } from './HomeIcon';
 export { default as PhoneIcon } from './PhoneIcon';
+export { default as PreviewIcon } from './PreviewIcon';
 export { default as ProgressBar } from './ProgressBar';
+export { default as RemoveMentorIcon } from './RemoveMentorIcon';
 export { default as SvgIcon } from './SvgIcon';
