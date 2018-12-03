@@ -2,7 +2,7 @@ import React from 'react';
 import SvgIcon from 'alys/SvgIcon';
 
 /** Basic EyeIcon component */
-export default function EyeIcon({ dark, ...svgProps }) {
+export default function ExampleEyeIcon({ dark, ...svgProps }) {
   return (
     <SvgIcon {...svgProps}>
       <g
