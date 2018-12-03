@@ -28,7 +28,7 @@ export default function SadIcon({ dark, ...svgProps }) {
           {...commonProps}
           id="ellipse-2"
           data-name="ellipse"
-          fill={dark ? '#4C5264' : '#fff'}
+          fill={dark ? '#fff' : '#4C5264'}
           cx="0.5"
           cy="0.5"
           r="0.5"
@@ -38,7 +38,7 @@ export default function SadIcon({ dark, ...svgProps }) {
           {...commonProps}
           id="ellipse-3"
           data-name="ellipse"
-          fill={dark ? '#4C5264' : '#fff'}
+          fill={dark ? '#fff' : '#4C5264'}
           cx="0.5"
           cy="0.5"
           r="0.5"
