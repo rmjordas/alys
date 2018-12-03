@@ -3,6 +3,7 @@ export { default as ArrowRightIcon } from './ArrowRightIcon';
 export { default as AttachmentIcon } from './AttachmentIcon';
 export { default as Avatar } from './Avatar';
 export { default as ChevronLeftIcon } from './ChevronLeftIcon';
+export { default as ChevronRightIcon } from './ChevronRightIcon';
 export { default as ComputerIcon } from './ComputerIcon';
 export { default as EmailIcon } from './EmailIcon';
 export { default as HomeIcon } from './HomeIcon';
