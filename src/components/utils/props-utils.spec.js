@@ -21,6 +21,14 @@ test('generates correct list for "enum" type', () => {
   expect(parseType(type)).toEqual(expected);
 });
 
+test('returns an empty array when "enum" value is undefined', () => {
+  const type = { name: 'enum' };
+  const actual = parseType(type);
+
+  expect(Array.isArray(actual)).toBe(true);
+  expect(actual).toHaveLength(0);
+});
+
 test('generates correct list for "union" type', () => {
   const type = {
     name: 'union',
