@@ -2,9 +2,12 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled, { ThemeProvider } from 'styled-components';
 
+import MentorIcon from '@/MentorIcon';
+
 const getSize = ({ theme: { size } }) => size;
 const calcSize = (percent) => ({ theme: { size } }) => size + size * percent;
 const sizes = {
+  smaller: 2.5,
   small: 3.75,
   default: 6.25,
 };
@@ -25,6 +28,21 @@ const Img = styled.img`
     outlined && !round ? size * 0.1 : 0}em;
 `;
 
+const DefaultWrapper = styled(Wrapper)`
+  background-color: #e2e8ed;
+`;
+
+const StyledMentorIcon = styled(MentorIcon)`
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  && path {
+    stroke: #bcc5d3;
+  }
+`;
+
 /** Image avatars. */
 export default function Avatar({ src, alt, outlined, size, round }) {
   const theme = {
@@ -35,12 +53,18 @@ export default function Avatar({ src, alt, outlined, size, round }) {
 
   return (
     <ThemeProvider theme={theme}>
-      {outlined && !round ? (
-        <Wrapper>
+      {src ? (
+        outlined && !round ? (
+          <Wrapper>
+            <Img src={src} alt={alt} />
+          </Wrapper>
+        ) : (
           <Img src={src} alt={alt} />
-        </Wrapper>
+        )
       ) : (
-        <Img src={src} alt={alt} />
+        <DefaultWrapper>
+          <StyledMentorIcon />
+        </DefaultWrapper>
       )}
     </ThemeProvider>
   );
@@ -55,7 +79,7 @@ Avatar.defaultProps = {
 
 Avatar.propTypes = {
   /** Path to the image file */
-  src: PropTypes.string.isRequired,
+  src: PropTypes.string,
 
   /** Alternate text for the image */
   alt: PropTypes.string,
@@ -64,7 +88,7 @@ Avatar.propTypes = {
   outlined: PropTypes.bool,
 
   /** Pre-set avatar size */
-  size: PropTypes.oneOf(['small', 'default']),
+  size: PropTypes.oneOf(['smaller', 'small', 'default']),
 
   /** Set to true to make the image round */
   round: PropTypes.bool,
