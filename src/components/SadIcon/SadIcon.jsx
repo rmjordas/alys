@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import SvgIcon from '../SvgIcon';
 
 /** See <SvgIcon /> for more prop descriptions. */
-export default function PreviewIcon({ dark, ...svgProps }) {
+export default function SadIcon({ dark, ...svgProps }) {
   const commonProps = {
     stroke: dark ? '#fff' : '#4C5264',
     strokeLinecap: 'round',
@@ -55,9 +55,9 @@ export default function PreviewIcon({ dark, ...svgProps }) {
   );
 }
 
-PreviewIcon.defaultProps = { dark: false };
+SadIcon.defaultProps = { dark: false };
 
-PreviewIcon.propTypes = {
+SadIcon.propTypes = {
   /** Set to `true` to make icon viewable in dark backgrounds */
   dark: PropTypes.bool,
 };
