@@ -1,5 +1,6 @@
 export { default as ArrowLeftIcon } from './ArrowLeftIcon';
 export { default as Avatar } from './Avatar';
+export { default as ComputerIcon } from './ComputerIcon';
 export { default as EmailIcon } from './EmailIcon';
 export { default as HomeIcon } from './HomeIcon';
 export { default as PasswordIcon } from './PasswordIcon';
