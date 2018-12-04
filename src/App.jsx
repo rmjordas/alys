@@ -1,10 +1,12 @@
-import React, { Component } from 'react';
+import React, { Component, Suspense } from 'react';
 import styled from 'styled-components';
 
 import Header from './docs/Header';
-import Navigation from './docs/Navigation';
-import ComponentPage from './docs/ComponentPage';
 import componentData from './docs/component-data';
+
+const Landing = React.lazy(() => import('./docs/Landing'));
+const Navigation = React.lazy(() => import('./docs/Navigation'));
+const ComponentPage = React.lazy(() => import('./docs/ComponentPage'));
 
 const MainContent = styled.div`
   position: fixed;
@@ -12,6 +14,9 @@ const MainContent = styled.div`
   overflow-y: auto;
   height: calc(100% - 69px);
 `;
+
+// @TODO+App: Create proper Loading component
+const Loading = <h2>Loading</h2>;
 
 export default class App extends Component {
   state = {
@@ -39,14 +44,22 @@ export default class App extends Component {
           repoLink="https://github.com/rmjordas/alys"
         />
 
-        <MainContent>
-          <Navigation
-            components={componentData.map(({ name }) => name)}
-            active={route}
-          />
+        {route ? (
+          <Suspense fallback={Loading}>
+            <MainContent>
+              <Navigation
+                components={componentData.map(({ name }) => name)}
+                active={route}
+              />
 
-          <ComponentPage component={component} />
-        </MainContent>
+              <ComponentPage component={component} />
+            </MainContent>
+          </Suspense>
+        ) : (
+          <Suspense fallback={Loading}>
+            <Landing component={component.name} />
+          </Suspense>
+        )}
       </React.Fragment>
     );
   }
