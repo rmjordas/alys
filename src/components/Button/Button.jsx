@@ -12,6 +12,7 @@ import { styleLengths } from '../utils/string-utils';
 
 const linearGradient = (colors) => `linear-gradient(to right, ${colors})`;
 
+// @TODO+Button: Styles for Button states (hover, clicked, etc.)
 const BasicButton = styled.div.attrs(({ text }) => ({
   children: text,
 }))`
