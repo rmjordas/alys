@@ -15,9 +15,11 @@ body {
   color: #666666;
 }
 
-code {
+code,
+code[class*='language-'],
+pre[class*='language-'] {
   font-family: 'Source Code Pro', Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+    monospace !important;
 }
 
 a,
