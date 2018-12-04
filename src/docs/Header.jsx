@@ -2,15 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
-import { ReactComponent as logo } from './assets/logo-icon.svg';
+import AppLogo from './AppLogo';
 import { ReactComponent as github } from './assets/github.svg';
-
-const AlysLogo = styled(logo).attrs(() => ({
-  height: '20px',
-  width: '20px',
-}))`
-  margin: 0 0.5em;
-`;
 
 const GithubLogo = styled(github).attrs(() => ({
   height: '20px',
@@ -68,8 +61,8 @@ const Spacer = styled.div`
 export default function Header({ title, repoLink }) {
   return (
     <Wrapper>
-      <Brand as="a" href="/">
-        <AlysLogo />
+      <Brand as="a" href="#">
+        <AppLogo />
         <Link as="span">{title}</Link>
       </Brand>
 
