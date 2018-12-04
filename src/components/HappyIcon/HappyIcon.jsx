@@ -1,12 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import SvgIcon from '../SvgIcon';
+import { iconDark } from '@utils/icon-utils';
+import SvgIcon from '@/SvgIcon';
 
 /** See <SvgIcon /> for more prop descriptions. */
 export default function HappyIcon({ dark, ...svgProps }) {
   const commonProps = {
-    stroke: dark ? '#fff' : '#4C5264',
+    stroke: iconDark(dark),
     strokeLinecap: 'round',
     strokeLinejoin: 'round',
     strokeMiterlimit: 10,
@@ -28,7 +29,7 @@ export default function HappyIcon({ dark, ...svgProps }) {
           {...commonProps}
           id="ellipse-2"
           data-name="ellipse"
-          fill={dark ? '#fff' : '#4c5264'}
+          fill={iconDark(dark)}
           cx="0.5"
           cy="0.5"
           r="0.5"
@@ -38,7 +39,7 @@ export default function HappyIcon({ dark, ...svgProps }) {
           {...commonProps}
           id="ellipse-3"
           data-name="ellipse"
-          fill={dark ? '#fff' : '#4c5264'}
+          fill={iconDark(dark)}
           cx="0.5"
           cy="0.5"
           r="0.5"

@@ -1,7 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import SvgIcon from '../SvgIcon';
+import { iconDark } from '@utils/icon-utils';
+import SvgIcon from '@/SvgIcon';
 
 /** See <SvgIcon /> for more prop descriptions. */
 export default function LiveIcon({ dark, ...svgProps }) {
@@ -11,7 +12,7 @@ export default function LiveIcon({ dark, ...svgProps }) {
         <circle
           id="ellipse"
           fill="none"
-          stroke={dark ? '#fff' : '#4C5264'}
+          stroke={iconDark(dark)}
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeMiterlimit={10}
@@ -23,7 +24,7 @@ export default function LiveIcon({ dark, ...svgProps }) {
         <circle
           id="ellipse-2"
           data-name="ellipse"
-          fill={dark ? '#fff' : '#4C5264'}
+          fill={iconDark(dark)}
           cx="4.5"
           cy="4.5"
           r="4.5"

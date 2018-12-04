@@ -1,16 +1,21 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+import {
+  COLOR_PRIMARY_LIGHT,
+  COLOR_WHITE,
+  COLOR_WHITE_BLUE,
+  COLOR_WHITE_ALPHA60,
+} from '@/constants';
 import SvgIcon from '@/SvgIcon';
 
 const fill = {
-  default: '#60c3ff',
-  secondary: '#ffffff',
+  default: COLOR_PRIMARY_LIGHT,
+  secondary: COLOR_WHITE,
 };
-
 const empty = {
-  default: '#e2e8ed',
-  secondary: 'rgba(255, 255,255, 0.6)',
+  default: COLOR_WHITE_BLUE,
+  secondary: COLOR_WHITE_ALPHA60,
 };
 
 /** See <SvgIcon /> for more prop descriptions. */

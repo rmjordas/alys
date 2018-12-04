@@ -1,9 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import SvgIcon from '../SvgIcon';
-
-const isDark = (dark) => (dark ? '#fff' : '#4c5264');
+import { iconDark } from '@utils/icon-utils';
+import SvgIcon from '@/SvgIcon';
 
 /** See <SvgIcon /> for more prop descriptions. */
 export default function OptionsIcon({ dark, ...svgProps }) {
@@ -13,7 +12,7 @@ export default function OptionsIcon({ dark, ...svgProps }) {
         <g
           id="ellipse"
           fill="none"
-          stroke={isDark(dark)}
+          stroke={iconDark(dark)}
           transform="translate(326 201)"
         >
           <circle stroke="none" cx="2.5" cy="2.5" r="2.5" />
@@ -23,7 +22,7 @@ export default function OptionsIcon({ dark, ...svgProps }) {
           id="ellipse-2"
           data-name="ellipse"
           fill="none"
-          stroke={isDark(dark)}
+          stroke={iconDark(dark)}
           transform="translate(333 201)"
         >
           <circle stroke="none" cx="2.5" cy="2.5" r="2.5" />
@@ -33,7 +32,7 @@ export default function OptionsIcon({ dark, ...svgProps }) {
           id="ellipse-3"
           data-name="ellipse"
           fill="none"
-          stroke={isDark(dark)}
+          stroke={iconDark(dark)}
           transform="translate(340 201)"
         >
           <circle stroke="none" cx="2.5" cy="2.5" r="2.5" />

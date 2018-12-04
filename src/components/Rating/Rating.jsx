@@ -4,7 +4,7 @@ import styled from 'styled-components';
 
 import StarIcon from '@common/StarIcon';
 
-const MAX_VALUE = 5;
+const RATING_MAX_VALUE = 5;
 const Wrapper = styled.div`
   display: flex;
   flex-direction: row;
@@ -15,7 +15,7 @@ const Wrapper = styled.div`
 export default function Rating({ value, color }) {
   let stars = [];
 
-  for (let i = 1; i <= MAX_VALUE; i += 1) {
+  for (let i = 1; i <= RATING_MAX_VALUE; i += 1) {
     stars.push(
       <StarIcon
         fontSize="0.77875em"

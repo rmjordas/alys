@@ -1,7 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import SvgIcon from '../SvgIcon';
+import { iconDark } from '@utils/icon-utils';
+import SvgIcon from '@/SvgIcon';
 
 /** See <SvgIcon /> for more prop descriptions. */
 export default function Settings({ dark, ...svgProps }) {
@@ -10,7 +11,7 @@ export default function Settings({ dark, ...svgProps }) {
       <path
         id="path"
         fill="none"
-        stroke={dark ? '#fff' : '#4C5264'}
+        stroke={iconDark(dark)}
         strokeLinecap="round"
         strokeLinejoin="round"
         strokeMiterlimit={10}

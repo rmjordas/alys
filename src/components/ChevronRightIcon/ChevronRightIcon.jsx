@@ -1,7 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import SvgIcon from '../SvgIcon';
+import { iconDark } from '@utils/icon-utils';
+import SvgIcon from '@/SvgIcon';
 
 /** See <SvgIcon /> for more prop descriptions. */
 export default function ChevronRightIcon({ dark, ...svgProps }) {
@@ -12,7 +13,7 @@ export default function ChevronRightIcon({ dark, ...svgProps }) {
           id="arrow-right-2"
           data-name="arrow-right"
           fill="none"
-          stroke={dark ? '#fff' : '#4C5264'}
+          stroke={iconDark(dark)}
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeMiterlimit={10}

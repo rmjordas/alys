@@ -20,10 +20,10 @@ export default function SvgIcon({ fontSize, viewBox, children, ...svgProps }) {
   );
 }
 
-const DEFAULT_FONT_SIZE = 24;
+const SVG_ICON_DEFAULT_FONT_SIZE = 24;
 
 SvgIcon.defaultProps = {
-  fontSize: DEFAULT_FONT_SIZE,
+  fontSize: SVG_ICON_DEFAULT_FONT_SIZE,
   viewBox: '0 0 24 24',
 };
 
