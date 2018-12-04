@@ -1,9 +1,17 @@
 import React, { Component } from 'react';
+import styled from 'styled-components';
 
 import Header from './docs/Header';
 import Navigation from './docs/Navigation';
 import ComponentPage from './docs/ComponentPage';
 import componentData from './docs/component-data';
+
+const MainContent = styled.div`
+  position: fixed;
+  width: 100%;
+  overflow-y: auto;
+  height: calc(100% - 69px);
+`;
 
 export default class App extends Component {
   state = {
@@ -27,9 +35,12 @@ export default class App extends Component {
     return (
       <React.Fragment>
         <Header title="Alys docs" />
-        <Navigation components={componentData.map(({ name }) => name)} />
 
-        <ComponentPage component={component} />
+        <MainContent>
+          <Navigation components={componentData.map(({ name }) => name)} />
+
+          <ComponentPage component={component} />
+        </MainContent>
       </React.Fragment>
     );
   }

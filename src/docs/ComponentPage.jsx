@@ -10,7 +10,9 @@ const Example = React.lazy(() => import('./Example'));
 const Props = React.lazy(() => import('./Props'));
 
 const Wrapper = styled.div`
-  margin: 0 1em 1em;
+  padding: 0 1em 0 1em;
+  height: 100%;
+  overflow-y: auto;
 
   @media (min-width: 60em) {
     margin-left: 18.5em;

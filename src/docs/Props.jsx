@@ -6,6 +6,7 @@ import { styleLengths } from '@utils/string-utils';
 import { parseType } from '@utils/props-utils';
 
 const Table = styled.table`
+  margin-bottom: 1em;
   width: 100%;
 `;
 

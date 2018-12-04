@@ -8,6 +8,9 @@ const List = styled.ul`
   list-style-type: none;
   padding: 1em;
   display: none;
+  height: calc(100% - 2em);
+  overflow-y: auto;
+  margin: 0;
 
   @media (min-width: 60em) {
     display: block;
