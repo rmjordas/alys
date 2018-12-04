@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled, { ThemeProvider } from 'styled-components';
 
+import { COLOR_GRAY_BLUE, COLOR_WHITE, COLOR_WHITE_BLUE } from '@/constants';
 import MentorIcon from '@/MentorIcon';
 
 const getSize = ({ theme: { size } }) => size;
@@ -13,7 +14,7 @@ const sizes = {
 };
 
 const Wrapper = styled.div`
-  background-color: white;
+  background-color: ${COLOR_WHITE};
   width: ${calcSize(0.2)}em;
   height: ${calcSize(0.2)}em;
   border-radius: ${({ theme: { size } }) => size * 0.1}em;
@@ -29,7 +30,7 @@ const Img = styled.img`
 `;
 
 const DefaultWrapper = styled(Wrapper)`
-  background-color: #e2e8ed;
+  background-color: ${COLOR_WHITE_BLUE};
 `;
 
 const StyledMentorIcon = styled(MentorIcon)`
@@ -39,7 +40,7 @@ const StyledMentorIcon = styled(MentorIcon)`
   transform: translate(-50%, -50%);
 
   && path {
-    stroke: #bcc5d3;
+    stroke: ${COLOR_GRAY_BLUE};
   }
 `;
 
