@@ -34,7 +34,10 @@ export default class App extends Component {
 
     return (
       <React.Fragment>
-        <Header title="Alys docs" />
+        <Header
+          title="Alys / Components"
+          repoLink="https://github.com/rmjordas/alys"
+        />
 
         <MainContent>
           <Navigation components={componentData.map(({ name }) => name)} />

@@ -59,7 +59,7 @@ const Spacer = styled.div`
   flex: 1;
 `;
 
-export default function Header({ title }) {
+export default function Header({ title, repoLink }) {
   return (
     <Wrapper>
       <Brand as="a" href="/">
@@ -69,7 +69,7 @@ export default function Header({ title }) {
 
       <Spacer />
 
-      <Link href="https://github.com/rmjordas/alys">
+      <Link href={repoLink}>
         <GithubLogo />
       </Link>
     </Wrapper>
