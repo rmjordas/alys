@@ -3,12 +3,24 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 import { ReactComponent as logo } from './assets/logo-icon.svg';
+import { ReactComponent as github } from './assets/github.svg';
 
 const AlysLogo = styled(logo).attrs(() => ({
   height: '20px',
   width: '20px',
 }))`
-  margin-bottom: -0.3em;
+  margin: 0 0.5em;
+`;
+
+const GithubLogo = styled(github).attrs(() => ({
+  height: '20px',
+  width: '20px',
+}))`
+  margin: 0 0.5em;
+
+  && path {
+    fill: #fff;
+  }
 `;
 
 const Wrapper = styled.div`
@@ -20,6 +32,12 @@ const Wrapper = styled.div`
   background-color: #333;
   border-bottom: 1px solid #d4dadf;
   box-shadow: 0 1px 1px 0 rgba(116, 129, 141, 0.1);
+`;
+
+const Brand = styled.div`
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   text-decoration: none;
 
   &:visited {
@@ -27,19 +45,33 @@ const Wrapper = styled.div`
   }
 `;
 
-const Text = styled.h1`
+const Link = styled.a`
   font-size: 1.5em;
   line-height: 1.5;
-  font-weight: 500;
-  padding-left: 1em;
-  margin: 0;
+  text-decoration: none;
+
+  &:visited {
+    color: #fff;
+  }
+`;
+
+const Spacer = styled.div`
+  flex: 1;
 `;
 
 export default function Header({ title }) {
   return (
-    <Wrapper as="a" href="/">
-      <AlysLogo />
-      <Text>{title}</Text>
+    <Wrapper>
+      <Brand as="a" href="/">
+        <AlysLogo />
+        <Link as="span">{title}</Link>
+      </Brand>
+
+      <Spacer />
+
+      <Link href="https://github.com/rmjordas/alys">
+        <GithubLogo />
+      </Link>
     </Wrapper>
   );
 }
