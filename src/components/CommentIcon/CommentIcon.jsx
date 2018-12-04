@@ -1,18 +1,19 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+import { colors, COLOR_WHITE } from '@/constants';
 import { iconDark } from '@utils/icon-utils';
 import SvgIcon from '@/SvgIcon';
 
 /** See <SvgIcon /> for more prop descriptions. */
-export default function CommentIcon({ dark, ...svgProps }) {
+export default function CommentIcon({ dark, color, ...svgProps }) {
   return (
     <SvgIcon viewBox="0 0 21.4 18.3" {...svgProps}>
       <g id="comment-icon" transform="translate(0 0)">
         <path
           id="path"
           fill="none"
-          stroke={iconDark(dark)}
+          stroke={iconDark(dark, COLOR_WHITE, colors[color])}
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeMiterlimit={10}
@@ -23,9 +24,15 @@ export default function CommentIcon({ dark, ...svgProps }) {
   );
 }
 
-CommentIcon.defaultProps = { dark: false };
+CommentIcon.defaultProps = {
+  dark: false,
+  color: 'dark',
+};
 
 CommentIcon.propTypes = {
   /** Set to `true` to make icon viewable in dark backgrounds */
   dark: PropTypes.bool,
+
+  /** Main color of icon when background is light. */
+  color: PropTypes.oneOf(['primary', 'dark']),
 };

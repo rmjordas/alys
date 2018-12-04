@@ -1,13 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+import { colors, COLOR_WHITE } from '@/constants';
 import { iconDark } from '@utils/icon-utils';
 import SvgIcon from '@/SvgIcon';
 
 /** See <SvgIcon /> for more prop descriptions. */
-export default function HappyIcon({ dark, ...svgProps }) {
+export default function HappyIcon({ dark, color, ...svgProps }) {
   const commonProps = {
-    stroke: iconDark(dark),
+    stroke: iconDark(dark, COLOR_WHITE, colors[color]),
     strokeLinecap: 'round',
     strokeLinejoin: 'round',
     strokeMiterlimit: 10,
@@ -29,7 +30,7 @@ export default function HappyIcon({ dark, ...svgProps }) {
           {...commonProps}
           id="ellipse-2"
           data-name="ellipse"
-          fill={iconDark(dark)}
+          fill={iconDark(dark, COLOR_WHITE, colors[color])}
           cx="0.5"
           cy="0.5"
           r="0.5"
@@ -39,7 +40,7 @@ export default function HappyIcon({ dark, ...svgProps }) {
           {...commonProps}
           id="ellipse-3"
           data-name="ellipse"
-          fill={iconDark(dark)}
+          fill={iconDark(dark, COLOR_WHITE, colors[color])}
           cx="0.5"
           cy="0.5"
           r="0.5"
@@ -56,9 +57,15 @@ export default function HappyIcon({ dark, ...svgProps }) {
   );
 }
 
-HappyIcon.defaultProps = { dark: false };
+HappyIcon.defaultProps = {
+  dark: false,
+  color: 'dark',
+};
 
 HappyIcon.propTypes = {
   /** Set to `true` to make icon viewable in dark backgrounds */
   dark: PropTypes.bool,
+
+  /** Main color of icon when background is light. */
+  color: PropTypes.oneOf(['primary', 'dark']),
 };

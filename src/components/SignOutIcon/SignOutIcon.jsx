@@ -1,14 +1,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+import { colors, COLOR_WHITE } from '@/constants';
 import { iconDark } from '@utils/icon-utils';
 import SvgIcon from '@/SvgIcon';
 
 /** See <SvgIcon /> for more prop descriptions. */
-export default function SignOutIcon({ dark, ...svgProps }) {
+export default function SignOutIcon({ dark, color, ...svgProps }) {
   const commonProps = {
     fill: 'none',
-    stroke: iconDark(dark),
+    stroke: iconDark(dark, COLOR_WHITE, colors[color]),
     strokeLinecap: 'round',
     strokeLinejoin: 'round',
     strokeMiterlimit: 10,
@@ -35,9 +36,15 @@ export default function SignOutIcon({ dark, ...svgProps }) {
   );
 }
 
-SignOutIcon.defaultProps = { dark: false };
+SignOutIcon.defaultProps = {
+  dark: false,
+  color: 'dark',
+};
 
 SignOutIcon.propTypes = {
   /** Set to `true` to make icon viewable in dark backgrounds */
   dark: PropTypes.bool,
+
+  /** Main color of icon when background is light. */
+  color: PropTypes.oneOf(['primary', 'dark']),
 };

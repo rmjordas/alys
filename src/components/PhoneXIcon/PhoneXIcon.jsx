@@ -1,14 +1,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+import { colors, COLOR_WHITE } from '@/constants';
 import { iconDark } from '@utils/icon-utils';
 import SvgIcon from '@/SvgIcon';
 
 /** See <SvgIcon /> for more prop descriptions. */
-export default function PhoneXIcon({ dark, ...svgProps }) {
+export default function PhoneXIcon({ dark, color, ...svgProps }) {
   const commonProps = {
     fill: 'none',
-    stroke: iconDark(dark),
+    stroke: iconDark(dark, COLOR_WHITE, colors[color]),
     strokeMiterlimit: 10,
   };
 
@@ -33,9 +34,15 @@ export default function PhoneXIcon({ dark, ...svgProps }) {
   );
 }
 
-PhoneXIcon.defaultProps = { dark: false };
+PhoneXIcon.defaultProps = {
+  dark: false,
+  color: 'dark',
+};
 
 PhoneXIcon.propTypes = {
   /** Set to `true` to make icon viewable in dark backgrounds */
   dark: PropTypes.bool,
+
+  /** Main color of icon when background is light. */
+  color: PropTypes.oneOf(['primary', 'dark']),
 };
