@@ -45,7 +45,13 @@ const Brand = styled.div`
   }
 `;
 
-const Link = styled.a`
+const Link = styled.a.attrs(
+  ({ external }) =>
+    external && {
+      target: '_blank',
+      rel: 'noopener noreferrer',
+    },
+)`
   font-size: 1.5em;
   line-height: 1.5;
   text-decoration: none;
@@ -69,7 +75,7 @@ export default function Header({ title, repoLink }) {
 
       <Spacer />
 
-      <Link href={repoLink}>
+      <Link href={repoLink} external>
         <GithubLogo />
       </Link>
     </Wrapper>
