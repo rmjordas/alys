@@ -40,7 +40,10 @@ export default class App extends Component {
         />
 
         <MainContent>
-          <Navigation components={componentData.map(({ name }) => name)} />
+          <Navigation
+            components={componentData.map(({ name }) => name)}
+            active={route}
+          />
 
           <ComponentPage component={component} />
         </MainContent>
