@@ -23,9 +23,6 @@ was to port the styles to components, but this was not fulfilled (because of
 reasons and I kinda forgot about this repo).
 
 Hopefully, this newest iteration would lead to the desired `v1.0.0` release.
-This time, it's written with JavaScript using the React framework. I didn't try
-making my own style guide this time, so I would speed time tweaking the design
-and stuff.
 
 ## Quick Start
 
@@ -51,7 +48,8 @@ https://unpkg.com/alys@latest/dist/alys.common.js
 
 ## Documentation
 
-[Project web site](https://alys.js.org)
+- [Component documentation](https://alys.js.org)
+- [Contributing guide](https://github.com/rmjordas/alys/blob/master/.github/CONTRIBUTING.md)
 
 ## Development
 
@@ -64,12 +62,8 @@ cd alys
 npm install
 ```
 
-Enter `npm run build:lib` in your terminal to compile the app in a `lib`
-directory:
-
-```bash
-npm run build:lib
-```
+Enter `npm start` in your terminal and view the Alys component documentation in
+your browser.
 
 ## License
 
