@@ -45,6 +45,7 @@ const Link = styled.a.attrs(
       rel: 'noopener noreferrer',
     },
 )`
+  color: #fff;
   font-size: 1.5em;
   line-height: 1.5;
   text-decoration: none;

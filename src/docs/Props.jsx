@@ -6,13 +6,15 @@ import { styleLengths } from '@utils/string-utils';
 import { parseType } from '@utils/props-utils';
 
 const Table = styled.table`
+  border-collapse: collapse;
   margin-bottom: 1em;
   width: 100%;
 `;
 
-const HeaderCell = styled.td`
+const HeaderCell = styled.th`
+  border-top: solid 1px #d3d3d3;
   text-align: ${({ centered }) => (centered ? 'center' : 'left')};
-  padding: 5px;
+  padding: 10px;
   font-weight: 700;
   width: ${({ width = 'auto' }) => styleLengths(width, '%')};
 `;
@@ -20,7 +22,7 @@ const HeaderCell = styled.td`
 const DataCell = styled.td.attrs(({ required }) => ({
   title: required ? 'This prop is required by the component.' : null,
 }))`
-  padding: 5px;
+  padding: 10px;
   text-align: ${({ centered }) => (centered ? 'center' : 'left')};
   color: ${({ required, color }) => (required ? '#aaa' : color)};
 `;

@@ -7,8 +7,13 @@ const Item = styled.li`
 `;
 
 const Link = styled.a`
+  color: #666;
   text-decoration: none;
   font-weight: ${({ active }) => (active ? 500 : 400)};
+
+  &:visited {
+    color: #666;
+  }
 `;
 
 export default function NavigationItem({ text, active }) {
