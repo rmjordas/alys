@@ -2,6 +2,8 @@ import React, { Component, Suspense } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
+import ShowCode from './ShowCode';
+
 const SyntaxHighlightedCode = React.lazy(() =>
   import('@common/SyntaxHighlightedCode'),
 );
@@ -17,7 +19,8 @@ const Description = styled.h4`
   margin-top: 0;
 `;
 
-const ButtonWrapper = styled.p`
+const ExampleCodeWrapper = styled.div`
+  margin-top: 1.33em;
   margin-bottom: 0;
 `;
 
@@ -52,23 +55,21 @@ export default class Example extends Component {
           <ExampleComponent />
         </Suspense>
 
-        <ButtonWrapper>
-          <button onClick={this._toggleCode}>
-            {showCode ? 'Hide' : 'Show'} Code
-          </button>
-        </ButtonWrapper>
+        <ExampleCodeWrapper>
+          <ShowCode onClick={this._toggleCode} show={showCode} />
 
-        {showCode && (
-          <Suspense
-            fallback={
-              <pre>
-                <code>Loading...</code>
-              </pre>
-            }
-          >
-            <SyntaxHighlightedCode>{code}</SyntaxHighlightedCode>
-          </Suspense>
-        )}
+          {showCode && (
+            <Suspense
+              fallback={
+                <pre>
+                  <code>Loading...</code>
+                </pre>
+              }
+            >
+              <SyntaxHighlightedCode>{code}</SyntaxHighlightedCode>
+            </Suspense>
+          )}
+        </ExampleCodeWrapper>
       </Wrapper>
     );
   }
