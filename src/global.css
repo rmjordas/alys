@@ -20,4 +20,16 @@ code[class*='language-'],
 pre[class*='language-'] {
   font-family: 'Source Code Pro', Menlo, Monaco, Consolas, 'Courier New',
     monospace !important;
+  font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong,
+th {
+  font-weight: 500;
 }

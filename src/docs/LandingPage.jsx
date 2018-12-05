@@ -31,6 +31,14 @@ const InnerWrapper = styled.div`
   text-align: center;
 `;
 
+const MainTitle = styled.h1`
+  font-weight: 500;
+`;
+
+const SubTitle = styled.p`
+  font-size: 1.125em;
+`;
+
 const GetStarted = styled.a.attrs(() => ({
   children: 'Get Started →',
 }))`
@@ -53,8 +61,8 @@ export default function LandingPage({ component }) {
       <InnerWrapper>
         <AppLogo />
 
-        <h1>Alys</h1>
-        <p>A tiny React component library</p>
+        <MainTitle>Alys</MainTitle>
+        <SubTitle>A tiny React component library</SubTitle>
 
         <GetStarted href={`#${component}`} />
       </InnerWrapper>

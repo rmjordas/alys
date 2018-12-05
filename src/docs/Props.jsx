@@ -16,7 +16,6 @@ const HeaderCell = styled.th`
   border-bottom: solid 1px #d3d3d3;
   text-align: ${({ centered }) => (centered ? 'center' : 'left')};
   padding: 10px;
-  font-weight: 700;
   width: ${({ width = 'auto' }) => styleLengths(width, '%')};
 `;
 
