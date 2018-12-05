@@ -11,7 +11,7 @@ export default function Currency({ value, locale, code, whole }) {
     maximumFractionDigits: whole ? 0 : undefined,
   });
 
-  return <span>{fmt.format(value)}</span>;
+  return <React.Fragment>{fmt.format(value)}</React.Fragment>;
 }
 
 Currency.defaultProps = {
