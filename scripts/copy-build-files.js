@@ -2,7 +2,7 @@ const path = require('path');
 const fse = require('fs-extra');
 
 const PACKAGE_NAME = 'alys';
-const files = ['README.md', 'LICENSE'];
+const files = ['README.md', 'LICENSE', 'NOTICE'];
 
 Promise.all(files.map((file) => copyFile(file))).then(() =>
   createPackageFile(),
