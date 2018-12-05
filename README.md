@@ -22,10 +22,10 @@ The next iteration produced a small Vue component library. Initially, the goal
 was to port the styles to components, but this was not fulfilled (because of
 reasons and I kinda forgot about this repo).
 
-Finally (hopefully), this newest iteration would lead to the desired `v1.0.0`
-release. This time, it's written with JavaScript using the React framework. So,
-why the switch? Well, React is very popular. Also, it ~~requires~~ encourages
-developers to be good at JavaScript to use it well.
+Hopefully, this newest iteration would lead to the desired `v1.0.0` release.
+This time, it's written with JavaScript using the React framework. I didn't try
+making my own style guide this time, so I would speed time tweaking the design
+and stuff.
 
 ## Quick Start
 
