@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-import { ReactComponent as logo } from './assets/logo-icon.svg';
+import { ReactComponent as logo } from '../assets/logo-icon.svg';
 
 const AppLogo = styled(logo).attrs(() => ({
   height: '20px',
