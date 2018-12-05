@@ -59,9 +59,12 @@ export default class Example extends Component {
 
   render() {
     const { showCode, darkMode } = this.state;
-    const { code, description, name } = this.props.example;
+    const {
+      componentName,
+      example: { code, description, name },
+    } = this.props;
     const ExampleComponent = React.lazy(() =>
-      import(`../examples/${this.props.componentName}/${name}`),
+      import(`../examples/${componentName}/${name}`),
     );
 
     return (
