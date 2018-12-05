@@ -46,7 +46,8 @@ const GetStarted = styled.a.attrs(() => ({
   }
 `;
 
-export default function Landing({ component }) {
+/** Page to show at the home page */
+export default function LandingPage({ component }) {
   return (
     <OuterWrapper>
       <InnerWrapper>
@@ -61,7 +62,7 @@ export default function Landing({ component }) {
   );
 }
 
-Landing.propTypes = {
+LandingPage.propTypes = {
   /** Component to render on button click */
   component: PropTypes.string.isRequired,
 };

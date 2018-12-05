@@ -19,6 +19,7 @@ const Wrapper = styled.div`
   }
 `;
 
+/** Displays information about a component. */
 export default function ComponentPage({ component }) {
   const { name, description, props, examples } = component;
   const numOfExamples = examples.length;
@@ -58,6 +59,7 @@ export default function ComponentPage({ component }) {
 }
 
 ComponentPage.propTypes = {
+  /** Component information to be displayed */
   component: PropTypes.shape({
     name: PropTypes.string.isRequired,
     description: PropTypes.string.isRequired,

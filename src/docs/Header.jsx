@@ -59,11 +59,13 @@ const Spacer = styled.div`
   flex: 1;
 `;
 
+/** Header containing links to home page and the GitHub repository */
 export default function Header({ title, repoLink }) {
   return (
     <Wrapper>
       <Brand as="a" href="#">
         <AppLogo />
+
         <Link as="span">{title}</Link>
       </Brand>
 
@@ -77,5 +79,6 @@ export default function Header({ title, repoLink }) {
 }
 
 Header.propTypes = {
+  /** Text to be shown for the link to the homepage */
   title: PropTypes.string.isRequired,
 };

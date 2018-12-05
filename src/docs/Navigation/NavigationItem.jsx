@@ -16,6 +16,7 @@ const Link = styled.a`
   }
 `;
 
+/** Navigation item */
 export default function NavigationItem({ text, active }) {
   return (
     <Item>

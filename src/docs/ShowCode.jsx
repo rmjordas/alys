@@ -16,10 +16,11 @@ const Button = styled.button`
   font-family: inherit;
 `;
 
+/** A button that changes the text it displays depending on the `show` prop */
 export default function ShowCode({ show, onClick }) {
   return (
     <Button onClick={onClick} show={show}>
-      {show ? 'Hide Code' : 'Show Code'}
+      {show ? 'Hide' : 'Show'} Code
     </Button>
   );
 }
@@ -30,7 +31,7 @@ ShowCode.defaultProps = {
 };
 
 ShowCode.propTypes = {
-  /** Sets appearance of button */
+  /** Determines the appearance and text of button */
   show: PropTypes.bool,
 
   /** Handler when button is clicked */

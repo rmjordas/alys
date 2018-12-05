@@ -35,6 +35,7 @@ export const propItemPropsShape = PropTypes.shape({
   required: PropTypes.bool,
 });
 
+/** Lists the props of a component with descriptions and default values */
 export default function Props({ props }) {
   return (
     <Table>
@@ -98,5 +99,6 @@ export default function Props({ props }) {
 }
 
 Props.propTypes = {
+  /** Contains prop information for a component */
   props: PropTypes.objectOf(propItemPropsShape).isRequired,
 };

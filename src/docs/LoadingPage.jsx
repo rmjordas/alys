@@ -36,6 +36,7 @@ const Spinner = styled.div`
   z-index: 999;
 `;
 
+/** Shows an page overlay that has a spinner in the middle */
 export default function LoadingPage() {
   return (
     <Wrapper>

@@ -30,13 +30,21 @@ export const examplePropsShape = PropTypes.shape({
   name: PropTypes.string.isRequired,
 });
 
+/** Shows an actual component example of the component being described */
 export default class Example extends Component {
   static propTypes = {
-    examples: PropTypes.arrayOf(examplePropsShape),
+    /** A list of example information objects */
+    example: examplePropsShape.isRequired,
+
+    /** The name of the component for this example */
     componentName: PropTypes.string.isRequired,
   };
 
   state = {
+    /**
+     * If set to `true` this will show the syntax highlighted code snipped for
+     * this example.
+     */
     showCode: false,
   };
 
@@ -74,6 +82,7 @@ export default class Example extends Component {
     );
   }
 
+  /** Flips the value of `showCode` */
   _toggleCode = (event) => {
     event.preventDefault();
     this.setState((prevState) => ({ showCode: !prevState.showCode }));

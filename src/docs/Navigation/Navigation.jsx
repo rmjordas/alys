@@ -19,6 +19,7 @@ const List = styled.ul`
   }
 `;
 
+/** Navigation containing lists of component names. */
 export default function Navigation({ components, active }) {
   return (
     <List>

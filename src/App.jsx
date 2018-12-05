@@ -5,7 +5,7 @@ import Header from './docs/Header';
 import LoadingPage from './docs/LoadingPage';
 import componentData from './docs/component-data';
 
-const Landing = React.lazy(() => import('./docs/Landing'));
+const Landing = React.lazy(() => import('./docs/LandingPage'));
 const Navigation = React.lazy(() => import('./docs/Navigation'));
 const ComponentPage = React.lazy(() => import('./docs/ComponentPage'));
 
