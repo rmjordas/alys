@@ -2,6 +2,7 @@ import React, { Component, Suspense } from 'react';
 import styled from 'styled-components';
 
 import Header from './docs/Header';
+import LoadingPage from './docs/LoadingPage';
 import componentData from './docs/component-data';
 
 const Landing = React.lazy(() => import('./docs/Landing'));
@@ -14,9 +15,6 @@ const MainContent = styled.div`
   overflow-y: auto;
   height: calc(100% - 69px);
 `;
-
-// @TODO+App: Create proper Loading component
-const Loading = <h2>Loading</h2>;
 
 export default class App extends Component {
   state = {
@@ -45,7 +43,7 @@ export default class App extends Component {
         />
 
         {route ? (
-          <Suspense fallback={Loading}>
+          <Suspense fallback={<LoadingPage />}>
             <MainContent>
               <Navigation
                 components={componentData.map(({ name }) => name)}
@@ -56,7 +54,7 @@ export default class App extends Component {
             </MainContent>
           </Suspense>
         ) : (
-          <Suspense fallback={Loading}>
+          <Suspense fallback={<LoadingPage />}>
             <Landing component={component.name} />
           </Suspense>
         )}
