@@ -13,6 +13,7 @@ const Table = styled.table`
 
 const HeaderCell = styled.th`
   border-top: solid 1px #d3d3d3;
+  border-bottom: solid 1px #d3d3d3;
   text-align: ${({ centered }) => (centered ? 'center' : 'left')};
   padding: 10px;
   font-weight: 700;
