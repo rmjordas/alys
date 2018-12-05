@@ -90,12 +90,14 @@ export default class Example extends Component {
               offText="show code"
             />
 
-            <ToggleButton
-              onClick={this._toggleDarkMode}
-              on={darkMode}
-              onText="light mode"
-              offText="dark mode"
-            />
+            {!componentName.match(/Icon$/) && (
+              <ToggleButton
+                onClick={this._toggleDarkMode}
+                on={darkMode}
+                onText="light mode"
+                offText="dark mode"
+              />
+            )}
 
             {showCode && (
               <Suspense
