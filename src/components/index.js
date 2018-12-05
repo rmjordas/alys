@@ -32,6 +32,7 @@ export { default as PasswordIcon } from './PasswordIcon';
 export { default as PencilIcon } from './PencilIcon';
 export { default as PhoneIcon } from './PhoneIcon';
 export { default as PhoneXIcon } from './PhoneXIcon';
+export { default as Pill } from './Pill';
 export { default as PreviewIcon } from './PreviewIcon';
 export { default as ProgressBar } from './ProgressBar';
 export { default as Rating } from './Rating';
