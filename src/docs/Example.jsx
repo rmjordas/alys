@@ -69,7 +69,13 @@ export default class Example extends Component {
         <Wrapper>
           {description && <Description>{description}</Description>}
 
-          <Suspense fallback={<div>Loading...</div>}>
+          <Suspense
+            fallback={
+              <div style={{ color: darkMode ? '#fff' : 'inherit' }}>
+                Loading...
+              </div>
+            }
+          >
             <ExampleComponent />
           </Suspense>
 
@@ -92,7 +98,9 @@ export default class Example extends Component {
               <Suspense
                 fallback={
                   <pre>
-                    <code>Loading...</code>
+                    <code style={{ color: darkMode ? '#fff' : 'inherit' }}>
+                      Loading...
+                    </code>
                   </pre>
                 }
               >
