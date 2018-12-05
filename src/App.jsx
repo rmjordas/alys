@@ -40,7 +40,7 @@ export default class App extends Component {
     return (
       <React.Fragment>
         <Header
-          title="Alys / Components"
+          title={route ? 'Alys / Components' : 'Alys'}
           repoLink="https://github.com/rmjordas/alys"
         />
 
