@@ -12,6 +12,7 @@ const Wrapper = styled.div`
   max-width: 5em;
 `;
 
+/** Show a rating from 0 to 5 */
 export default function Rating({ value, color }) {
   let stars = [];
 
