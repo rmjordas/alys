@@ -14,6 +14,7 @@ export { default as CloseIcon } from './CloseIcon';
 export { default as CommentIcon } from './CommentIcon';
 export { default as ComputerIcon } from './ComputerIcon';
 export { default as ConfirmIcon } from './ConfirmIcon';
+export { default as Currency } from './Currency';
 export { default as EmailIcon } from './EmailIcon';
 export { default as EnlargeIcon } from './EnlargeIcon';
 export { default as FiltersIcon } from './FiltersIcon';
