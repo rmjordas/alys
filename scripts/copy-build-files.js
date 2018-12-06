@@ -45,30 +45,30 @@ function createPackageFile() {
     .then((data) => JSON.parse(data))
     .then((packageData) => {
       const {
-        author,
         version,
         description,
         keywords,
-        repository,
-        license,
-        bugs,
         homepage,
-        peerDependencies,
+        bugs,
+        license,
+        author,
+        repository,
         dependencies,
+        peerDependencies,
       } = packageData;
       const minimalPackage = {
         name: PACKAGE_NAME,
-        author,
         version,
         description,
-        main: './index.js',
         keywords,
-        repository,
-        license,
-        bugs,
         homepage,
-        peerDependencies,
+        bugs,
+        license,
+        author,
+        main: './index.js',
+        repository,
         dependencies,
+        peerDependencies,
       };
 
       return new Promise((resolve) => {

@@ -1,6 +1,9 @@
 .DS_Store
 node_modules
 /dist
+/tmp
+/build
+/lib
 
 # local env files
 .env.local
@@ -86,11 +89,3 @@ typings/
 
 # Serverless directories
 .serverless
-
-# Local setup
-.vscode/settings.json
-.vscode/launch.json
-/docs
-tmp/
-build/
-lib/

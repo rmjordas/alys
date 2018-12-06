@@ -2,22 +2,26 @@
   "name": "alys-build-template",
   "version": "0.3.0",
   "description": "♠️ A tiny React component library",
-  "main": "./lib/index.js",
-  "engines": {
-    "node": ">=4.0.0"
-  },
-  "author": "Rodger Jordas <rmjordas@gmail.com> (https://rmjordas.github.io)",
-  "files": [
-    "lib"
-  ],
   "keywords": [
     "React",
     "UI",
     "component",
     "library"
   ],
-  "private": true,
   "homepage": "https://alys.js.org",
+  "bugs": {
+    "url": "https://github.com/rmjordas/alys/issues"
+  },
+  "license": "Apache-2.0",
+  "author": "Rodger Jordas <rmjordas@gmail.com> (https://rmjordas.github.io)",
+  "files": [
+    "lib"
+  ],
+  "main": "./lib/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rmjordas/alys.git"
+  },
   "scripts": {
     "lint": "eslint . --ext .js,.jsx --ignore-path .eslintignore",
     "test": "node scripts/test.js",
@@ -33,12 +37,6 @@
     "prebuild:lib": "rimraf lib",
     "build:lib": "npm-run-all --parallel build:cjs build:css build:copy-files",
     "build:copy-files": "node scripts/copy-build-files.js"
-  },
-  "peerDependencies": {
-    "prismjs": "^1.15.0",
-    "react": "^16.6.3",
-    "react-dom": "^16.6.3",
-    "styled-components": "^4.1.1"
   },
   "devDependencies": {
     "@babel/cli": "7.1.5",
@@ -111,91 +109,14 @@
     "webpack-manifest-plugin": "2.0.4",
     "workbox-webpack-plugin": "3.6.3"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "plugin:prettier/recommended"
-    ]
+  "peerDependencies": {
+    "prismjs": "^1.15.0",
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3",
+    "styled-components": "^4.1.1"
   },
-  "browserslist": [
-    ">0.2%",
-    "not dead",
-    "not ie <= 11",
-    "not op_mini all"
-  ],
-  "jest": {
-    "setupTestFrameworkScriptFile": "<rootDir>/config/setup-tests.js",
-    "collectCoverageFrom": [
-      "src/**/*.{js,jsx,ts,tsx}",
-      "!src/**/*.d.ts"
-    ],
-    "resolver": "jest-pnp-resolver",
-    "setupFiles": [
-      "react-app-polyfill/jsdom"
-    ],
-    "testMatch": [
-      "<rootDir>/src/**/__tests__/**/*.{js,jsx,ts,tsx}",
-      "<rootDir>/src/**/?(*.)(spec|test).{js,jsx,ts,tsx}"
-    ],
-    "testEnvironment": "jsdom",
-    "testURL": "http://localhost",
-    "transform": {
-      "^.+\\.(js|jsx|ts|tsx)$": "<rootDir>/node_modules/babel-jest",
-      "^.+\\.css$": "<rootDir>/config/jest/cssTransform.js",
-      "^(?!.*\\.(js|jsx|ts|tsx|css|json)$)": "<rootDir>/config/jest/fileTransform.js"
-    },
-    "transformIgnorePatterns": [
-      "[/\\\\]node_modules[/\\\\].+\\.(js|jsx|ts|tsx)$",
-      "^.+\\.module\\.(css|sass|scss)$"
-    ],
-    "moduleNameMapper": {
-      "^react-native$": "react-native-web",
-      "^.+\\.module\\.(css|sass|scss)$": "identity-obj-proxy"
-    },
-    "moduleFileExtensions": [
-      "web.js",
-      "js",
-      "web.ts",
-      "ts",
-      "web.tsx",
-      "tsx",
-      "json",
-      "web.jsx",
-      "jsx",
-      "node"
-    ]
+  "engines": {
+    "node": ">=4.0.0"
   },
-  "babel": {
-    "presets": [
-      [
-        "@babel/preset-env",
-        {
-          "modules": "commonjs"
-        }
-      ],
-      [
-        "react-app",
-        {
-          "helpers": false,
-          "absoluteRuntime": false
-        }
-      ]
-    ],
-    "plugins": [
-      "babel-plugin-styled-components",
-      [
-        "module-resolver",
-        {
-          "root": [
-            "./src"
-          ],
-          "alias": {
-            "@": "./src/components",
-            "@common": "./src/components/common",
-            "@utils": "./src/components/utils"
-          }
-        }
-      ]
-    ]
-  }
+  "private": true
 }
