@@ -12,12 +12,12 @@ const Wrapper = styled.div`
   border: solid 1px #d3d3d3;
   padding: 1em;
   margin-bottom: 1em;
+  color: ${({ theme: { darkMode } }) => (darkMode ? '#fff' : 'inherit')};
   background-color: ${({ theme: { darkMode } }) =>
     darkMode ? '#4C5264' : '#f4f6f9'};
 `;
 
 const Description = styled.h4`
-  color: ${({ theme: { darkMode } }) => (darkMode ? '#fff' : 'inherit')};
   font-weight: 500;
   margin-top: 0;
 `;
@@ -90,14 +90,12 @@ export default class Example extends Component {
               offText="show code"
             />
 
-            {!componentName.match(/Icon$/) && (
-              <ToggleButton
-                onClick={this._toggleDarkMode}
-                on={darkMode}
-                onText="light mode"
-                offText="dark mode"
-              />
-            )}
+            <ToggleButton
+              onClick={this._toggleDarkMode}
+              on={darkMode}
+              onText="light mode"
+              offText="dark mode"
+            />
 
             {showCode && (
               <Suspense
