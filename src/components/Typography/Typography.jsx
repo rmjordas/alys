@@ -2,13 +2,15 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled, { css } from 'styled-components';
 
-import { fontSizes, lineHeights } from '@/constants';
+import { fontSizes, lineHeights, COLOR_PRIMARY, COLOR_DARK } from '@/constants';
 
 const pStyles = css`
+  color: ${COLOR_DARK};
   font-weight: 400;
 `;
 
 const builder = (variant) => styled(variant)`
+  color: ${COLOR_PRIMARY};
   margin: 0 0
     ${({ gutterBottom }) =>
       gutterBottom ? `${lineHeights[variant] * 12}px` : 0};
