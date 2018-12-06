@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 import BottomBar from 'alys/BottomBar';
 import BottomBarAction from 'alys/BottomBarAction';
 import HomeIcon from 'alys/HomeIcon';
@@ -7,7 +7,7 @@ import CommentIcon from 'alys/CommentIcon';
 import SettingsIcon from 'alys/SettingsIcon';
 
 /** Basic bottom bar */
-export default class ExampleBasic extends Component {
+export default class ExampleBasic extends PureComponent {
   state = {
     value: 'Mentor',
   };
@@ -29,8 +29,5 @@ export default class ExampleBasic extends Component {
     );
   }
 
-  _handleOnChange = (event, value) => {
-    this.setState({ value });
-    console.log(this.state);
-  };
+  _handleOnChange = (event, value) => this.setState({ value });
 }
