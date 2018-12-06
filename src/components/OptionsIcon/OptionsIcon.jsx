@@ -9,7 +9,7 @@ import SvgIcon from '@/SvgIcon';
 export default function OptionsIcon({ dark, color, ...svgProps }) {
   const commonProps = {
     fill: 'none',
-    stroke: iconDark(dark, COLOR_WHITE, colors[color]),
+    stroke: iconDark(dark, COLOR_WHITE, color ? colors[color] : 'currentColor'),
   };
   return (
     <SvgIcon viewBox="0 0 19 5" {...svgProps}>
@@ -41,13 +41,14 @@ export default function OptionsIcon({ dark, color, ...svgProps }) {
   );
 }
 
-OptionsIcon.defaultProps = { dark: false, color: 'dark' };
+OptionsIcon.defaultProps = {
+  dark: false,
+};
 
 OptionsIcon.propTypes = {
   /** Set to `true` to make icon viewable in dark backgrounds */
   dark: PropTypes.bool,
-  /** Main color of icon when background is light. */ color: PropTypes.oneOf([
-    'primary',
-    'dark',
-  ]),
+
+  /** Main color of icon when background is light. */
+  color: PropTypes.oneOf(['primary', 'dark']),
 };

@@ -9,7 +9,7 @@ import SvgIcon from '@/SvgIcon';
 export default function MicrophoneIcon({ dark, color, ...svgProps }) {
   const commonProps = {
     fill: 'none',
-    stroke: iconDark(dark, COLOR_WHITE, colors[color]),
+    stroke: iconDark(dark, COLOR_WHITE, color ? colors[color] : 'currentColor'),
     strokeLinecap: 'round',
     strokeLinejoin: 'round',
     strokeMiterlimit: 10,
@@ -49,7 +49,6 @@ export default function MicrophoneIcon({ dark, color, ...svgProps }) {
 
 MicrophoneIcon.defaultProps = {
   dark: false,
-  color: 'dark',
 };
 
 MicrophoneIcon.propTypes = {

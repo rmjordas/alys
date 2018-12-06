@@ -9,7 +9,7 @@ import SvgIcon from '@/SvgIcon';
 export default function LocationIcon({ dark, color, ...svgProps }) {
   const commonProps = {
     fill: 'none',
-    stroke: iconDark(dark, COLOR_WHITE, colors[color]),
+    stroke: iconDark(dark, COLOR_WHITE, color ? colors[color] : 'currentColor'),
     strokeLinecap: 'round',
     strokeLinejoin: 'round',
     strokeMiterlimit: 10,
@@ -38,7 +38,6 @@ export default function LocationIcon({ dark, color, ...svgProps }) {
 
 LocationIcon.defaultProps = {
   dark: false,
-  color: 'dark',
 };
 
 LocationIcon.propTypes = {

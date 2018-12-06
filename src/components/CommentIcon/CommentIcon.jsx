@@ -13,7 +13,11 @@ export default function CommentIcon({ dark, color, ...svgProps }) {
         <path
           id="path"
           fill="none"
-          stroke={iconDark(dark, COLOR_WHITE, colors[color])}
+          stroke={iconDark(
+            dark,
+            COLOR_WHITE,
+            color ? colors[color] : 'currentColor',
+          )}
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeMiterlimit={10}
@@ -26,7 +30,6 @@ export default function CommentIcon({ dark, color, ...svgProps }) {
 
 CommentIcon.defaultProps = {
   dark: false,
-  color: 'dark',
 };
 
 CommentIcon.propTypes = {

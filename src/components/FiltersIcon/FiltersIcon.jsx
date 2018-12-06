@@ -9,7 +9,7 @@ import SvgIcon from '@/SvgIcon';
 export default function FiltersIcon({ dark, color, ...svgProps }) {
   const commonProps = {
     fill: 'none',
-    stroke: iconDark(dark, COLOR_WHITE, colors[color]),
+    stroke: iconDark(dark, COLOR_WHITE, color ? colors[color] : 'currentColor'),
   };
 
   return (
@@ -85,7 +85,6 @@ export default function FiltersIcon({ dark, color, ...svgProps }) {
 
 FiltersIcon.defaultProps = {
   dark: false,
-  color: 'dark',
 };
 
 FiltersIcon.propTypes = {

@@ -8,7 +8,7 @@ import SvgIcon from '@/SvgIcon';
 /** See <SvgIcon /> for more prop descriptions. */
 export default function SadIcon({ dark, color, ...svgProps }) {
   const commonProps = {
-    stroke: iconDark(dark, COLOR_WHITE, colors[color]),
+    stroke: iconDark(dark, COLOR_WHITE, color ? colors[color] : 'currentColor'),
     strokeLinecap: 'round',
     strokeLinejoin: 'round',
     strokeMiterlimit: 10,
@@ -30,7 +30,11 @@ export default function SadIcon({ dark, color, ...svgProps }) {
           {...commonProps}
           id="ellipse-2"
           data-name="ellipse"
-          fill={iconDark(dark, COLOR_WHITE, colors[color])}
+          fill={iconDark(
+            dark,
+            COLOR_WHITE,
+            color ? colors[color] : 'currentColor',
+          )}
           cx="0.5"
           cy="0.5"
           r="0.5"
@@ -40,7 +44,11 @@ export default function SadIcon({ dark, color, ...svgProps }) {
           {...commonProps}
           id="ellipse-3"
           data-name="ellipse"
-          fill={iconDark(dark, COLOR_WHITE, colors[color])}
+          fill={iconDark(
+            dark,
+            COLOR_WHITE,
+            color ? colors[color] : 'currentColor',
+          )}
           cx="0.5"
           cy="0.5"
           r="0.5"
@@ -59,7 +67,6 @@ export default function SadIcon({ dark, color, ...svgProps }) {
 
 SadIcon.defaultProps = {
   dark: false,
-  color: 'dark',
 };
 
 SadIcon.propTypes = {

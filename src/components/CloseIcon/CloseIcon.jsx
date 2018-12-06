@@ -9,7 +9,7 @@ import SvgIcon from '@/SvgIcon';
 export default function CloseIcon({ dark, color, ...svgProps }) {
   const commonProps = {
     fill: 'none',
-    stroke: iconDark(dark, COLOR_WHITE, colors[color]),
+    stroke: iconDark(dark, COLOR_WHITE, color ? colors[color] : 'currentColor'),
     strokeLinecap: 'round',
     strokeMiterlimit: 10,
   };
@@ -39,7 +39,6 @@ export default function CloseIcon({ dark, color, ...svgProps }) {
 
 CloseIcon.defaultProps = {
   dark: false,
-  color: 'dark',
 };
 
 CloseIcon.propTypes = {

@@ -9,7 +9,7 @@ import SvgIcon from '@/SvgIcon';
 export default function CameraIcon({ dark, color, ...svgProps }) {
   const commonProps = {
     fill: 'none',
-    stroke: iconDark(dark, COLOR_WHITE, colors[color]),
+    stroke: iconDark(dark, COLOR_WHITE, color ? colors[color] : 'currentColor'),
     strokeLinecap: 'round',
     strokeLinejoin: 'round',
     strokeMiterlimit: 10,
@@ -45,7 +45,6 @@ export default function CameraIcon({ dark, color, ...svgProps }) {
 
 CameraIcon.defaultProps = {
   dark: false,
-  color: 'dark',
 };
 
 CameraIcon.propTypes = {

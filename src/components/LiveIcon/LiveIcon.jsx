@@ -13,7 +13,11 @@ export default function LiveIcon({ dark, color, ...svgProps }) {
         <circle
           id="ellipse"
           fill="none"
-          stroke={iconDark(dark, COLOR_WHITE, colors[color])}
+          stroke={iconDark(
+            dark,
+            COLOR_WHITE,
+            color ? colors[color] : 'currentColor',
+          )}
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeMiterlimit={10}
@@ -25,7 +29,11 @@ export default function LiveIcon({ dark, color, ...svgProps }) {
         <circle
           id="ellipse-2"
           data-name="ellipse"
-          fill={iconDark(dark, COLOR_WHITE, colors[color])}
+          fill={iconDark(
+            dark,
+            COLOR_WHITE,
+            color ? colors[color] : 'currentColor',
+          )}
           cx="4.5"
           cy="4.5"
           r="4.5"
@@ -38,7 +46,6 @@ export default function LiveIcon({ dark, color, ...svgProps }) {
 
 LiveIcon.defaultProps = {
   dark: false,
-  color: 'dark',
 };
 
 LiveIcon.propTypes = {

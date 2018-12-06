@@ -9,7 +9,7 @@ import SvgIcon from '@/SvgIcon';
 export default function EmailIcon({ dark, color, ...svgProps }) {
   const commonProps = {
     fill: 'none',
-    stroke: iconDark(dark, COLOR_WHITE, colors[color]),
+    stroke: iconDark(dark, COLOR_WHITE, color ? colors[color] : 'currentColor'),
     strokeMiterlimit: 10,
   };
 
@@ -36,7 +36,6 @@ export default function EmailIcon({ dark, color, ...svgProps }) {
 
 EmailIcon.defaultProps = {
   dark: false,
-  color: 'dark',
 };
 
 EmailIcon.propTypes = {

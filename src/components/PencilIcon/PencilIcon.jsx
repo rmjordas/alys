@@ -9,7 +9,7 @@ import SvgIcon from '@/SvgIcon';
 export default function PencilIcon({ dark, color, ...svgProps }) {
   const commonProps = {
     fill: 'none',
-    stroke: iconDark(dark, COLOR_WHITE, colors[color]),
+    stroke: iconDark(dark, COLOR_WHITE, color ? colors[color] : 'currentColor'),
     strokeLinecap: 'round',
     strokeMiterlimit: 10,
   };

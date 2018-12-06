@@ -14,7 +14,11 @@ export default function ChevronLeftIcon({ dark, color, ...svgProps }) {
           id="arrow-left-2"
           data-name="arrow-left"
           fill="none"
-          stroke={iconDark(dark, COLOR_WHITE, colors[color])}
+          stroke={iconDark(
+            dark,
+            COLOR_WHITE,
+            color ? colors[color] : 'currentColor',
+          )}
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeMiterlimit={10}
@@ -28,7 +32,6 @@ export default function ChevronLeftIcon({ dark, color, ...svgProps }) {
 
 ChevronLeftIcon.defaultProps = {
   dark: false,
-  color: 'dark',
 };
 
 ChevronLeftIcon.propTypes = {
