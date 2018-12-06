@@ -12,6 +12,10 @@ const Wrapper = styled.div`
   background: ${COLOR_WHITE};
 `;
 
+/**
+ * Provides a list of action items that the user can click to move to another
+ * page of the app.
+ */
 export default function BottomBar({ children: childrenProp, value, onChange }) {
   const children = React.Children.map(childrenProp, (child, i) => {
     if (!React.isValidElement(child)) {
@@ -35,7 +39,7 @@ BottomBar.propTypes = {
   children: PropTypes.node.isRequired,
 
   /** Represents the currently selected action item */
-  value: PropTypes.string,
+  value: PropTypes.any,
 
   /**
    * Callback when `value` changes. Must have two params for the `event` object
