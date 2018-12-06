@@ -4,7 +4,8 @@
     "target": "es5",
     "baseUrl": ".",
     "paths": {
-      "@/*": ["./src/components*"],
+      "alys/*": ["./src/components/*"],
+      "@/*": ["./src/components/*"],
       "@common/*": ["./src/components/common/*"],
       "@utils/*": ["./src/components/utils/*"]
     }
