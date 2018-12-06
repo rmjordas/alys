@@ -6,10 +6,16 @@ import { COLOR_WHITE } from '@/constants';
 
 const Wrapper = styled.div`
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
+  width: 100%;
+  overflow-x: auto;
   max-height: 5.3125em;
   background: ${COLOR_WHITE};
+
+  @media (min-width: 34em) {
+    justify-content: center;
+  }
 `;
 
 /**

@@ -5,17 +5,30 @@ import styled from 'styled-components';
 import { COLOR_GRAY_BLUE, COLOR_PRIMARY } from '@/constants';
 
 const Action = styled.div`
-  padding: 1.75em 3.5em;
+  padding: 0.875em 0.875em;
   cursor: pointer;
   color: ${COLOR_GRAY_BLUE};
 
   svg {
+    width: 1.15em;
     transition: color 0.2s ease-in-out;
     color: ${({ selected }) => (selected ? COLOR_PRIMARY : 'inherit')};
   }
 
   &:hover svg {
     color: ${COLOR_PRIMARY};
+  }
+
+  @media (min-width: 34em) {
+    padding: 1.3125em 3em;
+
+    svg {
+      width: initial;
+    }
+  }
+
+  @media (min-width: 60em) {
+    padding: 1.75em 3.5em;
   }
 `;
 
