@@ -21,6 +21,7 @@ export { default as EnlargeIcon } from './EnlargeIcon';
 export { default as FiltersIcon } from './FiltersIcon';
 export { default as HappyIcon } from './HappyIcon';
 export { default as HomeIcon } from './HomeIcon';
+export { default as Label } from './HomeIcon';
 export { default as LaptopIcon } from './LaptopIcon';
 export { default as LikeIcon } from './LikeIcon';
 export { default as LiveIcon } from './LiveIcon';
