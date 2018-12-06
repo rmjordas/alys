@@ -4,6 +4,8 @@ export { default as ArrowLeftIcon } from './ArrowLeftIcon';
 export { default as ArrowRightIcon } from './ArrowRightIcon';
 export { default as AttachmentIcon } from './AttachmentIcon';
 export { default as Avatar } from './Avatar';
+export { default as BottomBar } from './BottomBar';
+export { default as BottomBarAction } from './BottomBarAction';
 export { default as Button } from './Button';
 export { default as CameraFlipIcon } from './CameraFlipIcon';
 export { default as CameraIcon } from './CameraIcon';
