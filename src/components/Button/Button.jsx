@@ -10,6 +10,10 @@ import {
 } from '@/constants';
 import { styleLengths } from '@utils/string-utils';
 
+/**
+ * Returns `null` if an icon node is not provided. Otherwise, it returns a
+ * styled <Icon /> component.
+ */
 function buttonIcon({ icon, type = 'default', iconOnly = false }) {
   if (!icon) {
     return null;
@@ -29,6 +33,7 @@ function buttonIcon({ icon, type = 'default', iconOnly = false }) {
   return <Icon />;
 }
 
+/** Linear gradient value builder for the `background` property. */
 function linearGradient(colors) {
   return `linear-gradient(to right, ${colors})`;
 }
@@ -115,21 +120,21 @@ Button.propTypes = {
    */
   basic: PropTypes.bool,
 
-  /** Button width should span it's container's width */
+  /** If set to `true`, the button's width will span it's container's width */
   block: PropTypes.bool,
 
-  /** Button color */
+  /** Button color preset */
   color: PropTypes.oneOf(['default', 'secondary']),
 
   /** Button type */
   type: PropTypes.oneOf(['default', 'link']),
 
-  /** The icon before the button text */
+  /** The icon to be displayed before the button text */
   icon: PropTypes.func,
 
   /**
-   * Button with only an icon. If this is set to `true` the value of `text` is
-   * ignored.
+   * A button that contains only an icon. If this is set to `true` the value of
+   * `text` is ignored.
    */
   iconOnly: PropTypes.bool,
 };

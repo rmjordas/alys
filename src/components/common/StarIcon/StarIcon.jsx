@@ -6,7 +6,7 @@ import {
   COLOR_PRIMARY_LIGHT,
   COLOR_WHITE,
   COLOR_WHITE_BLUE,
-  COLOR_WHITE_ALPHA60,
+  COLOR_GRAY,
 } from '@/constants';
 import SvgIcon from '@/SvgIcon';
 
@@ -17,7 +17,7 @@ const fill = {
 };
 const empty = {
   default: COLOR_WHITE_BLUE,
-  secondary: COLOR_WHITE_ALPHA60,
+  secondary: COLOR_GRAY,
 };
 
 /** See <SvgIcon /> for more prop descriptions. */

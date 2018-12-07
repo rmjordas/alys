@@ -14,7 +14,9 @@ const Indicator = styled.div`
       : colors.whiteBlue};
 `;
 
-/** Provides the status of an item in the interface */
+/**
+ * Provides a visual representation of the status or state of an interface item.
+ */
 export default function ActiveIndicator(props) {
   return <Indicator {...props} />;
 }
@@ -25,9 +27,12 @@ ActiveIndicator.defaultProps = {
 };
 
 ActiveIndicator.propTypes = {
-  /** Determines the color of the indicator */
+  /**
+   * If set to `true`, indicator will be filled with the color of represented by
+   * the value of the `color` prop
+   */
   active: PropTypes.bool,
 
-  /** Color when value of `active` prop is `true` */
+  /** Indicator fill color when value of `active` prop is `true` */
   color: PropTypes.oneOf(['default', 'error']),
 };

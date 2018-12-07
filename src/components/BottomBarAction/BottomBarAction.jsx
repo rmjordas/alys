@@ -2,7 +2,11 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
-import { COLOR_GRAY_BLUE, COLOR_PRIMARY } from '@/constants';
+import {
+  COLOR_GRAY_BLUE,
+  COLOR_PRIMARY,
+  COLOR_PRIMARY_LIGHT,
+} from '@/constants';
 
 const Action = styled.div`
   padding: 0.875em 0.875em;
@@ -16,7 +20,7 @@ const Action = styled.div`
   }
 
   &:hover svg {
-    color: ${COLOR_PRIMARY};
+    color: ${COLOR_PRIMARY_LIGHT};
   }
 
   @media (min-width: 34em) {
@@ -32,10 +36,10 @@ const Action = styled.div`
   }
 `;
 
-/** An action item inside a bottom bar */
+/** An action item inside <BottomBar /> */
 export default class BottomBarAction extends Component {
   static propTypes = {
-    /** Value to be passed to a `BottomBar` parent's `onChange` prop  */
+    /** Value to be passed to a `BottomBar` parent's `onChange` prop */
     value: PropTypes.string,
 
     /** Icon to display */

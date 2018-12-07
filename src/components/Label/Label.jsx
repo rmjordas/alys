@@ -10,6 +10,7 @@ const StyledLabel = styled.label`
   font-size: ${TYPE_FONT_SIZE_HEADING_6};
 `;
 
+/** Caption for an interface item. */
 export default function Label({ text, htmlFor }) {
   return <StyledLabel htmlFor={htmlFor}>{text}</StyledLabel>;
 }

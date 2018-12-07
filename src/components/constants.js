@@ -27,6 +27,10 @@ export const TYPE_LINE_HEIGHT_HEADING_5 = 1.125;
 export const TYPE_LINE_HEIGHT_HEADING_6 = 1;
 export const TYPE_LINE_HEIGHT_PARAGRAPH = 1.25;
 
+export const AVATAR_SIZE_SMALLER = 2.5;
+export const AVATAR_SIZE_SMALL = 3.75;
+export const AVATAR_SIZE_DEFAULT = 6.25;
+
 export const colors = {
   primary: COLOR_PRIMARY,
   primaryLight: COLOR_PRIMARY_LIGHT,
@@ -59,6 +63,12 @@ export const lineHeights = {
   p: TYPE_LINE_HEIGHT_PARAGRAPH,
 };
 
+export const avatarSizes = {
+  smaller: AVATAR_SIZE_SMALLER,
+  small: AVATAR_SIZE_SMALL,
+  default: AVATAR_SIZE_DEFAULT,
+};
+
 export const type = {
   fontSizes,
   lineHeights,
@@ -67,4 +77,5 @@ export const type = {
 export default {
   colors,
   type,
+  avatarSizes,
 };

@@ -2,16 +2,23 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled, { ThemeProvider } from 'styled-components';
 
-import { COLOR_GRAY_BLUE, COLOR_WHITE, COLOR_WHITE_BLUE } from '@/constants';
+import {
+  COLOR_GRAY_BLUE,
+  COLOR_WHITE,
+  COLOR_WHITE_BLUE,
+  avatarSizes,
+} from '@/constants';
 import MentorIcon from '@/MentorIcon';
 
-const getSize = ({ theme: { size } }) => size;
-const calcSize = (percent) => ({ theme: { size } }) => size + size * percent;
-const sizes = {
-  smaller: 2.5,
-  small: 3.75,
-  default: 6.25,
-};
+/** Returns the size of the avatar */
+export function getSize({ theme: { size } }) {
+  return size;
+}
+
+/** Calculates size of the avatar with an outline */
+export function calcSize(percent) {
+  return ({ theme: { size } }) => size + size * percent;
+}
 
 const Wrapper = styled.div`
   background-color: ${COLOR_WHITE};
@@ -47,7 +54,7 @@ const StyledMentorIcon = styled(MentorIcon)`
 /** Image avatars. */
 export default function Avatar({ src, alt, outlined, size, round }) {
   const theme = {
-    size: sizes[size],
+    size: avatarSizes[size],
     outlined,
     round,
   };
@@ -91,6 +98,6 @@ Avatar.propTypes = {
   /** Pre-set avatar size */
   size: PropTypes.oneOf(['smaller', 'small', 'default']),
 
-  /** Set to true to make the image round */
+  /** If set `true`, image shape will be clipped to a circle */
   round: PropTypes.bool,
 };

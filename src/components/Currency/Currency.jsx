@@ -30,8 +30,7 @@ Currency.propTypes = {
    */
   code: PropTypes.string,
 
-  /** Language tag. More info: https://tools.ietf.org/html/rfc5646
-   */
+  /** Language tag. More info: https://tools.ietf.org/html/rfc5646 */
   locale: PropTypes.string,
 
   /** If set to `true`, the value will only be rounded-off whole value */

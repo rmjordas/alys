@@ -41,6 +41,6 @@ Pill.propTypes = {
   /** Background color of text wrapper */
   color: PropTypes.oneOf(['primary', 'secondary']),
 
-  /** If set to `true`, a `NewIcon` will be shown and text is ignored */
+  /** If set to `true`, a `NewIcon` will be shown and `text` is ignored */
   add: PropTypes.bool,
 };

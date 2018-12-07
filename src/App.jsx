@@ -66,9 +66,5 @@ export default class App extends Component {
     return window.location.hash.substr(1);
   }
 
-  _setRouteState = () => {
-    this.setState({
-      route: this._getRoute(),
-    });
-  };
+  _setRouteState = () => this.setState({ route: this._getRoute() });
 }

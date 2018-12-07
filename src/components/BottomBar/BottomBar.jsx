@@ -19,8 +19,8 @@ const Wrapper = styled.div`
 `;
 
 /**
- * Provides a list of action items that the user can click to move to another
- * page of the app.
+ * Provides a list of action items that a user can click to navigate to another
+ * part of the app or to do a task on the current page.
  */
 export default function BottomBar({ children: childrenProp, value, onChange }) {
   const children = React.Children.map(childrenProp, (child, i) => {
@@ -45,8 +45,8 @@ BottomBar.propTypes = {
   children: PropTypes.node.isRequired,
 
   /**
-   * The <BottomBarAction /> child(ren) uses this value to determine if it is
-   * selected
+   * The <BottomBarAction /> children use this value to determine if it is
+   * selected.
    */
   value: PropTypes.any,
 
