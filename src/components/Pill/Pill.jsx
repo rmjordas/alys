@@ -42,7 +42,7 @@ Pill.defaultProps = {
 
 Pill.propTypes = {
   /** Text to display */
-  text: PropTypes.string.isRequired,
+  text: PropTypes.string,
 
   /** Background color of text wrapper */
   color: PropTypes.oneOf(['primary', 'secondary']),
