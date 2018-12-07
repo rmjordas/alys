@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import {
+  COLOR_PRIMARY,
   COLOR_PRIMARY_LIGHT,
   COLOR_WHITE,
   COLOR_WHITE_BLUE,
@@ -11,6 +12,7 @@ import SvgIcon from '@/SvgIcon';
 
 const fill = {
   default: COLOR_PRIMARY_LIGHT,
+  primary: COLOR_PRIMARY,
   secondary: COLOR_WHITE,
 };
 const empty = {
@@ -41,5 +43,5 @@ StarIcon.propTypes = {
   filled: PropTypes.bool,
 
   /** Fill color of star icon */
-  color: PropTypes.oneOf(['default', 'secondary']),
+  color: PropTypes.oneOf(['default', 'primary', 'secondary']),
 };
