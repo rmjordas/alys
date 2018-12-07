@@ -4,12 +4,5 @@ import RegisterIcon from 'alys/RegisterIcon';
 
 /** Block with icon button */
 export default function ExampleBlockIcon() {
-  return (
-    <Button
-      block
-      icon={RegisterIcon}
-      text="Example block with Icon"
-      onClick={() => {}}
-    />
-  );
+  return <Button block icon={RegisterIcon} text="Example block with Icon" />;
 }

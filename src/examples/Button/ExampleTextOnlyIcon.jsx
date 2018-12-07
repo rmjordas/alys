@@ -9,7 +9,6 @@ export default function ExampleTextOnlyIcon() {
       type="link"
       text="Example text only with icon"
       icon={RegisterIcon}
-      onClick={() => {}}
     />
   );
 }

@@ -4,5 +4,5 @@ import ArrowLeftIcon from 'alys/ArrowLeftIcon';
 
 /** Icon only button */
 export default function ExampleIconOnly() {
-  return <Button iconOnly icon={ArrowLeftIcon} onClick={() => {}} />;
+  return <Button iconOnly icon={ArrowLeftIcon} />;
 }

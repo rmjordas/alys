@@ -3,5 +3,5 @@ import Button from 'alys/Button';
 
 /** Default button */
 export default function ExampleDefault() {
-  return <Button text="Example default" onClick={() => {}} />;
+  return <Button text="Example default" />;
 }

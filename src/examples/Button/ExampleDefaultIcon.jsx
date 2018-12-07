@@ -4,11 +4,5 @@ import MentorIcon from 'alys/MentorIcon';
 
 /** Default button with icon */
 export default function ExampleDefaultIcon() {
-  return (
-    <Button
-      text="Example default with icon"
-      icon={MentorIcon}
-      onClick={() => {}}
-    />
-  );
+  return <Button text="Example default with icon" icon={MentorIcon} />;
 }
