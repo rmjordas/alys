@@ -41,10 +41,13 @@ export default function BottomBar({ children: childrenProp, value, onChange }) {
 }
 
 BottomBar.propTypes = {
-  /** Action items */
+  /** List of <BottomBarAction /> items */
   children: PropTypes.node.isRequired,
 
-  /** Represents the currently selected action item */
+  /**
+   * The <BottomBarAction /> child(ren) uses this value to determine if it is
+   * selected
+   */
   value: PropTypes.any,
 
   /**
