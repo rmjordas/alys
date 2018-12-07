@@ -1,14 +1,23 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 import {
   COLOR_PRIMARY,
   COLOR_WHITE,
+  COLOR_GRAY_BLUE,
   GRADIENT_PRIMARY,
   TYPE_FONT_SIZE_HEADING_6,
 } from '@/constants';
 import { styleLengths } from '@utils/string-utils';
+
+const disabledStyles = css`
+  background-color: ${COLOR_GRAY_BLUE};
+
+  && {
+    cursor: default;
+  }
+`;
 
 /**
  * Returns `null` if an icon node is not provided. Otherwise, it returns a
@@ -40,22 +49,31 @@ function linearGradient(colors) {
 
 const BasicButton = styled.div.attrs(({ text }) => ({
   children: text,
+  role: 'button',
 }))`
+  box-sizing: border-box;
+  border: 0;
+  outline: none;
   user-select: none;
   display: inline-block;
   text-align: center;
   vertical-align: middle;
-  background: ${COLOR_PRIMARY};
-  color: ${COLOR_WHITE};
+  background: ${({ type }) =>
+    type === 'link' ? 'transparent' : COLOR_PRIMARY};
+  color: ${({ type }) => (type === 'link' ? COLOR_PRIMARY : COLOR_WHITE)};
   text-transform: uppercase;
   border-radius: 0.375em;
   padding: 1em;
   font-size: ${styleLengths(TYPE_FONT_SIZE_HEADING_6)};
   font-weight: 500;
+  overflow: hidden;
+  position: relative;
 
   &:hover {
     cursor: pointer;
   }
+
+  ${({ disabled }) => disabled && disabledStyles}
 `;
 
 const IconOnlyButton = styled(BasicButton).attrs(({ icon }) => ({
@@ -69,12 +87,26 @@ const WideButton = styled(BasicButton)`
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  background: ${({ type }) =>
-    type === 'link' ? 'transparent' : linearGradient(GRADIENT_PRIMARY)};
-  color: ${({ type, theme: { darkMode } }) =>
-    type === 'link' ? (darkMode ? COLOR_WHITE : COLOR_PRIMARY) : COLOR_WHITE};
+  background: ${({ type, disabled }) => {
+    if (disabled) {
+      return type === 'link' ? 'transparent' : COLOR_GRAY_BLUE;
+    }
+
+    return type === 'link' ? 'transparent' : linearGradient(GRADIENT_PRIMARY);
+  }};
+  color: ${({ type, disabled, theme: { darkMode } }) => {
+    if (type === 'link') {
+      if (disabled) {
+        return 'inherit';
+      }
+
+      return darkMode ? 'inherit' : COLOR_PRIMARY;
+    }
+
+    return COLOR_WHITE;
+  }};
   border-radius: ${({ block }) => (block ? 0 : '0.375em')};
-  min-height: 1.75em;
+  min-height: 4em;
   margin: ${({ block }) => (block ? 0 : '1.25em 1.875em')};
 `;
 
@@ -82,17 +114,32 @@ const WideButton = styled(BasicButton)`
  * Button signals to the user that an action can be performed by clicking or
  * taping this element.
  */
-export default function Button({ basic, text, block, type, icon, iconOnly }) {
+export default function Button({
+  basic,
+  text,
+  block,
+  type,
+  icon,
+  iconOnly,
+  disabled,
+  onClick,
+}) {
+  const common = { disabled };
+
+  if (!disabled) {
+    common.onClick = onClick;
+  }
+
   if (iconOnly) {
-    return <IconOnlyButton icon={icon} />;
+    return <IconOnlyButton icon={icon} {...common} />;
   }
 
   if (basic) {
-    return <BasicButton text={text} />;
+    return <BasicButton text={text} type={type} {...common} />;
   }
 
   return (
-    <WideButton block={block} type={type}>
+    <WideButton block={block} type={type} {...common}>
       {buttonIcon({ icon, type })} {text}
     </WideButton>
   );
@@ -105,14 +152,18 @@ Button.defaultProps = {
   icon: null,
   iconOnly: false,
   type: 'default',
+  disabled: false,
 };
 
 Button.propTypes = {
+  /** Text to display on the button */
+  text: PropTypes.string,
+
   /** Handler to call when button is clicked */
   onClick: PropTypes.func,
 
-  /** Text to display on the button */
-  text: PropTypes.string,
+  /** If set to `true`, the button cannot be interacted with */
+  disabled: PropTypes.bool,
 
   /**
    * Button width is determined by the content. If set to `true`, the value of
