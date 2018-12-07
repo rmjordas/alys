@@ -8,14 +8,35 @@ import {
   GRADIENT_PRIMARY,
   TYPE_FONT_SIZE_HEADING_6,
 } from '@/constants';
-import { styleLengths } from '../utils/string-utils';
+import { styleLengths } from '@utils/string-utils';
 
-const linearGradient = (colors) => `linear-gradient(to right, ${colors})`;
+function buttonIcon({ icon, type = 'default', iconOnly = false }) {
+  if (!icon) {
+    return null;
+  }
 
-// @TODO+Button: Styles for Button states (hover, clicked, etc.)
+  const Icon = styled(icon).attrs(() => ({
+    dark: type !== 'link',
+  }))`
+    margin-right: ${iconOnly ? 0 : '1.125em'};
+    vertical-align: middle;
+
+    && svg {
+      font-size: 1.125em;
+    }
+  `;
+
+  return <Icon />;
+}
+
+function linearGradient(colors) {
+  return `linear-gradient(to right, ${colors})`;
+}
+
 const BasicButton = styled.div.attrs(({ text }) => ({
   children: text,
 }))`
+  user-select: none;
   display: inline-block;
   text-align: center;
   vertical-align: middle;
@@ -32,18 +53,21 @@ const BasicButton = styled.div.attrs(({ text }) => ({
   }
 `;
 
-const IconOnlyButton = styled(BasicButton)`
+const IconOnlyButton = styled(BasicButton).attrs(({ icon }) => ({
+  children: buttonIcon({ icon, iconOnly: true }),
+}))`
   border-radius: 50%;
 `;
 
-const OtherButton = styled(BasicButton)`
+const WideButton = styled(BasicButton)`
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   background: ${({ type }) =>
     type === 'link' ? 'transparent' : linearGradient(GRADIENT_PRIMARY)};
-  color: ${({ type }) => (type === 'link' ? COLOR_PRIMARY : COLOR_WHITE)};
+  color: ${({ type, theme: { darkMode } }) =>
+    type === 'link' ? (darkMode ? COLOR_WHITE : COLOR_PRIMARY) : COLOR_WHITE};
   border-radius: ${({ block }) => (block ? 0 : '0.375em')};
   min-height: 1.75em;
   margin: ${({ block }) => (block ? 0 : '1.25em 1.875em')};
@@ -54,33 +78,18 @@ const OtherButton = styled(BasicButton)`
  * taping this element.
  */
 export default function Button({ basic, text, block, type, icon, iconOnly }) {
-  // @WARN+Button: This components gets created every render!
-  let ButtonIcon = () => null;
-
-  if (icon) {
-    ButtonIcon = styled(icon).attrs(() => ({
-      dark: type !== 'link',
-      color: 'primary',
-    }))`
-      margin-right: ${iconOnly ? 0 : '1.125em'};
-      vertical-align: middle;
-
-      && svg {
-        font-size: 1.125em;
-      }
-    `;
+  if (iconOnly) {
+    return <IconOnlyButton icon={icon} />;
   }
 
-  return iconOnly ? (
-    <IconOnlyButton>
-      <ButtonIcon />
-    </IconOnlyButton>
-  ) : basic ? (
-    <BasicButton text={text} />
-  ) : (
-    <OtherButton block={block} type={type}>
-      <ButtonIcon /> {text}
-    </OtherButton>
+  if (basic) {
+    return <BasicButton text={text} />;
+  }
+
+  return (
+    <WideButton block={block} type={type}>
+      {buttonIcon({ icon, type })} {text}
+    </WideButton>
   );
 }
 
@@ -95,7 +104,7 @@ Button.defaultProps = {
 
 Button.propTypes = {
   /** Handler to call when button is clicked */
-  onClick: PropTypes.func.isRequired,
+  onClick: PropTypes.func,
 
   /** Text to display on the button */
   text: PropTypes.string,
