@@ -9,7 +9,7 @@ const Wrapper = styled.div`
   display: inline-block;
   font-size: ${TYPE_FONT_SIZE_HEADING_6}px;
   font-weight: 500;
-  padding: 0.5em 0.75em;
+  padding: ${({ add }) => (add ? '0.5em' : '0.5em 0.75em')};
   border-radius: 0.375em;
   background-color: ${({ color }) => colors[color]};
   color: ${COLOR_WHITE};
@@ -19,6 +19,8 @@ const Wrapper = styled.div`
 const AddIcon = styled(NewIcon).attrs(() => ({
   fontSize: `${TYPE_FONT_SIZE_HEADING_6}px`,
 }))`
+  display: block;
+
   && line {
     stroke: ${COLOR_WHITE};
   }
@@ -26,7 +28,11 @@ const AddIcon = styled(NewIcon).attrs(() => ({
 
 /** Text inside a small container */
 export default function Pill({ text, color, add }) {
-  return <Wrapper color={color}>{add ? <AddIcon /> : text}</Wrapper>;
+  return (
+    <Wrapper color={color} add={add}>
+      {add ? <AddIcon /> : text}
+    </Wrapper>
+  );
 }
 
 Pill.defaultProps = {
