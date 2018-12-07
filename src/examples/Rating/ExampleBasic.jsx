@@ -19,5 +19,5 @@ export default class ExampleBasic extends PureComponent {
     );
   }
 
-  _handleOnChange = (event, value) => this.setState({ value });
+  _handleOnChange = (_event, value) => this.setState({ value });
 }

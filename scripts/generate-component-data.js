@@ -17,7 +17,7 @@ if (enableWatchMode) {
   // Regenerates component metadata when components or examples change.
   chokidar
     .watch([paths.examples, paths.components])
-    .on('change', (event, path) => generate(paths));
+    .on('change', (_event, path) => generate(paths));
 } else {
   generate(paths);
 }
