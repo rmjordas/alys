@@ -56,6 +56,10 @@ function getComponentData(paths, componentName) {
   );
   const info = parse(content);
 
+  if (!info.description) {
+    console.log(chalk.red(`No description found for "${componentName}"`));
+  }
+
   return {
     name: componentName,
     description: info.description,
