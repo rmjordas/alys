@@ -1,8 +1,8 @@
 import React, { PureComponent } from 'react';
 import Rating from 'alys/Rating';
 
-/** Basic rating */
-export default class Example5Stars extends PureComponent {
+/** Basic rating with intial value of 3 */
+export default class ExampleBasic extends PureComponent {
   state = {
     value: 3,
   };
