@@ -27,7 +27,10 @@ export default class Rating extends Component {
     /** Amount of filled stars */
     value: PropTypes.oneOf([0, 1, 2, 3, 4, 5]).isRequired,
 
-    /** Callback when rating value changes */
+    /**
+     * Callback when rating value changes. Must have two params for the `event`
+     * object and the `value`
+     */
     onChange: PropTypes.func,
 
     /** If set to `true` the <Rating /> component value cannot be changed */
