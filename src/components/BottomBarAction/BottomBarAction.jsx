@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
@@ -37,7 +37,7 @@ const Action = styled.div`
 `;
 
 /** An action item inside <BottomBar /> */
-export default class BottomBarAction extends Component {
+export default class BottomBarAction extends PureComponent {
   static propTypes = {
     /** Value to be passed to a `BottomBar` parent's `onChange` prop */
     value: PropTypes.string,

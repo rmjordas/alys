@@ -8,14 +8,14 @@ const Ul = styled.ul`
 `;
 
 /** Container for a set of list sub-items */
-export default function List({ component, children, ...componentProps }) {
+export default function List({ component, children, ...props }) {
   let Component = component;
 
   if (component === 'ul') {
     Component = Ul;
   }
 
-  return <Component {...componentProps}>{children}</Component>;
+  return <Component {...props}>{children}</Component>;
 }
 
 List.defaultProps = {

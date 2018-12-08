@@ -26,9 +26,9 @@ const Li = styled.li`
 `;
 
 /** A sub-item of <List /> */
-export default function ListItem({ children, ...liProps }) {
+export default function ListItem({ children, ...props }) {
   return (
-    <Li {...liProps}>
+    <Li {...props}>
       <Disc />
       <Typography variant="p">{children}</Typography>
     </Li>

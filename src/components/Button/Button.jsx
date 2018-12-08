@@ -121,25 +121,22 @@ export default function Button({
   type,
   icon,
   iconOnly,
-  disabled,
-  onClick,
+  ...props
 }) {
-  const common = { disabled };
-
-  if (!disabled) {
-    common.onClick = onClick;
+  if (props.disabled) {
+    props.onClick = undefined;
   }
 
   if (iconOnly) {
-    return <IconOnlyButton icon={icon} {...common} />;
+    return <IconOnlyButton icon={icon} {...props} />;
   }
 
   if (basic) {
-    return <BasicButton text={text} type={type} {...common} />;
+    return <BasicButton text={text} type={type} {...props} />;
   }
 
   return (
-    <WideButton block={block} type={type} {...common}>
+    <WideButton block={block} type={type} {...props}>
       {buttonIcon({ icon, type })} {text}
     </WideButton>
   );

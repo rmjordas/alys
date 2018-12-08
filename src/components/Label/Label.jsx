@@ -11,8 +11,8 @@ const StyledLabel = styled.label`
 `;
 
 /** Caption for an interface item. */
-export default function Label({ text, htmlFor }) {
-  return <StyledLabel htmlFor={htmlFor}>{text}</StyledLabel>;
+export default function Label({ text, ...props }) {
+  return <StyledLabel {...props}>{text}</StyledLabel>;
 }
 
 Label.propTypes = {
