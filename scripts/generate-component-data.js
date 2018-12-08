@@ -32,9 +32,7 @@ function generate(paths) {
       try {
         data = getComponentData(paths, componentName);
       } catch (error) {
-        errors.push(
-          `An error occurred while attempting to generate metadata for ${componentName}. ${error}`,
-        );
+        errors.push(`${componentName}: Error generating metadata. ${error}`);
       }
 
       return data;
@@ -57,7 +55,7 @@ function getComponentData(paths, componentName) {
   const info = parse(content);
 
   if (!info.description) {
-    console.log(chalk.red(`No description found for "${componentName}"`));
+    console.log(chalk.red(`${componentName}: No description`));
   }
 
   return {
@@ -94,7 +92,7 @@ function getExampleFiles(examplePath, componentName) {
   try {
     exampleFiles = getFiles(path.join(examplePath, componentName));
   } catch (error) {
-    console.log(chalk.red(`No examples found for ${componentName}`));
+    console.log(chalk.red(`${componentName}: No examples`));
   }
 
   return exampleFiles;
