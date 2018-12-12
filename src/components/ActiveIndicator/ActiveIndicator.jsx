@@ -5,8 +5,10 @@ import styled from 'styled-components';
 import { colors } from '@/constants';
 
 const Indicator = styled.div`
-  height: 0.75em;
-  width: 0.75em;
+  min-height: 0.75em;
+  max-height: 0.75em;
+  min-width: 0.75em;
+  max-width: 0.75em;
   border-radius: 50%;
   background-color: ${({ active, color }) =>
     active
