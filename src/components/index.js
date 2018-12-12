@@ -28,6 +28,7 @@ export { default as LaptopIcon } from './LaptopIcon';
 export { default as LikeIcon } from './LikeIcon';
 export { default as List } from './List';
 export { default as ListItem } from './ListItem';
+export { default as ListItemPerson } from './ListItemPerson';
 export { default as LiveIcon } from './LiveIcon';
 export { default as LocationIcon } from './LocationIcon';
 export { default as MentorIcon } from './MentorIcon';
