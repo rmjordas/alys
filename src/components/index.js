@@ -7,6 +7,7 @@ export { default as Avatar } from './Avatar';
 export { default as BottomBar } from './BottomBar';
 export { default as BottomBarAction } from './BottomBarAction';
 export { default as Button } from './Button';
+export { default as CalendarIcon } from './CalendarIcon';
 export { default as CameraFlipIcon } from './CameraFlipIcon';
 export { default as CameraIcon } from './CameraIcon';
 export { default as CardIcon } from './CardIcon';
