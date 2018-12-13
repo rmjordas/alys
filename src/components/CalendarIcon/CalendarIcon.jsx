@@ -14,7 +14,7 @@ export default function CalendarIcon({ dark, color, ...svgProps }) {
   };
 
   return (
-    <SvgIcon {...svgProps}>
+    <SvgIcon viewBox="0 0 17 19" {...svgProps}>
       <path
         {...commonProps}
         id="path"
