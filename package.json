@@ -25,7 +25,7 @@
   "scripts": {
     "lint": "eslint . --ext .js,.jsx --ignore-path .eslintignore",
     "test": "node scripts/test.js",
-    "gen:docs": "node scripts/generate-component-data.js",
+    "gen:docs": "node scripts/generate-component-data",
     "gen:docs-watch": "npm run gen:docs -- --watch",
     "prestart": "npm run gen:docs",
     "start": "npm-run-all --parallel start:docs gen:docs-watch",
