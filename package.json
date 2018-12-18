@@ -36,7 +36,7 @@
     "build:css": "cpx \"./src/components/**/*.css\" ./lib",
     "prebuild:lib": "rimraf lib",
     "build:lib": "npm-run-all --parallel build:cjs build:css build:copy-files",
-    "build:copy-files": "node scripts/copy-build-files.js"
+    "build:copy-files": "node scripts/copy-build-files"
   },
   "dependencies": {
     "prop-types": "15.6.2",
