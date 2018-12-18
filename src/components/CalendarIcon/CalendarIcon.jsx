@@ -5,6 +5,7 @@ import { COLOR_WHITE, colors } from '@/constants';
 import { iconDark } from '@utils/icon-utils';
 import SvgIcon from '@/SvgIcon';
 
+/** See <SvgIcon /> for more prop descriptions. */
 export default function CalendarIcon({ dark, color, ...svgProps }) {
   const commonProps = {
     fill: 'none',
