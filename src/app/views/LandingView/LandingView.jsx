@@ -2,7 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
-import Logo from './AppLogo';
+import Logo from '../../common/AppLogo';
+import constants from '../../constants';
 
 const AppLogo = styled(Logo).attrs(() => ({
   width: '15em',
@@ -61,8 +62,8 @@ export default function LandingPage({ component }) {
       <InnerWrapper>
         <AppLogo />
 
-        <MainTitle>Alys</MainTitle>
-        <SubTitle>A tiny React component library</SubTitle>
+        <MainTitle>{constants.app.name}</MainTitle>
+        <SubTitle>{constants.app.description}</SubTitle>
 
         <GetStarted href={`#${component}`} />
       </InnerWrapper>

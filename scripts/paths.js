@@ -7,5 +7,5 @@ module.exports = {
   libPackageManifest: path.resolve(__dirname, '../lib', 'package.json'),
   examples: path.join(__dirname, '../src', 'examples'),
   components: path.join(__dirname, '../src', 'components'),
-  output: path.join(__dirname, '../src', 'docs', 'component-data.js'),
+  output: path.join(__dirname, '../src', 'app', 'config', 'component-data.js'),
 };

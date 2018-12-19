@@ -2,8 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
-import AppLogo from './AppLogo';
-import { ReactComponent as github } from './assets/github.svg';
+import AppLogo from '../../common/AppLogo';
+import { ReactComponent as github } from '../../assets/github.svg';
 
 const GithubLogo = styled(github).attrs(() => ({
   height: '20px',

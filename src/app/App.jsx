@@ -1,18 +1,20 @@
 import React, { Component, Suspense } from 'react';
 import styled from 'styled-components';
 
-import Header from './docs/Header';
-import LoadingPage from './docs/LoadingPage';
-import componentData from './docs/component-data';
+import constants from './constants';
+import Header from './layout/Header';
+import LoadingOverlay from './common/LoadingOverlay';
+import componentData from './config/component-data';
 
-const Landing = React.lazy(() => import('./docs/LandingPage'));
-const Navigation = React.lazy(() => import('./docs/Navigation'));
-const ComponentPage = React.lazy(() => import('./docs/ComponentPage'));
+const Navigation = React.lazy(() => import('./layout/Navigation'));
+const LandingView = React.lazy(() => import('./views/LandingView'));
+const ComponentView = React.lazy(() => import('./views/ComponentView'));
 
 const MainContent = styled.div`
   position: fixed;
   width: 100%;
   overflow-y: auto;
+  /* @TODO+App: Fix this hack */
   height: calc(100% - 69px);
 `;
 
@@ -30,6 +32,7 @@ export default class App extends Component {
   }
 
   render() {
+    const appName = constants.app.name;
     const { route } = this.state;
     const component = route
       ? componentData.filter(({ name }) => name === route)[0]
@@ -38,24 +41,24 @@ export default class App extends Component {
     return (
       <React.Fragment>
         <Header
-          title={route ? 'Alys / Components' : 'Alys'}
-          repoLink="https://github.com/rmjordas/alys"
+          title={route ? `${appName} / Components` : appName}
+          repoLink={constants.repoLink}
         />
 
         {route ? (
-          <Suspense fallback={<LoadingPage />}>
+          <Suspense fallback={<LoadingOverlay />}>
             <MainContent>
               <Navigation
                 components={componentData.map(({ name }) => name)}
                 active={route}
               />
 
-              <ComponentPage component={component} />
+              <ComponentView component={component} />
             </MainContent>
           </Suspense>
         ) : (
-          <Suspense fallback={<LoadingPage />}>
-            <Landing component={component.name} />
+          <Suspense fallback={<LoadingOverlay />}>
+            <LandingView component={component.name} />
           </Suspense>
         )}
       </React.Fragment>

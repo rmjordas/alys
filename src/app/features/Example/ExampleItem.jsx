@@ -2,7 +2,7 @@ import React, { Component, Suspense } from 'react';
 import PropTypes from 'prop-types';
 import styled, { ThemeProvider } from 'styled-components';
 
-import ToggleButton from './ToggleButton';
+import ToggleButton from '../../common/ToggleButton';
 
 const SyntaxHighlightedCode = React.lazy(() =>
   import('@common/SyntaxHighlightedCode'),
@@ -34,7 +34,7 @@ export const examplePropsShape = PropTypes.shape({
 });
 
 /** Shows an actual component example of the component being described */
-export default class Example extends Component {
+export default class ExampleItem extends Component {
   static propTypes = {
     /** A list of example information objects */
     example: examplePropsShape.isRequired,
@@ -64,7 +64,7 @@ export default class Example extends Component {
       example: { code, description, name },
     } = this.props;
     const ExampleComponent = React.lazy(() =>
-      import(`../examples/${componentName}/${name}`),
+      import(`../../../examples/${componentName}/${name}`),
     );
 
     return (

@@ -27,15 +27,8 @@ const DataCell = styled.td.attrs(({ required }) => ({
   color: ${({ required, color }) => (required ? '#aaa' : color)};
 `;
 
-export const propItemPropsShape = PropTypes.shape({
-  description: PropTypes.string.isRequired,
-  type: PropTypes.shape({ name: PropTypes.string }).isRequired,
-  defaultValue: PropTypes.shape({ value: PropTypes.any }),
-  required: PropTypes.bool,
-});
-
 /** Lists the props of a component with descriptions and default values */
-export default function Props({ props }) {
+export default function PropsItem({ props }) {
   return (
     <Table>
       <thead>
@@ -97,7 +90,14 @@ export default function Props({ props }) {
   );
 }
 
-Props.propTypes = {
+export const propItemPropsShape = PropTypes.shape({
+  description: PropTypes.string.isRequired,
+  type: PropTypes.shape({ name: PropTypes.string }).isRequired,
+  defaultValue: PropTypes.shape({ value: PropTypes.any }),
+  required: PropTypes.bool,
+});
+
+PropsItem.propTypes = {
   /** Contains prop information for a component */
   props: PropTypes.objectOf(propItemPropsShape).isRequired,
 };
