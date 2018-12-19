@@ -22,7 +22,7 @@ Alys
     <img src="https://img.shields.io/npm/v/alys.svg" alt="Alys on npm">
   </a>
 
-  <a href="https:/alys.js.org">
+  <a href="https://alys.js.org">
     <img src="https://img.shields.io/badge/docs-alys@next-blue.svg" alt="Documentation website">
   </a>
 </p>
