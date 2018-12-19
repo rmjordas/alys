@@ -1,2 +1,5 @@
-src/docs/prism.js
+src/components/common/SyntaxHighlightedCode/prism.js
+scripts/build.js
+scripts/start.js
+scripts/test.js
 lib/
