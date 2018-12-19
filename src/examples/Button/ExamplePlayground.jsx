@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Button from 'alys/Button';
 import ArrowLeftIcon from 'alys/ArrowLeftIcon';
 
-import ToggleButton from '../../docs/ToggleButton';
+import ToggleButton from '../../app/common/ToggleButton';
 
 /** Button playgound */
 export default class ExamplePlayground extends Component {
