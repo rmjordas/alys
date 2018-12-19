@@ -1,7 +1,7 @@
 import React from 'react';
 import Avatar from 'alys/Avatar';
 
-import img from '../../docs/assets/alys.jpg';
+import img from '../../app/assets/alys.jpg';
 
 /** Normal size avatar */
 export default function ExampleNormal() {

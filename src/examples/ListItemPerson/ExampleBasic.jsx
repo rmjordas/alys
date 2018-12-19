@@ -1,7 +1,7 @@
 import React from 'react';
 import ListItemPerson from 'alys/ListItemPerson';
 
-import alys from '../../docs/assets/alys.jpg';
+import alys from '../../app/assets/alys.jpg';
 
 /** Basic person list item */
 export default function ExampleBasic() {
