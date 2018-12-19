@@ -1,28 +1,33 @@
-# Alys [![Build Status][badge]][ci]
+<h1 align="center">
 
-[badge]: https://travis-ci.org/rmjordas/alys.svg?branch=master
-[ci]: https://travis-ci.org/rmjordas/alys
+<br>
 
-⚠️ **Work in Progress** ⚠️
+<img src="./public/android-chrome-192x192.png" alt="Alys" width="128">
 
-## Background
+<br>
+<br>
 
-This project started as "classless" PostCSS/CSS toolkit as a way to practice
-CSS. Although, the original design featured rounded and colorful aesthetic,
-which admittedly is not unique nor mind-blowing, it was usable and decent enough
-for a more backend-leaning developer like me.
+Alys
 
-Eventually, it was determined that a "classless" toolkit is not that useful
-because more complicated applications would contain a lot of different
-components and these components would most likely have specialized styles. If
-the web page is simple or, maybe, used as a base style, then this toolkit would
-be fine.
+</h1>
 
-The next iteration produced a small Vue component library. Initially, the goal
-was to port the styles to components, but this was not fulfilled (because of
-reasons and I kinda forgot about this repo).
+<p align="center">A tiny React component library</p>
 
-Hopefully, this newest iteration would lead to the desired `v1.0.0` release.
+<p align="center">
+  <a href="https://travis-ci.org/rmjordas/alys">
+    <img src="https://travis-ci.org/rmjordas/alys.svg" alt="Travis CI">
+  </a>
+
+  <a href="https://www.npmjs.com/package/alys">
+    <img src="https://img.shields.io/npm/v/alys.svg" alt="Alys on npm">
+  </a>
+
+  <a href="https:/alys.js.org">
+    <img src="https://img.shields.io/badge/docs-alys@next-blue.svg" alt="Documentation website">
+  </a>
+</p>
+
+<hr />
 
 ## Quick Start
 
@@ -50,20 +55,6 @@ https://unpkg.com/alys@latest/dist/alys.common.js
 
 - [Component documentation](https://alys.js.org)
 - [Contributing guide](https://github.com/rmjordas/alys/blob/master/.github/CONTRIBUTING.md)
-
-## Development
-
-To run this app on your machine, clone the repository, then run the
-`npm install` command on your terminal to install the project dependencies:
-
-```bash
-git clone https://github.com/rmjordas/alys.git
-cd alys
-npm install
-```
-
-Enter `npm start` in your terminal and view the Alys component documentation in
-your browser.
 
 ## License
 
