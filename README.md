@@ -55,6 +55,7 @@ https://unpkg.com/alys@latest/dist/alys.common.js
 
 - [Component documentation](https://alys.js.org)
 - [Contributing guide](https://github.com/rmjordas/alys/blob/master/.github/CONTRIBUTING.md)
+- [Attribution notice](https://github.com/rmjordas/alys/blob/master/NOTICE)
 
 ## License
 
