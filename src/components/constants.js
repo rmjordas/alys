@@ -1,5 +1,6 @@
 export const COLOR_PRIMARY = '#5887F9';
 export const COLOR_PRIMARY_LIGHT = '#60C3FF';
+export const COLOR_PRIMARY_FILL = '#dce9ff';
 export const COLOR_ERROR = '#FC5F6B';
 export const COLOR_WHITE_ALPHA30 = 'rgba(255, 255, 255, 0.3)';
 export const COLOR_SECONDARY = COLOR_WHITE_ALPHA30;
@@ -34,6 +35,7 @@ export const AVATAR_SIZE_DEFAULT = 6.25;
 export const colors = {
   primary: COLOR_PRIMARY,
   primaryLight: COLOR_PRIMARY_LIGHT,
+  primaryFill: COLOR_PRIMARY_FILL,
   error: COLOR_ERROR,
   secondary: COLOR_SECONDARY,
   dark: COLOR_DARK,
