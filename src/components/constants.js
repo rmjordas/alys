@@ -6,6 +6,7 @@ export const COLOR_WHITE_ALPHA30 = 'rgba(255, 255, 255, 0.3)';
 export const COLOR_SECONDARY = COLOR_WHITE_ALPHA30;
 export const COLOR_DARK = '#4C5264';
 export const COLOR_GRAY_BLUE = '#BCC5D3';
+export const COLOR_BLUE_GRAY = '#b0caff';
 export const COLOR_WHITE_BLUE = '#E2E8ED';
 export const COLOR_WHITE = '#ffffff';
 export const COLOR_WHITE_ALPHA60 = 'rgba(255, 255, 255, 0.6)';
