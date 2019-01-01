@@ -59,6 +59,6 @@ https://unpkg.com/alys@latest/dist/alys.common.js
 
 ## License
 
-Copyright 2017-2018 Rodger Jordas
+Copyright 2017-2019 Rodger Jordas
 
 This project is licensed under the terms of the Apache License, Version 2.0.
