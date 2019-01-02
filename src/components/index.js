@@ -8,6 +8,7 @@ export { default as AttachmentIcon } from './AttachmentIcon';
 export { default as Avatar } from './Avatar';
 export { default as BottomBar } from './BottomBar';
 export { default as BottomBarAction } from './BottomBarAction';
+export { default as BusinessIcon } from './BusinessIcon';
 export { default as Button } from './Button';
 export { default as CalendarIcon } from './CalendarIcon';
 export { default as CameraFlipIcon } from './CameraFlipIcon';
