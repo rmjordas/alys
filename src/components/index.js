@@ -23,6 +23,7 @@ export { default as ComputerIcon } from './ComputerIcon';
 export { default as ConfirmIcon } from './ConfirmIcon';
 export { default as Currency } from './Currency';
 export { default as DesignIcon } from './DesignIcon';
+export { default as DevelopmentIcon } from './DevelopmentIcon';
 export { default as EmailIcon } from './EmailIcon';
 export { default as EnlargeIcon } from './EnlargeIcon';
 export { default as FiltersIcon } from './FiltersIcon';
