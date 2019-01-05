@@ -1,7 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import { COLOR_PRIMARY, COLOR_BLUE_GRAY } from '@/constants';
+import {
+  COLOR_PRIMARY,
+  COLOR_PRIMARY_FILL,
+  COLOR_BLUE_GRAY,
+} from '@/constants';
 import SvgIcon from '@/SvgIcon';
 
 /** See <SvgIcon /> for more prop descriptions. */
@@ -16,7 +20,7 @@ export default function BusinessIcon({ dark, color, ...svgProps }) {
       <g id="business-icon">
         <path
           id="path"
-          fill="#dce9ff"
+          fill={COLOR_PRIMARY_FILL}
           d="M39.6,22.138V5.6A4.551,4.551,0,0,0,35,1H5.6A4.551,4.551,0,0,0,1,5.6V35a4.551,4.551,0,0,0,4.6,4.6H21.678l-2.941-8.363,2.941-7.628,5.79-4.228H33.9l5.7,2.757"
         />
         <path
@@ -88,6 +92,7 @@ export default function BusinessIcon({ dark, color, ...svgProps }) {
         <path
           {...commonProps}
           id="ellipse"
+          fill="none"
           stroke-linecap="round"
           d="M44.534,34.6A9.845,9.845,0,0,1,34.7,44.434"
           transform="translate(-2.729 -2.721)"
@@ -120,6 +125,7 @@ export default function BusinessIcon({ dark, color, ...svgProps }) {
           {...commonProps}
           id="line-2"
           data-name="line"
+          fill="none"
           stroke-linecap="round"
           x2="2.757"
           transform="translate(7.433 24.435)"
@@ -128,6 +134,7 @@ export default function BusinessIcon({ dark, color, ...svgProps }) {
           {...commonProps}
           id="line-3"
           data-name="line"
+          fill="none"
           stroke-linecap="round"
           x2="2.757"
           transform="translate(18.462 16.164)"
@@ -136,6 +143,7 @@ export default function BusinessIcon({ dark, color, ...svgProps }) {
           {...commonProps}
           id="line-4"
           data-name="line"
+          fill="none"
           stroke-linecap="round"
           x2="2.757"
           transform="translate(30.409 6.974)"
