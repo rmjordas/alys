@@ -16,7 +16,7 @@ const commonProps = {
 };
 
 /** See <SvgIcon /> for more prop descriptions. */
-export default function MusicIcon({ dark, color, ...svgProps }) {
+export default function PhotographyIcon({ dark, color, ...svgProps }) {
   return (
     <SvgIcon viewBox="0 0 47.347 35.839" {...svgProps}>
       <path
@@ -110,11 +110,11 @@ export default function MusicIcon({ dark, color, ...svgProps }) {
   );
 }
 
-MusicIcon.defaultProps = {
+PhotographyIcon.defaultProps = {
   dark: false,
 };
 
-MusicIcon.propTypes = {
+PhotographyIcon.propTypes = {
   /** Set to `true` to make icon viewable in dark backgrounds */
   dark: PropTypes.bool,
 
