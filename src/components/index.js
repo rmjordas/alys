@@ -64,3 +64,4 @@ export { default as SvgIcon } from './SvgIcon';
 export { default as TabletIcon } from './TabletIcon';
 export { default as TrashIcon } from './TrashIcon';
 export { default as Typography } from './Typography';
+export { default as VideographyIcon } from './VideographyIcon';
