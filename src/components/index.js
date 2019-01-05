@@ -40,6 +40,7 @@ export { default as LocationIcon } from './LocationIcon';
 export { default as MarketingIcon } from './MarketingIcon';
 export { default as MentorIcon } from './MentorIcon';
 export { default as MicrophoneIcon } from './MicrophoneIcon';
+export { default as MusicIcon } from './MusicIcon';
 export { default as NewIcon } from './NewIcon';
 export { default as OptionsIcon } from './OptionsIcon';
 export { default as PasswordIcon } from './PasswordIcon';
