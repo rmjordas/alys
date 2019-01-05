@@ -37,6 +37,7 @@ export { default as ListItem } from './ListItem';
 export { default as ListItemPerson } from './ListItemPerson';
 export { default as LiveIcon } from './LiveIcon';
 export { default as LocationIcon } from './LocationIcon';
+export { default as MarketingIcon } from './MarketingIcon';
 export { default as MentorIcon } from './MentorIcon';
 export { default as MicrophoneIcon } from './MicrophoneIcon';
 export { default as NewIcon } from './NewIcon';
