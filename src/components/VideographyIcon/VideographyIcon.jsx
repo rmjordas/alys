@@ -9,13 +9,13 @@ import {
 } from '@/constants';
 import SvgIcon from '@/SvgIcon';
 
-const commonProps = {
-  stroke: COLOR_PRIMARY,
-  strokeMiterlimit: 10,
-};
-
 /** See <SvgIcon /> for more prop descriptions. */
 export default function VideographyIcon({ dark, color, ...svgProps }) {
+  const commonProps = {
+    stroke: COLOR_PRIMARY,
+    strokeMiterlimit: 10,
+  };
+
   return (
     <SvgIcon viewBox="0 0 58 45" {...svgProps}>
       <g id="videography-icon">

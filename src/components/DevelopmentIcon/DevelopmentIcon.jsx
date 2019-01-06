@@ -8,12 +8,12 @@ import {
 } from '@/constants';
 import SvgIcon from '@/SvgIcon';
 
-const commonProps = {
-  strokeMiterlimit: 10,
-};
-
 /** See <SvgIcon /> for more prop descriptions. */
 export default function DevelopmentIcon({ dark, color, ...svgProps }) {
+  const commonProps = {
+    strokeMiterlimit: 10,
+  };
+
   return (
     <SvgIcon viewBox="0 0 50.877 38" {...svgProps}>
       <g id="development-icon" class="cls-1" transform="translate(0.018)">

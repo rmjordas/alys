@@ -9,14 +9,14 @@ import {
 } from '@/constants';
 import SvgIcon from '@/SvgIcon';
 
-const commonProps = {
-  strokeLinecap: 'round',
-  strokeLinejoin: 'round',
-  strokeMiterlimit: 10,
-};
-
 /** See <SvgIcon /> for more prop descriptions. */
 export default function MarketingIcon({ dark, color, ...svgProps }) {
+  const commonProps = {
+    strokeLinecap: 'round',
+    strokeLinejoin: 'round',
+    strokeMiterlimit: 10,
+  };
+
   return (
     <SvgIcon viewBox="0 0 51.2 51" {...svgProps}>
       <g id="marketing-icon">

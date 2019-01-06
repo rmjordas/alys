@@ -8,14 +8,14 @@ import {
 } from '@/constants';
 import SvgIcon from '@/SvgIcon';
 
-const commonProps = {
-  stroke: COLOR_PRIMARY,
-  strokeLinecap: 'round',
-  strokeMiterlimit: 10,
-};
-
 /** See <SvgIcon /> for more prop descriptions. */
 export default function MusicIcon({ dark, color, ...svgProps }) {
+  const commonProps = {
+    stroke: COLOR_PRIMARY,
+    strokeLinecap: 'round',
+    strokeMiterlimit: 10,
+  };
+
   return (
     <SvgIcon viewBox="0 0 43 47.8" {...svgProps}>
       <path
