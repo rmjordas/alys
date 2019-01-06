@@ -16,7 +16,7 @@ export default function DevelopmentIcon({ dark, color, ...svgProps }) {
 
   return (
     <SvgIcon viewBox="0 0 50.877 38" {...svgProps}>
-      <g id="development-icon" class="cls-1" transform="translate(0.018)">
+      <g id="development-icon" transform="translate(0.018)">
         <rect
           id="rectangle"
           fill={COLOR_BLUE_GRAY}

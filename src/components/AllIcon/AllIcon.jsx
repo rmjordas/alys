@@ -17,7 +17,7 @@ export default function AllIcon({ dark, color, ...svgProps }) {
 
   return (
     <SvgIcon viewBox="0 0 43.1 43" {...svgProps}>
-      <g id="all-icon" class="cls-1">
+      <g id="all-icon">
         <path
           {...commonProps}
           id="path"
