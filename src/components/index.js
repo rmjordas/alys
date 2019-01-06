@@ -27,6 +27,7 @@ export { default as DevelopmentIcon } from './DevelopmentIcon';
 export { default as EmailIcon } from './EmailIcon';
 export { default as EnlargeIcon } from './EnlargeIcon';
 export { default as FiltersIcon } from './FiltersIcon';
+export { default as HappyFaceIcon } from './HappyFaceIcon';
 export { default as HappyIcon } from './HappyIcon';
 export { default as HomeIcon } from './HomeIcon';
 export { default as Label } from './HomeIcon';
