@@ -10,5 +10,5 @@
       "@utils/*": ["./src/components/utils/*"]
     }
   },
-  "include": ["src/**/*"]
+  "include": ["scripts/**/*", "src/**/*"]
 }
