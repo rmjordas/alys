@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
@@ -16,32 +16,38 @@ const Wrapper = styled.div`
 `;
 
 /** Displays information about a component. */
-export default function ComponentPage({ component }) {
-  const { name, description, props, examples } = component;
+export default class ComponentPage extends Component {
+  static propTypes = {
+    /** Component information to be displayed */
+    component: PropTypes.shape({
+      name: PropTypes.string.isRequired,
+      description: PropTypes.string.isRequired,
+      props: PropTypes.objectOf(propItemPropsShape),
+      examples: PropTypes.oneOfType([
+        PropTypes.array,
+        PropTypes.arrayOf(examplePropShape),
+      ]),
+    }).isRequired,
+  };
 
-  return (
-    <Wrapper>
-      <h2>
-        <code>{name}</code>
-      </h2>
-      <p>{description}</p>
+  componentDidUpdate() {
+    this._wrapper.scrollTop = 0;
+  }
 
-      <Example examples={examples} componentName={name} />
+  render() {
+    const { name, description, props, examples } = this.props.component;
 
-      <Props props={props} />
-    </Wrapper>
-  );
+    return (
+      <Wrapper ref={(ref) => (this._wrapper = ref)}>
+        <h2>
+          <code>{name}</code>
+        </h2>
+        <p>{description}</p>
+
+        <Example examples={examples} componentName={name} />
+
+        <Props props={props} />
+      </Wrapper>
+    );
+  }
 }
-
-ComponentPage.propTypes = {
-  /** Component information to be displayed */
-  component: PropTypes.shape({
-    name: PropTypes.string.isRequired,
-    description: PropTypes.string.isRequired,
-    props: PropTypes.objectOf(propItemPropsShape),
-    examples: PropTypes.oneOfType([
-      PropTypes.array,
-      PropTypes.arrayOf(examplePropShape),
-    ]),
-  }).isRequired,
-};
