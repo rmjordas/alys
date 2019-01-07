@@ -31,25 +31,20 @@ export default class ExamplePlayground extends Component {
         </p>
 
         <div style={{ textAlign: 'center' }}>
-          <p>
-            <Button basic text="basic" {...common} />
-          </p>
+          <Button
+            basic
+            text="basic"
+            {...common}
+            style={{ marginBottom: '1em' }}
+          />
 
-          <p>
-            <Button block text="block" {...common} />
-          </p>
+          <Button block text="block" {...common} />
 
-          <p>
-            <Button text="default" {...common} />
-          </p>
+          <Button text="default" {...common} />
 
-          <p>
-            <Button iconOnly icon={ArrowLeftIcon} {...common} />
-          </p>
+          <Button iconOnly icon={ArrowLeftIcon} {...common} />
 
-          <p>
-            <Button type="link" text="Link" {...common} />
-          </p>
+          <Button type="link" text="Link" {...common} />
         </div>
       </React.Fragment>
     );
