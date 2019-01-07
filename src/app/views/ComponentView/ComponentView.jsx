@@ -12,10 +12,6 @@ const Wrapper = styled.div`
   padding: 0 1em 0 1em;
   height: 100%;
   overflow-y: auto;
-
-  @media (min-width: 60em) {
-    margin-left: 18.5em;
-  }
 `;
 
 /** Displays information about a component. */

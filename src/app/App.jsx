@@ -10,11 +10,13 @@ const Navigation = React.lazy(() => import('./layout/Navigation'));
 const LandingView = React.lazy(() => import('./views/LandingView'));
 const ComponentView = React.lazy(() => import('./views/ComponentView'));
 
+const Wrapper = styled.div`
+  height: 100vh;
+`;
+
 const MainContent = styled.div`
-  position: fixed;
-  width: 100%;
-  overflow-y: auto;
-  /* @TODO+App: Fix this hack */
+  display: flex;
+  flex-direction: row;
   height: calc(100% - 69px);
 `;
 
@@ -39,7 +41,7 @@ export default class App extends Component {
       : componentData[0];
 
     return (
-      <React.Fragment>
+      <Wrapper>
         <Header
           title={route ? `${appName} / Components` : appName}
           repoLink={constants.repoLink}
@@ -61,7 +63,7 @@ export default class App extends Component {
             <LandingView component={component.name} />
           </Suspense>
         )}
-      </React.Fragment>
+      </Wrapper>
     );
   }
 

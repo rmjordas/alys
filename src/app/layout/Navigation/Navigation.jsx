@@ -5,12 +5,10 @@ import styled from 'styled-components';
 import NavigationItem from './NavigationItem';
 
 const List = styled.ul`
-  float: left;
   width: 16em;
   list-style-type: none;
   padding: 1em;
   display: none;
-  height: calc(100% - 2em);
   overflow-y: auto;
   margin: 0;
 

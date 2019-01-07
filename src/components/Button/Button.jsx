@@ -51,7 +51,6 @@ const BasicButton = styled.div.attrs(({ text }) => ({
   children: text,
   role: 'button',
 }))`
-  box-sizing: border-box;
   border: 0;
   outline: none;
   user-select: none;

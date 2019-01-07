@@ -9,7 +9,6 @@ import Typepography from '@/Typography';
 import ListItemMoreOptions from '@common/ListItemMoreOptions';
 
 const Wrapper = styled.div`
-  box-sizing: border-box;
   background-color: ${COLOR_WHITE};
   color: ${COLOR_DARK};
   display: flex;
