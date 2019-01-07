@@ -11,6 +11,7 @@ const Props = React.lazy(() => import('../../features/Props'));
 const Wrapper = styled.div`
   padding: 0 1em 0 1em;
   height: 100%;
+  width: 100%;
   overflow-y: auto;
 `;
 
