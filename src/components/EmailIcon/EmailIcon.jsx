@@ -25,8 +25,8 @@ export default function EmailIcon({ dark, color, ...svgProps }) {
           {...commonProps}
           id="path-2"
           data-name="path"
-          stroke-strokeLinecap="round"
-          stroke-strokeLinejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           d="M.7,1.8,9.4,7.9a1.36,1.36,0,0,0,1.5,0l8.3-6.1"
         />
       </g>

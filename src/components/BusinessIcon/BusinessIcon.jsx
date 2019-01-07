@@ -35,8 +35,8 @@ export default function BusinessIcon({ dark, color, ...svgProps }) {
           id="path-3"
           data-name="path"
           fill={COLOR_BLUE_GRAY}
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           d="M21.176,36.638H19.338A1.843,1.843,0,0,1,17.5,34.8V17.338A1.843,1.843,0,0,1,19.338,15.5h3.676a1.843,1.843,0,0,1,1.838,1.838V24.69"
           transform="translate(-1.336 -1.174)"
         />
@@ -45,9 +45,9 @@ export default function BusinessIcon({ dark, color, ...svgProps }) {
           id="path-4"
           data-name="path"
           fill="none"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="2px"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth="2px"
           d="M22,36.947h.919a1.843,1.843,0,0,0,1.838-1.838V25"
           transform="translate(-1.7 -1.943)"
         />
@@ -63,8 +63,8 @@ export default function BusinessIcon({ dark, color, ...svgProps }) {
           id="path-6"
           data-name="path"
           fill={COLOR_BLUE_GRAY}
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           d="M11.106,37.366H7.246A1.745,1.745,0,0,1,5.5,35.62V26.246A1.745,1.745,0,0,1,7.246,24.5h3.768a1.745,1.745,0,0,1,1.746,1.746v9.282A1.7,1.7,0,0,1,11.106,37.366Z"
           transform="translate(-0.364 -1.903)"
         />
@@ -73,9 +73,9 @@ export default function BusinessIcon({ dark, color, ...svgProps }) {
           id="path-7"
           data-name="path"
           fill="none"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="2px"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth="2px"
           d="M37.433,22V34.866A1.843,1.843,0,0,1,35.6,36.7H32.838A1.843,1.843,0,0,1,31,34.866V22"
           transform="translate(-2.429 -1.7)"
         />
@@ -84,8 +84,8 @@ export default function BusinessIcon({ dark, color, ...svgProps }) {
           id="path-8"
           data-name="path"
           fill={COLOR_BLUE_GRAY}
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           d="M30.5,20.2V7.338A1.843,1.843,0,0,1,32.338,5.5h3.676a1.843,1.843,0,0,1,1.838,1.838V19.285"
           transform="translate(-2.389 -0.364)"
         />
@@ -93,7 +93,7 @@ export default function BusinessIcon({ dark, color, ...svgProps }) {
           {...commonProps}
           id="ellipse"
           fill="none"
-          stroke-linecap="round"
+          strokeLinecap="round"
           d="M44.534,34.6A9.845,9.845,0,0,1,34.7,44.434"
           transform="translate(-2.729 -2.721)"
         />
@@ -102,9 +102,9 @@ export default function BusinessIcon({ dark, color, ...svgProps }) {
           id="ellipse-2"
           data-name="ellipse"
           fill="none"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="2px"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth="2px"
           cx="12.407"
           cy="12.407"
           r="12.407"
@@ -114,9 +114,9 @@ export default function BusinessIcon({ dark, color, ...svgProps }) {
           {...commonProps}
           id="line"
           fill="none"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="2px"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth="2px"
           x2="5.514"
           y2="5.514"
           transform="translate(41.437 40.886)"
@@ -126,7 +126,7 @@ export default function BusinessIcon({ dark, color, ...svgProps }) {
           id="line-2"
           data-name="line"
           fill="none"
-          stroke-linecap="round"
+          strokeLinecap="round"
           x2="2.757"
           transform="translate(7.433 24.435)"
         />
@@ -135,7 +135,7 @@ export default function BusinessIcon({ dark, color, ...svgProps }) {
           id="line-3"
           data-name="line"
           fill="none"
-          stroke-linecap="round"
+          strokeLinecap="round"
           x2="2.757"
           transform="translate(18.462 16.164)"
         />
@@ -144,7 +144,7 @@ export default function BusinessIcon({ dark, color, ...svgProps }) {
           id="line-4"
           data-name="line"
           fill="none"
-          stroke-linecap="round"
+          strokeLinecap="round"
           x2="2.757"
           transform="translate(30.409 6.974)"
         />
@@ -153,8 +153,8 @@ export default function BusinessIcon({ dark, color, ...svgProps }) {
           id="path-9"
           data-name="path"
           fill="none"
-          stroke-linejoin="round"
-          stroke-width="2px"
+          strokeLinejoin="round"
+          strokeWidth="2px"
           d="M21.678,39.6H5.6A4.551,4.551,0,0,1,1,35V5.6A4.551,4.551,0,0,1,5.6,1H35a4.551,4.551,0,0,1,4.6,4.6V22.138"
         />
       </g>

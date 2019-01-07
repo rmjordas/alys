@@ -31,7 +31,7 @@ export default function ArtIcon({ dark, color, ...svgProps }) {
           {...commonProps}
           id="rectangle"
           fill={COLOR_WHITE}
-          stroke-width="2px"
+          strokeWidth="2px"
           width="39.381"
           height="27.004"
           transform="translate(3.25 1)"
@@ -47,7 +47,7 @@ export default function ArtIcon({ dark, color, ...svgProps }) {
           {...commonProps}
           id="line"
           fill="none"
-          stroke-width="2px"
+          strokeWidth="2px"
           x2="43.882"
           transform="translate(1 28.004)"
         />
@@ -55,7 +55,7 @@ export default function ArtIcon({ dark, color, ...svgProps }) {
           {...commonProps}
           id="line-2"
           fill="none"
-          stroke-width="2px"
+          strokeWidth="2px"
           data-name="line"
           x1="15.19"
           y2="21.941"
@@ -65,7 +65,7 @@ export default function ArtIcon({ dark, color, ...svgProps }) {
           {...commonProps}
           id="line-3"
           fill="none"
-          stroke-width="2px"
+          strokeWidth="2px"
           data-name="line"
           x2="15.19"
           y2="21.941"

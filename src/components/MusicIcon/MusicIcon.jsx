@@ -22,15 +22,15 @@ export default function MusicIcon({ dark, color, ...svgProps }) {
         {...commonProps}
         id="path"
         fill={COLOR_PRIMARY_FILL}
-        stroke-linejoin="round"
+        strokeLinejoin="round"
         d="M42.5,11.5l-29,6.6V13.5l29-6.6Z"
       />
       <circle
         {...commonProps}
         id="ellipse"
         fill={COLOR_BLUE_GRAY}
-        stroke-width="2px"
-        stroke-linejoin="round"
+        strokeWidth="2px"
+        strokeLinejoin="round"
         cx="6"
         cy="6"
         r="6"
@@ -41,8 +41,8 @@ export default function MusicIcon({ dark, color, ...svgProps }) {
         id="path-2"
         data-name="path"
         fill="none"
-        stroke-linejoin="round"
-        stroke-width="2px"
+        strokeLinejoin="round"
+        strokeWidth="2px"
         d="M13,40.8V7.6L42,1V34.8"
       />
       <path
@@ -50,8 +50,8 @@ export default function MusicIcon({ dark, color, ...svgProps }) {
         id="path-3"
         data-name="path"
         fill={COLOR_BLUE_GRAY}
-        stroke-width="2px"
-        stroke-linejoin="round"
+        strokeWidth="2px"
+        strokeLinejoin="round"
         d="M42,8.1,13,14.7V7.8L42,1.2Z"
       />
       <path
@@ -66,8 +66,8 @@ export default function MusicIcon({ dark, color, ...svgProps }) {
         id="ellipse-2"
         data-name="ellipse"
         fill={COLOR_BLUE_GRAY}
-        stroke-width="2px"
-        stroke-linejoin="round"
+        strokeWidth="2px"
+        strokeLinejoin="round"
         cx="6"
         cy="6"
         r="6"

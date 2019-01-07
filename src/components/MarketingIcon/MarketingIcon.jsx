@@ -25,7 +25,7 @@ export default function MarketingIcon({ dark, color, ...svgProps }) {
           id="ellipse"
           fill={COLOR_BLUE_GRAY}
           stroke={COLOR_PRIMARY}
-          stroke-width="2px"
+          strokeWidth="2px"
           cx="22"
           cy="22"
           r="22"
@@ -66,7 +66,7 @@ export default function MarketingIcon({ dark, color, ...svgProps }) {
           data-name="ellipse"
           fill={COLOR_WHITE}
           stroke={COLOR_PRIMARY}
-          stroke-width="2px"
+          strokeWidth="2px"
           cx="7"
           cy="7"
           r="7"
@@ -77,7 +77,7 @@ export default function MarketingIcon({ dark, color, ...svgProps }) {
           id="line"
           fill="none"
           stroke={COLOR_WHITE}
-          stroke-width="3px"
+          strokeWidth="3px"
           x1="19.8"
           y2="19.8"
           transform="translate(22.9 8.8)"

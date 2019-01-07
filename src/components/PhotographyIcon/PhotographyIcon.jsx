@@ -28,7 +28,7 @@ export default function PhotographyIcon({ dark, color, ...svgProps }) {
         {...commonProps}
         id="ellipse"
         fill={COLOR_PRIMARY_FILL}
-        stroke-linejoin="round"
+        strokeLinejoin="round"
         cx="10.635"
         cy="10.635"
         r="10.635"
@@ -46,8 +46,8 @@ export default function PhotographyIcon({ dark, color, ...svgProps }) {
         id="ellipse-2"
         data-name="ellipse"
         fill={COLOR_WHITE}
-        stroke-linejoin="round"
-        stroke-width="2px"
+        strokeLinejoin="round"
+        strokeWidth="2px"
         cx="8.218"
         cy="8.218"
         r="8.218"
@@ -58,7 +58,7 @@ export default function PhotographyIcon({ dark, color, ...svgProps }) {
         id="ellipse-3"
         data-name="ellipse"
         fill={COLOR_PRIMARY_FILL}
-        stroke-linejoin="round"
+        strokeLinejoin="round"
         cx="1.45"
         cy="1.45"
         r="1.45"
@@ -69,8 +69,8 @@ export default function PhotographyIcon({ dark, color, ...svgProps }) {
         id="path-3"
         data-name="path"
         fill="none"
-        stroke-linejoin="round"
-        stroke-width="2px"
+        strokeLinejoin="round"
+        strokeWidth="2px"
         d="M13.569,6l-.387,1.257A3.511,3.511,0,0,1,9.8,9.867H1"
         transform="translate(0 -0.166)"
       />
@@ -86,7 +86,7 @@ export default function PhotographyIcon({ dark, color, ...svgProps }) {
         {...commonProps}
         id="line"
         fill="none"
-        stroke-linejoin="round"
+        strokeLinejoin="round"
         x2="44.958"
         transform="translate(1.483 32.422)"
       />
@@ -102,8 +102,8 @@ export default function PhotographyIcon({ dark, color, ...svgProps }) {
         id="path-5"
         data-name="path"
         fill="none"
-        stroke-linejoin="round"
-        stroke-width="2px"
+        strokeLinejoin="round"
+        strokeWidth="2px"
         d="M40.543,5.834H33.775l-.967-3A2.787,2.787,0,0,0,30.2,1H17.146a2.58,2.58,0,0,0-2.514,1.837l-1.064,3H3.8A2.806,2.806,0,0,0,1,8.638v23.3a2.828,2.828,0,0,0,2.8,2.9H43.54a2.806,2.806,0,0,0,2.8-2.8v-20.3A5.839,5.839,0,0,0,40.543,5.834Z"
       />
     </SvgIcon>

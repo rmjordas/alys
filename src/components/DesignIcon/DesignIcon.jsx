@@ -48,15 +48,15 @@ export default function DesignIcon({ dark, color, ...svgProps }) {
           id="path-4"
           data-name="path"
           fill="none"
-          stroke-width="2px"
+          strokeWidth="2px"
           d="M51,34H3a2.006,2.006,0,0,1-2-2V3A2.006,2.006,0,0,1,3,1H51a2.006,2.006,0,0,1,2,2V32A2.006,2.006,0,0,1,51,34Z"
         />
         <line
           {...commonProps}
           id="line"
           fill="none"
-          stroke-width="2px"
-          stroke-linecap="round"
+          strokeWidth="2px"
+          strokeLinecap="round"
           x2="21"
           transform="translate(17 12)"
         />
@@ -65,7 +65,7 @@ export default function DesignIcon({ dark, color, ...svgProps }) {
           id="line-2"
           data-name="line"
           fill="none"
-          stroke-linecap="round"
+          strokeLinecap="round"
           x2="18"
           transform="translate(18.5 14.5)"
         />
@@ -73,8 +73,8 @@ export default function DesignIcon({ dark, color, ...svgProps }) {
           {...commonProps}
           id="ellipse"
           fill={COLOR_PRIMARY_FILL}
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           cx="1.5"
           cy="1.5"
           r="1.5"
@@ -106,8 +106,8 @@ export default function DesignIcon({ dark, color, ...svgProps }) {
           id="path-7"
           data-name="path"
           fill="none"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           d="M26.6,21h2a.55.55,0,0,0,.5-.3l.5-.7H24.5l.5.7a.55.55,0,0,0,.5.3Z"
         />
         <line
@@ -115,8 +115,8 @@ export default function DesignIcon({ dark, color, ...svgProps }) {
           id="line-3"
           data-name="line"
           fill="none"
-          stroke-width="2px"
-          stroke-linecap="round"
+          strokeWidth="2px"
+          strokeLinecap="round"
           x2="6"
           transform="translate(24 31)"
         />
@@ -125,7 +125,7 @@ export default function DesignIcon({ dark, color, ...svgProps }) {
           id="line-4"
           data-name="line"
           fill="none"
-          stroke-linecap="round"
+          strokeLinecap="round"
           x2="3"
           transform="translate(25.5 33.5)"
         />
@@ -134,8 +134,8 @@ export default function DesignIcon({ dark, color, ...svgProps }) {
           id="ellipse-2"
           data-name="ellipse"
           fill={COLOR_PRIMARY_FILL}
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           cx="1.5"
           cy="1.5"
           r="1.5"
@@ -146,8 +146,8 @@ export default function DesignIcon({ dark, color, ...svgProps }) {
           id="line-5"
           data-name="line"
           fill="none"
-          stroke-width="2px"
-          stroke-linecap="round"
+          strokeWidth="2px"
+          strokeLinecap="round"
           x1="2.2"
           y2="2.2"
           transform="translate(6.9 34.4)"
@@ -157,8 +157,8 @@ export default function DesignIcon({ dark, color, ...svgProps }) {
           id="line-6"
           data-name="line"
           fill="none"
-          stroke-width="2px"
-          stroke-linecap="round"
+          strokeWidth="2px"
+          strokeLinecap="round"
           x2="2.2"
           y2="2.2"
           transform="translate(44.9 34.4)"
