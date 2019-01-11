@@ -165,7 +165,9 @@ console.log(secretKey);
 
 > **NOTE**: Restart the development server when you change the `.env*` files
 
-## Contributing (for contributors)
+## Contributing
+
+### Quick start
 
 These steps will guide you through contributing to this project:
 
@@ -183,8 +185,6 @@ Make and commit your changes. Make sure the commands `npm run build:lib` and
 Send a pull request and include a short summary of your changes.
 
 > [About Pull Requests](https://help.github.com/articles/about-pull-requests/)
-
-## Contributing (for collaborators)
 
 ### GitHub
 
