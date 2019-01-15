@@ -49,3 +49,10 @@ test('generates correct list for "custom" type', () => {
 
   expect(parseType(type)).toEqual(expected);
 });
+
+test('generates correct list for "instanceOf" type', () => {
+  const type = { name: 'instanceOf', value: 'Date' };
+  const expected = ['Date'];
+
+  expect(parseType(type)).toEqual(expected);
+});
