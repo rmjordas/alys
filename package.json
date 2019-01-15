@@ -41,7 +41,8 @@
   "dependencies": {
     "dayjs": "1.8.0",
     "prismjs": "1.15.0",
-    "prop-types": "15.6.2"
+    "prop-types": "15.6.2",
+    "throttle-debounce": "2.1.0"
   },
   "devDependencies": {
     "@babel/cli": "7.1.5",
