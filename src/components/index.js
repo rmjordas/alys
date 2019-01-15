@@ -51,6 +51,7 @@ export { default as PhoneIcon } from './PhoneIcon';
 export { default as PhoneXIcon } from './PhoneXIcon';
 export { default as PhotographyIcon } from './PhotographyIcon';
 export { default as Pill } from './Pill';
+export { default as PlayIcon } from './PlayIcon';
 export { default as PreviewIcon } from './PreviewIcon';
 export { default as ProgressBar } from './ProgressBar';
 export { default as Rating } from './Rating';
