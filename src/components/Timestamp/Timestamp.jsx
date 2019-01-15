@@ -4,7 +4,7 @@ import dayjs from 'dayjs';
 
 /** Formats a JavaScript object to a human-readable format */
 export default function Timestamp({ value }) {
-  const result = dayjs(value).format('MMMM D, HH:mm');
+  const result = dayjs(value).format('MMM D, HH:mm');
 
   return <React.Fragment>{result}</React.Fragment>;
 }
