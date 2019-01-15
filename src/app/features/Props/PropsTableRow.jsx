@@ -24,7 +24,7 @@ export default function PropsTableRow({ prop }) {
       <DataCell>{description}</DataCell>
 
       <DataCell>
-        <code>{type.name}</code>
+        <code>{type.name !== 'instanceOf' && type.name}</code>
 
         <React.Fragment>
           {parsedType.length > 1 && `: `}
@@ -39,7 +39,9 @@ export default function PropsTableRow({ prop }) {
               .map((v) => <code key={`union-${v}`}>{v}</code>)
               .reduce((a, v) => [a, ', ', v])}
 
-          {type.name === 'custom' && <code>{parsedType}</code>}
+          {(type.name === 'custom' || type.name === 'instanceOf') && (
+            <code>{parsedType}</code>
+          )}
         </React.Fragment>
       </DataCell>
 

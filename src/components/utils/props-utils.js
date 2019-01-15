@@ -1,6 +1,7 @@
 export const PROPTYPE_SIMPLE = 'simple';
 export const PROPTYPE_UNION = 'union';
 export const PROPTYPE_ENUM = 'enum';
+export const PROPTYPE_INSTANCE_OF = 'instanceOf';
 export const PROPTYPE_CUSTOM = 'custom';
 
 /**
@@ -18,6 +19,8 @@ export function parseType(type) {
       return parseEnum(value);
     case PROPTYPE_UNION:
       return parseUnion(value);
+    case PROPTYPE_INSTANCE_OF:
+      return parseInstanceOf(value);
     case PROPTYPE_CUSTOM:
     default:
       return [parseCustomOrSimple(type)];
@@ -36,6 +39,10 @@ function parseUnion(value = []) {
 
     return parseCustomOrSimple(v);
   });
+}
+
+function parseInstanceOf(value = {}) {
+  return [value];
 }
 
 function parseCustomOrSimple(value = {}) {
