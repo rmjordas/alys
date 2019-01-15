@@ -2,11 +2,15 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled, { css } from 'styled-components';
 
+import Timestamp from '@/Timestamp';
+
 import {
   COLOR_DARK,
   COLOR_WHITE,
   COLOR_WHITE_BLUE,
+  COLOR_GRAY_BLUE,
   TYPE_FONT_SIZE_PARAGRAPH,
+  TYPE_FONT_SIZE_HEADING_6,
 } from '@/constants';
 import { styleLengths } from '@utils/string-utils';
 
@@ -27,7 +31,7 @@ const Wrapper = styled.div`
     }
   }};
   border-radius: 0.375em;
-  padding: 1.3125rem;
+  padding: 1em;
   position: relative;
 
   ::after {
@@ -65,11 +69,27 @@ const Message = styled.p`
   margin: 0;
 `;
 
-export default function ChatBubble({ children, ...wrapperProps }) {
+const MessageTimestamp = styled.div`
+  color: ${COLOR_GRAY_BLUE};
+  font-size: ${styleLengths(TYPE_FONT_SIZE_HEADING_6)};
+  font-weight: 400;
+  padding: 0.1875em;
+  text-align: right;
+`;
+
+export default function ChatBubble({ children, timestamp, ...wrapperProps }) {
   return (
-    <Wrapper {...wrapperProps}>
-      <Message>{children}</Message>
-    </Wrapper>
+    <React.Fragment>
+      <Wrapper {...wrapperProps}>
+        <Message>{children}</Message>
+      </Wrapper>
+
+      {timestamp && (
+        <MessageTimestamp>
+          <Timestamp value={timestamp} />
+        </MessageTimestamp>
+      )}
+    </React.Fragment>
   );
 }
 
