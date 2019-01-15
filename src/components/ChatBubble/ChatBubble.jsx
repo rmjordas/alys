@@ -85,7 +85,7 @@ export default function ChatBubble({ children, timestamp, ...wrapperProps }) {
       </Wrapper>
 
       {timestamp && (
-        <MessageTimestamp>
+        <MessageTimestamp title={timestamp.toString()}>
           <Timestamp value={timestamp} />
         </MessageTimestamp>
       )}
