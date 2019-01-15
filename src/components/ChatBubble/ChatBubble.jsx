@@ -7,7 +7,6 @@ import {
   COLOR_WHITE,
   COLOR_WHITE_BLUE,
   TYPE_FONT_SIZE_PARAGRAPH,
-  TYPE_LINE_HEIGHT_PARAGRAPH,
 } from '@/constants';
 import { styleLengths } from '@utils/string-utils';
 
@@ -63,7 +62,7 @@ const Message = styled.p`
   font-size: ${styleLengths(TYPE_FONT_SIZE_PARAGRAPH)};
   font-weight: 400;
   line-height: 1.5;
-  margin: 0 0 ${styleLengths(TYPE_LINE_HEIGHT_PARAGRAPH * 12)};
+  margin: 0;
 `;
 
 export default function ChatBubble({ children, ...wrapperProps }) {
