@@ -77,6 +77,10 @@ const MessageTimestamp = styled.div`
   text-align: right;
 `;
 
+/**
+ * Wraps a message text in a chat bubble with an indication as to which side it
+ * was sent
+ */
 export default function ChatBubble({ children, timestamp, ...wrapperProps }) {
   return (
     <React.Fragment>
