@@ -1,8 +1,7 @@
 export { default as ActiveIndicator } from './ActiveIndicator';
 export { default as AddMentorIcon } from './AddMentorIcon';
 export { default as AllIcon } from './AllIcon';
-export { default as ArrowLeftIcon } from './ArrowLeftIcon';
-export { default as ArrowRightIcon } from './ArrowRightIcon';
+export { default as ArrowIcon } from './ArrowIcon';
 export { default as ArtIcon } from './ArtIcon';
 export { default as AttachmentIcon } from './AttachmentIcon';
 export { default as Avatar } from './Avatar';

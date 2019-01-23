@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Button from 'alys/Button';
-import ArrowLeftIcon from 'alys/ArrowLeftIcon';
+import ArrowIcon from 'alys/ArrowIcon';
 
 import ToggleButton from '../../app/common/ToggleButton';
 
@@ -42,7 +42,7 @@ export default class ExamplePlayground extends Component {
 
           <Button text="default" {...common} />
 
-          <Button iconOnly icon={ArrowLeftIcon} {...common} />
+          <Button iconOnly icon={ArrowIcon} {...common} />
 
           <Button type="link" text="Link" {...common} />
         </div>
