@@ -11,6 +11,8 @@ export const COLOR_WHITE_BLUE = '#E2E8ED';
 export const COLOR_WHITE = '#ffffff';
 export const COLOR_WHITE_ALPHA60 = 'rgba(255, 255, 255, 0.6)';
 export const COLOR_GRAY = COLOR_WHITE_ALPHA60;
+export const COLOR_BLACK_ALPHA20 = 'rgba(0, 0, 0, 0.2)';
+export const COLOR_SHADOW = COLOR_BLACK_ALPHA20;
 export const GRADIENT_PRIMARY = ['#5574f7', '#60C3FF'];
 
 export const TYPE_FONT_SIZE_HEADING_1 = 36;
