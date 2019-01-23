@@ -14,7 +14,7 @@ export { default as CalendarIcon } from './CalendarIcon';
 export { default as CameraFlipIcon } from './CameraFlipIcon';
 export { default as CameraIcon } from './CameraIcon';
 export { default as CardIcon } from './CardIcon';
-export { default as ChatBalloon } from './ChatBalloon';
+export { default as ChatBubble } from './ChatBubble';
 export { default as ChevronLeftIcon } from './ChevronLeftIcon';
 export { default as ChevronRightIcon } from './ChevronRightIcon';
 export { default as ClockIcon } from './ClockIcon';
