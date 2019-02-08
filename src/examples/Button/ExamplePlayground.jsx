@@ -1,60 +1,52 @@
-import React, { Component } from 'react';
+import React, { Fragment, useState } from 'react';
 import Button from 'alys/Button';
 import ArrowIcon from 'alys/ArrowIcon';
 
 import ToggleButton from '../../app/common/ToggleButton';
 
 /** Button playgound */
-export default class ExamplePlayground extends Component {
-  state = {
-    disabled: false,
-    count: 0,
+export default function ExamplePlayground() {
+  const [isDisabled, setIsDisabled] = useState(false);
+  const [count, setCount] = useState(0);
+
+  const updateCount = () => setCount((prevCount) => prevCount + 1);
+  const toggleButtonDisabledState = () =>
+    setIsDisabled((prevDisabled) => !prevDisabled);
+
+  const common = {
+    disabled: isDisabled,
+    onClick: updateCount,
   };
 
-  render() {
-    const common = {
-      disabled: this.state.disabled,
-      onClick: this._updateCount,
-    };
+  return (
+    <Fragment>
+      <ToggleButton
+        on={isDisabled}
+        onClick={toggleButtonDisabledState}
+        onText="enable"
+        offText="disable"
+      />
 
-    return (
-      <React.Fragment>
-        <ToggleButton
-          on={this.state.disabled}
-          onClick={this._toggleButtonDisabledState}
-          onText="enable"
-          offText="disable"
+      <p>
+        Count: <strong>{count}</strong>
+      </p>
+
+      <div style={{ textAlign: 'center' }}>
+        <Button
+          basic
+          text="basic"
+          {...common}
+          style={{ marginBottom: '1em' }}
         />
 
-        <p>
-          Count: <strong>{this.state.count}</strong>
-        </p>
+        <Button block text="block" {...common} />
 
-        <div style={{ textAlign: 'center' }}>
-          <Button
-            basic
-            text="basic"
-            {...common}
-            style={{ marginBottom: '1em' }}
-          />
+        <Button text="default" {...common} />
 
-          <Button block text="block" {...common} />
+        <Button iconOnly icon={ArrowIcon} {...common} />
 
-          <Button text="default" {...common} />
-
-          <Button iconOnly icon={ArrowIcon} {...common} />
-
-          <Button type="link" text="Link" {...common} />
-        </div>
-      </React.Fragment>
-    );
-  }
-
-  _toggleButtonDisabledState = () =>
-    this.setState(({ disabled: prevDisabled }) => ({
-      disabled: !prevDisabled,
-    }));
-
-  _updateCount = () =>
-    this.setState(({ count: prevCount }) => ({ count: prevCount + 1 }));
+        <Button type="link" text="Link" {...common} />
+      </div>
+    </Fragment>
+  );
 }

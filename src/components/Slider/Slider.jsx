@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import styled, { css } from 'styled-components';
 
@@ -107,19 +107,15 @@ const Range = styled.input.attrs({
 `;
 
 /** Used for adjusting a value inside a range of numbers */
-export default class Slider extends Component {
-  static defaultProps = {
-    fullWidth: false,
-  };
-
-  static propTypes = {
-    /** If set to `true` the <Slider /> component's width will span it's container */
-    fullWidth: PropTypes.bool,
-  };
-
-  render() {
-    const { fullWidth, ...inputRangeProps } = this.props;
-
-    return <Range {...inputRangeProps} />;
-  }
+export default function Slider({ fullWidth, ...inputRangeProps }) {
+  return <Range {...inputRangeProps} />;
 }
+
+Slider.defaultProps = {
+  fullWidth: false,
+};
+
+Slider.propTypes = {
+  /** If set to `true` the <Slider /> component's width will span it's container */
+  fullWidth: PropTypes.bool,
+};

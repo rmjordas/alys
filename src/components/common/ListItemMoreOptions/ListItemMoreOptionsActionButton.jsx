@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
@@ -22,42 +22,44 @@ const ActionButton = styled.div`
   }
 `;
 
-export default class ListItemMoreOptionsActionButton extends Component {
-  static defaultProps = {
-    color: 'default',
-  };
-
-  static propTypes = {
-    /** Button icon */
-    icon: PropTypes.node.isRequired,
-
-    /** Label for button */
-    label: PropTypes.string.isRequired,
-
-    /** Handler for button clicks */
-    onClick: PropTypes.func.isRequired,
-
-    /** Button background color */
-    color: PropTypes.oneOf(['default', 'primary']),
-  };
-
-  render() {
-    const { onClick, color, label, icon } = this.props;
-
-    return (
-      <ActionButton
-        onClick={this._handleOnActionButtonClick(onClick)}
-        color={color}
-        title={label}
-      >
-        {icon}
-      </ActionButton>
-    );
-  }
-
-  _handleOnActionButtonClick = (onClick) => (event) => {
+/** Button group to show when more options icon is expanded */
+export default function ListItemMoreOptionsActionButton({
+  onClick,
+  color,
+  label,
+  icon,
+}) {
+  const handleOnActionButtonClick = (onClick) => (event) => {
     event.stopPropagation();
 
     onClick();
   };
+
+  return (
+    <ActionButton
+      onClick={handleOnActionButtonClick(onClick)}
+      color={color}
+      title={label}
+    >
+      {icon}
+    </ActionButton>
+  );
 }
+
+ListItemMoreOptionsActionButton.defaultProps = {
+  color: 'default',
+};
+
+ListItemMoreOptionsActionButton.propTypes = {
+  /** Button icon */
+  icon: PropTypes.node.isRequired,
+
+  /** Label for button */
+  label: PropTypes.string.isRequired,
+
+  /** Handler for button clicks */
+  onClick: PropTypes.func.isRequired,
+
+  /** Button background color */
+  color: PropTypes.oneOf(['default', 'primary']),
+};
