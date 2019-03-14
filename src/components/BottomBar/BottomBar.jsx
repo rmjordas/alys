@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Children, isValidElement, cloneElement } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
@@ -23,14 +23,14 @@ const Wrapper = styled.div`
  * part of the app or to do a task on the current page.
  */
 export default function BottomBar({ children: childrenProp, value, onChange }) {
-  const children = React.Children.map(childrenProp, (child, i) => {
-    if (!React.isValidElement(child)) {
+  const children = Children.map(childrenProp, (child, i) => {
+    if (!isValidElement(child)) {
       return null;
     }
 
     const childValue = child.props.value === undefined ? i : child.props.value;
 
-    return React.cloneElement(child, {
+    return cloneElement(child, {
       selected: childValue === value,
       value: childValue,
       onChange,

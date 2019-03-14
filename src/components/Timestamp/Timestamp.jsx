@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
 import dayjs from 'dayjs';
 
@@ -6,7 +6,7 @@ import dayjs from 'dayjs';
 export default function Timestamp({ value }) {
   const result = dayjs(value).format('MMM D, HH:mm');
 
-  return <React.Fragment>{result}</React.Fragment>;
+  return <Fragment>{result}</Fragment>;
 }
 
 Timestamp.propTypes = {

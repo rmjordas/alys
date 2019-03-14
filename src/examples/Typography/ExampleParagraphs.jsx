@@ -1,10 +1,10 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import Typography from 'alys/Typography';
 
 /** Paragraphs */
 export default function ExampleParagraphs() {
   return (
-    <React.Fragment>
+    <Fragment>
       <Typography variant="h1" gutterBottom>
         Wintermute
       </Typography>
@@ -24,6 +24,6 @@ export default function ExampleParagraphs() {
         Sed ac pellentesque justo. Lorem ipsum consectetur adipiscing elit. Sed
         ac pellentesque.
       </Typography>
-    </React.Fragment>
+    </Fragment>
   );
 }

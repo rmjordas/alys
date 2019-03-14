@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
 
 /** Produces the currency format of a value */
@@ -11,7 +11,7 @@ export default function Currency({ value, locale, code, whole }) {
     maximumFractionDigits: whole ? 0 : undefined,
   });
 
-  return <React.Fragment>{fmt.format(value)}</React.Fragment>;
+  return <Fragment>{fmt.format(value)}</Fragment>;
 }
 
 Currency.defaultProps = {

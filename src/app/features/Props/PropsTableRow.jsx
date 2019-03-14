@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
@@ -26,7 +26,7 @@ export default function PropsTableRow({ prop }) {
       <DataCell>
         <code>{type.name !== 'instanceOf' && type.name}</code>
 
-        <React.Fragment>
+        <Fragment>
           {parsedType.length > 1 && `: `}
 
           {type.name === 'enum' &&
@@ -42,7 +42,7 @@ export default function PropsTableRow({ prop }) {
           {(type.name === 'custom' || type.name === 'instanceOf') && (
             <code>{parsedType}</code>
           )}
-        </React.Fragment>
+        </Fragment>
       </DataCell>
 
       <DataCell required={required}>

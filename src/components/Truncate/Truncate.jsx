@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, createRef } from 'react';
 import PropTypes from 'prop-types';
 import { debounce } from 'throttle-debounce';
 
@@ -16,9 +16,9 @@ export default class Truncate extends Component {
     ellipsis: PropTypes.string,
   };
 
-  _componentRef = React.createRef();
-  _textRef = React.createRef();
-  _ellipsisRef = React.createRef();
+  _componentRef = createRef();
+  _textRef = createRef();
+  _ellipsisRef = createRef();
 
   state = {
     truncating: true,

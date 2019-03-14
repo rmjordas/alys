@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
 import styled, { css } from 'styled-components';
 
@@ -83,7 +83,7 @@ const MessageTimestamp = styled.div`
  */
 export default function ChatBubble({ children, timestamp, ...wrapperProps }) {
   return (
-    <React.Fragment>
+    <Fragment>
       <Wrapper {...wrapperProps}>
         <Message>{children}</Message>
       </Wrapper>
@@ -93,7 +93,7 @@ export default function ChatBubble({ children, timestamp, ...wrapperProps }) {
           <Timestamp value={timestamp} />
         </MessageTimestamp>
       )}
-    </React.Fragment>
+    </Fragment>
   );
 }
 
