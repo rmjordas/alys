@@ -7,6 +7,7 @@ import 'prismjs/themes/prism-okaidia.css';
 import './prism';
 
 export default function SyntaxHighlightedCode({ children }) {
+  // eslint-disable-next-line no-unused-vars
   let element = useRef(null);
 
   const handleRef = (ref) => (element = ref);
