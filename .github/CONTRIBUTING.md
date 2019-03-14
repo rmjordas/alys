@@ -482,3 +482,27 @@ project, compare the packge versions for the two projects and install either
 one at a time (running the app after each install to check for issues) or if
 you're feeling adventurous, update all the packages, and try to fix any issues
 after the install.
+
+```bash
+npx create-react-app dummy-react-project --use-npm
+cd dummy-react-project
+npm run eject
+```
+
+Directories and files that must be checked:
+
+- babelrc.js
+- .browserslistrc
+- package.json
+- .eslintrc.js
+- jest.config.js
+- config/jest/cssTransform.js
+- config/jest/fielTransform.js
+- config/env.js
+- config/paths.js
+- config/webpack.config.js
+- config/webpackDevServer.config.js
+- scripts/build.js
+- scripts/paths.js
+- scripts/start.js
+- scripts/test.js
