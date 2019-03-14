@@ -1,27 +1,19 @@
-import React, { PureComponent } from 'react';
+import React, { Fragment, useState } from 'react';
 import Rating from 'alys/Rating';
 
 /** Rating with secondary color and intial value of 3 */
-export default class ExampleSecondary extends PureComponent {
-  state = {
-    value: 3,
-  };
+export default function ExampleSecondary() {
+  const [value, setValue] = useState(3);
 
-  render() {
-    return (
-      <React.Fragment>
-        <p>
-          Rating value: <strong>{this.state.value}</strong>
-        </p>
+  const handleOnChange = (_event, v) => setValue(v);
 
-        <Rating
-          value={this.state.value}
-          onChange={this._handleOnChange}
-          color="secondary"
-        />
-      </React.Fragment>
-    );
-  }
+  return (
+    <Fragment>
+      <p>
+        Rating value: <strong>{value}</strong>
+      </p>
 
-  _handleOnChange = (_event, value) => this.setState({ value });
+      <Rating value={value} onChange={handleOnChange} color="secondary" />
+    </Fragment>
+  );
 }
