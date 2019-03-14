@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
@@ -17,104 +17,85 @@ const ClickBox = styled.div`
 `;
 
 /** Show a rating from 0 to 5 */
-export default class Rating extends Component {
-  static defaultProps = {
-    static: false,
-    color: 'default',
-  };
+export default function Rating({
+  value: initialValue,
+  static: staticValue,
+  color,
+  onChange,
+}) {
+  const [value, setValue] = useState(initialValue);
+  const [tempValue, setTempValue] = useState(NaN);
 
-  static propTypes = {
-    /** Amount of filled stars */
-    value: PropTypes.oneOf([0, 1, 2, 3, 4, 5]).isRequired,
+  const maxValue = 5;
 
-    /**
-     * Callback when rating value changes. Must have two params for the `event`
-     * object and the `value`
-     */
-    onChange: PropTypes.func,
-
-    /** If set to `true` the <Rating /> component value cannot be changed */
-    static: PropTypes.bool,
-
-    /** Fill color of <StarIcon /> items */
-    color: PropTypes.oneOf(['default', 'secondary']),
-  };
-
-  state = {
-    value: 0,
-    tempValue: NaN,
-  };
-
-  _maxvalue = 5;
-
-  componentDidMount() {
-    this.setState({ value: this.props.value });
-  }
-
-  render() {
-    return <Wrapper>{this._generateStars()}</Wrapper>;
-  }
-
-  _onStarClick = (value) => (event) => {
-    const { onChange } = this.props;
-
-    if (this.props.static) {
+  const onStarClick = (v) => (event) => {
+    if (staticValue) {
       return;
     }
 
     if (onChange) {
-      onChange(event, value);
+      onChange(event, v);
     }
 
-    this.setState({
-      tempValue: value,
-      value,
-    });
+    setTempValue(v);
+    setValue(v);
   };
 
-  _onStarMouseOver = (value) => () => {
-    if (this.props.static) {
+  const onStarMouseOver = (v) => () => {
+    if (staticValue) {
       return;
     }
 
-    this.setState(({ value: prevValue }) => ({
-      tempValue: prevValue,
-      value,
-    }));
+    setTempValue(value);
+    setValue(v);
   };
 
-  _onStarMouseOut = () => {
-    if (this.props.static) {
+  const onStarMouseOut = () => {
+    if (staticValue) {
       return;
     }
 
-    this.setState(({ tempValue: prevTempValue }) => ({
-      value: prevTempValue,
-      tempValue: NaN,
-    }));
+    setTempValue(NaN);
+    setValue(tempValue);
   };
 
-  _generateStars = () => {
-    const stars = [];
-
-    for (let i = 1; i <= this._maxvalue; i += 1) {
-      stars.push(
-        <ClickBox
-          key={`ratingstar${i}`}
-          static={this.props.static}
-          onClick={this._onStarClick(i)}
-          onMouseOver={this._onStarMouseOver(i)}
-          onMouseOut={this._onStarMouseOut}
-        >
-          <StarIcon
-            fontSize="0.77875em"
-            filled={i <= this.state.value}
-            color={this.props.color}
-          />
-        </ClickBox>,
-      );
-    }
-
-    return stars;
-  };
+  return (
+    <Wrapper>
+      {Array.from({ length: maxValue + 1 }).map((_, i) =>
+        i !== 0 ? (
+          <ClickBox
+            key={`ratingstar${i}`}
+            static={staticValue}
+            onClick={onStarClick(i)}
+            onMouseOver={onStarMouseOver(i)}
+            onMouseOut={onStarMouseOut}
+          >
+            <StarIcon fontSize="0.77875em" filled={i <= value} color={color} />
+          </ClickBox>
+        ) : null,
+      )}
+    </Wrapper>
+  );
 }
+
+Rating.defaultProps = {
+  static: false,
+  color: 'default',
+};
+
+Rating.propTypes = {
+  /** Amount of filled stars */
+  value: PropTypes.oneOf([0, 1, 2, 3, 4, 5]).isRequired,
+
+  /**
+   * Callback when rating value changes. Must have two params for the `event`
+   * object and the `value`
+   */
+  onChange: PropTypes.func,
+
+  /** If set to `true` the <Rating /> component value cannot be changed */
+  static: PropTypes.bool,
+
+  /** Fill color of <StarIcon /> items */
+  color: PropTypes.oneOf(['default', 'secondary']),
+};

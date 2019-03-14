@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { useRef } from 'react';
 import PropTypes from 'prop-types';
 
 import PrismCode from './PrismCode';
@@ -6,18 +6,18 @@ import PrismCode from './PrismCode';
 import 'prismjs/themes/prism-okaidia.css';
 import './prism';
 
-export default class SyntaxHighlightedCode extends Component {
-  static propTypes = {
-    children: PropTypes.string.isRequired,
-  };
+export default function SyntaxHighlightedCode({ children }) {
+  let element = useRef(null);
 
-  render() {
-    return (
-      <pre ref={this._handleRef}>
-        <PrismCode className="language-jsx">{this.props.children}</PrismCode>
-      </pre>
-    );
-  }
+  const handleRef = (ref) => (element = ref);
 
-  _handleRef = (ref) => (this.element = ref);
+  return (
+    <pre ref={handleRef}>
+      <PrismCode className="language-jsx">{children}</PrismCode>
+    </pre>
+  );
 }
+
+SyntaxHighlightedCode.propTypes = {
+  children: PropTypes.string.isRequired,
+};

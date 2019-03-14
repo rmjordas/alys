@@ -1,40 +1,35 @@
 /* global Prism */
-import React, { PureComponent } from 'react';
+import React, { useRef, useEffect } from 'react';
 import PropTypes from 'prop-types';
 
-export default class PrismCode extends PureComponent {
-  static defaultProps = {
-    component: `code`,
-  };
+export default function PrismCode({
+  async,
+  className,
+  component: Wrapper,
+  children,
+}) {
+  let domNode = useRef(null);
 
-  static propTypes = {
-    async: PropTypes.bool,
-    className: PropTypes.string,
-    children: PropTypes.any,
-    component: PropTypes.node,
-  };
+  useEffect(() => {
+    Prism.highlightElement(domNode, async);
+  });
 
-  componentDidMount() {
-    this._highlight();
-  }
+  const handleRefMount = (ref) => (domNode = ref);
 
-  componentDidUpdate() {
-    this._highlight();
-  }
-
-  render() {
-    const { className, component: Wrapper, children } = this.props;
-
-    return (
-      <Wrapper ref={this._handleRefMount} className={className}>
-        {children}
-      </Wrapper>
-    );
-  }
-
-  _highlight() {
-    Prism.highlightElement(this._domNode, this.props.async);
-  }
-
-  _handleRefMount = (domNode) => (this._domNode = domNode);
+  return (
+    <Wrapper ref={handleRefMount} className={className}>
+      {children}
+    </Wrapper>
+  );
 }
+
+PrismCode.defaultProps = {
+  component: 'code',
+};
+
+PrismCode.propTypes = {
+  async: PropTypes.bool,
+  className: PropTypes.string,
+  children: PropTypes.any,
+  component: PropTypes.node,
+};

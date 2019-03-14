@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
@@ -38,75 +38,66 @@ const PrimaryText = styled.p`
 `;
 
 /** Displays an overview for a person */
-export default class ListItemPerson extends Component {
-  static defaultProps = {
-    active: false,
-  };
+export default function ListItemPerson({
+  active,
+  avatar,
+  name,
+  detail,
+  onClick,
+  moreOptionsActions,
+}) {
+  const [isMoreOptionsOpen, setIsMoreOptionsOpen] = useState(false);
 
-  static propTypes = {
-    /** The name to display */
-    name: PropTypes.string.isRequired,
+  const handleMoreOptionsOnClick = () =>
+    setIsMoreOptionsOpen(!isMoreOptionsOpen);
 
-    /** A detail about this item */
-    detail: PropTypes.string.isRequired,
-
-    /**
-     * If empty, this will hide the more options button. Otherwise, it will
-     * render a button that when clicked will reveal a list of actions.
-     */
-    moreOptionsActions: PropTypes.arrayOf(
-      PropTypes.shape({
-        icon: PropTypes.node.isRequired,
-        label: PropTypes.string.isRequired,
-        onClick: PropTypes.func.isRequired,
-        color: PropTypes.oneOf(['default', 'primary']),
-      }),
-    ).isRequired,
-
-    /** Sets the status of the person item */
-    active: PropTypes.bool,
-
-    /** Image to display before the name and details */
-    avatar: PropTypes.string,
-
-    /** Action to perform when item is clicked */
-    onClick: PropTypes.func,
-  };
-
-  state = {
-    isMoreOptionsOpen: false,
-  };
-
-  render() {
-    const {
-      active,
-      avatar,
-      name,
-      detail,
-      onClick,
-      moreOptionsActions,
-    } = this.props;
-    const { isMoreOptionsOpen } = this.state;
-
-    return (
-      <Wrapper onClick={onClick}>
-        <ActiveIndicator active={active} style={{ flexShrink: 0 }} />
-        <Avatar size="smaller" src={avatar} style={{ flexShrink: 0 }} />
-        <Text>
-          <PrimaryText>{name}</PrimaryText>
-          <Typepography>{detail}</Typepography>
-        </Text>
-        <ListItemMoreOptions
-          actions={moreOptionsActions}
-          isOpen={isMoreOptionsOpen}
-          onClick={this._handleMoreOptionsOnClick}
-        />
-      </Wrapper>
-    );
-  }
-
-  _handleMoreOptionsOnClick = () =>
-    this.setState((prevState) => ({
-      isMoreOptionsOpen: !prevState.isMoreOptionsOpen,
-    }));
+  return (
+    <Wrapper onClick={onClick}>
+      <ActiveIndicator active={active} style={{ flexShrink: 0 }} />
+      <Avatar size="smaller" src={avatar} style={{ flexShrink: 0 }} />
+      <Text>
+        <PrimaryText>{name}</PrimaryText>
+        <Typepography>{detail}</Typepography>
+      </Text>
+      <ListItemMoreOptions
+        actions={moreOptionsActions}
+        isOpen={isMoreOptionsOpen}
+        onClick={handleMoreOptionsOnClick}
+      />
+    </Wrapper>
+  );
 }
+
+ListItemPerson.defaultProps = {
+  active: false,
+};
+
+ListItemPerson.propTypes = {
+  /** The name to display */
+  name: PropTypes.string.isRequired,
+
+  /** A detail about this item */
+  detail: PropTypes.string.isRequired,
+
+  /**
+   * If empty, this will hide the more options button. Otherwise, it will
+   * render a button that when clicked will reveal a list of actions.
+   */
+  moreOptionsActions: PropTypes.arrayOf(
+    PropTypes.shape({
+      icon: PropTypes.node.isRequired,
+      label: PropTypes.string.isRequired,
+      onClick: PropTypes.func.isRequired,
+      color: PropTypes.oneOf(['default', 'primary']),
+    }),
+  ).isRequired,
+
+  /** Sets the status of the person item */
+  active: PropTypes.bool,
+
+  /** Image to display before the name and details */
+  avatar: PropTypes.string,
+
+  /** Action to perform when item is clicked */
+  onClick: PropTypes.func,
+};

@@ -1,4 +1,4 @@
-import React, { PureComponent } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
@@ -37,30 +37,24 @@ const Action = styled.div`
 `;
 
 /** An action item inside <BottomBar /> */
-export default class BottomBarAction extends PureComponent {
-  static propTypes = {
-    /** Value to be passed to a `BottomBar` parent's `onChange` prop */
-    value: PropTypes.string,
-
-    /** Icon to display */
-    icon: PropTypes.node.isRequired,
-  };
-
-  render() {
-    const { icon, selected } = this.props;
-
-    return (
-      <Action selected={selected} onClick={this._handleOnClick}>
-        {icon}
-      </Action>
-    );
-  }
-
-  _handleOnClick = (event) => {
-    const { value, onChange } = this.props;
-
+export default function BottomBarAction({ icon, selected, value, onChange }) {
+  const handleOnClick = (event) => {
     if (onChange) {
       onChange(event, value);
     }
   };
+
+  return (
+    <Action selected={selected} onClick={handleOnClick}>
+      {icon}
+    </Action>
+  );
 }
+
+BottomBarAction.propTypes = {
+  /** Value to be passed to a `BottomBar` parent's `onChange` prop */
+  value: PropTypes.string,
+
+  /** Icon to display */
+  icon: PropTypes.node.isRequired,
+};
