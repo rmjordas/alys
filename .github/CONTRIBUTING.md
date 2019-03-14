@@ -468,3 +468,17 @@ doing this, you can now commit the changes.
 
 Rebasing `master` to `other-branch` with conflicts would have a similar process
 for resolution, but the resulting history graph will be different.
+
+## Maintenance
+
+### Updating Packages
+
+**Do not update everything to the latest version.**
+
+This project was initialized with Create React App and was ejected immediately
+due necessary changes to the webpack configuration. To update packages, you must
+have latest version of Create React App installed locally. Create a dummy React
+project, compare the packge versions for the two projects and install either
+one at a time (running the app after each install to check for issues) or if
+you're feeling adventurous, update all the packages, and try to fix any issues
+after the install.
