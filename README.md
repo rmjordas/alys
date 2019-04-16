@@ -29,7 +29,13 @@ Alys
 
 <hr />
 
-## Quick Start
+## Requirements
+
+- [React](https://www.npmjs.com/package/react)
+- [React DOM](https://www.npmjs.com/package/react-dom)
+- [Styled Components](https://www.npmjs.com/package/styled-components)
+
+## Install
 
 ### npm
 
@@ -37,23 +43,27 @@ Alys
 npm install alys
 ```
 
-### Releases
+### Yarn
 
-```
-https://github.com/rmjordas/alys/releases
+```bash
+yarn add alys
 ```
 
-### unpkg
+## Usage
 
-```
-https://unpkg.com/alys@latest/dist/alys.css
-https://unpkg.com/alys@latest/dist/alys.umd.min.js
-https://unpkg.com/alys@latest/dist/alys.common.js
+```jsx
+import React from 'react';
+import Button from 'alys/Button';
+
+export default function MyComponent() {
+  return <Button basic text="Click me!" />;
+}
 ```
 
 ## Documentation
 
 - [Component documentation](https://alys.js.org)
+- [Change log](https://github.com/rmjordas/alys/blob/master/CHANGELOG.md)
 - [Contributing guide](https://github.com/rmjordas/alys/blob/master/.github/CONTRIBUTING.md)
 - [Attribution notice](https://github.com/rmjordas/alys/blob/master/NOTICE)
 
