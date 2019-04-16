@@ -2,7 +2,7 @@ const createPackageFile = require('./create-package-file');
 const copyFile = require('./copy-file');
 
 const packageName = 'alys';
-const files = ['README.md', 'LICENSE', 'NOTICE'];
+const files = ['README.md', 'LICENSE', 'NOTICE', 'CHANGELOG.md'];
 
 createPackageFile({ packageName });
 
