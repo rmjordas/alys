@@ -492,8 +492,8 @@ npm run eject
 Directories and files that must be checked:
 
 - babelrc.js
-- .browserslistrc
-- package.json
+- package.json > devDependencies
+- package.json > browserslist
 - .eslintrc.js
 - jest.config.js
 - config/jest/cssTransform.js
@@ -506,3 +506,4 @@ Directories and files that must be checked:
 - scripts/paths.js
 - scripts/start.js
 - scripts/test.js
+- src/serviceWorker.js

@@ -24,9 +24,10 @@ const MainContent = styled.div`
 export default function App() {
   const getRoute = () => window.location.hash.substr(1);
   const [route, setRoute] = useState(getRoute);
-  const setRouteState = () => setRoute(getRoute);
 
   useEffect(() => {
+    const setRouteState = () => setRoute(getRoute);
+
     window.addEventListener('hashchange', setRouteState);
 
     return () => window.removeEventListener('hashchange', setRouteState);

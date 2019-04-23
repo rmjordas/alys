@@ -2,13 +2,24 @@
   "compilerOptions": {
     "jsx": "react",
     "target": "es5",
-    "baseUrl": ".",
+    "baseUrl": "src",
     "paths": {
-      "alys/*": ["./src/components/*"],
-      "@/*": ["./src/components/*"],
-      "@common/*": ["./src/components/common/*"],
-      "@utils/*": ["./src/components/utils/*"]
+      "alys/*": [
+        "./components/*"
+      ],
+      "@/*": [
+        "./components/*"
+      ],
+      "@common/*": [
+        "./components/common/*"
+      ],
+      "@utils/*": [
+        "./components/utils/*"
+      ]
     }
   },
-  "include": ["scripts/**/*", "src/**/*"]
+  "include": [
+    "scripts/**/*",
+    "src/**/*"
+  ]
 }
