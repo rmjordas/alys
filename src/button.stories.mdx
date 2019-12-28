@@ -1,0 +1,92 @@
+import { action } from '@storybook/addon-actions';
+import { Meta, Preview, Props, Story } from '@storybook/addon-docs/blocks';
+
+import { Button } from './button';
+
+<Meta title='Components/Button' component={Button} />
+
+# Button
+
+Buttons are used to for providing the user a way to communicate that they want an action to be
+performed. Examples of action are confirmation of a process, issuing a request to fetch some data,
+etc.
+
+## Overview
+
+Here are all the primary buttons. They all have a solid background color.
+
+<Story name="Primary/All">
+  <div style={{ width: '100%', display: 'flex', justifyContent: 'space-around', }}>
+    <Button color="basic">Basic</Button>
+    <Button color="primary">Primary</Button>
+    <Button color="danger">Danger</Button>
+    <Button color="warning">Warning</Button>
+    <Button color="success">Success</Button>
+    <Button disabled>Disabled</Button>
+  </div>
+</Story>
+
+Next are all the secondary buttons where the background color is `transparent`.
+
+<Story name="Secondary/All">
+  <div style={{ width: '100%', display: 'flex', justifyContent: 'space-around', }}>
+    <Button variant="secondary" color="basic">Basic</Button>
+    <Button variant="secondary" color="primary">Primary</Button>
+    <Button variant="secondary" color="danger">Danger</Button>
+    <Button variant="secondary" color="warning">Warning</Button>
+    <Button variant="secondary" color="success">Success</Button>
+    <Button variant="secondary" disabled>Disabled</Button>
+  </div>
+</Story>
+
+<Props of={Button} />
+
+## Details
+
+<br />
+
+### Primary (default)
+
+Solid buttons are normally used to draw more attention. They are most likely used for call-to-action
+(CTA) buttons, confirmations, etc.
+
+<Preview>
+  <Story name='Primary/Default'>
+    <Button onClick={action('clicked')}>
+      Primary Default
+    </Button>
+  </Story>
+</Preview>
+
+### Primary (disabled)
+
+Buttons can also be disabled to indicate that the action cannot be performed because of possibly
+missing some pre-requisite action.
+
+<Preview>
+  <Story name="Primary/Disabled">
+    <Button disabled onClick={action('clicked')}>
+      Primary Disabled
+    </Button>
+  </Story>
+</Preview>
+
+### Secondary (default)
+
+<Preview>
+  <Story name='Secondary/Default'>
+    <Button variant="secondary" onClick={action('clicked')}>
+      Secondary Default
+    </Button>
+  </Story>
+</Preview>
+
+### Secondary (disabled)
+
+<Preview>
+  <Story name="Secondary/Disabled">
+    <Button variant="secondary" disabled onClick={action('clicked')}>
+      Secondaray Disabled
+    </Button>
+  </Story>
+</Preview>

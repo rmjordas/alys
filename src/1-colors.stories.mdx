@@ -1,0 +1,82 @@
+import { Meta, ColorPalette, ColorItem } from '@storybook/addon-docs/blocks';
+
+import { color } from './styles/themes/light';
+
+<Meta title="Getting Started/Colors" />
+
+# Colors
+
+These are the main colors used by the components.
+
+<ColorPalette>
+  <ColorItem
+    title="Accent"
+    subtitle="theme.color.accent"
+    colors={[
+      color.accent100,
+      color.accent200,
+      color.accent300,
+      color.accent400,
+      color.accent500,
+      color.accent600,
+      color.accent700,
+      color.accent800,
+      color.accent900,
+    ]}
+  />
+  <ColorItem
+    title="Success"
+    subtitle="theme.color.success"
+    colors={[
+      color.success100,
+      color.success200,
+      color.success300,
+      color.success400,
+      color.success500,
+      color.success600,
+      color.success700,
+      color.success800,
+      color.success900,
+    ]}
+  />
+  <ColorItem
+    title="Danger"
+    subtitle="theme.color.danger"
+    colors={[
+      color.danger100,
+      color.danger200,
+      color.danger300,
+      color.danger400,
+      color.danger500,
+      color.danger600,
+      color.danger700,
+      color.danger800,
+      color.danger900,
+    ]}
+  />
+  <ColorItem
+    title="Warning"
+    subtitle="theme.color.warning"
+    colors={[
+      color.warning100,
+      color.warning200,
+      color.warning300,
+      color.warning400,
+      color.warning500,
+      color.warning600,
+      color.warning700,
+      color.warning800,
+      color.warning900,
+    ]}
+  />
+  <ColorItem
+    title="Monochrome"
+    subtitle="See below for details"
+    colors={[color.base, color.description, color.textSubtle, color.subtle, color.baseInvert]}
+  />
+  <ColorItem title="Base" subtitle="theme.color.base" colors={[color.base]} />
+  <ColorItem title="Description" subtitle="theme.color.description" colors={[color.description]} />
+  <ColorItem title="Subtle Text" subtitle="theme.color.textSubtle" colors={[color.textSubtle]} />
+  <ColorItem title="Subtle" subtitle="theme.color.subtle" colors={[color.subtle]} />
+  <ColorItem title="Inverted Base" subtitle="theme.color.baseInvert" colors={[color.baseInvert]} />
+</ColorPalette>

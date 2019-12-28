@@ -1,8 +1,3 @@
-/build
-/dist
-/lib
-/scripts/build.js
-/scripts/start.js
-/scripts/test.js
-component-data.js
-prism.js
+dist/
+node_modules/
+storybook-static/

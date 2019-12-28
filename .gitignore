@@ -89,3 +89,6 @@ typings/
 
 # Serverless directories
 .serverless
+
+# Storybook
+storybook-static/
