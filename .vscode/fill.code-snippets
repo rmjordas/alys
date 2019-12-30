@@ -1,0 +1,10 @@
+{
+  "Fill currentColor": {
+    "scope": "html,javascript,javascriptreact,typescript,typescriptreact",
+    "prefix": "fi",
+    "body": [
+      "fill=\"currentColor\"",
+    ],
+    "description": "Fill SVG element with currentColor"
+  }
+}

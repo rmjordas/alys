@@ -1,0 +1,22 @@
+{
+  "Icon": {
+    "scope": "javascript,typescript,javascriptreact,typescriptreact",
+    "prefix": "icon",
+    "body": [
+      "/** @jsx jsx **/",
+      "import { jsx } from '@emotion/core';",
+      "",
+      "import { Icon } from '../shared/icon';",
+      "",
+      "export const $1 = (svgProps) => {",
+      "  return (",
+      "    <Icon {...svgProps}>",
+      "      $2",
+      "    </Icon>",
+      "  );",
+      "};",
+      ""
+    ],
+    "description": "Create a new Icon"
+  }
+}

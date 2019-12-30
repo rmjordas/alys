@@ -1,0 +1,47 @@
+import { action } from '@storybook/addon-actions';
+import { Meta, Preview, Props, Story } from '@storybook/addon-docs/blocks';
+
+import * as icons from './icons';
+import { IconShowcase } from './shared/icon-showcase';
+
+<Meta title="Components/Icon" />
+
+# Icon
+
+Icons can be used for decorating an interface element to mostly to convey visual representation of
+the interface element's label.
+
+## Usage
+
+If used as decoration, it must be provided with an `aria-hidden` attribute so that screen readers
+will ignore this element:
+
+```jsx
+<Button>
+  <Icon aria-hidden>
+    <path d="..." />
+  </Icon>
+  My button message
+</Button>
+```
+
+Otherwise, when the icon is used solely to provide the info (in place of a label), it must be
+provided with an alternative text via the `aria-label` attribute:
+
+```jsx
+<Button>
+  <Icon aria-label="Download this file">
+    <path d="..." />
+  </Icon>
+</Button>
+```
+
+## Library Icons
+
+Alys includes icon components based on [Eva Icons](https://github.com/akveo/eva-icons) (MIT
+License). There are currently only a few icons available but more icons will be added in the future.
+
+The names of the icons follow that of the upstream icons repository's. If you're bothered by some
+icon names, please open an issue in the upstream icons repository.
+
+<IconShowcase icons={icons} />
