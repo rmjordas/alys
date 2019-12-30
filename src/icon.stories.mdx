@@ -1,10 +1,11 @@
 import { action } from '@storybook/addon-actions';
 import { Meta, Preview, Props, Story } from '@storybook/addon-docs/blocks';
 
+import { Icon } from './icon';
 import * as icons from './icons';
-import { IconShowcase } from './shared/icon-showcase';
+import { IconShowcase } from './internal/icon-showcase';
 
-<Meta title="Components/Icon" />
+<Meta title="Components/Icon" component={Icon} />
 
 # Icon
 
@@ -17,24 +18,44 @@ If used as decoration, it must be provided with an `aria-hidden` attribute so th
 will ignore this element:
 
 ```jsx
-<Button>
+<button>
   <Icon aria-hidden>
-    <path d="..." />
+    <circle cx="..." />
   </Icon>
-  My button message
-</Button>
+  My button text
+</button>
 ```
+
+<Preview>
+  <button style={{ padding: '0.2em .6em'}}>
+    <>
+      <Icon style={{ marginRight: 10 }} aria-hidden>
+        <circle cx="12" cy="12" r="9" stroke="lightsalmon" stroke-width="3" fill="lightskyblue" />
+      </Icon>
+      My button text
+    </>
+  </button>
+</Preview>
 
 Otherwise, when the icon is used solely to provide the info (in place of a label), it must be
 provided with an alternative text via the `aria-label` attribute:
 
 ```jsx
-<Button>
-  <Icon aria-label="Download this file">
+<button>
+  <Icon aria-label="Task is done">
     <path d="..." />
   </Icon>
-</Button>
+</button>
 ```
+
+<Preview>
+  <button style={{ padding: '0.2em .6em'}}>
+    <Icon aria-label="Task is done">
+      <path d="M9.86 18a1 1 0 0 1-.73-.32l-4.86-5.17a1 1 0 1 1 1.46-1.37l4.12 4.39 8.41-9.2a1 1 0 1 1 1.48 1.34l-9.14 10a1 1 0 0 1-.73.33z"
+      />
+    </Icon>
+  </button>
+</Preview>
 
 ## Library Icons
 

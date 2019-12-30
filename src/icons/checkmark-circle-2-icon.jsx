@@ -1,7 +1,7 @@
 /** @jsx jsx **/
 import { jsx } from '@emotion/core';
 
-import { Icon } from '../shared/icon';
+import { Icon } from '../icon';
 
 export const CheckmarkCircle2Icon = (svgProps) => {
   return (
