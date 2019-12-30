@@ -7,12 +7,12 @@ cache: npm
 
 jobs:
   include:
-    - stage: test
+    - stage: typecheck_lint_and_test
       script: npm run lint
 
-    - stage: build_and_deploy_next
+    - stage: build_and_deploy_docs_next
       if: branch = master
-      script: REPO_ENV=next npm run build
+      script: REPO_ENV=next npm run build:docs
       deploy:
         provider: surge
         project: storybook-static/
@@ -21,10 +21,10 @@ jobs:
         on:
           branch: master
 
-    - stage: build_and_deploy_tagged_release
+    - stage: build_and_deploy_docs_tagged_release
       if: tag IS present
       before_script: if [[ ! -z "$DOCS_URL_RELEASE" ]]; then echo "$DOCS_URL_RELEASE" > static/CNAME; else false; fi
-      script: REPO_ENV=release npm run build
+      script: REPO_ENV=release npm run build:docs
       deploy:
         provider: pages
         skip-cleanup: true
@@ -35,7 +35,8 @@ jobs:
         on:
           tags: true
 
-    - stage: build_and_publish_tagged_release
+    - stage: build_and_publish_lib_tagged_release
+      if: tag IS present
       script: npm run build:lib
       before_deploy: cd lib
       deploy:
