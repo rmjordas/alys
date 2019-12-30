@@ -22,22 +22,39 @@ Alys
     <img src="https://img.shields.io/npm/v/alys.svg" alt="Alys on npm">
   </a>
 
+  <a href="https://alys.surge.sh">
+    <img src="https://img.shields.io/badge/storybook-https://alys.surge.sh-ff69b4" alt="Component documentation website">
+  </a>
+
   <a href="https://alys.js.org">
-    <img src="https://img.shields.io/badge/docs-alys.js.org-blue.svg" alt="Documentation website">
+    <img src="https://img.shields.io/badge/website-https://alys.js.org-blue.svg" alt="Project website">
   </a>
 </p>
 
 <hr />
 
-## Peer Dependencies
+Alys is a tiny React component library based on [Stefan Balan's](https://bstefan.com/)
+Starter Kit version 1.4.
 
-- [react](https://www.npmjs.com/package/react)
-- [react-dom](https://www.npmjs.com/package/react-dom)
+## Requirements
+
+Before you can use this library, your project should include the following packages. For version
+details, please see the package manifest file at the repository's root. Make sure you select the
+version compatible with the required minimum version.
+
 - [@emotion/core](https://www.npmjs.com/package/@emotion/core)
 - [emotion-theming](https://www.npmjs.com/package/emotion-theming)
 - [prop-types](https://www.npmjs.com/package/prop-types)
+- [react](https://www.npmjs.com/package/react)
+- [react-dom](https://www.npmjs.com/package/react-dom)
+
+```bash
+npm install --save @emotion/core emotion-theming prop-types react react-dom
+```
 
 ## Install
+
+You can use either `npm` or Yarn as your package manager.
 
 ### npm
 
@@ -53,10 +70,13 @@ yarn add alys
 
 ## Usage
 
+The following example shows a component called `MyComponent` that uses a `Button` component from
+the `alys` package:
+
 ```jsx
 /** @jsx jsx */
 import { css, jsx } from '@emotion/core';
-import Button from 'alys/Button';
+import { Button } from 'alys';
 
 export default function MyComponent() {
   return (
@@ -73,7 +93,7 @@ export default function MyComponent() {
 
 ## Documentation
 
-- [Component documentation](https://alys.js.org)
+- [Component documentation](https://alys.surge.sh)
 - [Change log](https://github.com/rmjordas/alys/blob/master/CHANGELOG.md)
 - [Contributing guide](https://github.com/rmjordas/alys/blob/master/.github/CONTRIBUTING.md)
 - [Attribution notice](https://github.com/rmjordas/alys/blob/master/NOTICE)
