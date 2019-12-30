@@ -130,6 +130,7 @@ export const Button = ({ variant, color, children, ...buttonProps }) => {
     };
     buttonStyles['@media (hover: hover)'] = undefined;
     buttonStyles['&:focus'] = undefined;
+    buttonStyles['&:active'] = undefined;
   }
 
   return (
@@ -149,4 +150,8 @@ Button.propTypes = {
   variant: PropTypes.oneOf(['primary', 'secondary']),
   /** Determines the colors of the button. */
   color: PropTypes.oneOf(['basic', 'primary', 'danger', 'success', 'warning']),
+  /**
+   * A React node, usually a string or a combination of icons and button text.
+   */
+  children: PropTypes.node.isRequired,
 };
