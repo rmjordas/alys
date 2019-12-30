@@ -23,11 +23,12 @@
   ],
   "main": "dist/index.js",
   "scripts": {
-    "build:docs": "build-storybook",
-    "dev:docs": "start-storybook -s public -p 6006 --docs",
+    "build": "build-storybook -s public",
+    "build:docs": "build-storybook -s public --docs",
     "dev": "start-storybook -s public -p 6006",
-    "lint": "eslint \"src/**/*.{js,jsx}\"",
-    "format:fix": "prettier \"src/**/*.{js,jsx,html}\" --write"
+    "dev:docs": "start-storybook -s public -p 6006 --docs",
+    "lint": "eslint \"src/**/*.{js,jsx,ts,tsx}\"",
+    "format:fix": "prettier \"src/**/*.{js,jsx,ts,tsx,html}\" --write"
   },
   "devDependencies": {
     "@babel/cli": "^7.7.7",
