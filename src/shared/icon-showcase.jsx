@@ -21,7 +21,6 @@ export const IconShowcase = ({ icons }) => {
           flexFlow: 'row wrap',
           listStyle: 'none',
           fontFamily: theme.typography.fonts.code,
-          color: theme.color.danger,
         }}
       >
         {Object.entries(icons).map(([key, Icon]) => (
