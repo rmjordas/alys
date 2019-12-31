@@ -1,8 +1,9 @@
 /** @jsx jsx */
 import { jsx } from '@emotion/core';
 import PropTypes from 'prop-types';
+import { forwardRef } from 'react';
 
-export const Icon = ({ children, ...svgProps }) => {
+export const Icon = forwardRef(({ children, ...svgProps }, ref) => {
   return (
     <svg
       css={{
@@ -14,16 +15,19 @@ export const Icon = ({ children, ...svgProps }) => {
       width={24}
       height={24}
       {...svgProps}
+      ref={ref}
     >
       {children}
     </svg>
   );
-};
+});
+
+Icon.displayName = 'Icon';
 
 Icon.propTypes = {
   /**
    * Any child node that can be placed inside an `<svg>` element, e.g `<path>`, `<rect>`,
-   * <circle> etc.
+   * <circle>, etc.
    */
   children: PropTypes.node,
 };

@@ -2,155 +2,157 @@
 import { jsx } from '@emotion/core';
 import { useTheme } from 'emotion-theming';
 import PropTypes from 'prop-types';
+import { forwardRef } from 'react';
 
-export const Button = ({ variant, color, children, ...buttonProps }) => {
-  const theme = useTheme().default;
+export const Button = forwardRef(
+  ({ variant, color: pColor, size, children, ...buttonProps }, ref) => {
+    const theme = useTheme().default;
 
-  let buttonStyles = {
-    border: '0',
-    outline: '0',
-    userSelect: 'none',
-    borderRadius: '0.3125em',
-    padding: '0.875em 2.25em',
-    fontFamily: theme.typography.fonts.base,
-    fontWeight: theme.typography.weight.medium,
-    fontSize: '0.9375em',
-    transition: `all 0.2s ${theme.easing.rubber}`,
-    boxShadow: 'none',
+    let fontSize = '0.9375em';
+    let padding = '0.875em 2.25em';
 
-    '@media (hover: hover)': {
-      '&:hover': {
-        cursor: 'pointer',
-        boxShadow: '0px 2px 7px rgba(0, 0, 0, 0.12)',
-      },
-    },
+    switch (size) {
+      case 'small':
+        fontSize = '0.8125em';
+        padding = '0.625em 1.5em';
+        break;
+      case 'big':
+      default:
+        fontSize = '0.9375em';
+        padding = '0.875em 2.25em';
+        break;
+    }
 
-    '&:focus': {
-      boxShadow: '0 0 0 4px lightskyblue',
-    },
-  };
-  let highlight = theme.color.accent;
-  let highlight200 = theme.color.accent200;
-  let highlight400 = theme.color.accent400;
-  let highlight600 = theme.color.accent600;
-  switch (color) {
-    case 'danger':
-      highlight = theme.color.danger;
-      highlight200 = theme.color.danger200;
-      highlight400 = theme.color.danger400;
-      highlight600 = theme.color.danger600;
-      break;
-    case 'warning':
-      highlight = theme.color.warning;
-      highlight200 = theme.color.warning200;
-      highlight400 = theme.color.warning400;
-      highlight600 = theme.color.warning600;
-      break;
-    case 'success':
-      highlight = theme.color.success;
-      highlight200 = theme.color.success200;
-      highlight400 = theme.color.success400;
-      highlight600 = theme.color.success600;
-      break;
-    case 'basic':
-      highlight = theme.color.subtle;
-      highlight200 = theme.color.subtle200;
-      highlight400 = theme.color.subtle400;
-      highlight600 = theme.color.subtle600;
-      break;
-    case 'primary':
-    default:
-      highlight = theme.color.accent;
-      highlight200 = theme.color.accent200;
-      highlight400 = theme.color.accent400;
-      highlight600 = theme.color.accent600;
-      break;
-  }
+    let themeColor = 'accent';
 
-  buttonStyles.backgroundColor = highlight;
+    switch (pColor) {
+      case 'basic':
+        themeColor = 'subtle';
+        break;
+      case 'danger':
+        themeColor = 'danger';
+        break;
+      case 'success':
+        themeColor = 'success';
+        break;
+      case 'warning':
+        themeColor = 'warning';
+        break;
+      case 'primary':
+      default:
+        themeColor = 'accent';
+        break;
+    }
 
-  switch (variant) {
-    case 'secondary':
-      buttonStyles = {
-        ...buttonStyles,
-        border: `2px solid ${highlight}`,
-        borderRadius: 5,
-        backgroundColor: 'transparent',
-        color: color === 'basic' ? theme.color.description : highlight,
+    // highlight colors
+    const h200 = theme.color[`${themeColor}200`];
+    const h400 = theme.color[`${themeColor}400`];
+    const h500 = theme.color[`${themeColor}`];
+    const h600 = theme.color[`${themeColor}600`];
 
-        '@media (hover: hover)': {
-          '&:hover': {
-            ...buttonStyles['@media (hover: hover)']['&:hover'],
-            borderColor: highlight400,
-            color: color === 'basic' ? theme.color.textSubtle : highlight400,
-          },
-        },
-        '&:focus': {
-          ...buttonStyles['&:focus'],
-          boxShadow: color === 'basic' ? `0 0 0 4px lightskyblue` : `0 0 0 4px ${highlight200}`,
-        },
-        '&:active': {
-          borderColor: highlight600,
-          color: color === 'basic' ? theme.color.description600 : highlight600,
-        },
-      };
-      break;
-    case 'primary':
-    default:
-      buttonStyles = {
-        ...buttonStyles,
-        color: color === 'basic' ? theme.color.description : theme.color.baseInvert,
+    let border = 'none';
+    let backgroundColor = h500;
+    let color = h500;
 
-        '@media (hover: hover)': {
-          '&:hover': {
-            ...buttonStyles['@media (hover: hover)']['&:hover'],
-            backgroundColor: highlight400,
-          },
-        },
-        '&:focus': {
-          ...buttonStyles['&:focus'],
-          backgroundColor: highlight,
-          boxShadow: color === 'basic' ? `0 0 0 4px lightskyblue` : `0 0 0 4px ${highlight200}`,
-        },
-        '&:active': {
-          backgroundColor: highlight600,
-        },
-      };
-      break;
-  }
-
-  if (buttonProps.disabled) {
-    buttonProps.onClick = undefined;
-    buttonStyles = {
-      ...buttonStyles,
-      border: variant === 'secondary' ? `2px solid ${theme.color.subtle}` : 'none',
-      backgroundColor: variant === 'secondary' ? 'transparent' : theme.color.subtle,
-      color: theme.color.textSubtle,
+    let hoverStyles = {
+      cursor: 'pointer',
+      boxShadow: '0px 2px 7px rgba(0, 0, 0, 0.12)',
     };
-    buttonStyles['@media (hover: hover)'] = undefined;
-    buttonStyles['&:focus'] = undefined;
-    buttonStyles['&:active'] = undefined;
-  }
 
-  return (
-    <button css={buttonStyles} {...buttonProps}>
-      {children}
-    </button>
-  );
-};
+    let focusStyles = {
+      boxShadow: '0 0 0 4px lightskyblue',
+    };
+
+    let activeStyles = {
+      color: pColor === 'basic' ? theme.color.description : theme.color.baseInvert,
+    };
+
+    switch (variant) {
+      case 'secondary':
+        border = `2px solid ${h500}`;
+        backgroundColor = 'transparent';
+        color = pColor === 'basic' ? theme.color.description : h500;
+
+        hoverStyles.borderColor = h400;
+        hoverStyles.color = pColor === 'basic' ? theme.color.description : h400;
+
+        focusStyles.boxShadow = pColor === 'basic' ? `0 0 0 4px lightskyblue` : `0 0 0 4px ${h200}`;
+
+        activeStyles.borderColor = pColor === 'basic' ? theme.color.subtle : h600;
+        activeStyles.backgroundColor = pColor === 'basic' ? theme.color.subtle : h600;
+        break;
+      case 'primary':
+      default:
+        color = pColor === 'basic' ? theme.color.description : theme.color.baseInvert;
+
+        hoverStyles.backgroundColor = h400;
+
+        focusStyles.backgroundColor = h500;
+        focusStyles.boxShadow = pColor === 'basic' ? `0 0 0 4px lightskyblue` : `0 0 0 4px ${h200}`;
+
+        activeStyles.backgroundColor = pColor === 'basic' ? 'lightgrey' : h600;
+        break;
+    }
+
+    if (buttonProps.disabled) {
+      border = variant === 'secondary' ? `2px solid ${theme.color.subtle}` : 'none';
+      backgroundColor = variant === 'secondary' ? 'transparent' : theme.color.subtle;
+      color = theme.color.textSubtle;
+      hoverStyles = undefined;
+      focusStyles = undefined;
+      activeStyles = undefined;
+    }
+
+    return (
+      <button
+        css={{
+          fontSize,
+          padding,
+          backgroundColor,
+          border,
+          color,
+          outline: 'none',
+          userSelect: 'none',
+          borderRadius: '0.3125em',
+          fontFamily: theme.typography.fonts.base,
+          fontWeight: theme.typography.weight.medium,
+          transition: `all 0.2s ${theme.easing.rubber}`,
+          boxShadow: 'none',
+
+          '@media (hover: hover)': {
+            '&:hover': hoverStyles,
+          },
+
+          '&:focus': focusStyles,
+
+          '&:active': activeStyles,
+        }}
+        {...buttonProps}
+        ref={ref}
+      >
+        {children}
+      </button>
+    );
+  },
+);
+
+Button.displayName = 'Button';
 
 Button.defaultProps = {
   variant: 'primary',
   color: 'primary',
+  size: 'big',
 };
 
 Button.propTypes = {
+  /**
+   * A React node, usually a string to be the button text or a combination of icons and button text.
+   */
+  children: PropTypes.node.isRequired,
   /** Sets the type of button. */
   variant: PropTypes.oneOf(['primary', 'secondary']),
   /** Determines the colors of the button. */
   color: PropTypes.oneOf(['basic', 'primary', 'danger', 'success', 'warning']),
-  /**
-   * A React node, usually a string or a combination of icons and button text.
-   */
-  children: PropTypes.node.isRequired,
+  /** Determines the size of the button. */
+  size: PropTypes.oneOf(['big', 'small']),
 };
