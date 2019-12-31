@@ -26,7 +26,6 @@ export const Button = ({ variant, color, children, ...buttonProps }) => {
     },
 
     '&:focus': {
-      cursor: 'pointer',
       boxShadow: '0 0 0 4px lightskyblue',
     },
   };
