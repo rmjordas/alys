@@ -45,48 +45,61 @@ Next are all the secondary buttons where the background color is `transparent`.
 
 <br />
 
-### Primary (default)
+### Variant (primary)
 
 Solid buttons are normally used to draw more attention. They are most likely used for call-to-action
 (CTA) buttons, confirmations, etc.
 
 <Preview>
-  <Story name='Primary/Default'>
+  <Story name='Variant/Primary'>
     <Button onClick={action('clicked')}>
-      Primary Default
+      Primary
     </Button>
   </Story>
 </Preview>
 
-### Primary (disabled)
+### Variant (secondary)
+
+Secondary buttons maybe intended for some optional action like, canceling or going back to a
+previous page.
+
+<Preview>
+  <Story name='Variant/Secondary'>
+    <Button variant="secondary" onClick={action('clicked')}>
+      Secondary
+    </Button>
+  </Story>
+</Preview>
+
+### Disabled
 
 Buttons can also be disabled to indicate that the action cannot be performed because of possibly
 missing some pre-requisite action.
 
 <Preview>
-  <Story name="Primary/Disabled">
+  <Story name="Disabled/True">
     <Button disabled onClick={action('clicked')}>
-      Primary Disabled
+      Disabled
     </Button>
   </Story>
 </Preview>
 
-### Secondary (default)
+### Size (default)
 
 <Preview>
-  <Story name='Secondary/Default'>
-    <Button variant="secondary" onClick={action('clicked')}>
-      Secondary Default
+  <Story name="Size/Default">
+    <Button onClick={action('clicked')}>
+      Big
     </Button>
   </Story>
 </Preview>
 
-### Secondary (disabled)
+### Size (small)
 
 <Preview>
-  <Story name="Secondary/Disabled">
-    <Button variant="secondary" disabled onClick={action('clicked')}>
-      Secondaray Disabled
+  <Story name="Size/Small">
+    <Button size="small" onClick={action('clicked')}>
+      Small
     </Button>
   </Story>
 </Preview>
