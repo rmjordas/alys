@@ -11,6 +11,7 @@ export const IconShowcase = ({ icons }) => {
       css={{
         color: theme.color.textSubtle,
         fontFamily: theme.typography.fonts.base,
+        fontSize: theme.typography.size.s1,
       }}
     >
       <input disabled placeholder={`Search ${Object.keys(icons).length} icons`} />
@@ -32,6 +33,12 @@ export const IconShowcase = ({ icons }) => {
               flex: '0 1 20%',
               minWidth: 120,
               padding: '0 7.5px 20px',
+              transition: `color 0.2s ${theme.easing.rubber}`,
+              cursor: 'default',
+
+              '&:hover': {
+                color: theme.color.description,
+              },
             }}
             key={key}
             data-icon-name={key}
@@ -45,15 +52,7 @@ export const IconShowcase = ({ icons }) => {
               height={24}
             />
 
-            <span
-              css={{
-                color: theme.color.subtleText,
-                fontSize: theme.typography.size.s1,
-              }}
-              title={key}
-            >
-              {key.length > 21 ? key.substring(0, 18) + '...' : key}
-            </span>
+            <span title={key}>{key.length > 21 ? key.substring(0, 18) + '...' : key}</span>
           </li>
         ))}
       </ul>

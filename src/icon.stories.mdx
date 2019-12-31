@@ -27,7 +27,7 @@ will ignore this element:
 ```
 
 <Preview>
-  <button style={{ padding: '0.2em .6em'}}>
+  <button>
     <>
       <Icon style={{ marginRight: 10 }} aria-hidden>
         <circle cx="12" cy="12" r="9" stroke="lightsalmon" stroke-width="3" fill="lightskyblue" />
@@ -42,15 +42,15 @@ provided with an alternative text via the `aria-label` attribute:
 
 ```jsx
 <button>
-  <Icon aria-label="Task is done">
+  <Icon aria-label="Mark task as done.">
     <path d="..." />
   </Icon>
 </button>
 ```
 
 <Preview>
-  <button style={{ padding: '0.2em .6em'}}>
-    <Icon aria-label="Task is done">
+  <button>
+    <Icon aria-label="Mark task as done.">
       <path d="M9.86 18a1 1 0 0 1-.73-.32l-4.86-5.17a1 1 0 1 1 1.46-1.37l4.12 4.39 8.41-9.2a1 1 0 1 1 1.48 1.34l-9.14 10a1 1 0 0 1-.73.33z"
       />
     </Icon>
