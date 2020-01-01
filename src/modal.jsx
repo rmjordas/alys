@@ -1,8 +1,8 @@
 import PropTypes from 'prop-types';
 import { createPortal } from 'react-dom';
-import { forwardRef, useRef, useEffect } from 'react';
+import { useRef, useEffect } from 'react';
 
-export const Modal = forwardRef(({ children }, ref) => {
+export const Modal = ({ children }) => {
   const elRef = useRef(null);
 
   if (!elRef.current) {
@@ -28,7 +28,7 @@ export const Modal = forwardRef(({ children }, ref) => {
   }, []);
 
   return createPortal(children, elRef.current);
-});
+};
 
 Modal.displayName = 'Modal';
 
