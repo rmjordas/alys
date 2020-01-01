@@ -1,0 +1,29 @@
+import { Meta, Preview, Props, Story } from '@storybook/addon-docs/blocks';
+
+import { VisuallyHidden } from './visually-hidden';
+import { SaveIcon } from './icons/save-icon';
+
+<Meta title="Utility/VisuallyHidden" component={VisuallyHidden} />
+
+# VisuallyHidden
+
+This utility component is used when showing text for screen readers.
+
+## Usage
+
+Wrap the text that is used as a label for an icon-only butotn and provided that icon with the
+`aria-hidden` attribute so it will be skipped by screen readers.
+
+```jsx
+<button>
+  <VisuallyHidden>Save</VisuallyHidden>
+  <SaveIcon aria-hidden />
+</button>
+```
+
+<Preview>
+  <button>
+    <VisuallyHidden>Save</VisuallyHidden>
+    <SaveIcon aria-hidden />
+  </button>
+</Preview>
