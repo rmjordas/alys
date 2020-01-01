@@ -1,0 +1,88 @@
+import { action } from '@storybook/addon-actions';
+import { Meta, Preview, Props, Story } from '@storybook/addon-docs/blocks';
+
+import { Tag } from './tag';
+
+<Meta title="Components/Tag" component={Tag} />
+
+# Tag
+
+Tags can be used to show how a certain item is categorized. It appears a lot on collections, below
+the title tag to indicate that the current item belongs to a group. When clicked, it usually
+navigates to a separate page to show all the items tagged with a similar tag.
+
+## Overview
+
+Solid tags are normally used to draw more attention to function as badges to indicate short but
+important information, e.g. deprecation notices, new features, etc.
+
+<Story name="Primary/All">
+  <div style={{ width: '100%', display: 'flex', justifyContent: 'space-around' }}>
+    <Tag color="basic">Basic</Tag>
+    <Tag>Primary</Tag>
+    <Tag color="danger">Danger</Tag>
+    <Tag color="warning">Warning</Tag>
+    <Tag color="success">Success</Tag>
+    <Tag onClose={action('closed')}>With onClose</Tag>
+    <Tag disabled>Disabled</Tag>
+    <Tag disabled onClose={action('should not close this')}>Disabled with onClose</Tag>
+  </div>
+</Story>
+
+Secondary tags will also provide information but it is not as critical. Since it's not eye-catching
+as the solid tags, they would not detract attention from more important UI elements, i.e. when
+showing a list of cards, we would normally want to make the card titles or card descriptions to be
+more prominent than the card tags.
+
+<Story name="Secondary/All">
+  <div style={{ width: '100%', display: 'flex', justifyContent: 'space-around' }}>
+    <Tag variant="secondary" color="basic">Basic</Tag>
+    <Tag variant="secondary">Primary</Tag>
+    <Tag variant="secondary" color="danger">Danger</Tag>
+    <Tag variant="secondary" color="warning">Warning</Tag>
+    <Tag variant="secondary" color="success">Success</Tag>
+    <Tag variant="secondary" onClose={action('closed')}>With onClose</Tag>
+    <Tag variant="secondary" disabled>Disabled</Tag>
+    <Tag variant="secondary" disabled onClose={action('should not close this')}>Disabled with onClose</Tag>
+  </div>
+</Story>
+
+<Props of={Tag} />
+
+## Stories
+
+<br />
+
+### Variant (primary)
+
+<Preview>
+  <Story name="Variant/Primary">
+    <Tag>Primary</Tag>
+  </Story>
+</Preview>
+
+### Variant (secondary)
+
+<Preview>
+  <Story name="Variant/Secondary">
+    <Tag variant="secondary">Secondary</Tag>
+  </Story>
+</Preview>
+
+### Disabled
+
+<Preview>
+  <Story name="Disabled/True">
+    <Tag disabled>Disabled</Tag>
+  </Story>
+</Preview>
+
+### With onClose
+
+Provide an onClose function to show a close icon next to the tag text.
+
+<Preview>
+  <Story name="WithOnClose/True">
+    <Tag onClose={action('closed')}>With onClose</Tag>
+  </Story>
+</Preview>
