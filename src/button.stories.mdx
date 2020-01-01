@@ -2,6 +2,7 @@ import { action } from '@storybook/addon-actions';
 import { Meta, Preview, Props, Story } from '@storybook/addon-docs/blocks';
 
 import { Button } from './button';
+import { DownloadIcon } from './icons';
 
 <Meta title='Components/Button' component={Button} />
 
@@ -41,7 +42,7 @@ Next are all the secondary buttons where the background color is `transparent`.
 
 <Props of={Button} />
 
-## Details
+## Stories
 
 <br />
 
@@ -100,6 +101,31 @@ missing some pre-requisite action.
   <Story name="Size/Small">
     <Button size="small" onClick={action('clicked')}>
       Small
+    </Button>
+  </Story>
+</Preview>
+
+### ReactNode as children (default size)
+
+Adding icons to button is done by importing the icon and placing it along the button text. You
+should put appropriate margins so that the icon and the button text are not stuck together.
+
+<Preview>
+  <Story name="Children/ReactNode/Size/Default">
+    <Button onClick={action('clicked')}>
+      Download
+      <DownloadIcon css={{ marginLeft: 10 }} />
+    </Button>
+  </Story>
+</Preview>
+
+### ReactNode as children (small size)
+
+<Preview>
+  <Story name="Children/ReactNode/Size/Small">
+    <Button size="small" onClick={action('clicked')}>
+      Download
+      <DownloadIcon css={{ marginLeft: 10 }} />
     </Button>
   </Story>
 </Preview>

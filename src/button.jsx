@@ -14,12 +14,12 @@ export const Button = forwardRef(
     switch (size) {
       case 'small':
         fontSize = '0.8125em';
-        padding = '0.625em 1.5em';
+        padding = children.length > 1 ? '0.625em 0.75em' : '0.625em 1.5em';
         break;
       case 'big':
       default:
         fontSize = '0.9375em';
-        padding = '0.875em 2.25em';
+        padding = children.length > 1 ? '0.625em 1.25em' : '0.625em 1.5em';
         break;
     }
 
@@ -118,6 +118,9 @@ export const Button = forwardRef(
           fontWeight: theme.typography.weight.medium,
           transition: `all 0.2s ${theme.easing.rubber}`,
           boxShadow: 'none',
+          display: 'inline-flex',
+          flexDirection: 'row',
+          alignItems: 'center',
 
           '@media (hover: hover)': {
             '&:hover': hoverStyles,
