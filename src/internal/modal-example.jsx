@@ -2,7 +2,7 @@
 import { jsx } from '@emotion/core';
 import { useReducer } from 'react';
 
-import { Modal } from './modal';
+import { Modal } from '../modal';
 
 const MODAL_SHOW = 'MODAL_SHOW';
 const MODAL_DESTROY = 'MODAL_DESTROY';
