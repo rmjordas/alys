@@ -68,7 +68,6 @@ export const Tag = forwardRef(
       border = variant === 'secondary' ? `1px solid ${theme.color.subtle}` : 'none';
       backgroundColor = variant === 'secondary' ? 'transparent' : theme.color.subtle;
       color = theme.color.textSubtle;
-      onClose = undefined;
       hoverStyles = undefined;
     }
 
