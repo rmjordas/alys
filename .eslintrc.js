@@ -47,7 +47,6 @@ module.exports = {
       files: ['*.js', '*.jsx'],
       rules: {
         '@typescript-eslint/explicit-function-return-type': 0,
-        'import/no-default-export': 0,
       },
     },
   ],
