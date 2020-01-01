@@ -56,7 +56,6 @@ export const Button = forwardRef(
 
     let hoverStyles = {
       cursor: 'pointer',
-      boxShadow: '0px 2px 7px rgba(0, 0, 0, 0.12)',
     };
 
     let focusStyles = {
@@ -73,13 +72,14 @@ export const Button = forwardRef(
         backgroundColor = 'transparent';
         color = pColor === 'basic' ? theme.color.description : h500;
 
-        hoverStyles.borderColor = h400;
-        hoverStyles.color = pColor === 'basic' ? theme.color.description : h400;
+        hoverStyles.borderColor = h500;
+        hoverStyles.backgroundColor = pColor === 'basic' ? theme.color.subtle : h500;
+        hoverStyles.color = pColor === 'basic' ? theme.color.description : theme.color.baseInvert;
 
         focusStyles.boxShadow = pColor === 'basic' ? `0 0 0 4px lightskyblue` : `0 0 0 4px ${h200}`;
 
         activeStyles.borderColor = pColor === 'basic' ? theme.color.subtle : h600;
-        activeStyles.backgroundColor = pColor === 'basic' ? theme.color.subtle : h600;
+        activeStyles.backgroundColor = pColor === 'basic' ? `lightgrey` : h600;
         break;
       case 'primary':
       default:
