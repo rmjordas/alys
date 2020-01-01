@@ -14,10 +14,6 @@ Alys
 <p align="center">A tiny React component library</p>
 
 <p align="center">
-  <a href="https://travis-ci.org/rmjordas/alys">
-    <img src="https://travis-ci.org/rmjordas/alys.svg" alt="Travis CI">
-  </a>
-
   <a href="https://www.npmjs.com/package/alys">
     <img src="https://img.shields.io/npm/v/alys.svg" alt="Alys on npm">
   </a>

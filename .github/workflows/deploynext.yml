@@ -1,0 +1,27 @@
+name: Deploy next
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    name: Deploy next to Surge
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v1
+      - name: Setup Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: 12
+      - name: Lint, test, typecheck and build
+        run: |
+          npm ci
+          npm run lint
+          npm run build:docs
+      - name: Install Surge and deploy
+        run: |
+          npm install -g surge
+          surge ./storybook-static ${{ secrets.SURGE_DOMAIN }} --token ${{ secrets.SURGE_TOKEN }}
