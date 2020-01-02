@@ -1,5 +1,6 @@
 import { action } from '@storybook/addon-actions';
 import { Meta, Preview, Props, Story } from '@storybook/addon-docs/blocks';
+import { Fragment } from 'react';
 
 import { Button } from './button';
 import { DownloadIcon } from './icons';
@@ -17,27 +18,27 @@ etc.
 Here are all the primary buttons. They all have a solid background color.
 
 <Story name="Primary/All">
-  <div style={{ width: '100%', display: 'flex', justifyContent: 'space-around', }}>
+  <Fragment>
     <Button color="basic">Basic</Button>
     <Button color="primary">Primary</Button>
     <Button color="danger">Danger</Button>
     <Button color="warning">Warning</Button>
     <Button color="success">Success</Button>
     <Button disabled>Disabled</Button>
-  </div>
+  </Fragment>
 </Story>
 
 Next are all the secondary buttons where the background color is `transparent`.
 
 <Story name="Secondary/All">
-  <div style={{ width: '100%', display: 'flex', justifyContent: 'space-around', }}>
+  <Fragment>
     <Button variant="secondary" color="basic">Basic</Button>
     <Button variant="secondary" color="primary">Primary</Button>
     <Button variant="secondary" color="danger">Danger</Button>
     <Button variant="secondary" color="warning">Warning</Button>
     <Button variant="secondary" color="success">Success</Button>
     <Button variant="secondary" disabled>Disabled</Button>
-  </div>
+  </Fragment>
 </Story>
 
 <Props of={Button} />

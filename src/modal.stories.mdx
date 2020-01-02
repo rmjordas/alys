@@ -1,7 +1,7 @@
 import { Meta, Preview, Story } from '@storybook/addon-docs/blocks';
-import { Fragment } from 'react';
 
 import { Modal } from './modal';
+import { Centered } from './internal/centered';
 import { ModalRoot } from './internal/modal-root';
 import { ModalExample } from './internal/modal-example';
 
@@ -44,7 +44,7 @@ state.showModal ? (
   <Modal>
     Hello <button onClick={toggleModal}>Close modal</button>
   </Modal>
-) : null
+) : null;
 ```
 
 <Props of={Modal} />
@@ -55,14 +55,14 @@ Click the button below to show a simple modal. Once the modal is shown, there is
 close the modal.
 
 <Story
-  name="ModalViewer"
+  name="Modal/Example"
   decorators={[
-    (StoryFn) => (
-      <Fragment>
-        <ModalRoot />
-        <StoryFn />
-      </Fragment>
-    ),
-  ]}>
+  (StoryFn) => (
+    <Centered>
+      <ModalRoot />
+      <StoryFn />
+    </Centered>
+  )]}
+>
   <ModalExample />
 </Story>

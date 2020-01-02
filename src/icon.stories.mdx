@@ -27,14 +27,14 @@ will ignore this element:
 ```
 
 <Preview>
-  <button>
-    <>
+  <Story name="Icon/AsDecoration">
+    <button>
       <Icon style={{ marginRight: 10 }} aria-hidden>
         <circle cx="12" cy="12" r="9" stroke="lightsalmon" stroke-width="3" fill="lightskyblue" />
       </Icon>
       My button text
-    </>
-  </button>
+    </button>
+  </Story>
 </Preview>
 
 Otherwise, when the icon is used solely to provide the info (in place of a label), it must be
@@ -49,12 +49,13 @@ provided with an alternative text via the `aria-label` attribute:
 ```
 
 <Preview>
-  <button>
-    <Icon aria-label="Mark task as done.">
-      <path d="M9.86 18a1 1 0 0 1-.73-.32l-4.86-5.17a1 1 0 1 1 1.46-1.37l4.12 4.39 8.41-9.2a1 1 0 1 1 1.48 1.34l-9.14 10a1 1 0 0 1-.73.33z"
-      />
-    </Icon>
-  </button>
+  <Story name="Icon/AsInfo">
+    <button>
+      <Icon aria-label="Mark task as done.">
+        <path d="M9.86 18a1 1 0 0 1-.73-.32l-4.86-5.17a1 1 0 1 1 1.46-1.37l4.12 4.39 8.41-9.2a1 1 0 1 1 1.48 1.34l-9.14 10a1 1 0 0 1-.73.33z" />
+      </Icon>
+    </button>
+  </Story>
 </Preview>
 
 ## Library Icons

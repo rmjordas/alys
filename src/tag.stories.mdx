@@ -1,5 +1,6 @@
 import { action } from '@storybook/addon-actions';
 import { Meta, Preview, Props, Story } from '@storybook/addon-docs/blocks';
+import { Fragment } from 'react';
 
 import { Tag } from './tag';
 
@@ -17,7 +18,7 @@ Solid tags are normally used to draw more attention to function as badges to ind
 important information, e.g. deprecation notices, new features, etc.
 
 <Story name="Primary/All">
-  <div style={{ width: '100%', display: 'flex', justifyContent: 'space-around' }}>
+  <Fragment>
     <Tag color="basic">Basic</Tag>
     <Tag>Primary</Tag>
     <Tag color="danger">Danger</Tag>
@@ -26,7 +27,7 @@ important information, e.g. deprecation notices, new features, etc.
     <Tag onClose={action('closed')}>With onClose</Tag>
     <Tag disabled>Disabled</Tag>
     <Tag disabled onClose={action('should not close this')}>Disabled with onClose</Tag>
-  </div>
+  </Fragment>
 </Story>
 
 Secondary tags will also provide information but it is not as critical. Since it's not eye-catching
@@ -35,7 +36,7 @@ showing a list of cards, we would normally want to make the card titles or card 
 more prominent than the card tags.
 
 <Story name="Secondary/All">
-  <div style={{ width: '100%', display: 'flex', justifyContent: 'space-around' }}>
+  <Fragment>
     <Tag variant="secondary" color="basic">Basic</Tag>
     <Tag variant="secondary">Primary</Tag>
     <Tag variant="secondary" color="danger">Danger</Tag>
@@ -44,7 +45,7 @@ more prominent than the card tags.
     <Tag variant="secondary" onClose={action('closed')}>With onClose</Tag>
     <Tag variant="secondary" disabled>Disabled</Tag>
     <Tag variant="secondary" disabled onClose={action('should not close this')}>Disabled with onClose</Tag>
-  </div>
+  </Fragment>
 </Story>
 
 <Props of={Tag} />

@@ -3,7 +3,7 @@ import { Meta, Preview, Props, Story } from '@storybook/addon-docs/blocks';
 import { VisuallyHidden } from './visually-hidden';
 import { SaveIcon } from './icons/save-icon';
 
-<Meta title="Utility/VisuallyHidden" component={VisuallyHidden} />
+<Meta title="Utility/VisuallyHidden" component={VisuallyHidden}></Meta>
 
 # VisuallyHidden
 
@@ -22,8 +22,12 @@ Wrap the text that is used as a label for an icon-only butotn and provided that 
 ```
 
 <Preview>
-  <button>
-    <VisuallyHidden>Save</VisuallyHidden>
-    <SaveIcon aria-hidden />
-  </button>
+  <Story name="VisuallyHidden/IconButton">
+    <button>
+      <VisuallyHidden>Save</VisuallyHidden>
+      <SaveIcon aria-hidden />
+    </button>
+  </Story>
 </Preview>
+
+<Props of={VisuallyHidden} />
