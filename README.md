@@ -96,6 +96,6 @@ export default function MyComponent() {
 
 ## License
 
-Copyright 2017-2020 Rodger Jordas
+Copyright 2020 Rodger Jordas
 
 This project is licensed under the terms of the Apache License, Version 2.0.
