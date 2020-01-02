@@ -1,6 +1,6 @@
 import { Meta, Preview, Props, Story } from '@storybook/addon-docs/blocks';
 
-import { Breadcrumb } from './breadcrumb';
+import { Breadcrumb, BreadcrumbItem } from './breadcrumb';
 
 <Meta title="Components/Breadcrumb" component={Breadcrumb} />
 
@@ -13,8 +13,16 @@ page they are currently viewing.
 
 This next example is lifted straight out of the WAI-ARIA Authoring Practices breadcrumb example.
 
-<Story name="Basic/ARIAExample">
-  <div style={{ width: '100%', display: 'flex', justifyContent: 'space-around', }}>
+### Basic ARIA example
+
+<Preview>
+  <Story name="Breadcrumb/ARIAExample" decorators={[
+    (StoryFn) => (
+      <div style={{ width: '100%', display: 'flex', justifyContent: 'space-around', }}>
+        <StoryFn />
+      </div>
+    ),
+  ]}>
     <Breadcrumb links={[
         {
           href: '../..',
@@ -33,7 +41,44 @@ This next example is lifted straight out of the WAI-ARIA Authoring Practices bre
           text: 'Breadcrumb Example',
           isCurrentPage: true,
         },]} />
-  </div>
-</Story>
+  </Story>
+</Preview>
+
+### ARIA example with subcomponents
+
+<Preview>
+  <Story name="Breadcrumb/ARIASubcomponent" decorators={[
+    (StoryFn) => (
+      <div style={{ width: '100%', display: 'flex', justifyContent: 'space-around', }}>
+        <StoryFn />
+      </div>
+    ),
+  ]}>
+    <Breadcrumb>
+      <BreadcrumbItem href="../..">WAI-ARIA Authoring Practices 1.1</BreadcrumbItem>
+      <BreadcrumbItem href="../../#aria_ex">Design Patterns</BreadcrumbItem>
+      <BreadcrumbItem href="../../#breadcrumb">Breadcrumb Patterns</BreadcrumbItem>
+      <BreadcrumbItem currentPage href="./index.html">Breadcrumb Example</BreadcrumbItem>
+    </Breadcrumb>
+  </Story>
+</Preview>
+
+## Breadcrumb (component)
 
 <Props of={Breadcrumb} />
+
+## BreadcrumbItem
+
+<Preview>
+  <Story name="Breadcrumb/Item" decorators={[
+    (StoryFn) => (
+      <div style={{ width: '100%', display: 'flex', justifyContent: 'space-around', }}>
+        <StoryFn />
+      </div>
+    ),
+  ]}>
+      <BreadcrumbItem href="/">Demo</BreadcrumbItem>
+  </Story>
+</Preview>
+
+<Props of={BreadcrumbItem} />
