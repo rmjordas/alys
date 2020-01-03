@@ -33,5 +33,6 @@ export const Modal = ({ children }) => {
 Modal.displayName = 'Modal';
 
 Modal.propTypes = {
+  /** Child component to be shown in the portal element */
   children: PropTypes.node.isRequired,
 };
