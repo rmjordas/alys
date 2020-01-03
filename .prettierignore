@@ -1,3 +1,4 @@
 dist/
 storybook-static/
+tmp/
 package-lock.json
