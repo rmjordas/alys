@@ -4,62 +4,61 @@ import PropTypes from 'prop-types';
 import { forwardRef, Children, isValidElement, cloneElement } from 'react';
 import { useTheme } from 'emotion-theming';
 
-export const BreadcrumbItem = forwardRef(
-  ({ currentPage: isCurrentPage, href, children, ...anchorProps }, ref) => {
-    const theme = useTheme().default;
+export const BreadcrumbItem = forwardRef(({ active, href, children, ...anchorProps }, ref) => {
+  const theme = useTheme().default;
 
-    return (
-      <li
-        css={{
-          fontFamily: theme.typography.fonts.base,
-          fontWeight: theme.typography.weight.medium,
-          fontSize: theme.typography.size.s2,
-          display: 'inline',
+  return (
+    <li
+      css={{
+        fontFamily: theme.typography.fonts.base,
+        fontWeight: theme.typography.weight.medium,
+        fontSize: theme.typography.size.s2,
+        display: 'inline',
 
-          '& + &:before': {
-            content: `''`,
-            display: 'inline-block',
-            margin: '0 0.5em',
-            transform: 'rotate(15deg)',
-            borderRight: `0.1em solid ${theme.color.description}`,
-            height: '0.8em',
-          },
-        }}
-        ref={ref}
-      >
-        <a
-          css={[
-            {
-              color: theme.color.accent600,
-              textDecoration: 'none',
-              transition: `color 0.2s ${theme.easing.rubber}`,
+        '& + &:before': {
+          content: `''`,
+          display: 'inline-block',
+          margin: '0 0.5em',
+          transform: 'rotate(15deg)',
+          borderRight: `0.1em solid ${theme.color.description}`,
+          height: '0.8em',
+        },
+      }}
+      ref={ref}
+    >
+      <a
+        css={[
+          {
+            color: theme.color.accent600,
+            textDecoration: 'none',
+            transition: `color 0.2s ${theme.easing.rubber}`,
 
-              '@media (hover: hover)': {
-                '&:hover': {
-                  color: theme.color.accent,
-                },
+            '@media (hover: hover)': {
+              '&:hover': {
+                color: theme.color.accent,
               },
             },
-            isCurrentPage && {
-              color: theme.color.description,
-              fontWeight: 700,
-              textDecoration: 'none',
-            },
-          ].filter(Boolean)}
-          {...anchorProps}
-          href={href}
-        >
-          {children}
-        </a>
-      </li>
-    );
-  },
-);
+          },
+          active && {
+            color: theme.color.description,
+            fontWeight: 700,
+            textDecoration: 'none',
+          },
+        ].filter(Boolean)}
+        {...anchorProps}
+        href={href}
+        aria-current={active ? 'page' : undefined}
+      >
+        {children}
+      </a>
+    </li>
+  );
+});
 
 BreadcrumbItem.displayName = 'BreadcrumbItem';
 
 BreadcrumbItem.defaultProps = {
-  currentPage: false,
+  active: false,
 };
 
 BreadcrumbItem.propTypes = {
@@ -68,7 +67,7 @@ BreadcrumbItem.propTypes = {
   /** Text to display */
   children: PropTypes.string.isRequired,
   /** If true, will make breadcrumb item link inert */
-  currentPage: PropTypes.bool,
+  active: PropTypes.bool,
 };
 
 export const Breadcrumb = forwardRef(({ links = [], children, ...navProps }, ref) => {
@@ -108,8 +107,8 @@ export const Breadcrumb = forwardRef(({ links = [], children, ...navProps }, ref
       >
         {clones && clones.length > 0
           ? clones
-          : links.map(({ href, text, isCurrentPage }) => (
-              <BreadcrumbItem href={href} currentPage={isCurrentPage} key={href}>
+          : links.map(({ href, text, active }) => (
+              <BreadcrumbItem href={href} active={active} key={href}>
                 {text}
               </BreadcrumbItem>
             ))}
@@ -126,12 +125,16 @@ Breadcrumb.defaultProps = {
 };
 
 Breadcrumb.propTypes = {
-  /** Contains attributes passed to breadcrumb item anchor elements. */
+  /**
+   * Contains attributes passed to breadcrumb item anchor elements.
+   *
+   * @deprecated use Breadcrumb sub-components (BreadcrumbItem, BreadcrumbSeparater, etc.)
+   */
   links: PropTypes.arrayOf(
     PropTypes.shape({
       href: PropTypes.string.isRequired,
       text: PropTypes.string.isRequired,
-      isCurrentPage: PropTypes.bool,
+      active: PropTypes.bool,
     }),
   ),
   /** Must be provided if `links` prop is not defined. If provided, `links` will be ignored. */
