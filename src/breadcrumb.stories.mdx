@@ -1,8 +1,9 @@
 import { Meta, Preview, Props, Story } from '@storybook/addon-docs/blocks';
 
-import { Breadcrumb, BreadcrumbItem } from './breadcrumb';
+import { Breadcrumb } from './breadcrumb';
+import { BreadcrumbItem } from './breadcrumb-item';
 
-<Meta title="Components/Breadcrumb" component={Breadcrumb} />
+<Meta title="Components/Breadcrumb" component={Breadcrumb}></Meta>
 
 # Breadcrumb
 
@@ -11,58 +12,44 @@ page they are currently viewing.
 
 ## Usage
 
-This next example is lifted straight out of the WAI-ARIA Authoring Practices breadcrumb example.
-
-### Basic ARIA example
-
-<Preview>
-  <Story name="Breadcrumb/ARIAExample">
-    <Breadcrumb
-      links={[
-        {
-          href: '../..',
-          text: 'WAI-ARIA Authoring Practices 1.1',
-        },
-        {
-          href: '../../#aria_ex',
-          text: 'Design Patterns',
-        },
-        {
-          href: '../../#breadcrumb',
-          text: 'Breadcrumb Pattern',
-        },
-        {
-          href: './index.html',
-          text: 'Breadcrumb Example',
-          active: true,
-        },
-      ]}
-    ></Breadcrumb>
-  </Story>
-</Preview>
-
-### ARIA example with subcomponents
+Wrap a list of BreadcrumbItems inside a Breadcrumb component. The BreadcrumbItem will accept the
+path (`href`) and anchor text (as child). By default, any last BreadcrumbItem will be marked as
+`active`.
 
 <Preview>
-  <Story name="Breadcrumb/ARIASubcomponent">
+  <Story name="Breadcrumb/Example">
     <Breadcrumb>
-      <BreadcrumbItem href="../..">WAI-ARIA Authoring Practices 1.1</BreadcrumbItem>
-      <BreadcrumbItem href="../../#aria_ex">Design Patterns</BreadcrumbItem>
-      <BreadcrumbItem href="../../#breadcrumb">Breadcrumb Patterns</BreadcrumbItem>
-      <BreadcrumbItem active href="./index.html">Breadcrumb Example</BreadcrumbItem>
+      <BreadcrumbItem href="/">Alys</BreadcrumbItem>
+      <BreadcrumbItem href="/components">Components</BreadcrumbItem>
+      <BreadcrumbItem href="/components/breadcrumb">Breadcrumb</BreadcrumbItem>
+      <BreadcrumbItem href="/components/breadcrumb/breadcrumb-item">BreadcrumbItem</BreadcrumbItem>
     </Breadcrumb>
   </Story>
 </Preview>
 
-## Breadcrumb (component)
+## Breadcrumb
+
+The Breadcrumb component wraps a list of BreadcrumbItems.
 
 <Props of={Breadcrumb} />
 
 ## BreadcrumbItem
 
+Breadcrumb items is provided the link text, path and if that item is the currently active page.
+
 <Preview>
-  <Story name="Breadcrumb/Item">
-    <BreadcrumbItem href="/">WAI-ARIA Authoring Practices 1.1</BreadcrumbItem>
+  <Story name="BreadcrumbItem/Active/False">
+    <BreadcrumbItem href="/components">Components</BreadcrumbItem>
+  </Story>
+</Preview>
+
+Although marking a BreadcrumbItem as `active` is not required, it is still possible to provide a
+boolean `active` attribute to a BreadcrumbItem but this will be ignored if the BreadcrumbItem is a
+child to a Breadcrumb wrapper component.
+
+<Preview>
+  <Story name="Breadcrumb/Item/Active/True">
+    <BreadcrumbItem active href="/components/breadcrumb/breadcrumb-item">BreadcrumbItem</BreadcrumbItem>
   </Story>
 </Preview>
 
