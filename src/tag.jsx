@@ -10,6 +10,12 @@ export const Tag = forwardRef(
   ({ color: pColor, disabled, variant, onClose, children, ...tagProps }, ref) => {
     const theme = useTheme().default;
 
+    let padding = '0.375em 0.875em';
+
+    if (onClose) {
+      padding = '0.375em 0.625em';
+    }
+
     let themeColor = 'accent';
 
     switch (pColor) {
@@ -77,15 +83,17 @@ export const Tag = forwardRef(
           border,
           color,
           backgroundColor,
+          padding,
           fontFamily: theme.typography.fonts.base,
           fontSize: theme.typography.size.s1,
           fontWeight: theme.typography.weight.medium,
-          display: 'inline',
+          display: 'inline-block',
           borderRadius: 5,
-          padding: '0.375em 0.875em',
           cursor: 'default',
           userSelect: 'none',
           transition: `all 0.2s ${theme.easing.rubber}`,
+          height: '1.75em',
+          lineHeight: 1.75,
 
           '@media (hover: hover)': {
             '&:hover': hoverStyles,
@@ -97,10 +105,15 @@ export const Tag = forwardRef(
         {children}
         {onClose && (
           <CloseIcon
-            css={{ opacity: 0.7, paddingLeft: '0.375em', cursor: disabled ? 'default' : 'pointer' }}
+            css={{
+              opacity: 0.7,
+              paddingLeft: '0.375em',
+              marginRight: '-0.375em',
+              cursor: disabled ? 'default' : 'pointer',
+            }}
             onClick={onClose}
-            width={13}
-            height={13}
+            width={theme.typography.size.m1}
+            height={theme.typography.size.m1}
           />
         )}
       </div>
