@@ -85,7 +85,7 @@ export const Button = forwardRef(
       default:
         color = pColor === 'basic' ? theme.color.description : theme.color.baseInvert;
 
-        hoverStyles.backgroundColor = h400;
+        hoverStyles.backgroundColor = pColor === 'basic' ? 'lightgrey' : h400;
 
         focusStyles.backgroundColor = h500;
         focusStyles.boxShadow = pColor === 'basic' ? `0 0 0 4px lightskyblue` : `0 0 0 4px ${h200}`;
