@@ -3,6 +3,7 @@ import { Meta, Preview, Props, Story } from '@storybook/addon-docs/blocks';
 import { Fragment } from 'react';
 
 import { Tag } from './tag';
+import { TagExample } from './internal/tag-example';
 
 <Meta title="Components/Tag" component={Tag} />
 
@@ -12,7 +13,7 @@ Tags can be used to show how a certain item is categorized. It appears a lot on 
 the title tag to indicate that the current item belongs to a group. When clicked, it usually
 navigates to a separate page to show all the items tagged with a similar tag.
 
-## Overview
+## Usage
 
 Solid tags are normally used to draw more attention to function as badges to indicate short but
 important information, e.g. deprecation notices, new features, etc.
@@ -49,6 +50,15 @@ more prominent than the card tags.
 </Story>
 
 <Props of={Tag} />
+
+## Demo
+
+Try removing the tags from the list below by clicking/tapping the close icon. Every tag is provided
+a handler that calls a dispatcher to update the tag list.
+
+<Story name="WithOnClose/Example">
+  <TagExample />
+</Story>
 
 ## Stories
 
