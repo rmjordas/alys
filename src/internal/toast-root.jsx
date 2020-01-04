@@ -2,12 +2,10 @@
 import { jsx } from '@emotion/core';
 import { forwardRef } from 'react';
 
-const domId = 'toast-root';
-
 export const ToastRoot = forwardRef((props, ref) => (
   <div
     css={{
-      position: 'absolute',
+      position: 'fixed',
       top: 20,
       right: 20,
 
@@ -16,7 +14,7 @@ export const ToastRoot = forwardRef((props, ref) => (
       },
     }}
     {...props}
-    id={domId}
+    id="toast-root"
     ref={ref}
   />
 ));

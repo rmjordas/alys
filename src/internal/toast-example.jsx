@@ -8,9 +8,5 @@ export const ToastExample = () => {
 
   const show = () => toast.add('Toasty at ' + new Date().getMilliseconds().toString() + ' degrees');
 
-  return (
-    <div>
-      <button onClick={show}>Show toast</button>
-    </div>
-  );
+  return <button onClick={show}>Show toast</button>;
 };
