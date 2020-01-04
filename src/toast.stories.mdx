@@ -1,0 +1,42 @@
+import { action } from '@storybook/addon-actions';
+import { Meta, Preview, Props, Story } from '@storybook/addon-docs/blocks';
+import { Fragment } from 'react';
+
+import { Toast } from './toast';
+import { ToastProvider } from './toast-provider';
+import { Centered } from './internal/centered';
+import { ModalRoot } from './internal/modal-root';
+import { ToastExample } from './internal/toast-example';
+import { ToastRoot } from './internal/toast-root';
+
+<Meta title="Components/Toast" component={Toast} />
+
+# Toast
+
+Toast components provide a way to relay information to a user without obstructing their interactions
+with other parts of the application.
+
+<Story name="Primary/All">
+  <Toast>This is an alert</Toast>
+</Story>
+
+## Demo
+
+Click the button below to add a new toast notification in the queue. Click the close icon to destroy
+that item.
+
+<Story
+  name="Toast/Example"
+  decorators={[
+    (StoryFn) => (
+      <Fragment>
+        <ToastRoot />
+        <Centered>
+          <StoryFn />
+        </Centered>
+      </Fragment>
+    )]}>
+  <ToastProvider>
+    <ToastExample />
+  </ToastProvider>
+</Story>
