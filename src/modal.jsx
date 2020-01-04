@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import { createPortal } from 'react-dom';
 import { useRef, useEffect } from 'react';
 
-export const Modal = ({ children }) => {
+export const Modal = ({ domId = 'modal-root', children }) => {
   const elRef = useRef(null);
 
   if (!elRef.current) {
@@ -10,7 +10,7 @@ export const Modal = ({ children }) => {
   }
 
   useEffect(() => {
-    const modalRoot = document.getElementById('modal-root');
+    const modalRoot = document.getElementById(domId);
 
     if (!modalRoot) {
       return;
@@ -25,7 +25,7 @@ export const Modal = ({ children }) => {
         modalRoot.removeChild(elRef.current);
       }
     };
-  }, []);
+  }, [domId]);
 
   return createPortal(children, elRef.current);
 };
