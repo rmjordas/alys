@@ -90,9 +90,8 @@ wrap your whole application if you want to.
 /** @jsx jsx */
 import { jsx } from '@emotion/core';
 import { ToastProvider } from 'alys';
-import { Fragment } from 'react';
 
-import { Nav, Footer } from './components';
+import { Nav, Footer, ToastButtonExample } from './components';
 
 // Assuming you placed div#toast-id in your index.html...
 export const App = () => (
@@ -114,7 +113,7 @@ import { useToast } from 'alys';
 export const ToastButtonExample = () => {
   const toast = useToast();
 
-  const show = () => toast.add('Toasty at ' + new Date().getMilliseconds().toString() + ' degrees');
+  const show = () => toast.add('Toasty at ' + new Date().getMilliseconds().toString() + ' Kelvin');
 
   return <button onClick={show}>Show toast</button>;
 };
