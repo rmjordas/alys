@@ -78,6 +78,6 @@ Toast.propTypes = {
   variant: PropTypes.oneOf(['primary', 'secondary']),
   /** Determines the colors of the toast */
   color: PropTypes.oneOf(['basic', 'primary', 'danger', 'success', 'warning']),
-  /** */
+  /** If provided will allow destroying the toast before it expires */
   onClose: PropTypes.func,
 };

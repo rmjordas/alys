@@ -1,3 +1,4 @@
+/** Returns a "unique-enough" pseudo-random ID. */
 export const generateUeid = () => {
   let first = (Math.random() * 46656) | 0;
   let second = (Math.random() * 46656) | 0;

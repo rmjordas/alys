@@ -38,5 +38,6 @@ export const ToastProvider = ({ children }) => {
 };
 
 ToastProvider.propTypes = {
+  /** Actual component that ToastContext's Provider wraps around */
   children: PropTypes.node.isRequired,
 };
