@@ -8,6 +8,7 @@ export const ToastRoot = forwardRef((props, ref) => (
       position: 'fixed',
       top: 20,
       right: 20,
+      zIndex: 2, // To move above Sorybook UI elements
 
       '&:empty': {
         display: 'none',

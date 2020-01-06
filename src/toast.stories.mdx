@@ -13,12 +13,112 @@ import { ToastRoot } from './internal/toast-root';
 
 # Toast
 
-Toast components provide a way to relay information to a user without obstructing their interactions
-with other parts of the application.
+Toast components provide a way to relay information to a user without obstructing completely their
+interactions with other parts of the application. Toast can contain information about the status of
+an operation.
+
+## Overview
+
+Basic Toasts look the same for all variants:
+
+<Story name="Basic">
+  <Toast variant="secondary" color="basic">Basic</Toast>
+</Story>
+
+Here are the primary Toast variants:
 
 <Story name="Primary/All">
-  <Toast>This is an alert</Toast>
+  <Fragment>
+    <div>
+      <Toast>Primary</Toast>
+      <Toast color="danger">Danger</Toast>
+    </div>
+    <div>
+      <Toast color="warning">Warning</Toast>
+      <Toast color="success">Success</Toast>
+    </div>
+  </Fragment>
 </Story>
+
+Secondary Toast variants are also available:
+
+<Story name="Secondary/All">
+  <Fragment>
+    <div>
+      <Toast variant="secondary">Primary</Toast>
+      <Toast variant="secondary" color="danger">Danger</Toast>
+    </div>
+    <div>
+      <Toast variant="secondary" color="warning">Warning</Toast>
+      <Toast variant="secondary" color="success">Success</Toast>
+    </div>
+  </Fragment>
+</Story>
+
+<Props of={Toast} />
+
+## Usage
+
+Using Toasts requires a little bit of set up because it relies on the low-level Modal component.
+Here's quick overview of the steps:
+
+Create a Toast "root" component or assign a div with a unique toast ID. Be sure to update the
+styles of the div so the toast will be positioned properly. With proper styling to the Toast root,
+you can put this component anywhere.
+
+```html
+<div id="toast-root"></div>
+```
+
+```css
+#toast-root {
+  position: fixed;
+  top: 20;
+  right: 20;
+  z-index: 1;
+}
+
+#toast-root:empty {
+  display: none;
+}
+```
+
+Next, update your app to wrap the components that will use the Toast with the ToastProvider. You can
+wrap your whole application if you want to.
+
+```jsx
+/** @jsx jsx */
+import { jsx } from '@emotion/core';
+import { ToastProvider } from 'alys';
+import { Fragment } from 'react';
+
+import { Nav, Footer } from './components';
+
+// Assuming you placed div#toast-id in your index.html...
+export const App = () => (
+  <ToastProvider>
+    <Nav />
+    <ToastButtonExample />
+    <Footer />
+  </ToastProvider>
+)
+```
+
+Finally, use the Toast component in one of your components inside the ToastProvider.
+
+```jsx
+/** @jsx jsx */
+import { jsx } from '@emotion/core';
+import { useToast } from 'alys';
+
+export const ToastButtonExample = () => {
+  const toast = useToast();
+
+  const show = () => toast.add('Toasty at ' + new Date().getMilliseconds().toString() + ' degrees');
+
+  return <button onClick={show}>Show toast</button>;
+};
+```
 
 ## Demo
 
@@ -40,3 +140,42 @@ that item.
     <ToastExample />
   </ToastProvider>
 </Story>
+
+## Stories
+
+<br />
+
+### Variant (default)
+
+<Preview>
+  <Story name="Variant/Default">
+    <Toast>
+      Now Playing: Never Ending Circles - CHVRCHΞS
+    </Toast>
+  </Story>
+</Preview>
+
+### Variant (secondary)
+
+<Preview>
+  <Story name="Variant/Secondary">
+    <Toast variant="secondary">
+      May your road lead you to warm sands.
+    </Toast>
+  </Story>
+</Preview>
+
+### Long text
+
+Ideally, it would be better if text provided to the toast are brief so that the toast will not
+obstruct a lot of UI elements underneath. But in case this cannot be avoided, the component will
+extend its height.
+
+<Preview>
+  <Story name="LongText">
+    <Toast>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque consectetur enim elementum
+      odio laoreet, non maximus tellus faucibus.
+    </Toast>
+  </Story>
+</Preview>
