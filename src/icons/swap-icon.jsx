@@ -1,20 +1,21 @@
 /** @jsx jsx **/
 import { jsx } from '@emotion/core';
+import { forwardRef } from 'react';
 
 import { Icon } from '../icon';
 
-export const SwapIcon = (svgProps) => {
-  return (
-    <Icon {...svgProps}>
-      <rect width="24" height="24" transform="rotate(-90 12 12)" opacity="0" />
-      <path
-        fill="currentColor"
-        d="M4 9h13l-1.6 1.2a1 1 0 0 0-.2 1.4 1 1 0 0 0 .8.4 1 1 0 0 0 .6-.2l4-3a1 1 0 0 0 0-1.59l-3.86-3a1 1 0 0 0-1.23 1.58L17.08 7H4a1 1 0 0 0 0 2z"
-      />
-      <path
-        fill="currentColor"
-        d="M20 16H7l1.6-1.2a1 1 0 0 0-1.2-1.6l-4 3a1 1 0 0 0 0 1.59l3.86 3a1 1 0 0 0 .61.21 1 1 0 0 0 .79-.39 1 1 0 0 0-.17-1.4L6.92 18H20a1 1 0 0 0 0-2z"
-      />
-    </Icon>
-  );
-};
+export const SwapIcon = forwardRef((svgProps, ref) => (
+  <Icon {...svgProps} ref={ref}>
+    <rect width="24" height="24" transform="rotate(-90 12 12)" opacity="0" />
+    <path
+      fill="currentColor"
+      d="M4 9h13l-1.6 1.2a1 1 0 0 0-.2 1.4 1 1 0 0 0 .8.4 1 1 0 0 0 .6-.2l4-3a1 1 0 0 0 0-1.59l-3.86-3a1 1 0 0 0-1.23 1.58L17.08 7H4a1 1 0 0 0 0 2z"
+    />
+    <path
+      fill="currentColor"
+      d="M20 16H7l1.6-1.2a1 1 0 0 0-1.2-1.6l-4 3a1 1 0 0 0 0 1.59l3.86 3a1 1 0 0 0 .61.21 1 1 0 0 0 .79-.39 1 1 0 0 0-.17-1.4L6.92 18H20a1 1 0 0 0 0-2z"
+    />
+  </Icon>
+));
+
+SwapIcon.displayName = 'SwapIcon';
