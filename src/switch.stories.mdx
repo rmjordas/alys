@@ -1,0 +1,23 @@
+import { Meta, Preview, Props, Story } from '@storybook/addon-docs/blocks';
+
+import { Switch } from './switch';
+
+<Meta title="Components/Switch" component={Switch}></Meta>
+
+# Switch
+
+A toggle switch can be used to provide the user an input for something represented by an on and off
+state. It is similar to a checkbox except it normally does not allow an intermediate state.
+
+> "Only a Sith deals in absolutes." - A Jedi Master stating an absolute
+
+## Overview
+
+Switches are commonly used inside forms. Accessibilty practices require that it must always be
+provided with a label.
+
+<Story name="Default">
+  <Switch label="Nice" />
+</Story>
+
+<Props of={Switch} />
