@@ -36,39 +36,43 @@ export const Button = forwardRef(
     };
 
     let focusStyles = {
-      boxShadow: '0 0 0 4px lightskyblue',
+      boxShadow: `0 0 0 4px ${h200}`,
     };
 
     let activeStyles = {
-      color: pColor === 'basic' ? theme.color.description : theme.color.baseInvert,
+      color: theme.color.baseInvert,
+      backgroundColor: h600,
     };
 
     switch (variant) {
       case 'secondary':
-        border = `2px solid ${h500}`;
+        border = `2px solid ${pColor === 'basic' ? theme.color.subtle : h500}`;
         backgroundColor = 'transparent';
-        color = pColor === 'basic' ? theme.color.description : h500;
+        color = h500;
 
         hoverStyles.borderColor = h500;
         hoverStyles.backgroundColor = pColor === 'basic' ? theme.color.subtle : h500;
         hoverStyles.color = pColor === 'basic' ? theme.color.description : theme.color.baseInvert;
 
-        focusStyles.boxShadow = pColor === 'basic' ? `0 0 0 4px lightskyblue` : `0 0 0 4px ${h200}`;
-
-        activeStyles.borderColor = pColor === 'basic' ? theme.color.subtle : h600;
-        activeStyles.backgroundColor = pColor === 'basic' ? `lightgrey` : h600;
+        activeStyles.borderColor = pColor === 'basic' ? 'lightgrey' : h600;
         break;
       case 'primary':
       default:
-        color = pColor === 'basic' ? theme.color.description : theme.color.baseInvert;
+        color = theme.color.baseInvert;
 
-        hoverStyles.backgroundColor = pColor === 'basic' ? 'lightgrey' : h400;
+        hoverStyles.backgroundColor = pColor === 'basic' ? theme.color.subtle : h400;
 
         focusStyles.backgroundColor = h500;
-        focusStyles.boxShadow = pColor === 'basic' ? `0 0 0 4px lightskyblue` : `0 0 0 4px ${h200}`;
-
-        activeStyles.backgroundColor = pColor === 'basic' ? 'lightgrey' : h600;
         break;
+    }
+
+    if (pColor === 'basic') {
+      color = theme.color.description;
+
+      focusStyles.boxShadow = '0 0 0 4px lightskyblue';
+
+      activeStyles.backgroundColor = 'lightgrey';
+      activeStyles.color = theme.color.description;
     }
 
     if (buttonProps.disabled) {
