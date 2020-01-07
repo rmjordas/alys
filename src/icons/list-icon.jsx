@@ -4,8 +4,8 @@ import { forwardRef } from 'react';
 
 import { Icon } from '../icon';
 
-export const ListIcon = forwardRef((svgProps) => (
-  <Icon {...svgProps}>
+export const ListIcon = forwardRef((svgProps, ref) => (
+  <Icon {...svgProps} ref={ref}>
     <rect width="24" height="24" transform="rotate(180 12 12)" opacity="0" />
     <circle fill="currentColor" cx="4" cy="7" r="1" />
     <circle fill="currentColor" cx="4" cy="12" r="1" />

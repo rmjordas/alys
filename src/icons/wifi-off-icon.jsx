@@ -4,8 +4,8 @@ import { forwardRef } from 'react';
 
 import { Icon } from '../icon';
 
-export const WifiOffIcon = forwardRef((svgProps) => (
-  <Icon {...svgProps}>
+export const WifiOffIcon = forwardRef((svgProps, ref) => (
+  <Icon {...svgProps} ref={ref}>
     <rect width="24" height="24" opacity="0" />
     <circle fill="currentColor" cx="12" cy="19" r="1" />
     <path

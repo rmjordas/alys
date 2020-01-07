@@ -4,8 +4,8 @@ import { forwardRef } from 'react';
 
 import { Icon } from '../icon';
 
-export const BookIcon = forwardRef((svgProps) => (
-  <Icon {...svgProps}>
+export const BookIcon = forwardRef((svgProps, ref) => (
+  <Icon {...svgProps} ref={ref}>
     <rect width="24" height="24" opacity="0" />
     <path
       fill="currentColor"

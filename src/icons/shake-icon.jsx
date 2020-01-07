@@ -4,8 +4,8 @@ import { forwardRef } from 'react';
 
 import { Icon } from '../icon';
 
-export const ShakeIcon = forwardRef((svgProps) => (
-  <Icon {...svgProps}>
+export const ShakeIcon = forwardRef((svgProps, ref) => (
+  <Icon {...svgProps} ref={ref}>
     <rect width="24" height="24" opacity="0" />
     <path
       fill="currentColor"
