@@ -2,7 +2,7 @@ export * from './breadcrumb';
 export * from './breadcrumb-item';
 export * from './button';
 export * from './icon';
-export * from './modal';
+export * from './portal';
 export * from './tag';
 export * from './toast';
 export * from './toast-context';

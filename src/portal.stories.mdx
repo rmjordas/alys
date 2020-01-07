@@ -1,23 +1,27 @@
 import { Meta, Props, Story } from '@storybook/addon-docs/blocks';
 import { Fragment } from 'react';
 
-import { Modal } from './modal';
+import { Portal } from './portal';
 import { Centered } from './internal/centered';
 import { ModalRoot } from './internal/modal-root';
-import { ModalExample } from './internal/modal-example';
+import { PortalExample } from './internal/portal-example';
 
-<Meta title="Utility/Modal" component={Modal} />
+<Meta title="Utility/Portal" component={Portal} />
 
-# Modal
+# Portal
 
-Modals are useful for showing prompts that the user must immediately resolve in order to move on
-with some process. The whole screen will be dimmed and some dialog component will be presented where
-UI elements will accept input to either confirm and proceed or cancel.
+A Portal is a relatively lower-level component that is responsible for rendering components in
+another element, possibly not in the current component heirarchy.
 
 ## Usage
 
-This is a relatively lower level component so you must add first the modal root, the UI elements
-for showing the modal, and the Modal contents to appear when the modal is opened.
+One use for a Portal is for making modals. Modals are useful for showing prompts that the user must
+immediately resolve in order to move on with some process. The whole screen will be dimmed and some
+dialog component will be presented where UI elements will accept input to either confirm and proceed
+or cancel.
+
+To create a modal using a Portal, you must add first the modal root element, the UI elements for
+showing the modal (e.g. button, etc.), and the modal contents to appear when the modal is opened.
 
 The modal root is a container where the modal contents will be "injected". If the React application
 is rendered in a `div#app-root`, the modal root should be placed as a sibling to it. The modal root
@@ -42,21 +46,21 @@ The modal contents are can be shown conditionally inside stateful components:
 
 ```jsx
 state.showModal ? (
-  <Modal>
+  <Portal domId="modal-root">
     Hello <button onClick={toggleModal}>Close modal</button>
-  </Modal>
+  </Portal>
 ) : null;
 ```
 
-<Props of={Modal} />
+<Props of={Portal} />
 
 ### Demo
 
-Click the button below to show a simple modal. Once the modal is shown, there is another butotn to
+Click the button below to show a simple modal. Once the modal is shown, there is another button to
 close the modal.
 
 <Story
-  name="Modal/Example"
+  name="Portal/Example"
   decorators={[
   (StoryFn) => (
     <Fragment>
@@ -67,5 +71,5 @@ close the modal.
     </Fragment>
   )]}
 >
-  <ModalExample />
+  <PortalExample />
 </Story>

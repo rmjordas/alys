@@ -3,7 +3,7 @@ import { jsx } from '@emotion/core';
 import PropTypes from 'prop-types';
 import { Fragment, useState } from 'react';
 
-import { Modal } from './modal';
+import { Portal } from './portal';
 import { Toast } from './toast';
 import { ToastContext } from './toast-context';
 import { generateUeid } from './utils/rand-utils';
@@ -23,7 +23,7 @@ export const ToastProvider = ({ children }) => {
     <ToastContext.Provider value={{ add, remove }}>
       {children}
       {toasts.length > 0 ? (
-        <Modal domId="toast-root">
+        <Portal domId="toast-root">
           <Fragment>
             {toasts.map((v) => (
               <Toast key={v.id} onClose={() => remove(v.id)}>
@@ -31,7 +31,7 @@ export const ToastProvider = ({ children }) => {
               </Toast>
             ))}
           </Fragment>
-        </Modal>
+        </Portal>
       ) : null}
     </ToastContext.Provider>
   );

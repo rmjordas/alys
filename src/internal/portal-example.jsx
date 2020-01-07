@@ -2,7 +2,7 @@
 import { jsx } from '@emotion/core';
 import { useReducer } from 'react';
 
-import { Modal } from '../modal';
+import { Portal } from '../portal';
 
 const MODAL_SHOW = 'MODAL_SHOW';
 const MODAL_DESTROY = 'MODAL_DESTROY';
@@ -22,7 +22,7 @@ function reducer(state, action) {
   }
 }
 
-export const ModalExample = () => {
+export const PortalExample = () => {
   const [state, dispatch] = useReducer(reducer, initialState);
 
   const toggleModal = () => {
@@ -35,9 +35,9 @@ export const ModalExample = () => {
     <div>
       <button onClick={toggleModal}>Show modal</button>
       {state.showModal ? (
-        <Modal>
+        <Portal domId="modal-root">
           Hello <button onClick={toggleModal}>Close modal</button>
-        </Modal>
+        </Portal>
       ) : null}
     </div>
   );

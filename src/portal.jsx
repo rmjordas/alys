@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import { createPortal } from 'react-dom';
 import { useRef, useEffect } from 'react';
 
-export const Modal = ({ domId = 'modal-root', children }) => {
+export const Portal = ({ domId = 'portal-root', children }) => {
   const elRef = useRef(null);
 
   if (!elRef.current) {
@@ -30,9 +30,9 @@ export const Modal = ({ domId = 'modal-root', children }) => {
   return createPortal(children, elRef.current);
 };
 
-Modal.displayName = 'Modal';
+Portal.displayName = 'Portal';
 
-Modal.propTypes = {
+Portal.propTypes = {
   /** Child component to be shown in the portal element */
   children: PropTypes.node.isRequired,
 };

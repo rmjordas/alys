@@ -5,7 +5,6 @@ import { Fragment } from 'react';
 import { Toast } from './toast';
 import { ToastProvider } from './toast-provider';
 import { Centered } from './internal/centered';
-import { ModalRoot } from './internal/modal-root';
 import { ToastExample } from './internal/toast-example';
 import { ToastRoot } from './internal/toast-root';
 
@@ -59,7 +58,7 @@ Secondary Toast variants are also available:
 
 ## Usage
 
-Using Toasts requires a little bit of set up because it relies on the low-level Modal component.
+Using Toasts requires a little bit of set up because it relies on the low-level Portal component.
 Here's quick overview of the steps:
 
 Create a Toast "root" component or assign a div with a unique toast ID. Be sure to update the
