@@ -3,7 +3,12 @@ import { Meta, Preview, Props, Story } from '@storybook/addon-docs/blocks';
 import { Breadcrumb } from './breadcrumb';
 import { BreadcrumbItem } from './breadcrumb-item';
 
-<Meta title="Components/Breadcrumb/Breadcrumb" component={Breadcrumb}></Meta>
+<Meta
+  title="Components/Breadcrumb/Breadcrumb"
+  component={Breadcrumb}
+  parameters={{
+    subcomponents: { BreadcrumbItem },
+  }}></Meta>
 
 # Breadcrumb
 
