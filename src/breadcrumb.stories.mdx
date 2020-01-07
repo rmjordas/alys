@@ -3,7 +3,7 @@ import { Meta, Preview, Props, Story } from '@storybook/addon-docs/blocks';
 import { Breadcrumb } from './breadcrumb';
 import { BreadcrumbItem } from './breadcrumb-item';
 
-<Meta title="Components/Breadcrumb" component={Breadcrumb}></Meta>
+<Meta title="Components/Breadcrumb/Breadcrumb" component={Breadcrumb}></Meta>
 
 # Breadcrumb
 
@@ -12,9 +12,7 @@ page they are currently viewing.
 
 ## Usage
 
-Wrap a list of BreadcrumbItems inside a Breadcrumb component. The BreadcrumbItem will accept the
-path (`href`) and anchor text (as child). By default, any last BreadcrumbItem will be marked as
-`active`.
+Wrap a list of BreadcrumbItems inside a Breadcrumb component.
 
 <Preview>
   <Story name="Breadcrumb/Example">
@@ -27,30 +25,4 @@ path (`href`) and anchor text (as child). By default, any last BreadcrumbItem wi
   </Story>
 </Preview>
 
-## Breadcrumb
-
-The Breadcrumb component wraps a list of BreadcrumbItems.
-
 <Props of={Breadcrumb} />
-
-## BreadcrumbItem
-
-Breadcrumb items is provided the link text, path and if that item is the currently active page.
-
-<Preview>
-  <Story name="BreadcrumbItem/Active/False">
-    <BreadcrumbItem href="/components">Components</BreadcrumbItem>
-  </Story>
-</Preview>
-
-Although marking a BreadcrumbItem as `active` is not required, it is still possible to provide a
-boolean `active` attribute to a BreadcrumbItem but this will be ignored if the BreadcrumbItem is a
-child to a Breadcrumb wrapper component.
-
-<Preview>
-  <Story name="Breadcrumb/Item/Active/True">
-    <BreadcrumbItem active href="/components/breadcrumb/breadcrumb-item">BreadcrumbItem</BreadcrumbItem>
-  </Story>
-</Preview>
-
-<Props of={BreadcrumbItem} />

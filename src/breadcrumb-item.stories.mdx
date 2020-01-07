@@ -1,0 +1,32 @@
+import { Meta, Preview, Props, Story } from '@storybook/addon-docs/blocks';
+
+import { BreadcrumbItem } from './breadcrumb-item';
+
+<Meta title="Components/Breadcrumb/BreadcrumbItem" component={BreadcrumbItem}></Meta>
+
+# BreadcrumbItem
+
+Breadcrumb items is provided the link text, path and if that item is the currently active page.
+
+## Usage
+
+The BreadcrumbItem will accept the path and text to display. By default, any last BreadcrumbItem
+will be marked as `active`.
+
+<Preview>
+  <Story name="BreadcrumbItem/Active/False">
+    <BreadcrumbItem href="/components">Components</BreadcrumbItem>
+  </Story>
+</Preview>
+
+Although marking a BreadcrumbItem as `active` is not required, it is still possible to provide a
+boolean `active` attribute to a BreadcrumbItem but this will be ignored if the BreadcrumbItem is a
+child to a Breadcrumb wrapper component.
+
+<Preview>
+  <Story name="Breadcrumb/Item/Active/True">
+    <BreadcrumbItem active href="/components/breadcrumb/breadcrumb-item">BreadcrumbItem</BreadcrumbItem>
+  </Story>
+</Preview>
+
+<Props of={BreadcrumbItem} />
