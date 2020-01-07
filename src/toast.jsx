@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { jsx, keyframes } from '@emotion/core';
+import { jsx } from '@emotion/core';
 import PropTypes from 'prop-types';
 import { forwardRef, useRef, useEffect } from 'react';
 import { useTheme } from 'emotion-theming';
@@ -7,28 +7,35 @@ import { useTheme } from 'emotion-theming';
 import { CloseCircleIcon } from './icons/close-circle-icon';
 import { useColor } from './internal/use-color';
 
-const fadein = keyframes`
-  from { bottom: 0; opacity: 0; }
-  to { bottom: 30; opacity: 1;}
-`;
-
-const fadeout = keyframes`
-  from { bottom: 30; opacity: 1; }
-  to { bottom: 0; opacity: 0; }
-`;
-
 export const Toast = forwardRef(
   ({ color: pColor, children, onClose, variant, ...alertProps }, ref) => {
     const theme = useTheme().default;
     const closeRef = useRef();
+    const timerRef = useRef();
 
     closeRef.current = onClose ? onClose : () => undefined;
 
     useEffect(() => {
-      const id = setTimeout(() => closeRef.current(), 5000);
+      timerRef.current = setTimeout(() => closeRef.current(), 5000);
 
-      return () => clearTimeout(id);
+      return () => clearTimeout(timerRef.current);
     }, []);
+
+    const mouseEnter = () => {
+      if (!timerRef.current) {
+        return;
+      }
+
+      clearTimeout(timerRef.current);
+    };
+
+    const mouseLeave = () => {
+      if (timerRef.current) {
+        clearTimeout(timerRef.current);
+      }
+
+      timerRef.current = setTimeout(() => closeRef.current(), 5000);
+    };
 
     const { h400, h500, h600 } = useColor(pColor);
 
@@ -104,7 +111,6 @@ export const Toast = forwardRef(
           maxWidth: '20em',
           boxShadow: '0px 10px 23px rgba(0, 0, 0, 0.12)',
           transition: `all 0.2s ${theme.easing.rubber}`,
-          animation: onClose ? `${fadein} 0.5s, ${fadeout} 0.5s 4.5s` : undefined,
 
           svg: {
             color:
@@ -122,15 +128,17 @@ export const Toast = forwardRef(
           '&:active': activeStyles,
         }}
         {...alertProps}
+        onMouseEnter={mouseEnter}
+        onMouseLeave={mouseLeave}
         ref={ref}
         role="alertdialog"
-        aria-labelledby="toast_label"
+        aria-labelledby="toast-label"
       >
         <span
           css={{
             maxWidth: '90%',
           }}
-          id="toast_label"
+          id="toast-label"
         >
           {children}
         </span>
