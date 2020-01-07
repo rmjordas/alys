@@ -43,22 +43,19 @@ function reducer(state, action) {
 export const TagExample = () => {
   const [state, dispatch] = useReducer(reducer, { ...initialState });
 
+  const close = (title) => () => dispatch({ type: TAG_DESTROY, payload: title });
+
+  const click = () => dispatch({ type: STATE_RESET });
+
   return (
     <Fragment>
       {state.tags.map(({ title, color }) => (
-        <Tag
-          key={title}
-          color={color}
-          onClose={() => dispatch({ type: TAG_DESTROY, payload: title })}
-        >
+        <Tag key={title} color={color} onClose={close(title)}>
           {title}
         </Tag>
       ))}
 
-      <button
-        disabled={!state.isChanged}
-        onClick={state.isChanged ? () => dispatch({ type: STATE_RESET }) : undefined}
-      >
+      <button disabled={!state.isChanged} onClick={state.isChanged ? click : undefined}>
         Reset
       </button>
     </Fragment>
