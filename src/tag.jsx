@@ -5,6 +5,7 @@ import PropTypes from 'prop-types';
 import { forwardRef } from 'react';
 
 import { CloseIcon } from './icons/close-icon';
+import { useColor } from './internal/use-color';
 
 export const Tag = forwardRef(
   ({ color: pColor, disabled, variant, onClose, children, ...tagProps }, ref) => {
@@ -16,31 +17,7 @@ export const Tag = forwardRef(
       padding = '0.375em 0.625em';
     }
 
-    let themeColor = 'accent';
-
-    switch (pColor) {
-      case 'basic':
-        themeColor = 'subtle';
-        break;
-      case 'danger':
-        themeColor = 'danger';
-        break;
-      case 'success':
-        themeColor = 'success';
-        break;
-      case 'warning':
-        themeColor = 'warning';
-        break;
-      case 'primary':
-      default:
-        themeColor = 'accent';
-        break;
-    }
-
-    // highlight colors
-    const h400 = theme.color[`${themeColor}400`];
-    const h500 = theme.color[`${themeColor}`];
-    const h600 = theme.color[`${themeColor}600`];
+    const { h400, h500, h600 } = useColor(pColor);
 
     let border = 'none';
     let color;

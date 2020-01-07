@@ -4,6 +4,8 @@ import { useTheme } from 'emotion-theming';
 import PropTypes from 'prop-types';
 import { forwardRef } from 'react';
 
+import { useColor } from './internal/use-color';
+
 export const Button = forwardRef(
   ({ variant, color: pColor, size, children, ...buttonProps }, ref) => {
     const theme = useTheme().default;
@@ -23,32 +25,7 @@ export const Button = forwardRef(
         break;
     }
 
-    let themeColor = 'accent';
-
-    switch (pColor) {
-      case 'basic':
-        themeColor = 'subtle';
-        break;
-      case 'danger':
-        themeColor = 'danger';
-        break;
-      case 'success':
-        themeColor = 'success';
-        break;
-      case 'warning':
-        themeColor = 'warning';
-        break;
-      case 'primary':
-      default:
-        themeColor = 'accent';
-        break;
-    }
-
-    // highlight colors
-    const h200 = theme.color[`${themeColor}200`];
-    const h400 = theme.color[`${themeColor}400`];
-    const h500 = theme.color[`${themeColor}`];
-    const h600 = theme.color[`${themeColor}600`];
+    const { h200, h400, h500, h600 } = useColor(pColor);
 
     let border = 'none';
     let backgroundColor = h500;

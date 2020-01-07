@@ -5,6 +5,7 @@ import { forwardRef, useRef, useEffect } from 'react';
 import { useTheme } from 'emotion-theming';
 
 import { CloseCircleIcon } from './icons/close-circle-icon';
+import { useColor } from './internal/use-color';
 
 const fadein = keyframes`
   from { bottom: 0; opacity: 0; }
@@ -29,31 +30,7 @@ export const Toast = forwardRef(
       return () => clearTimeout(id);
     }, []);
 
-    let themeColor = 'accent';
-
-    switch (pColor) {
-      case 'basic':
-        themeColor = 'subtle';
-        break;
-      case 'danger':
-        themeColor = 'danger';
-        break;
-      case 'success':
-        themeColor = 'success';
-        break;
-      case 'warning':
-        themeColor = 'warning';
-        break;
-      case 'primary':
-      default:
-        themeColor = 'accent';
-        break;
-    }
-
-    // highlight colors
-    const h400 = theme.color[`${themeColor}400`];
-    const h500 = theme.color[`${themeColor}`];
-    const h600 = theme.color[`${themeColor}600`];
+    const { h400, h500, h600 } = useColor(pColor);
 
     let backgroundColor = h500;
     let color = h500;
