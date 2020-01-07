@@ -29,8 +29,8 @@ export const Tag = forwardRef(
 
     switch (variant) {
       case 'secondary':
-        border = `1px solid ${h500}`;
-        color = pColor === 'basic' ? theme.color.description : h500;
+        border = `1px solid ${pColor === 'basic' ? theme.color.subtle : h500}`;
+        color = h500;
         backgroundColor = 'transparent';
 
         hoverStyles.border = `1px solid ${h500}`;
@@ -40,11 +40,15 @@ export const Tag = forwardRef(
       case 'primary':
       default:
         border = 'none';
-        color = pColor === 'basic' ? theme.color.description : theme.color.baseInvert;
-        backgroundColor = h500;
+        color = theme.color.baseInvert;
+        backgroundColor = pColor === 'basic' ? theme.color.subtle : h500;
 
         hoverStyles.backgroundColor = pColor === 'basic' ? 'lightgrey' : h400;
         break;
+    }
+
+    if (pColor === 'basic') {
+      color = theme.color.description;
     }
 
     if (disabled) {
