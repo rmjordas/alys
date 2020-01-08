@@ -5,7 +5,7 @@ import { forwardRef, useRef, useEffect } from 'react';
 import { useTheme } from 'emotion-theming';
 
 import { CloseCircleIcon } from './icons/close-circle-icon';
-import { useColor } from './internal/use-color';
+import { useColor } from './internal';
 
 export const Toast = forwardRef(
   ({ color: pColor, children, onClose, variant, ...alertProps }, ref) => {

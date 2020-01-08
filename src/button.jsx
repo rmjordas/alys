@@ -4,7 +4,7 @@ import { useTheme } from 'emotion-theming';
 import PropTypes from 'prop-types';
 import { forwardRef } from 'react';
 
-import { useColor } from './internal/use-color';
+import { useColor } from './internal';
 
 export const Button = forwardRef(
   ({ variant, color: pColor, size, children, ...buttonProps }, ref) => {

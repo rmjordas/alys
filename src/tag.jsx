@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 import { forwardRef } from 'react';
 
 import { CloseIcon } from './icons/close-icon';
-import { useColor } from './internal/use-color';
+import { useColor } from './internal';
 
 export const Tag = forwardRef(
   ({ color: pColor, disabled, variant, onClose, children, ...tagProps }, ref) => {
