@@ -8,7 +8,7 @@ import { VisuallyHidden } from './visually-hidden';
 import { generateUeid } from './utils';
 
 export const Switch = forwardRef(
-  ({ label: ownLabel, showLabel, checked: ownChecked, disabled, ...inputProps }, ref) => {
+  ({ label: ownLabel, showLabel, checked: ownChecked, disabled, size, ...inputProps }, ref) => {
     const theme = useTheme().default;
     const [checked, setChecked] = useState(ownChecked);
 
@@ -18,6 +18,26 @@ export const Switch = forwardRef(
 
     let checkedBackground = theme.color.success;
     let cursor = 'pointer';
+    let wrapperHeight;
+    let knobWidth;
+    let knobOffset;
+    let translateDistance;
+
+    switch (size) {
+      case 'small':
+        wrapperHeight = '1.5em';
+        knobWidth = '1.25em';
+        knobOffset = '0.125em';
+        translateDistance = '1.75em';
+        break;
+      case 'big':
+      default:
+        wrapperHeight = '2em';
+        knobWidth = '1.625em';
+        knobOffset = '0.1875em';
+        translateDistance = '1.25em';
+        break;
+    }
 
     if (disabled) {
       check = undefined;
@@ -30,7 +50,7 @@ export const Switch = forwardRef(
         css={{
           position: 'relative',
           display: 'inline-flex',
-          height: '2em',
+          height: wrapperHeight,
           fontFamily: theme.typography.fonts.base,
           fontWeight: theme.typography.weight.medium,
           flexDirection: 'row',
@@ -50,7 +70,7 @@ export const Switch = forwardRef(
               },
 
               '+ span::before': {
-                transform: 'translateX(1.25em)',
+                transform: `translateX(${translateDistance})`,
               },
             },
 
@@ -88,10 +108,10 @@ export const Switch = forwardRef(
               content: '""',
               position: 'absolute',
               borderRadius: '50%',
-              height: '1.625em',
-              width: '1.625em',
-              top: '0.1875em',
-              left: '0.1875em',
+              height: knobWidth,
+              width: knobWidth,
+              top: knobOffset,
+              left: knobOffset,
               backgroundColor: disabled ? '#ccc' : theme.color.baseInvert,
               transition: `all .4s ${theme.easing.rubber}`,
             },
