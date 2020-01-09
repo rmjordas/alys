@@ -19,20 +19,23 @@ export const Switch = forwardRef(
     let checkedBackground = theme.color.success;
     let cursor = 'pointer';
     let wrapperHeight;
+    let sliderHeight;
     let knobWidth;
     let knobOffset;
     let translateDistance;
 
     switch (size) {
       case 'small':
-        wrapperHeight = '1.5em';
+        wrapperHeight = '1.625em';
+        sliderHeight = '1.5em';
         knobWidth = '1.25em';
         knobOffset = '0.125em';
         translateDistance = '1.75em';
         break;
       case 'big':
       default:
-        wrapperHeight = '2em';
+        wrapperHeight = '2.125em';
+        sliderHeight = '2em';
         knobWidth = '1.625em';
         knobOffset = '0.1875em';
         translateDistance = '1.25em';
@@ -60,6 +63,7 @@ export const Switch = forwardRef(
       >
         <input
           css={{
+            position: 'absolute',
             opacity: 0,
             width: 0,
             height: 0,
@@ -74,11 +78,14 @@ export const Switch = forwardRef(
               },
             },
 
-            '&:focus + span': {
-              boxShadow: '0 0 0.0625em #2196f3',
-            },
+            '&:focus + span': disabled
+              ? undefined
+              : {
+                  boxShadow: '0 0 0 0.25em lightskyblue',
+                },
           }}
           {...inputProps}
+          disabled={disabled}
           checked={checked}
           role="switch"
           aria-checked={checked}
@@ -102,7 +109,7 @@ export const Switch = forwardRef(
             boxShadow: 'none',
             transition: `all .4s ${theme.easing.rubber}`,
             width: '3.25em',
-            height: 'inherit',
+            height: sliderHeight,
 
             '&:before': {
               content: '""',
@@ -120,8 +127,7 @@ export const Switch = forwardRef(
         {showLabel ? (
           <span
             css={{
-              position: 'relative',
-              left: '3.875em',
+              marginLeft: '3.875em',
               color: disabled ? theme.color.textSubtle : theme.color.description,
             }}
             id={labelledby}

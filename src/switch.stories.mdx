@@ -1,4 +1,5 @@
 import { Meta, Preview, Props, Story } from '@storybook/addon-docs/blocks';
+import { Fragment } from 'react';
 
 import { Switch } from './switch';
 
@@ -88,5 +89,28 @@ Adding a `disabled` attribute prevents interaction with the toggle switch.
 <Preview>
   <Story name='SizeSmall'>
     <Switch size="small" label="Toggle Switch" />
+  </Story>
+</Preview>
+
+### Size (small with label shown)
+
+<Preview>
+  <Story name='SizeSmallWithLabel'>
+    <Switch size="small" showLabel label="Toggle Switch" />
+  </Story>
+</Preview>
+
+### Inline by default
+
+<Preview>
+  <Story
+    name='AsInline'
+    decorators={[
+      (StoryFn) => (<div><StoryFn /></div>)
+    ]}
+  >
+    <Fragment>
+      <Switch showLabel label="Toggle Switch" /> This text is not part of the Switch label
+    </Fragment>
   </Story>
 </Preview>
