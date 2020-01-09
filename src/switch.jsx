@@ -32,6 +32,7 @@ export const Switch = forwardRef(
           display: 'inline-flex',
           height: '2em',
           fontFamily: theme.typography.fonts.base,
+          fontWeight: theme.typography.weight.medium,
           flexDirection: 'row',
           alignItems: 'center',
         }}
