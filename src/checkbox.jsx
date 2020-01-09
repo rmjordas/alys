@@ -49,7 +49,7 @@ export const Checkbox = forwardRef(
 
           '@media (hover: hover)': {
             '&:hover input ~ span:first-of-type': {
-              backgroundColor: theme.color.subtle,
+              // backgroundColor: theme.color.subtle,
             },
           },
 
@@ -89,10 +89,9 @@ export const Checkbox = forwardRef(
         <span
           css={{
             position: 'absolute',
-            top: 0,
             left: 0,
-            height: '1.5625em',
-            width: '1.5625em',
+            height: '1em',
+            width: '1em',
             backgroundColor: checkboxBgColor,
             border: `0.0625em solid ${theme.color.subtle}`,
             transition: `all 0.2s ${theme.easing.rubber}`,
@@ -102,10 +101,9 @@ export const Checkbox = forwardRef(
               content: '""',
               position: 'absolute',
               display: 'none',
-
-              left: '0.5625em',
-              top: '0.3125em',
-              width: '0.3125em',
+              left: '0.3em',
+              top: '0.075em',
+              width: '0.2em',
               height: '0.625em',
               border: `solid ${theme.color.baseInvert}`,
               borderWidth: '0 0.1875em 0.1875em 0',
