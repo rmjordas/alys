@@ -22,13 +22,6 @@ provided with a label, even though the label is hidden by default.
 
 <Props of={Switch} />
 
-To show the label beside the toggle switch, add the `showLabel` boolean attribute to the toggle
-switch.
-
-<Story name="ShowLabel">
-  <Switch showLabel label="Toggle Switch" />
-</Story>
-
 ## Stories
 
 <br />
@@ -51,16 +44,41 @@ switch.
 
 ### Disabled
 
+Adding a `disabled` attribute prevents interaction with the toggle switch.
+
 <Preview>
   <Story name='Disabled'>
     <Switch disabled label="Toggle Switch" />
   </Story>
 </Preview>
 
+### Disabled (checked)
+
+Adding a `disabled` attribute prevents interaction with the toggle switch.
+
+<Preview>
+  <Story name='DisabledChecked'>
+    <Switch disabled checked label="Toggle Switch" />
+  </Story>
+</Preview>
+
 ### Show label
+
+To show the label beside the toggle switch, add the `showLabel` boolean attribute to the toggle
+switch.
 
 <Preview>
   <Story name='DefaultWithShowLabel'>
     <Switch showLabel label="Toggle Switch" />
+  </Story>
+</Preview>
+
+### Show label (disabled)
+
+Adding a `disabled` attribute prevents interaction with the toggle switch.
+
+<Preview>
+  <Story name='DisabledShowLabel'>
+    <Switch disabled showLabel label="Toggle Switch" />
   </Story>
 </Preview>

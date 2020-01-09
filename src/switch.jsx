@@ -8,20 +8,28 @@ import { VisuallyHidden } from './visually-hidden';
 import { generateUeid } from './utils';
 
 export const Switch = forwardRef(
-  ({ label: ownLabel, showLabel, checked: ownChecked, ...inputProps }, ref) => {
+  ({ label: ownLabel, showLabel, checked: ownChecked, disabled, ...inputProps }, ref) => {
     const theme = useTheme().default;
     const [checked, setChecked] = useState(ownChecked);
 
     const labelledby = `${inputProps.id || generateUeid()}-label`;
 
-    const check = (e) => setChecked(e.target.checked);
+    let check = (e) => setChecked(e.target.checked);
+
+    let checkedBackground = theme.color.success;
+    let cursor = 'pointer';
+
+    if (disabled) {
+      check = undefined;
+      checkedBackground = 'transparent';
+      cursor = 'default';
+    }
 
     return (
       <label
         css={{
           position: 'relative',
           display: 'inline-flex',
-          width: '3.25em',
           height: '2em',
           fontFamily: theme.typography.fonts.base,
           flexDirection: 'row',
@@ -37,7 +45,7 @@ export const Switch = forwardRef(
 
             '&:checked': {
               '+ span': {
-                backgroundColor: theme.color.success,
+                backgroundColor: checkedBackground,
               },
 
               '+ span::before': {
@@ -61,15 +69,19 @@ export const Switch = forwardRef(
         />
         <span
           css={{
+            cursor,
             position: 'absolute',
-            cursor: 'pointer',
             top: 0,
             left: 0,
             right: 0,
             bottom: 0,
-            backgroundColor: '#ccc',
+            backgroundColor: disabled ? 'transparent' : '#ccc',
+            border: disabled ? '0.0625em solid #ccc' : '0.0625em solid transparent',
             borderRadius: '2.5em',
+            boxShadow: 'none',
             transition: `all .4s ${theme.easing.rubber}`,
+            width: '3.25em',
+            height: 'inherit',
 
             '&:before': {
               content: '""',
@@ -79,7 +91,7 @@ export const Switch = forwardRef(
               width: '1.625em',
               top: '0.1875em',
               left: '0.1875em',
-              backgroundColor: theme.color.baseInvert,
+              backgroundColor: disabled ? '#ccc' : theme.color.baseInvert,
               transition: `all .4s ${theme.easing.rubber}`,
             },
           }}
@@ -89,6 +101,7 @@ export const Switch = forwardRef(
             css={{
               position: 'relative',
               left: '3.875em',
+              color: disabled ? theme.color.textSubtle : theme.color.base,
             }}
             id={labelledby}
           >
@@ -118,7 +131,7 @@ Switch.propTypes = {
   checked: PropTypes.bool,
   /**
    * If `true`, will add a label beside the toggle switch. Otherwise, it will hide the label using
-   * the VisuallyHidden component.
+   * the `VisuallyHidden` component.
    */
   showLabel: PropTypes.bool,
   /** Determines the size of the Switch */
