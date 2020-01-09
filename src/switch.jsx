@@ -122,7 +122,7 @@ export const Switch = forwardRef(
             css={{
               position: 'relative',
               left: '3.875em',
-              color: disabled ? theme.color.textSubtle : theme.color.base,
+              color: disabled ? theme.color.textSubtle : theme.color.description,
             }}
             id={labelledby}
           >

@@ -85,9 +85,9 @@ export const Toast = forwardRef(
       borderTop = '3px solid transparent';
 
       hoverStyles.backgroundColor = '#efefef';
-      hoverStyles.color = theme.color.base;
+      hoverStyles.color = theme.color.description;
       hoverStyles.svg = {
-        color: theme.color.base,
+        color: theme.color.description,
       };
 
       activeStyles.backgroundColor = 'lightgrey';
