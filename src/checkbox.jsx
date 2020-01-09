@@ -16,13 +16,28 @@ export const Checkbox = forwardRef(
 
     let check = (e) => setChecked(e.target.checked);
 
+    let checkboxBgColor = 'transparent';
+    let labelColor = theme.color.description;
+    let cursor = 'pointer';
+    let checkedBgColor = theme.color.accent;
+    let checkedBorderColor = theme.color.accent;
+
+    if (disabled) {
+      check = undefined;
+      checkboxBgColor = theme.color.subtle;
+      labelColor = theme.color.textSubtle;
+      cursor = 'default';
+      checkedBgColor = theme.color.subtle;
+      checkedBorderColor = theme.color.subtle;
+    }
+
     return (
       <label
         css={{
+          cursor,
           position: 'relative',
           paddingLeft: 35,
-          cursor: 'pointer',
-          color: theme.color.description,
+          color: labelColor,
           fontFamily: theme.typography.fonts.base,
           fontWeight: theme.typography.weight.medium,
           fontSize: theme.typography.size.s2,
@@ -34,12 +49,13 @@ export const Checkbox = forwardRef(
 
           '@media (hover: hover)': {
             '&:hover input ~ span:first-of-type': {
-              backgroundColor: '#ccc',
+              backgroundColor: theme.color.subtle,
             },
           },
 
           '& input:checked ~ span:first-of-type': {
-            background: theme.color.accent,
+            background: checkedBgColor,
+            border: `0.0625em solid ${checkedBorderColor}`,
           },
 
           '& input:checked ~ span:first-of-type:after': {
@@ -54,9 +70,16 @@ export const Checkbox = forwardRef(
             opacity: 0,
             height: 0,
             width: 0,
+
+            '&:focus + span': disabled
+              ? undefined
+              : {
+                  boxShadow: '0 0 0 0.25em lightskyblue',
+                },
           }}
           type="checkbox"
           {...inputProps}
+          disabled={disabled}
           checked={checked}
           aria-checked={checked}
           onChange={check}
@@ -70,7 +93,8 @@ export const Checkbox = forwardRef(
             left: 0,
             height: 25,
             width: 25,
-            backgroundColor: '#eee',
+            backgroundColor: checkboxBgColor,
+            border: `0.0625em solid ${theme.color.subtle}`,
             transition: `all 0.2s ${theme.easing.rubber}`,
             borderRadius: '0.25em',
 
@@ -83,7 +107,7 @@ export const Checkbox = forwardRef(
               top: 5,
               width: 5,
               height: 10,
-              border: 'solid white',
+              border: `solid ${theme.color.baseInvert}`,
               borderWidth: '0 3px 3px 0',
               transform: 'rotate(45deg)',
             },
@@ -93,7 +117,6 @@ export const Checkbox = forwardRef(
           <span
             css={{
               position: 'relative',
-              color: disabled ? theme.color.textSubtle : theme.color.description,
             }}
             id={labelledby}
           >

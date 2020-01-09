@@ -13,7 +13,47 @@ TODO
 TODO
 
 <Story name="Basic">
-  <Checkbox label="My label" />
+  <form>
+    <div><Checkbox label="Batman" /></div>
+    <div><Checkbox label="Robin" /></div>
+    <div><Checkbox label="Alfred" /></div>
+  </form>
 </Story>
 
 <Props of={Checkbox} />
+
+## Stories
+
+<br />
+
+### Default
+
+<Preview>
+  <Story name="ColorBasic">
+    <Checkbox label="My label" />
+  </Story>
+</Preview>
+
+### Checked
+
+<Preview>
+  <Story name="Checked">
+    <Checkbox checked label="My label" />
+  </Story>
+</Preview>
+
+### Disabled
+
+<Preview>
+  <Story name="Disabled">
+    <Checkbox disabled label="My label" />
+  </Story>
+</Preview>
+
+### Disabled (checked)
+
+<Preview>
+  <Story name="DisabledChecked">
+    <Checkbox disabled checked label="My label" />
+  </Story>
+</Preview>
