@@ -6,7 +6,7 @@ import { Fragment, useState } from 'react';
 import { Portal } from './portal';
 import { Toast } from './toast';
 import { ToastContext } from './toast-context';
-import { generateUeid } from './utils/rand-utils';
+import { generateUeid } from './utils';
 
 export const ToastProvider = ({ children }) => {
   const [toasts, setToasts] = useState([]);

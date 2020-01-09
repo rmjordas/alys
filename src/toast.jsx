@@ -1,11 +1,12 @@
 /** @jsx jsx */
 import { jsx } from '@emotion/core';
+import { useTheme } from 'emotion-theming';
 import PropTypes from 'prop-types';
 import { forwardRef, useRef, useEffect } from 'react';
-import { useTheme } from 'emotion-theming';
 
 import { CloseCircleIcon } from './icons/close-circle-icon';
 import { useColor } from './internal';
+import { noop } from './utils';
 
 export const Toast = forwardRef(
   ({ color: pColor, children, onClose, variant, ...alertProps }, ref) => {
@@ -13,7 +14,7 @@ export const Toast = forwardRef(
     const closeRef = useRef();
     const timerRef = useRef();
 
-    closeRef.current = onClose ? onClose : () => undefined;
+    closeRef.current = onClose ? onClose : noop;
 
     useEffect(() => {
       timerRef.current = setTimeout(() => closeRef.current(), 5000);
