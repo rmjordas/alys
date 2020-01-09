@@ -14,10 +14,53 @@ state. It is similar to a checkbox except it normally does not allow an intermed
 ## Overview
 
 Switches are commonly used inside forms. Accessibilty practices require that it must always be
-provided with a label.
+provided with a label, even though the label is hidden by default.
 
-<Story name="Default">
-  <Switch label="Nice" />
+<Story name="Basic">
+  <Switch label="My label" />
 </Story>
 
 <Props of={Switch} />
+
+To show the label beside the toggle switch, add the `showLabel` boolean attribute to the toggle
+switch.
+
+<Story name="ShowLabel">
+  <Switch showLabel label="Toggle Switch" />
+</Story>
+
+## Stories
+
+<br />
+
+### Default
+
+<Preview>
+  <Story name='Default'>
+    <Switch label="Toggle Switch" />
+  </Story>
+</Preview>
+
+### Checked
+
+<Preview>
+  <Story name='Checked'>
+    <Switch checked label="Toggle Switch" />
+  </Story>
+</Preview>
+
+### Disabled
+
+<Preview>
+  <Story name='Disabled'>
+    <Switch disabled label="Toggle Switch" />
+  </Story>
+</Preview>
+
+### Show label
+
+<Preview>
+  <Story name='DefaultWithShowLabel'>
+    <Switch showLabel label="Toggle Switch" />
+  </Story>
+</Preview>
