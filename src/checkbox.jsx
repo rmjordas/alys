@@ -137,8 +137,15 @@ Checkbox.defaultProps = {
 };
 
 Checkbox.propTypes = {
+  /** Text to display beside the check box */
   label: PropTypes.string.isRequired,
+  /**
+   * If `true`, will add a label beside the check box. Otherwise, it will hide the label using
+   * the `VisuallyHidden` component.
+   */
   showLabel: PropTypes.bool,
+  /** If true, will disable the Checkbox */
   disabled: PropTypes.bool,
+  /** If `true`, will display a check mark inside the check box */
   checked: PropTypes.bool,
 };
