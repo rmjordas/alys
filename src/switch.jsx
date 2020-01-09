@@ -12,8 +12,8 @@ export const Switch = forwardRef(({ label, ...inputProps }, ref) => {
       css={{
         position: 'relative',
         display: 'inline-block',
-        width: 60,
-        height: 34,
+        width: '3.25em',
+        height: '2em',
       }}
     >
       <input
@@ -28,12 +28,12 @@ export const Switch = forwardRef(({ label, ...inputProps }, ref) => {
             },
 
             '+ span::before': {
-              transform: 'translateX(26px)',
+              transform: 'translateX(1.25em)',
             },
           },
 
           '&:focus + span': {
-            boxShadow: '0 0 1px #2196f3',
+            boxShadow: '0 0 0.0625em #2196f3',
           },
         }}
         type="checkbox"
@@ -49,17 +49,17 @@ export const Switch = forwardRef(({ label, ...inputProps }, ref) => {
           right: 0,
           bottom: 0,
           backgroundColor: '#ccc',
-          borderRadius: 34,
+          borderRadius: '2.5em',
           transition: `all .4s ${theme.easing.rubber}`,
 
           '&:before': {
             content: '""',
             position: 'absolute',
             borderRadius: '50%',
-            height: 26,
-            width: 26,
-            top: 4,
-            left: 4,
+            height: '1.625em',
+            width: '1.625em',
+            top: '0.1875em',
+            left: '0.1875em',
             backgroundColor: theme.color.baseInvert,
             transition: `all .4s ${theme.easing.rubber}`,
           },
