@@ -17,7 +17,7 @@ etc.
 
 Here are all the primary buttons. They all have a solid background color.
 
-<Story name="Primary/All">
+<Story name="All primary variant">
   <Fragment>
     <Button color="basic">Basic</Button>
     <Button color="primary">Primary</Button>
@@ -30,7 +30,7 @@ Here are all the primary buttons. They all have a solid background color.
 
 Next are all the secondary buttons where the background color is `transparent`.
 
-<Story name="Secondary/All">
+<Story name="All secondary variant">
   <Fragment>
     <Button variant="secondary" color="basic">Basic</Button>
     <Button variant="secondary" color="primary">Primary</Button>
@@ -53,7 +53,7 @@ Solid buttons are normally used to draw more attention. They are most likely use
 (CTA) buttons, confirmations, etc.
 
 <Preview>
-  <Story name='Variant/Primary'>
+  <Story name='Primary variant'>
     <Button onClick={action('clicked')}>
       Primary
     </Button>
@@ -66,7 +66,7 @@ Secondary buttons maybe intended for some optional action like, canceling or goi
 previous page.
 
 <Preview>
-  <Story name='Variant/Secondary'>
+  <Story name='Secondary variant'>
     <Button variant="secondary" onClick={action('clicked')}>
       Secondary
     </Button>
@@ -79,7 +79,7 @@ Buttons can also be disabled to indicate that the action cannot be performed bec
 missing some pre-requisite action.
 
 <Preview>
-  <Story name="Disabled/True">
+  <Story name="Disabled">
     <Button disabled onClick={action('clicked')}>
       Disabled
     </Button>
@@ -89,7 +89,7 @@ missing some pre-requisite action.
 ### Size (default)
 
 <Preview>
-  <Story name="Size/Default">
+  <Story name="Default size">
     <Button onClick={action('clicked')}>
       Big
     </Button>
@@ -99,7 +99,7 @@ missing some pre-requisite action.
 ### Size (small)
 
 <Preview>
-  <Story name="Size/Small">
+  <Story name="Small size">
     <Button size="small" onClick={action('clicked')}>
       Small
     </Button>
@@ -112,7 +112,7 @@ Adding icons to button is done by importing the icon and placing it along the bu
 should put appropriate margins so that the icon and the button text are not stuck together.
 
 <Preview>
-  <Story name="Children/ReactNode/Size/Default">
+  <Story name="Default sized button with an icon">
     <Button onClick={action('clicked')}>
       Download
       <DownloadIcon css={{ marginLeft: 10 }} />
@@ -123,7 +123,7 @@ should put appropriate margins so that the icon and the button text are not stuc
 ### ReactNode as children (small size)
 
 <Preview>
-  <Story name="Children/ReactNode/Size/Small">
+  <Story name="Small sized button with an icon">
     <Button size="small" onClick={action('clicked')}>
       Download
       <DownloadIcon css={{ marginLeft: 10 }} />

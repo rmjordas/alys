@@ -26,7 +26,7 @@ will ignore this element:
 ```
 
 <Preview>
-  <Story name="Icon/AsDecoration">
+  <Story name="Icon as decoration">
     <button>
       <Icon style={{ marginRight: 10 }} aria-hidden>
         <circle cx="12" cy="12" r="9" stroke="lightsalmon" strokeWidth="3" fill="lightskyblue" />
@@ -48,7 +48,7 @@ provided with an alternative text via the `aria-label` attribute:
 ```
 
 <Preview>
-  <Story name="Icon/AsInfo">
+  <Story name="Icon as sole visual representation">
     <button>
       <Icon aria-label="Mark task as done.">
         <path d="M9.86 18a1 1 0 0 1-.73-.32l-4.86-5.17a1 1 0 1 1 1.46-1.37l4.12 4.39 8.41-9.2a1 1 0 1 1 1.48 1.34l-9.14 10a1 1 0 0 1-.73.33z" />
@@ -67,4 +67,6 @@ License). There are currently only a few icons available but more icons will be 
 The names of the icons follow that of the upstream icons repository's. If you're bothered by some
 icon names, please open an issue in the upstream icons repository.
 
-<IconShowcase icons={icons} />
+<Story name="Icon showcase">
+  <IconShowcase icons={icons} />
+</Story>
