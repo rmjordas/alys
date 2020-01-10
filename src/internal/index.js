@@ -1,4 +1,5 @@
 export * from './centered';
+export * from './checkbox-example';
 export * from './fade';
 export * from './icon-showcase';
 export * from './modal-root';

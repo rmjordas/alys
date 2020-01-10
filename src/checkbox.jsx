@@ -2,19 +2,16 @@
 import { jsx } from '@emotion/core';
 import { useTheme } from 'emotion-theming';
 import PropTypes from 'prop-types';
-import { forwardRef, useState } from 'react';
+import { forwardRef } from 'react';
 
 import { VisuallyHidden } from './visually-hidden';
 import { generateUeid } from './utils';
 
 export const Checkbox = forwardRef(
-  ({ label: ownLabel, showLabel, checked: ownChecked, disabled, ...inputProps }, ref) => {
+  ({ label: ownLabel, showLabel, checked, disabled, onChange, ...inputProps }, ref) => {
     const theme = useTheme().default;
-    const [checked, setChecked] = useState(ownChecked);
 
     const labelledby = `${inputProps.id || generateUeid()}-label`;
-
-    let check = (e) => setChecked(e.target.checked);
 
     let checkboxBgColor = 'transparent';
     let labelColor = theme.color.description;
@@ -23,7 +20,7 @@ export const Checkbox = forwardRef(
     let checkedBorderColor = theme.color.accent;
 
     if (disabled) {
-      check = undefined;
+      onChange = undefined;
       checkboxBgColor = theme.color.subtle;
       labelColor = theme.color.textSubtle;
       cursor = 'default';
@@ -74,15 +71,16 @@ export const Checkbox = forwardRef(
             '&:focus + span': disabled
               ? undefined
               : {
-                  boxShadow: '0 0 0 0.25em lightskyblue',
+                  boxShadow: '0 0 0 0.1875em lightskyblue',
                 },
           }}
+          defaultChecked={onChange ? undefined : checked}
           type="checkbox"
           {...inputProps}
           disabled={disabled}
-          checked={checked}
+          checked={onChange ? checked : undefined}
           aria-checked={checked}
-          onChange={check}
+          onChange={onChange}
           tabIndex="0"
           ref={ref}
         />
@@ -148,4 +146,6 @@ Checkbox.propTypes = {
   disabled: PropTypes.bool,
   /** If `true`, will display a check mark inside the check box */
   checked: PropTypes.bool,
+  /** An onChange event handler for controlling the checkbox */
+  onChange: PropTypes.func,
 };

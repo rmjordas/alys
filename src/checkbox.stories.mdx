@@ -1,22 +1,21 @@
 import { Meta, Preview, Props, Story } from '@storybook/addon-docs/blocks';
 
 import { Checkbox } from './checkbox';
+import { CheckboxExample } from './internal';
 
 <Meta title="Components/Checkbox" component={Checkbox}></Meta>
 
 # Checkbox
 
-<br />
+Checkboxes allow users to pick or exclude choices from a group.
 
 ## Usage
 
+Use a checkbox to represent one item from a list of choices. When a user ticks a checkbox it will
+show a checkmark inside the box.
+
 <Story name="Demo">
-  <form>
-    <p>Select version:</p>
-    <div><Checkbox label="Java SE 8" /></div>
-    <div><Checkbox label="Java SE 11 " /></div>
-    <div><Checkbox label="Java SE 17" /></div>
-  </form>
+  <CheckboxExample />
 </Story>
 
 <Props of={Checkbox} />
