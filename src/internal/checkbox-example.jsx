@@ -37,7 +37,7 @@ const reducer = (state, action) => {
     case OPTIONS_DESELECT_ALL:
       return { ...state, options: toggleAll(state.options, false) };
     default:
-      return { ...state };
+      throw new Error('unknown action type');
   }
 };
 

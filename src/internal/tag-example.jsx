@@ -30,7 +30,7 @@ const initialState = {
 const TAG_DESTROY = 'TAG_DESTROY';
 const STATE_RESET = 'STATE_RESET';
 
-function reducer(state, action) {
+const reducer = (state, action) => {
   switch (action.type) {
     case TAG_DESTROY:
       return {
@@ -43,7 +43,7 @@ function reducer(state, action) {
     default:
       throw new Error('unknown action type');
   }
-}
+};
 
 export const TagExample = () => {
   const [state, dispatch] = useReducer(reducer, { ...initialState });

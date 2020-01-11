@@ -11,7 +11,7 @@ const initialState = {
   showModal: false,
 };
 
-function reducer(state, action) {
+const reducer = (state, action) => {
   switch (action.type) {
     case MODAL_SHOW:
       return { ...state, showModal: true };
@@ -20,7 +20,7 @@ function reducer(state, action) {
     default:
       throw new Error('unknown action type');
   }
-}
+};
 
 export const PortalExample = () => {
   const [state, dispatch] = useReducer(reducer, initialState);
