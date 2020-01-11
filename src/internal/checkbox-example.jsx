@@ -1,6 +1,6 @@
 /** @jsx jsx */
 import { jsx } from '@emotion/core';
-import { Fragment, useCallback, useEffect, useReducer, useRef } from 'react';
+import { useCallback, useEffect, useReducer, useRef } from 'react';
 
 import { Checkbox } from '../checkbox';
 
@@ -62,48 +62,46 @@ export const CheckboxExample = () => {
   const selected = state.options.filter((v) => v.checked);
 
   return (
-    <Fragment>
-      <div>
-        <div role="group" aria-labelledby="id-group-label">
-          <h3 id="id-group-label">Download Java into your veins:</h3>
+    <div>
+      <div role="group" aria-labelledby="id-group-label">
+        <h3 id="id-group-label">Download Java into your veins:</h3>
 
-          {state.options.map((v) => (
-            <div key={v.name}>
-              <Checkbox {...v} onChange={toggle} />
-            </div>
-          ))}
-        </div>
-
-        <br />
-
-        <div>
-          <button disabled={selected.length === notDisabled.length} onClick={selectAll}>
-            Select All
-          </button>{' '}
-          <button disabled={selected.length < 1} onClick={deselectAll}>
-            Deselect All
-          </button>{' '}
-          <button
-            css={{
-              position: 'relative',
-            }}
-            disabled={selected.length < 1}
-            onClick={setOk(true)}
-          >
-            Download
-          </button>{' '}
-          {state.ok ? <span css={{ position: 'absolute', paddingLeft: 10 }}>Ok!</span> : null}
-        </div>
-
-        <p>Checked:</p>
-        <ul>
-          {selected.length > 0 ? (
-            selected.map((v) => <li key={v.name}>{v.label}</li>)
-          ) : (
-            <li>None selected</li>
-          )}
-        </ul>
+        {state.options.map((v) => (
+          <div key={v.name}>
+            <Checkbox {...v} onChange={toggle} />
+          </div>
+        ))}
       </div>
-    </Fragment>
+
+      <br />
+
+      <div>
+        <button disabled={selected.length === notDisabled.length} onClick={selectAll}>
+          Select All
+        </button>{' '}
+        <button disabled={selected.length < 1} onClick={deselectAll}>
+          Deselect All
+        </button>{' '}
+        <button
+          css={{
+            position: 'relative',
+          }}
+          disabled={selected.length < 1}
+          onClick={setOk(true)}
+        >
+          Download
+        </button>{' '}
+        {state.ok ? <span css={{ position: 'absolute', paddingLeft: 10 }}>Ok!</span> : null}
+      </div>
+
+      <p>Checked:</p>
+      <ul>
+        {selected.length > 0 ? (
+          selected.map((v) => <li key={v.name}>{v.label}</li>)
+        ) : (
+          <li>None selected</li>
+        )}
+      </ul>
+    </div>
   );
 };
