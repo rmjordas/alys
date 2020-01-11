@@ -1,9 +1,8 @@
 /** @jsx jsx */
 import { jsx } from '@emotion/core';
-import { Fragment, useState, useEffect } from 'react';
+import { Fragment, useCallback, useEffect, useReducer, useRef } from 'react';
 
 import { Checkbox } from '../checkbox';
-import { useReducer } from 'react';
 
 const initialState = {
   options: [
@@ -12,6 +11,7 @@ const initialState = {
     { label: 'Java SE 11', name: 'javase11', checked: true },
     { label: 'Java SE 17', name: 'javase17', checked: false },
   ],
+  ok: false,
 };
 
 const toggleAll = (options, checked) => options.map((v) => (v.disabled ? v : { ...v, checked }));
@@ -19,9 +19,12 @@ const toggleAll = (options, checked) => options.map((v) => (v.disabled ? v : { .
 const OPTIONS_TOGGLE = 'OPTIONS_TOGGLE';
 const OPTIONS_SELECT_ALL = 'OPTIONS_SELECT_ALL';
 const OPTIONS_DESELECT_ALL = 'OPTIONS_DESELECT_ALL';
+const OK_UPDATE = 'OK_UPDATE';
 
 const reducer = (state, action) => {
   switch (action.type) {
+    case OK_UPDATE:
+      return { ...state, ok: action.payload.ok };
     case OPTIONS_TOGGLE:
       return {
         ...state,
@@ -40,21 +43,20 @@ const reducer = (state, action) => {
 
 export const CheckboxExample = () => {
   const [state, dispatch] = useReducer(reducer, { ...initialState });
-  const [showOk, setShowOk] = useState(false);
+  const timerRef = useRef();
 
   const toggle = (e) => dispatch({ type: OPTIONS_TOGGLE, payload: { name: e.target.name } });
   const selectAll = () => dispatch({ type: OPTIONS_SELECT_ALL });
   const deselectAll = () => dispatch({ type: OPTIONS_DESELECT_ALL });
-  const download = () => setShowOk(true);
+  const setOk = useCallback((ok) => () => dispatch({ type: OK_UPDATE, payload: { ok } }), []);
 
   useEffect(() => {
-    let id;
-    if (showOk) {
-      id = setTimeout(() => setShowOk(false), 2000);
+    if (state.ok) {
+      timerRef.current = setTimeout(setOk(false), 2000);
     }
 
-    return id ? () => clearTimeout(id) : undefined;
-  }, [showOk]);
+    return timerRef.current ? () => clearTimeout(timerRef.current) : undefined;
+  }, [setOk, state.ok]);
 
   const notDisabled = state.options.filter((v) => !v.disabled);
   const selected = state.options.filter((v) => v.checked);
@@ -86,11 +88,11 @@ export const CheckboxExample = () => {
               position: 'relative',
             }}
             disabled={selected.length < 1}
-            onClick={download}
+            onClick={setOk(true)}
           >
             Download
           </button>{' '}
-          {showOk ? <span css={{ position: 'absolute', paddingLeft: 10 }}>Ok!</span> : null}
+          {state.ok ? <span css={{ position: 'absolute', paddingLeft: 10 }}>Ok!</span> : null}
         </div>
 
         <p>Checked:</p>
