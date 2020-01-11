@@ -92,7 +92,7 @@ export const Tag = forwardRef(
               marginRight: '-0.375em',
               cursor: disabled ? 'default' : 'pointer',
             }}
-            onClick={onClose}
+            onClick={disabled ? undefined : onClose}
             width={theme.typography.size.m1}
             height={theme.typography.size.m1}
           />

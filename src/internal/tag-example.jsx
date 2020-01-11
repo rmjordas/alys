@@ -7,6 +7,11 @@ import { Tag } from '../tag';
 const initialState = {
   tags: [
     {
+      title: 'ES2015',
+      color: 'warning',
+      disabled: true,
+    },
+    {
       title: 'React',
       color: 'primary',
     },
@@ -49,8 +54,8 @@ export const TagExample = () => {
 
   return (
     <Fragment>
-      {state.tags.map(({ title, color }) => (
-        <Tag key={title} color={color} onClose={close(title)}>
+      {state.tags.map(({ title, ...tagProps }) => (
+        <Tag key={title} {...tagProps} onClose={close(title)}>
           {title}
         </Tag>
       ))}
