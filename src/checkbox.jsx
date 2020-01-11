@@ -2,7 +2,7 @@
 import { jsx } from '@emotion/core';
 import { useTheme } from 'emotion-theming';
 import PropTypes from 'prop-types';
-import { forwardRef } from 'react';
+import { forwardRef, useMemo } from 'react';
 
 import { VisuallyHidden } from './visually-hidden';
 import { generateUeid } from './utils';
@@ -11,7 +11,7 @@ export const Checkbox = forwardRef(
   ({ label: ownLabel, showLabel, checked, disabled, onChange, ...inputProps }, ref) => {
     const theme = useTheme().default;
 
-    const id = inputProps.id || generateUeid();
+    const id = inputProps.id || useMemo(generateUeid, []);
     const labelledby = `${id}-label`;
 
     let checkboxBgColor = 'transparent';
