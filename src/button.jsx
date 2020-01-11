@@ -10,17 +10,17 @@ export const Button = forwardRef(
   ({ variant, color: pColor, size, children, ...buttonProps }, ref) => {
     const theme = useTheme().default;
 
-    let fontSize = '0.9375em';
+    let fontSize = theme.typography.size.s2;
     let padding = '0.875em 2.25em';
 
     switch (size) {
       case 'small':
-        fontSize = '0.8125em';
+        fontSize = theme.typography.size.s1;
         padding = children.length > 1 ? '0.625em 0.75em' : '0.625em 1.5em';
         break;
       case 'big':
       default:
-        fontSize = '0.9375em';
+        fontSize = theme.typography.size.s2;
         padding = children.length > 1 ? '0.625em 1.25em' : '0.625em 1.5em';
         break;
     }

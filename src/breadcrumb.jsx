@@ -24,7 +24,6 @@ export const Breadcrumb = forwardRef(({ children, ...navProps }, ref) => {
       css={{
         fontFamily: theme.typography.fonts.base,
         fontWeight: theme.typography.weight.medium,
-        fontSize: theme.typography.size.s2,
         color: theme.color.description,
         padding: '0.8em 1em',
         borderRadius: 4,
