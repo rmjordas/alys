@@ -11,7 +11,8 @@ export const Checkbox = forwardRef(
   ({ label: ownLabel, showLabel, checked, disabled, onChange, ...inputProps }, ref) => {
     const theme = useTheme().default;
 
-    const labelledby = `${inputProps.id || generateUeid()}-label`;
+    const id = inputProps.id || generateUeid();
+    const labelledby = `${id}-label`;
 
     let checkboxBgColor = 'transparent';
     let labelColor = theme.color.description;
@@ -59,7 +60,7 @@ export const Checkbox = forwardRef(
             display: 'block',
           },
         }}
-        htmlFor={inputProps.id}
+        htmlFor={id}
       >
         <input
           css={{
@@ -74,12 +75,14 @@ export const Checkbox = forwardRef(
                   boxShadow: '0 0 0 0.1875em lightskyblue',
                 },
           }}
-          defaultChecked={onChange ? undefined : checked}
-          type="checkbox"
           {...inputProps}
+          id={id}
+          type="checkbox"
+          defaultChecked={onChange ? undefined : checked}
           disabled={disabled}
           checked={onChange ? checked : undefined}
           aria-checked={checked}
+          aria-labelledby={labelledby}
           onChange={onChange}
           tabIndex="0"
           ref={ref}
