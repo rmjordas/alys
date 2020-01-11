@@ -37,7 +37,6 @@ export const BreadcrumbItem = forwardRef(({ active, href, children, ...listItemP
               },
               active && {
                 color: theme.color.description,
-                fontWeight: 700,
                 textDecoration: 'none',
               },
             ].filter(Boolean)}
@@ -50,7 +49,6 @@ export const BreadcrumbItem = forwardRef(({ active, href, children, ...listItemP
           <span
             css={{
               color: theme.color.description,
-              fontWeight: 700,
               textDecoration: 'none',
             }}
           >
