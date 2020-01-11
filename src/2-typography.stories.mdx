@@ -1,26 +1,52 @@
-import { Meta, Typeset } from '@storybook/addon-docs/blocks';
+import { Meta } from '@storybook/addon-docs/blocks';
 
-import { typography } from './styles/themes/light';
+import { Typeset } from './internal/typeset';
 
 <Meta title="Getting Started/Typography" />
 
 # Typography
 
-**Font:** Inter
+It is important to have a standard for how text should appear in the UI elements to help provide a
+better experience for users.
 
-**Weights:** 100 (thin), 200 (extraLight), 300 (light), 400 (regular), 500 (medium), 600 (semiBold), 700 (bold), 800 (extraBold), 900 (black)
+The library's main typeface is called "Inter" which is used on a lot of components that are not
+source code.
 
-<Typeset
-  fontSizes={[
-    typography.size.s1,
-    typography.size.s2,
-    typography.size.s3,
-    typography.size.m1,
-    typography.size.m2,
-    typography.size.m3,
-    typography.size.l1,
-    typography.size.l2,
-    typography.size.l3,
-  ]}
-  fontWeight={typography.weight.regular}
-/>
+## Usage
+
+Typography values are available under the `typography` property of the theme.
+
+```jsx
+/** @jsx jsx */
+import { jsx } from '@emotion/core';
+import { useTheme } from 'emotion-theming';
+
+export const Text = ({ children }) => {
+  const theme = useTheme().default;
+
+  return (
+    <span
+      css={{
+        fontFamily: theme.typography.fonts.base,
+        fontWeight: theme.typography.weight.regular,
+        fontSize: theme.typography.size.s3,
+      }}
+    >
+      {children}
+    </span>
+  );
+};
+```
+
+## Font sizes
+
+Font sizes are divided into three groups, small (`s`), medium (`m`) and large (`l`) with each group
+having three sub-values (i.e. `x1`, `x2`, `x3`, where `x` is the group name).
+
+<Typeset />
+
+## Font Weights
+
+Heavier font weights can be used to adjust the importance of a portion of text.
+
+<Typeset option="weight" />
