@@ -1,8 +1,9 @@
 /** @jsx jsx */
 import { jsx } from '@emotion/core';
-import { useCallback, useEffect, useReducer, useRef } from 'react';
+import { useReducer } from 'react';
 
 import { Checkbox } from '../checkbox';
+import { useNopButton } from './use-nop-button';
 
 const initialState = {
   options: [
@@ -11,7 +12,6 @@ const initialState = {
     { label: 'Java SE 11', name: 'javase11', checked: true },
     { label: 'Java SE 17', name: 'javase17', checked: false },
   ],
-  ok: false,
 };
 
 const toggleAll = (options, checked) => options.map((v) => (v.disabled ? v : { ...v, checked }));
@@ -19,12 +19,9 @@ const toggleAll = (options, checked) => options.map((v) => (v.disabled ? v : { .
 const OPTIONS_TOGGLE = 'OPTIONS_TOGGLE';
 const OPTIONS_SELECT_ALL = 'OPTIONS_SELECT_ALL';
 const OPTIONS_DESELECT_ALL = 'OPTIONS_DESELECT_ALL';
-const OK_UPDATE = 'OK_UPDATE';
 
 const reducer = (state, action) => {
   switch (action.type) {
-    case OK_UPDATE:
-      return { ...state, ok: action.payload.ok };
     case OPTIONS_TOGGLE:
       return {
         ...state,
@@ -43,20 +40,11 @@ const reducer = (state, action) => {
 
 export const CheckboxExample = () => {
   const [state, dispatch] = useReducer(reducer, { ...initialState });
-  const timerRef = useRef();
+  const [, NopButton] = useNopButton('Download', false);
 
   const toggle = (e) => dispatch({ type: OPTIONS_TOGGLE, payload: { name: e.target.name } });
   const selectAll = () => dispatch({ type: OPTIONS_SELECT_ALL });
   const deselectAll = () => dispatch({ type: OPTIONS_DESELECT_ALL });
-  const setOk = useCallback((ok) => () => dispatch({ type: OK_UPDATE, payload: { ok } }), []);
-
-  useEffect(() => {
-    if (state.ok) {
-      timerRef.current = setTimeout(setOk(false), 2000);
-    }
-
-    return timerRef.current ? () => clearTimeout(timerRef.current) : undefined;
-  }, [setOk, state.ok]);
 
   const notDisabled = state.options.filter((v) => !v.disabled);
   const selected = state.options.filter((v) => v.checked);
@@ -82,16 +70,7 @@ export const CheckboxExample = () => {
         <button disabled={selected.length < 1} onClick={deselectAll}>
           Deselect All
         </button>{' '}
-        <button
-          css={{
-            position: 'relative',
-          }}
-          disabled={selected.length < 1}
-          onClick={setOk(true)}
-        >
-          Download
-        </button>{' '}
-        {state.ok ? <span css={{ position: 'absolute', paddingLeft: 10 }}>Ok!</span> : null}
+        <NopButton disabled={selected.length < 1} />
       </div>
 
       <p>Checked:</p>
