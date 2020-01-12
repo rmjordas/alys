@@ -1,0 +1,59 @@
+import { Preview, Story, Props, Meta } from '@storybook/addon-docs/blocks';
+
+import { Radio } from './radio';
+import { RadioExample } from './internal';
+
+<Meta title="Components/Radio" component={Radio}></Meta>
+
+# Radio
+
+Forms normally have sections where the user is required to select one and only one choice from a
+list of choices. When the list of choices is short, a set of radio inputs may be enough.
+
+## Demo
+
+Select a song for your ringtone. You can preview the song by clicking on the audio player's play
+button. You can set the player to instantly play when the song changes by ticking the "Auto play"
+checkbox in the Options section.
+
+<Story name="Demo">
+  <RadioExample />
+</Story>
+
+<Props of={Radio} />
+
+## Stories
+
+<br />
+
+### Default
+
+<Preview>
+  <Story name="Default">
+    <Radio label="My label" />
+  </Story>
+</Preview>
+
+### Checked
+
+<Preview>
+  <Story name="Checked">
+    <Radio checked label="My label" />
+  </Story>
+</Preview>
+
+### Disabled (default)
+
+<Preview>
+  <Story name="Disabled">
+    <Radio disabled label="My label" />
+  </Story>
+</Preview>
+
+### Disabled (checked)
+
+<Preview>
+  <Story name="Disabled/Checked">
+    <Radio disabled checked label="My label" />
+  </Story>
+</Preview>

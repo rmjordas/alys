@@ -92,3 +92,7 @@ typings/
 
 # Storybook
 storybook-static/
+
+# Local
+audio/*
+!audio/.gitkeep

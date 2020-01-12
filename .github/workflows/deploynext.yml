@@ -19,6 +19,8 @@ jobs:
           npm ci
           npm run lint
           npm run build:docs
+        env:
+          STORYBOOK_DEMO_VIDEOS_BASE_URL: ${{ secrets.STORYBOOK_DEMO_VIDEOS_BASE_URL }}
       - name: Install Surge and deploy
         run: |
           npm install -g surge
