@@ -1,0 +1,48 @@
+import { Meta, Preview, Story, Props } from '@storybook/addon-docs/blocks';
+
+import { Tab } from './tab';
+import { TabList } from './tab-list';
+import { TabPanel } from './tab-panel';
+import { Tabs } from './tabs';
+
+<Meta
+  title="Extras/Tabs/Tabs"
+  component={Tabs}
+  parameters={{
+    subcomponents: { TabList, TabPanel, Tab },
+  }}></Meta>
+
+# Tabs
+
+TODO
+
+<Props of={Tabs} />
+
+## Demo
+
+TODO
+
+<Tabs label="Entertainment" options={[{
+  id: 'nils',
+  label: 'Nils Frahm',
+  contents:
+    'Nils Frahm is a German musician, composer and record producer based in Berlin. He is known for combining classical and electronic music and for an unconventional approach to the piano in which he mixes a grand piano, upright piano, Roland Juno-60, Rhodes piano, drum machine, and Moog Taurus.',
+},{
+  id: 'agnes',
+  label: 'Agnes Obel',
+  contents:
+    'Agnes Caroline Thaarup Obel is a Danish singer/songwriter. Her first album, Philharmonics, was released by PIAS Recordings on 4 October 2010 in Europe. Philharmonics was certified gold in June 2011 by the Belgian Entertainment Association (BEA) for sales of 10,000 Copies.',
+},{
+  id: 'joke',
+  label: 'Joke',
+  contents: 'Fear of complicated buildings: A complex complex complex.',
+},{
+  id: 'disabl',
+  label: 'Disabled Tab',
+  contents: 'Not showed?',
+  disabled: true,
+}]} />
+
+## Stories
+
+TODO
