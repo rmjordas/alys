@@ -19,7 +19,7 @@ Alys
   </a>
 
   <a href="https://alyswc-next.web.app">
-    <img src="https://img.shields.io/badge/storybook-https://alyswc-next.web.app-ff69b4" alt="Component documentation website">
+    <img src="https://img.shields.io/badge/storybook-https://alyswc--next.web.app-ff69b4" alt="Component documentation website">
   </a>
 
   <a href="https://alys.js.org">
