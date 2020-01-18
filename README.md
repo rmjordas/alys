@@ -18,8 +18,8 @@ Alys
     <img src="https://img.shields.io/npm/v/alys.svg" alt="Alys on npm">
   </a>
 
-  <a href="https://alys.surge.sh">
-    <img src="https://img.shields.io/badge/storybook-https://alys.surge.sh-ff69b4" alt="Component documentation website">
+  <a href="https://alyswc-next.web.app">
+    <img src="https://img.shields.io/badge/storybook-https://alyswc-next.web.app-ff69b4" alt="Component documentation website">
   </a>
 
   <a href="https://alys.js.org">
@@ -89,7 +89,7 @@ export default function MyComponent() {
 
 ## Documentation
 
-- [Component documentation](https://alys.surge.sh)
+- [Component documentation](https://alyswc-next.web.app)
 - [Change log](https://github.com/rmjordas/alys/blob/master/CHANGELOG.md)
 - [Contributing guide](https://github.com/rmjordas/alys/blob/master/.github/CONTRIBUTING.md)
 - [Attribution notice](https://github.com/rmjordas/alys/blob/master/NOTICE)

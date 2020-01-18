@@ -1,0 +1,17 @@
+{
+  "projects": {
+    "default": "alyswc"
+  },
+  "targets": {
+    "alyswc": {
+      "hosting": {
+        "next": [
+          "alyswc-next"
+        ],
+        "release": [
+          "alyswc"
+        ]
+      }
+    }
+  }
+}
